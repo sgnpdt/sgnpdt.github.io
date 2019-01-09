@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,initial-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#00968f">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/favicon/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/offcanvas.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/ie10-viewport-bug-workaround.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/aos.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/common.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/header.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/Footer.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/Popper.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/offcanvas.js"></script> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/aos.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/slider.js"></script> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/common.js"></script>
+</head>
+
+<body>
+	<!--All Header-->
+	<div class="HeaderPage">
+
+       
+        <div class="Headertop hidden-xs-down">
+        	<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Tiếng Việt
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Tiếng Việt</a>
+							<a class="dropdown-item" href="#">English</a>
+						</div>
+						<a class="email_fptTH" href="mailto:fpttruyenhinh@gmail.com">Email: fpttruyenhinh@gmail.com</a>
+						<a class="phone_fptTH" href="tel:19001566"><span class="hidden-md-down">Hotline:</span> 19001566</a>
+						<div class="group_login">
+							<a class="txt">ĐĂNG NHẬP</a>
+							<div class="txt space">|</div>
+							<a class="txt">ĐĂNG KÝ</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div class="Header_navigation ">
+        	<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<img class="logo hidden-xs-down" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/logo.png" />
+						<div class="navigation hidden-xs-down">
+							<ul>
+								<li class="par">
+									<a class="txt ">SẢN PHẨM DỊCH VỤ</a>
+									<div class="bg_navigation_2">
+										<div class="container">
+										<ul>
+											<li class="item">
+												<a class="txt ">Ứng dụng</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Gói dịch vụ</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Danh sách kênh</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Thiết bị FPT TV</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Dịch vụ truyền hình</a>
+											</li>
+										</ul>
+										</div>
+									</div>
+								</li>
+								<li class="par">
+									<a class="txt">TIN TỨC</a>
+									<div class="bg_navigation_2">
+										<div class="container">
+										<ul>
+											<li class="item">
+												<a class="txt ">Sự kiện</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Truyền hình</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Điện ảnh</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Thể thao</a>
+											</li>
+										</ul>
+										</div>
+									</div>
+								</li>
+								<li class="par">
+									<a class="txt">HỖ TRỢ</a>
+									<div class="bg_navigation_2">
+										<div class="container">
+										<ul>
+											<li class="item">
+												<a class="txt ">Liên hệ</a>
+											</li>
+											
+											<li class="item">
+												<a class="txt ">Phòng giao dịch</a>
+											</li>
+											<li class="item">
+												<a class="txt  ">Hướng dẫn</a>
+											</li>
+										</ul>
+										</div>
+									</div>
+								</li>
+								<li class="par active">
+									<a class="txt">TRUYỀN HÌNH FPT</a>
+									<div class="bg_navigation_2">
+										<div class="container">
+										<ul>
+											<li class="item">
+												<a class="txt ">Thoả thuận dịch vụ</a>
+											</li>
+											<li class="item">
+												<a class="txt ">Chính sách bảo mật</a>
+											</li>
+											
+											<li class="item">
+												<a class="txt ">Giới Thiệu FPT TH</a>
+											</li>
+										</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<nav id="header_link" class="navbar navbar-expand-lg fixed-top Shows-xs menu_collapse">
+							<div class="menu_right">
+								<span class="icon_menu_right"></span>
+								<div class="div_menu_right">
+			  	  	  	  	  		<div class="pos_arrow">
+										<ul>
+											<li class=""><a href="#">Đăng nhập</a></li>
+											<li class=""><a href="#">Đăng ký</a></li>
+											<hr>
+											<li class=""><a class="phone_fptTH" href="tel:19001566"><span class="hidden-md-down">Hotline:</span> 19001566</a></li>
+											<li class=""><a class="email_fptTH" href="mailto:fpttruyenhinh@gmail.com"><span class="hidden-md-down">Email:</span>  fpttruyenhinh@gmail.com</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<img class="logo" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/logo.png" />
+							<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="navbar-collapse offcanvas-collapse" id="collape_menu">
+								
+								<div class="collapse_item">
+									<div class="" id="link_thfpt">
+									  <h5 class="mb-0">
+										<p class="btn btn-danhmuc" data-toggle="collapse" data-target="#danhmuc_thfpt" aria-expanded="false" aria-controls="danhmuc_thfpt">
+										  <span>TRUYỀN HÌNH FPT</span>
+										</p>
+									  </h5>
+									</div>
+
+									<div id="danhmuc_thfpt" class="collapse " aria-labelledby="link_thfpt" data-parent="#collape_menu">
+									  <div class="card-body">
+										<ul class="">
+											<li class="">
+												<a class="link" href="">Giới Thiệu FPT TH</a>
+											</li>
+											
+											<li class="">
+												<a class="link" href="">Chính sách bảo mật</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Thoả thuận dịch vụ</a>
+											</li>
+										</ul>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="collapse_item">
+									<div class="" id="link_hotro">
+									  <h5 class="mb-0">
+										<p class="btn btn-danhmuc" data-toggle="collapse" data-target="#danhmuc_hotro" aria-expanded="false" aria-controls="danhmuc_hotro">
+										  <span>HỖ TRỢ</span>
+										</p>
+									  </h5>
+									</div>
+
+									<div id="danhmuc_hotro" class="collapse " aria-labelledby="link_hotro" data-parent="#collape_menu">
+									  <div class="card-body">
+										<ul class="">
+											<li class="">
+												<a class="link" href="">Hướng dẫn</a>
+											</li>
+											
+											<li class="">
+												<a class="link" href="">Phòng giao dịch</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Liên hệ</a>
+											</li>
+										</ul>
+									  </div>
+									</div>
+								</div>
+								<div class="collapse_item">
+									<div class="" id="link_spdv">
+									  <h5 class="mb-0">
+										<p class="btn btn-danhmuc" data-toggle="collapse" data-target="#danhmuc_spdv" aria-expanded="false" aria-controls="danhmuc_spdv">
+										  <span>SẢN PHẨM DỊCH VỤ</span>
+										</p>
+									  </h5>
+									</div>
+
+									<div id="danhmuc_spdv" class="collapse " aria-labelledby="link_spdv" data-parent="#collape_menu">
+									  <div class="card-body">
+										<ul class="">
+											<li class="">
+												<a class="link" href="">Thể thao</a>
+											</li>
+											
+											<li class="">
+												<a class="link" href="">Điện ảnhh</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Truyền hình</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Sự kiện</a>
+											</li>
+										</ul>
+									  </div>
+									</div>
+								</div>
+								<div class="collapse_item">
+									<div class="" id="link_tintuc">
+									  <h5 class="mb-0">
+										<p class="btn btn-danhmuc" data-toggle="collapse" data-target="#danhmuc_tintuc" aria-expanded="false" aria-controls="danhmuc_tintuc">
+										  <span>TIN TỨC</span>
+										</p>
+									  </h5>
+									</div>
+
+									<div id="danhmuc_tintuc" class="collapse " aria-labelledby="link_tintuc" data-parent="#collape_menu">
+									  <div class="card-body">
+										<ul class="">
+											<li class="">
+												<a class="link" href="">Dịch vụ truyền hình</a>
+											</li>
+											
+											<li class="">
+												<a class="link" href="">Thiết bị FPT TV</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Danh sách kênh</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Gói dịch vụ</a>
+											</li>
+											<li class="">
+												<a class="link" href="">Ứng dụng</a>
+											</li>
+										</ul>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!--All Header End-->
+    <!-- TemplateBeginEditable name="Body" -->
+	<!-- TemplateEndEditable -->
+   
+    <!--Footer-->
+	<div class="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-4 item hidden-xs-down">
+					<h3 class="title">TRUYỀN HÌNH FPT</h3>
+					<ul class="ul_link">
+						<li><a>Giới Thiệu FPT TH</a></li>
+						<li><a>Chính sách bảo mật</a></li>
+						<li><a>Thoả thuận dịch vụ</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-5 item hidden-xs-down">
+					<h3 class="title">SẢN PHẨM DỊCH VỤ</h3>
+					<ul class="ul_link">
+						<li><a>Dịch vụ truyền hình</a></li>
+						<li><a>Thiết bị FPT TV</a></li>
+						<li><a>Danh sách kênh</a></li>
+						<li><a>Gói dịch vụ</a></li>
+						<li><a>Ứng dụng</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-3 item hidden-xs-down">
+					<h3 class="title">TIN TỨC</h3>
+					<ul class="ul_link">
+						<li><a>Truyền hình</a></li>
+						<li><a>Điện ảnh</a></li>
+						<li><a>Thể thao</a></li>
+						<li><a>Sự kiện</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 item hidden-xs-down">
+					<h3 class="title">HỖ TRỢ</h3>
+					<ul class="ul_link">
+						<li><a>Hướng dẫn</a></li>
+						<li><a>Phòng giao dịch</a></li>
+						<li><a>Liên hệ</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3 col-md-8 item">
+					<h3 class="title">TRUYỀN HÌNH FPT</h3>
+					<div class="group_input_email">
+						<input class="input_email" type="input" placeholder="Nhập email"></input>
+						<button type="submit" class="btn btn-primary">Gửi</button>
+					</div>
+					<ul class="social">
+						<li>
+							<a class="ico_fb"></a>
+						</li>
+						<li>
+							<a class="ico_youtube"></a>
+						</li>
+					</ul>
+				</div>
+            </div>
+			<hr>
+			<p class="copyright">@fpt truyen hinh</p>
+        </div>
+    </div>			
+    <!--Footer End-->  
+    
+    <a class="btn-top" href="javascript:void(0);" title="Top" ><i class="material-icons">keyboard_arrow_up</i></a>
+</body>
+
+
+<!-- TemplateBeginEditable name="footer" -->
+
+<!-- TemplateEndEditable -->
+
+</html>

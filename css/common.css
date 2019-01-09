@@ -1,0 +1,523 @@
+.shadow-navigation {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.b-shadow-5 {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.source-icon-hotline {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@3x.png) 3x);
+}
+.source-icon-email {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@3x.png) 3x);
+}
+.source-icon-dropdown {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@3x.png) 3x);
+}
+.source-icon-ngonngu {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@3x.png) 3x);
+}
+.source-menu-right {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@3x.png) 3x);
+}
+.source-icon-truyenhinh {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@3x.png) 3x);
+}
+.source-icon-vod {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@3x.png) 3x);
+}
+.source-icon-sukien {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@3x.png) 3x);
+}
+.source-icon-thethao {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@3x.png) 3x);
+}
+.source-icon-truyenhinh-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@3x.png) 3x);
+}
+.source-icon-vod-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@3x.png) 3x);
+}
+.source-icon-sukien-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@3x.png) 3x);
+}
+.source-icon-thethao-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@3x.png) 3x);
+}
+.source-bg-khampha {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/demo/khampha_bg.png);
+}
+.source-icon-huongdan {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@3x.png) 3x);
+}
+.source-icon-phonggd {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@3x.png) 3x);
+}
+.source-icon-khuyenmai {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@3x.png) 3x);
+}
+.source-icon-huongdan-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@3x.png) 3x);
+}
+.source-icon-phonggd-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@3x.png) 3x);
+}
+.source-icon-khuyenmai-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@3x.png) 3x);
+}
+.source-icon-youtube {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@3x.png) 3x);
+}
+.source-icon-fb {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@3x.png) 3x);
+}
+.source-menu-mobile {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@3x.png) 3x);
+}
+.Shows-xs {
+  display: none !important;
+}
+.Shows-sm {
+  display: none !important;
+}
+.Shows-md {
+  display: none !important;
+}
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none!important;
+  }
+  .Shows-xs {
+    display: none !important;
+  }
+  .Shows-sm {
+    display: none !important;
+  }
+  .Shows-md {
+    display: block !important;
+  }
+}
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none!important;
+  }
+  .Shows-xs {
+    display: none !important;
+  }
+  .Shows-sm {
+    display: none !important;
+  }
+  .Shows-md {
+    display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-sm-down {
+    display: none!important;
+  }
+  .Shows-xs {
+    display: none !important;
+  }
+  .Shows-sm {
+    display: block !important;
+  }
+  .Shows-md {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs-down {
+    display: none!important;
+  }
+  .Shows-xs {
+    display: block !important;
+  }
+  .Shows-sm {
+    display: block !important;
+  }
+  .Shows-md {
+    display: block !important;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+[data-aos=fade-down-right] {
+  transform: translate3d(-8px, -8px, 0);
+}
+[data-aos=fade-down-left] {
+  transform: translate3d(8px, -8px, 0);
+}
+[data-aos=fade-up-right] {
+  transform: translate3d(-8px, 8px, 0);
+}
+[data-aos=fade-up-left] {
+  transform: translate3d(8px, 8px, 0);
+}
+[data-aos=fade-right] {
+  transform: translate3d(-8px, 0, 0);
+}
+[data-aos=fade-left] {
+  transform: translate3d(8px, 0, 0);
+}
+[data-aos=fade-up] {
+  transform: translate3d(0, 8px, 0);
+}
+[data-aos=zoom-in-up] {
+  transform: translate3d(0, 8px, 0) scale(0.8);
+}
+[data-aos=zoom-in] {
+  transform: scale(0.9);
+}
+body {
+  font-family: "roboto";
+  font-size: 14px;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+html {
+  height: 100%;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+p {
+  font-size: 16px;
+}
+a {
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+@media (hover: hover) {
+  a:hover {
+    color: #00968f !important;
+    text-decoration: none;
+  }
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+}
+.col_5col {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: none;
+}
+.btn-primary {
+  background-color: #00968f;
+  color: #ffffff !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 40px;
+  padding: 9px 24px;
+  border: 1px solid #00968f;
+}
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #00968f !important;
+  border: 1px solid #00968f;
+}
+.title_big {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 36px;
+}
+.title_big:after {
+  content: "";
+  position: relative;
+  bottom: -16px;
+  width: 130px;
+  height: 3px;
+  background-color: #00968f;
+  display: block;
+  margin: 0 auto;
+}
+.subtext {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.Khampha {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/demo/khampha_bg.png);
+}
+.Khampha .title {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+}
+.Khampha .title:after {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  content: "";
+}
+.Khampha .txt {
+  font-size: 16px;
+  color: #ffffff;
+}
+.Footer {
+  padding-top: 100px;
+  background-color: #f7f7f7;
+}
+.Footer .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.Footer .ul_link li {
+  margin-bottom: 8px;
+}
+.Footer .ul_link li a {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+.Footer .group_input_email {
+  position: relative;
+}
+.Footer .group_input_email .input_email {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 40px;
+  width: 100%;
+  border-radius: 42px;
+  text-indent: 18px;
+  padding-right: 76px;
+}
+.Footer .group_input_email .btn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.Footer .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.Footer .col-lg-2,
+.Footer .col-lg-3 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.Footer .social {
+  margin-top: 20px;
+}
+.Footer .social li {
+  display: inline-block;
+  margin-right: 12px;
+}
+.Footer .social li .ico_fb {
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@3x.png) 3x);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+.Footer .social li .ico_youtube {
+  background-repeat: no-repeat;
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@3x.png) 3x);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+.Footer .copyright {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.btn-top {
+  background-color: #00968f;
+  background-size: 100%;
+  border-radius: 36px;
+  background-repeat: no-repeat;
+  border: medium none;
+  bottom: 32px;
+  cursor: pointer;
+  display: none;
+  height: 36px;
+  outline: medium none;
+  padding: 0;
+  position: fixed;
+  right: 16px;
+  width: 36px;
+  z-index: 10;
+  text-decoration: none !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-top i {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 36px;
+  text-align: center;
+  width: 36px;
+}
+.btn-top:hover {
+  text-decoration: none !important;
+  background-color: #ff8201;
+}
+@media (max-width: 991px) {
+  .title_big {
+    font-size: 32px;
+  }
+  .Footer {
+    padding-top: 64px;
+  }
+  .Footer .title {
+    margin-bottom: 16px;
+  }
+  .Footer .item {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767px) {
+  [data-aos=fade-down-right] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-down-left] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-up-right] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-up-left] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-right] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-left] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=fade-up] {
+    transform: translate3d(0, 0, 0);
+  }
+  [data-aos=zoom-in-up] {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  [data-aos=zoom-in] {
+    transform: scale(1);
+  }
+  .title_big {
+    font-size: 24px;
+  }
+  .btn-primary {
+    font-size: 14px;
+  }
+  .Footer {
+    padding-top: 32px;
+  }
+  .Footer .item {
+    margin-bottom: 0;
+  }
+  .Footer .group_input_email .btn {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+  .Footer hr {
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  .Footer .copyright {
+    font-size: 14px;
+  }
+}
