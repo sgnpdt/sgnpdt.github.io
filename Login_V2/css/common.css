@@ -1307,6 +1307,9 @@ input:-ms-input-placeholder {
 .div_profile_selected .div_header {
   height: 64px;
 }
+.div_profile_selected .div_input_pos_signup {
+  height: 280px;
+}
 @media (max-width: 320px) {
   .div_input_pos_signup {
     margin-top: 8px;
