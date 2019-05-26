@@ -33,13 +33,14 @@
 	
 	<div class="appbar">
 		<a class="btn_back"></a>
+		<a class="btn_un_editmode"></a>
 	</div>
 	
 	<div class="bg_login_form bg_dk div_profile_selected">
 		<div class="container">
 			<div class="div_header">
 				
-				<p class="title_mlk">Chọn tài khoản <br><span class="text_color">Foxy</span></p>
+				<p class="title_mlk">Chọn hồ sơ <br><span class="text_color">Foxy</span></p>
 			</div>
 			<div class="div_input_pos div_input_pos_signup">
 				<div class="row">
@@ -47,6 +48,7 @@
 						<div class="profile">
 							<div class="avatar">
 								<img src="master/images/avatar.jpg" />
+								<div class="bg_edit" data-toggle="modal" data-target="#ShowEdit"></div>
 							</div>
 							<span class="name">Moon</span>
 						</div>
@@ -55,6 +57,7 @@
 						<div class="profile">
 							<div class="avatar">
 								<img src="master/images/avatar.jpg" />
+								<div class="bg_edit" data-toggle="modal" data-target="#ShowEdit"></div>
 							</div>
 							<span class="name">Moon</span>
 						</div>
@@ -63,28 +66,86 @@
 						<div class="profile">
 							<div class="avatar">
 								<img src="master/images/avatar.jpg" />
+								<div class="bg_edit" data-toggle="modal" data-target="#ShowEdit"></div>
 							</div>
 							<span class="name">Moon</span>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-6 div_add_profile">
 						<div class="profile">
-							<div class="avatar">
+							<div class="avatar" data-toggle="modal" data-target="#ShowAdd">
 								<i class="material-icons">add</i>
 							</div>
-							<span class="name">Thêm</span>
+							<span class="name">Mới</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			
 			<div class="group_bottom">
-				<div class="btn_cus btn-primary">Đăng nhập</div>
-				<p class="title_mk  text-center"><a href="V2_Quen_mat_khau.html" class="text_color">Quên mật khẩu</a></p>
+				<div class="btn_cus btn-primary btn_edit_profile">Tùy chỉnh hồ sơ</div>
+				
 			</div>
 		</div>
 	</div>
-	
+	<!-- Modal -->
+	<div class="modal fade" id="ShowAdd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-270" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+		  	<div class="group_form clearable">
+				<div class="input_relative input_profile">
+					<input class="form-control input_mk " type="text" placeholder="Tên hồ sơ" value="" required="" />
+					<div class="invalid-feedback show">
+					 Tên không hợp lệ
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-6 align-self-center">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Hủy bỏ</button>
+					</div>
+					<div class="col-6 align-self-center">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Đồng ý</button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal edit-->
+	<div class="modal fade" id="ShowEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-270" role="document">
+		<div class="modal-content">
+		  <div class="modal-body">
+		  	<div class="group_form clearable">
+				<div class="input_relative input_profile">
+					<input class="form-control input_mk " type="text" placeholder="Tên hồ sơ" value="Moon" required="" />
+					<div class="invalid-feedback show">
+					 Tên không hợp lệ
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-6 align-self-center">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Hủy bỏ</button>
+					</div>
+					<div class="col-6 align-self-center">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Đồng ý</button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
 	<!-- InstanceEndEditable -->
    
     <!--Footer-->

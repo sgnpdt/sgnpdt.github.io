@@ -76,4 +76,11 @@ $( document ).ready(function() {
 		})
 	});
     
+	$(".btn_edit_profile").click(function() {
+		$("body").addClass('editmode');
+	});
+	
+	$(".btn_un_editmode").click(function() {
+		$("body").removeClass('editmode');
+	});
 });
