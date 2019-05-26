@@ -1271,6 +1271,12 @@ input:-ms-input-placeholder {
 .modal-footer .col-6:last-child {
   border-right: 0;
 }
+.link li {
+  margin-bottom: 20px;
+}
+.link li a {
+  color: #fff;
+}
 @media (max-width: 320px) {
   .div_input_pos_signup {
     margin-top: 8px;
