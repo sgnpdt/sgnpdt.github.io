@@ -110,6 +110,14 @@
   background-image: url(../master/images/OTP_bg.png);
   background-image: -webkit-image-set(url(../master/images/OTP_bg.png) 1x, url(../master/images/OTP_bg@2x.png) 2x, url(../master/images/OTP_bg@3x.png) 3x);
 }
+.source-bg-maOTP {
+  background-image: url(../master/images/OTP_bg.png);
+  background-image: -webkit-image-set(url(../master/images/OTP_bg.png) 1x, url(../master/images/OTP_bg@2x.png) 2x, url(../master/images/OTP_bg@3x.png) 3x);
+}
+.source-bg_mk {
+  background-image: url(../master/images/bg_mk.png);
+  background-image: -webkit-image-set(url(../master/images/bg_mk.png) 1x, url(../master/images/bg_mk@2x.png) 2x, url(../master/images/bg_mk@3x.png) 3x);
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1280,6 +1288,21 @@ input:-ms-input-placeholder {
 .link li a {
   color: #fff;
 }
+.title_mk {
+  margin: 50px auto 0 auto;
+  display: block;
+}
+.bg_mk {
+  background-image: url(../master/images/bg_mk.png);
+  background-image: -webkit-image-set(url(../master/images/bg_mk.png) 1x, url(../master/images/bg_mk@2x.png) 2x, url(../master/images/bg_mk@3x.png) 3x);
+  height: 45px;
+  width: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
 @media (max-width: 320px) {
   .div_input_pos_signup {
     margin-top: 8px;
@@ -1291,6 +1314,9 @@ input:-ms-input-placeholder {
   .policy {
     margin-top: 16px;
     width: 100%;
+  }
+  .title_mk {
+    margin-top: 16px;
   }
   .btn_cus {
     width: 100%;
