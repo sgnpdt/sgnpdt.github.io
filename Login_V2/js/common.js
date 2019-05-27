@@ -83,4 +83,15 @@ $( document ).ready(function() {
 	$(".btn_un_editmode").click(function() {
 		$("body").removeClass('editmode');
 	});
+	
+	var _originalSize = $(window).width() + $(window).height()
+	$(window).resize(function(){
+		if($(window).width() + $(window).height() != _originalSize){
+		  console.log("keyboard show up");
+		  $("body").css("background-size","0");  
+		}else{
+		  console.log("keyboard closed");
+		  $(".body").css("background-size","contain");  
+		}
+	});
 });
