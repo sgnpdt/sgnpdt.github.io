@@ -85,13 +85,13 @@ $( document ).ready(function() {
 	});
 	
 	var _originalSize = $(window).width() + $(window).height()
-	alert(_originalSize);
+	
 	$(window).resize(function(){
 		if($(window).width() + $(window).height() != _originalSize){
-		  alert("keyboard show up");
+		  
 		  $("body").css("background-size","0");  
 		}else{
-		  alert("keyboard closed");
+		  
 		  $("body").css("background-size","contain");  
 		}
 	});
