@@ -192,21 +192,23 @@ ul{margin: 0;padding: 0;}
 }
 .hc-input-single label:before {
   left: 0;
+  top:6px;
   width: 16px;
   height: 16px;
-  margin: -13px 0 0;
+  margin: 0 0;
   background-color: transparent;
-  border: 1px solid #ffc72c;
+  .source-uncheck();width: 16px;height: 16px;background-repeat: no-repeat;
 }
 .hc-input-single label:after {
-  left: 3px;
+  left: 0;
+  top:6px;
   width: 10px;
   height: 10px;
-  margin: -10px 0 0;
+  margin: 0 0;
   opacity: 0;
-  background: #ffc72c;
-  transform: translate3d(-40px, 0, 0) scale(0.5);
+  
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  .source-checked();width: 16px;height: 16px;background-repeat: no-repeat;
 }
 .hc-input-single input[type="radio"],
 .hc-input-single input[type="checkbox"] {
@@ -217,8 +219,14 @@ ul{margin: 0;padding: 0;}
 }
 .hc-input-single input[type="radio"]:checked + label:after,
 .hc-input-single input[type="checkbox"]:checked + label:after {
-  transform: translate3d(0, 0, 0);
+  
   opacity: 1;
+}
+
+.hc-input-single input[type="radio"]:checked + label:before,
+.hc-input-single input[type="checkbox"]:checked + label:before {
+  
+  opacity: 0;
 }
 .hc-input--square label:before,
 .hc-input--square label:after {

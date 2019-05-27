@@ -84,15 +84,14 @@ $( document ).ready(function() {
 		$("body").removeClass('editmode');
 	});
 	
-	var _originalSize = $(window).width() + $(window).height()
-	
+	//Hidden backgroud when show keyboard
+	var _originalSize = $(window).width() + $(window).height();
 	$(window).resize(function(){
 		if($(window).width() + $(window).height() != _originalSize){
-		  
 		  $("body").css("background-size","0");  
-		}else{
-		  
+		}else{das
 		  $("body").css("background-size","contain");  
 		}
 	});
+	
 });

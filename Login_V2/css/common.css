@@ -122,6 +122,14 @@
   background-image: url(../master/images/edit_profile.png);
   background-image: -webkit-image-set(url(../master/images/edit_profile.png) 1x, url(../master/images/edit_profile@2x.png) 2x, url(../master/images/edit_profile@3x.png) 3x);
 }
+.source-uncheck {
+  background-image: url(../master/images/uncheck.png);
+  background-image: -webkit-image-set(url(../master/images/uncheck.png) 1x, url(../master/images/uncheck@2x.png) 2x, url(../master/images/uncheck@3x.png) 3x);
+}
+.source-checked {
+  background-image: url(../master/images/checked.png);
+  background-image: -webkit-image-set(url(../master/images/checked.png) 1x, url(../master/images/checked@2x.png) 2x, url(../master/images/checked@3x.png) 3x);
+}
 .Shows-xs {
   display: none !important;
 }
@@ -470,21 +478,28 @@ ul {
 }
 .hc-input-single label:before {
   left: 0;
+  top: 6px;
+  margin: 0 0;
+  background-color: transparent;
+  background-image: url(../master/images/uncheck.png);
+  background-image: -webkit-image-set(url(../master/images/uncheck.png) 1x, url(../master/images/uncheck@2x.png) 2x, url(../master/images/uncheck@3x.png) 3x);
   width: 16px;
   height: 16px;
-  margin: -13px 0 0;
-  background-color: transparent;
-  border: 1px solid #ffc72c;
+  background-repeat: no-repeat;
 }
 .hc-input-single label:after {
-  left: 3px;
+  left: 0;
+  top: 6px;
   width: 10px;
   height: 10px;
-  margin: -10px 0 0;
+  margin: 0 0;
   opacity: 0;
-  background: #ffc72c;
-  transform: translate3d(-40px, 0, 0) scale(0.5);
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+  background-image: url(../master/images/checked.png);
+  background-image: -webkit-image-set(url(../master/images/checked.png) 1x, url(../master/images/checked@2x.png) 2x, url(../master/images/checked@3x.png) 3x);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
 }
 .hc-input-single input[type="radio"],
 .hc-input-single input[type="checkbox"] {
@@ -495,8 +510,11 @@ ul {
 }
 .hc-input-single input[type="radio"]:checked + label:after,
 .hc-input-single input[type="checkbox"]:checked + label:after {
-  transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+.hc-input-single input[type="radio"]:checked + label:before,
+.hc-input-single input[type="checkbox"]:checked + label:before {
+  opacity: 0;
 }
 .hc-input--square label:before,
 .hc-input--square label:after {
