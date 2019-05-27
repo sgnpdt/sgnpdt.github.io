@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	
 	$( ".show_pass" )
 	  .mouseup(function() {
-		alert("asd as dad");
+		
 		$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
 	  })
 	  .mousedown(function() {
