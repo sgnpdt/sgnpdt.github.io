@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 	
+	
 	$(".clearable").each(function() {
   
 	  var $inp = $(this).find("input"),
@@ -28,13 +29,13 @@ $( document ).ready(function() {
 //		
 //	});
 	
+	
 	$( ".show_pass" )
 	  .mouseup(function() {
-		
-		$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
+		$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
 	  })
 	  .mousedown(function() {
-		$(this).parent('.group_form_null ').find(".input_mk").attr("type","text");
+		$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
     });
 
 	
