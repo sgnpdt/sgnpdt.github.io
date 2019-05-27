@@ -920,13 +920,13 @@ ul {
   background-color: #db5149 !important;
 }
 .group_form_null .clearable__clear {
-  top: 0;
+  top: 6px;
 }
 .group_form_null .show_pass {
-  top: 0;
+  top: 6px;
 }
 .group_form_null .show_pass.hidden {
-  top: 0;
+  top: 6px;
 }
 .modal-270 {
   width: 270px;

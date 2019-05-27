@@ -16,17 +16,27 @@ $( document ).ready(function() {
 
 	});
 	
-	$(".show_pass").click(function() {
-		if ($(this).hasClass("hidden") === false){
-			$(this).parent('.group_form_null ').find(".input_mk").attr("type","text");
-	  		$(this).addClass("hidden");
-		}
-		else{
-			$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
-	  		$(this).removeClass("hidden");
-		}
-		
-	});
+	//$(".show_pass").click(function() {
+//		if ($(this).hasClass("hidden") === false){
+//			$(this).parent('.group_form_null ').find(".input_mk").attr("type","text");
+//	  		$(this).addClass("hidden");
+//		}
+//		else{
+//			$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
+//	  		$(this).removeClass("hidden");
+//		}
+//		
+//	});
+	
+	$( ".show_pass" )
+	  .mouseup(function() {
+		alert("asd as dad");
+		$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
+	  })
+	  .mousedown(function() {
+		$(this).parent('.group_form_null ').find(".input_mk").attr("type","text");
+    });
+
 	
 	function processInput(holder){
 		var elements = holder.children(), //taking the "kids" of the parent
