@@ -1422,6 +1422,9 @@ input:-ms-input-placeholder {
 .input_profile input:-ms-input-placeholder {
   color: #ffffff !important;
 }
+.ds_content p {
+  font-size: 0.885em;
+}
 @media (max-width: 320px) {
   .div_input_pos_signup {
     margin-top: 8px;
