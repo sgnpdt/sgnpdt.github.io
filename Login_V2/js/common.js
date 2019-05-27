@@ -17,26 +17,26 @@ $( document ).ready(function() {
 
 	});
 	
-	//$(".show_pass").click(function() {
-//		if ($(this).hasClass("hidden") === false){
-//			$(this).parent('.group_form_null ').find(".input_mk").attr("type","text");
-//	  		$(this).addClass("hidden");
-//		}
-//		else{
-//			$(this).parent('.group_form_null ').find(".input_mk").attr("type","password");
-//	  		$(this).removeClass("hidden");
-//		}
-//		
-//	});
+	$(".show_pass").click(function() {
+		if ($(this).hasClass("hidden") === false){
+			$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
+	  		$(this).addClass("hidden");
+		}
+		else{
+			$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
+	  		$(this).removeClass("hidden");
+		}
+		
+	});
 	
 	
-	$( ".show_pass" )
-	  .mouseup(function() {
-		$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
-	  })
-	  .mousedown(function() {
-		$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
-    });
+//	$( ".show_pass" )
+//	  .mouseup(function() {
+//		$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
+//	  })
+//	  .mousedown(function() {
+//		$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
+//    });
 
 	
 	function processInput(holder){
