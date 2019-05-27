@@ -99,7 +99,7 @@ $( document ).ready(function() {
 	$(window).resize(function(){
 		if($(window).width() + $(window).height() != _originalSize){
 		  $("body").css("background-size","0");  
-		}else{das
+		}else{
 		  $("body").css("background-size","contain");  
 		}
 	});
