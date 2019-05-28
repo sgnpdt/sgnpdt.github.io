@@ -105,4 +105,9 @@ $( document ).ready(function() {
 		}
 	});
 	
+	//disable jump ios
+	$( "#inputs input" ).focus(function() {
+	  $('body').addClass('fixfixed');
+	});
+	
 });

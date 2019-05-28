@@ -338,6 +338,16 @@ ul {
 .show {
   display: block !important;
 }
+.fixfixed {
+  position: absolute !important;
+}
+button:focus {
+  outline: none !important;
+}
+a:hover {
+  color: #ffd200;
+  text-decoration: none;
+}
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
@@ -368,6 +378,38 @@ ul {
 }
 .btn-primary.focus,
 .btn-primary:focus {
+  box-shadow: none;
+}
+.btn-fb:not(:disabled):not(.disabled).active,
+.btn-fb:not(:disabled):not(.disabled):active,
+.show > .btn-fb.dropdown-toggle {
+  border: none;
+  background-color: #1c52c2;
+  color: #ffffff !important;
+}
+.btn-fb:not(:disabled):not(.disabled).active:focus,
+.btn-fb:not(:disabled):not(.disabled):active:focus,
+.show > .btn-fb.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-fb.focus,
+.btn-fb:focus {
+  box-shadow: none;
+}
+.btn-outline:not(:disabled):not(.disabled).active,
+.btn-outline:not(:disabled):not(.disabled):active,
+.show > .btn-outline.dropdown-toggle {
+  border: 1px solid #ffd200;
+  background-color: transparent;
+  color: #000000 !important;
+}
+.btn-outline:not(:disabled):not(.disabled).active:focus,
+.btn-outline:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-outline.focus,
+.btn-outline:focus {
   box-shadow: none;
 }
 .text {
@@ -431,6 +473,12 @@ ul {
   position: relative;
 }
 .group_form .input_relative {
+  padding-bottom: 16px;
+}
+.group_form_null {
+  position: relative;
+}
+.group_form_null .input_relative {
   padding-bottom: 16px;
 }
 .form-control,
@@ -919,6 +967,9 @@ ul {
 .btn-google:active {
   background-color: #db5149 !important;
 }
+.group_form_null {
+  margin-top: 8px;
+}
 .group_form_null .clearable__clear {
   top: 6px;
 }
@@ -1238,7 +1289,7 @@ input:-ms-input-placeholder {
   caret-color: transparent;
 }
 .invalid-feedback {
-  font-size: 0.825em;
+  font-size: 0.775em;
   color: #fe1d03;
   text-align: center;
   top: 4px;
@@ -1283,7 +1334,7 @@ input:-ms-input-placeholder {
 }
 .div_input_pos_signup {
   margin-top: 24px;
-  height: 200px;
+  height: 225px;
 }
 .title_success {
   font-size: 1.5em;
@@ -1424,6 +1475,30 @@ input:-ms-input-placeholder {
 }
 .ds_content p {
   font-size: 0.885em;
+}
+.change_pass_pass .div_input_pos {
+  padding: 0 18px;
+  width: 100%;
+  margin-top: 18px;
+  height: auto;
+  padding-bottom: 16px;
+}
+.change_pass_pass .form-control,
+.change_pass_pass .form-control:focus {
+  padding-left: 0;
+  text-align: left;
+}
+html body.change_pass_pass {
+  font-size: 0.73em !important;
+}
+html body.change_pass_pass .btn-primary {
+  border-radius: 4px !important;
+}
+html body.change_pass_pass .btn-left {
+  padding-right: 5px;
+}
+html body.change_pass_pass .btn-right {
+  padding-left: 5px;
 }
 @media (max-width: 320px) {
   .div_input_pos_signup {
