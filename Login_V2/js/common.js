@@ -130,5 +130,5 @@ $( document ).ready(function() {
 	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
 	
 	//auto focus OTP
-	$('input.focused').focus();
+	setTimeout(function() {$('.focused').focus();alert(0);}, 1000);
 });
