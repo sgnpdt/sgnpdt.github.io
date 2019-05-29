@@ -27,7 +27,6 @@ $( document ).ready(function() {
 			$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
 	  		$(this).removeClass("hidden");
 		}
-		
 	});
 	
 	
@@ -129,4 +128,7 @@ $( document ).ready(function() {
 	
 	//auto close popup
 	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
+	
+	//auto focus OTP
+	$('input.focused').focus();
 });
