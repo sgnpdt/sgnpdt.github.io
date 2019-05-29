@@ -121,10 +121,6 @@ $( document ).ready(function() {
 	  $('body').addClass('fixfixed');
 	});
 	
-	//Auto show modal
-	 $(window).on('load',function(){
-        $('#ShowThanhCong').modal('show');
-    });
 	
 	//auto close popup
 	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
