@@ -17,6 +17,7 @@ $( document ).ready(function() {
 
 	});
 	
+	//Show pass
 	$(".show_pass").click(function() {
 		if ($(this).hasClass("hidden") === false){
 			$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
@@ -38,7 +39,7 @@ $( document ).ready(function() {
 //		$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
 //    });
 
-	
+	//OTP input
 	function processInput(holder){
 		var elements = holder.children(), //taking the "kids" of the parent
 				str = ""; //unnecesary || added for some future mods
@@ -46,26 +47,36 @@ $( document ).ready(function() {
 		elements.each(function(e){ //iterates through each element
 			var val = $(this).val().replace(/\D/,""), //taking the value and parsing it. Returns string without changing the value.
 					focused = $(this).is(":focus"), //checks if the current element in the iteration is focused
+					
 					parseGate = false;
-
+			
+			var clear = $("#inputs input");
 			val.length==1?parseGate=false:parseGate=true; 
 				/*a fix that doesn't allow the cursor to jump 
 				to another field even if input was parsed 
 				and nothing was added to the input*/
 
 			$(this).val(val); //applying parsed value.
-
+			
 			if(parseGate&&val.length>1){ //Takes you to another input
 				var	exist = elements[e+1]?true:false; //checks if there is input ahead
+				
 				exist&&val[1]?( //if so then
 					elements[e+1].disabled=false,
 					elements[e+1].value=val[1], //sends the last character to the next input
 					elements[e].value=val[0], //clears the last character of this input
-					elements[e+1].focus() //sends the focus to the next input
+					
+					elements[e+1].focus(), //sends the focus to the next input
+					elements[e+1].classList.add("focused")
 				):void 0;
 			} else if(parseGate&&focused&&val.length==0){ //if the input was REMOVING the character, then
+				
 				var exist = elements[e-1]?true:false; //checks if there is an input before
 				if(exist) elements[e-1].focus(); //sends the focus back to the previous input
+				elements[e].classList.remove("focused");
+				if(e==0){
+					elements[0].classList.add("focused");
+				}
 			}
 
 			val==""?str+=" ":str+=val;
@@ -87,6 +98,7 @@ $( document ).ready(function() {
 		})
 	});
     
+	//
 	$(".btn_edit_profile").click(function() {
 		$("body").addClass('editmode');
 	});
@@ -110,4 +122,11 @@ $( document ).ready(function() {
 	  $('body').addClass('fixfixed');
 	});
 	
+	//Auto show modal
+	 $(window).on('load',function(){
+        $('#ShowThanhCong').modal('show');
+    });
+	
+	//auto close popup
+	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
 });

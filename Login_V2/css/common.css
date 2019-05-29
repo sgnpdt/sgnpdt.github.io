@@ -130,6 +130,10 @@
   background-image: url(../master/images/checked.png);
   background-image: -webkit-image-set(url(../master/images/checked.png) 1x, url(../master/images/checked@2x.png) 2x, url(../master/images/checked@3x.png) 3x);
 }
+.source-check_success {
+  background-image: url(../master/images/check_success.png);
+  background-image: -webkit-image-set(url(../master/images/check_success.png) 1x, url(../master/images/check_success@2x.png) 2x, url(../master/images/check_success@3x.png) 3x);
+}
 .Shows-xs {
   display: none !important;
 }
@@ -418,7 +422,7 @@ a:hover {
 }
 .btn_cus {
   border-radius: 50px !important;
-  width: 85%;
+  width: 100%;
   font-size: 16px;
   display: block;
   margin: auto;
@@ -596,6 +600,7 @@ a:hover {
   width: 100%;
   top: 0;
   background-color: #080808;
+  z-index: 2;
 }
 .appbar .text {
   color: #ffd200;
@@ -726,7 +731,9 @@ a:hover {
 }
 .bg_login_form {
   padding-top: 0px;
-  margin-top: 16px;
+  height: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .bg_login_form .container {
   padding-left: 16px;
@@ -833,8 +840,8 @@ a:hover {
 }
 .policy {
   margin: 24px 0 16px 0;
-  width: 85%;
-  margin: 50px auto 0 auto;
+  width: 100%;
+  margin: 5% auto 0 auto;
 }
 .forgot_pass {
   margin-top: 24px;
@@ -1037,9 +1044,6 @@ a:hover {
 .list-group-item:last-child {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-}
-.div_lienket_hopdong {
-  margin-top: 64px;
 }
 .div_lienket_hopdong .title_1 {
   color: #ffd200;
@@ -1274,7 +1278,7 @@ input:-ms-input-placeholder {
   margin-top: 24px;
 }
 .inputs input {
-  width: 40px;
+  width: 32px;
   height: 60px;
   line-height: 100%;
   background-color: transparent;
@@ -1286,7 +1290,12 @@ input:-ms-input-placeholder {
   word-spacing: 0px;
   overflow: hidden;
   text-align: center;
+  margin: 0 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   caret-color: transparent;
+}
+.inputs input.focused {
+  border-bottom: 1px solid #ffd200;
 }
 .invalid-feedback {
   font-size: 0.775em;
@@ -1305,9 +1314,7 @@ input:-ms-input-placeholder {
   height: 160px;
   background-position: center;
   position: relative;
-  margin-bottom: 16px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 4rem;
 }
 .group_bottom {
   width: 100%;
@@ -1323,18 +1330,44 @@ input:-ms-input-placeholder {
   margin-bottom: 30px;
 }
 .bg_dk .div_header {
-  height: 130px;
+  height: 25%;
+}
+.bg_OTP {
+  position: relative;
+  top: -5%;
+}
+.bg_OTP .d-table {
+  width: 100%;
+  height: 100%;
+}
+.bg_OTP .d-table-cell {
+  vertical-align: middle;
+}
+.bg_OTP .input_relative {
+  height: 30px;
+}
+.div_header .d-table {
+  width: 100%;
+  height: 100%;
+}
+.div_header .d-table-cell {
+  vertical-align: middle;
 }
 .div_input_pos {
-  margin-top: 80px;
-  width: 85%;
   display: block;
-  margin: 80px auto 0 auto;
-  height: 160px;
+  margin: 8px auto 0 auto;
+  height: 45%;
+}
+.div_input_pos .d-table {
+  width: 100%;
+  height: 100%;
+}
+.div_input_pos .d-table-cell {
+  vertical-align: middle;
 }
 .div_input_pos_signup {
-  margin-top: 24px;
-  height: 225px;
+  margin-top: 0px;
+  height: 45%;
 }
 .title_success {
   font-size: 1.5em;
@@ -1351,6 +1384,7 @@ input:-ms-input-placeholder {
 .send-feedback-OTP {
   text-align: center;
   color: #fff;
+  height: 76px;
 }
 .send-feedback-OTP .text {
   font-weight: 300;
@@ -1494,11 +1528,26 @@ html body.change_pass_pass {
 html body.change_pass_pass .btn-primary {
   border-radius: 4px !important;
 }
+html body.change_pass_pass .btn-secondary {
+  border-radius: 4px !important;
+}
 html body.change_pass_pass .btn-left {
   padding-right: 5px;
 }
 html body.change_pass_pass .btn-right {
   padding-left: 5px;
+}
+html body.change_pass_pass .invalid-feedback {
+  text-align: left;
+}
+.bg_check_success {
+  height: 59px;
+  width: 59px;
+  background-image: url(../master/images/check_success.png);
+  background-image: -webkit-image-set(url(../master/images/check_success.png) 1x, url(../master/images/check_success@2x.png) 2x, url(../master/images/check_success@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 10px auto 20px auto;
 }
 @media (max-width: 320px) {
   .div_input_pos_signup {
@@ -1519,11 +1568,15 @@ html body.change_pass_pass .btn-right {
     width: 100%;
   }
   .div_lienket_hopdong {
-    margin-top: 32px;
+    margin-top: 0px;
   }
   .div_profile_selected .div_input_pos_signup {
     margin-top: 32px;
     margin-bottom: 0px;
+  }
+  .bg_login_form {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
