@@ -1,167 +1,134 @@
 $( document ).ready(function() {
-	AOS.init({
-	  // Global settings
-	  disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+	
+	
+	$(".clearable").each(function() {
+  
+	  var $inp = $(this).find("input"),
+		  $cle = $(this).find(".clearable__clear");
 
+	  $inp.on("input", function(){
+		$cle.toggle(!!this.value);
+	  });
 
+	  $cle.on("touchstart click", function(e) {
+		e.preventDefault();
+		$inp.val("").trigger("input");
+	  });
 
 	});
 	
-	if($(".btn-top").length){
-		$(window).scroll(function () {
-			var e = $(window).scrollTop();
-			if (e > 300) {
-				$(".btn-top").fadeIn(400);
-			} else {
-				$(".btn-top").fadeOut(400);
-			}
-		});
-		$(".btn-top").click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			});
-		});
-	}		
-	
-	
-	if($('.show_search').length){
-		$(".show_search").click(function() {
-            $('.div_cart_gr').removeClass("Show");
-            $('.div_login_signup').removeClass("Show");
-			if($('.div_input_search').hasClass("Show")){
-				$('.div_input_search').removeClass("Show");
-				
-			}
-			else{
-			    $('.div_input_search').addClass("Show");
-			    $('#searchKeyword').focus();
-				
-			}
-		});
-		$(".close_search").click(function() {
-			$('.div_input_search').removeClass("Show");
-			
-		});
-	}
-	
-	if($('.ico_cart').length){
-		$(".ico_cart").click(function() {
-            $('.div_input_search').removeClass("Show");
-            $('.div_login_signup').removeClass("Show");
-			if($('.div_cart_gr').hasClass("Show")){
-				$('.div_cart_gr').removeClass("Show");
-			}
-			else{
-				$('.div_cart_gr').addClass("Show");				
-			}
-			
-		});
-	}
-	
-    if($('.ico_avatar').length){
-		$('.div_login_signup').removeClass("Show");
-		$(".ico_avatar").click(function() {
-            $('.div_input_search').removeClass("Show");
-            $('.div_cart_gr').removeClass("Show");
-			if($('.div_login_signup').hasClass("Show")){
-
-				$('.div_login_signup').removeClass("Show");
-				
-			}
-			else{
-				$('.div_login_signup').addClass("Show");
-				
-			}
-			
-		});
-	}
-	
-	$('.navbar-toggle').click(function() {
-		$('.div_login_signup').removeClass("Show");
-	});
-	
-	
-	var lastScrollTop = $(window).scrollTop();
-	if (lastScrollTop >= 157) {
-		$(".HeaderPage").addClass("scaleheader");
-	}
-	$(window).scroll(function() {  
-		var st = $(this).scrollTop();
-		if (st > lastScrollTop && st >= 157 ){
-			$(".HeaderPage").addClass("scaleheader");
-			$('.par').removeClass('disable');
-	    } 
-		else {
-			$(".HeaderPage").removeClass("scaleheader");
-			$('.par').removeClass('disable');
-			$( '.par').removeClass( "hover" );	
-	    }
-		if (st == 0 ){
-			$(".HeaderPage").removeClass("header_shadow");
-			
-	    } 
+	//Show pass
+	$(".show_pass").click(function() {
+		if ($(this).hasClass("hidden") === false){
+			$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
+	  		$(this).addClass("hidden");
+		}
 		else{
-			$(".HeaderPage").addClass("header_shadow");
+			$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
+	  		$(this).removeClass("hidden");
 		}
-	    lastScrollTop = st;
 	});
 	
 	
-	
-	$( ".par" ).hover(
-	  function() {
-		if($(this).hasClass('hover') !== true){
-			$( this ).addClass( "hover" );
-		}  
-		
-		if($( ".par" ).hasClass('active') === true){
-			$('.par.active').addClass('disable');
-		}  
-	  }, function() {
-		$('.par').removeClass('disable');
-		$( ".par" ).removeClass( "hover" );
-		if($(this).hasClass('hover') === true){
-			$( this ).removeClass( "hover" );
-		}  
-	  }
-	);
-		
-	$('.par').click(function() {
-		
-		if($(this).hasClass('hover') !== true){
-			$(this).addClass("hover");
-			$('.par.active').addClass('disable');
-		}
+//	$( ".show_pass" )
+//	  .mouseup(function() {
+//		$(this).parents('.group_form_null ').find(".input_mk").attr("type","password");
+//	  })
+//	  .mousedown(function() {
+//		$(this).parents('.group_form_null ').find(".input_mk").attr("type","text");
+//    });
 
-		
+	//OTP input
+	//function processInput(holder){
+//		var elements = holder.children(), //taking the "kids" of the parent
+//				str = ""; //unnecesary || added for some future mods
+//
+//		elements.each(function(e){ //iterates through each element
+//			var val = $(this).val().replace(/\D/,""), //taking the value and parsing it. Returns string without changing the value.
+//					focused = $(this).is(":focus"), //checks if the current element in the iteration is focused
+//					
+//					parseGate = false;
+//			
+//			var clear = $("#inputs input");
+//			val.length==1?parseGate=false:parseGate=true; 
+//				/*a fix that doesn't allow the cursor to jump 
+//				to another field even if input was parsed 
+//				and nothing was added to the input*/
+//
+//			$(this).val(val); //applying parsed value.
+//			
+//			if(parseGate&&val.length>1){ //Takes you to another input
+//				var	exist = elements[e+1]?true:false; //checks if there is input ahead
+//				
+//				exist&&val[1]?( //if so then
+//					elements[e+1].disabled=false,
+//					elements[e+1].value=val[1], //sends the last character to the next input
+//					elements[e].value=val[0], //clears the last character of this input
+//					
+//					elements[e+1].focus(), //sends the focus to the next input
+//					elements[e+1].classList.add("focused")
+//				):void 0;
+//			} else if(parseGate&&focused&&val.length==0){ //if the input was REMOVING the character, then
+//				
+//				var exist = elements[e-1]?true:false; //checks if there is an input before
+//				if(exist) elements[e-1].focus(); //sends the focus back to the previous input
+//				elements[e].classList.remove("focused");
+//				if(e==0){
+//					elements[0].classList.add("focused");
+//				}
+//			}
+//
+//			val==""?str+=" ":str+=val;
+//		});
+//	}
+//
+//	$("#inputs").on('input', function(){processInput($(this))}); //still wonder how it worked out. But we are adding input listener to the parent... (omg, jquery is so smart...);
+//
+//	$("#inputs").on('click', function(e) { //making so that if human focuses on the wrong input (not first) it will move the focus to a first empty one.
+//		var els = $(this).children(),
+//				str = "";
+//		els.each(function(e){
+//			var focus = $(this).is(":focus");
+//			$this = $(this);
+//			while($this.prev().val()==""){
+//				$this.prev().focus();
+//				$this = $this.prev();
+//			}
+//		})
+//	});
+    
+	//
+	$(".btn_edit_profile").click(function() {
+		$("body").addClass('editmode');
 	});
 	
+	$(".btn_un_editmode").click(function() {
+		$("body").removeClass('editmode');
+	});
 	
-	if($(window).width() <= 1199){
-		var w_sli = $(window).width() / 1.618 / 1.618;
-		$('.carousel').css({'height':w_sli});
-	}
-	$( window ).resize(function() {
-		if($(window).width() <= 1199){
-			w_sli = $(window).width() / 1.618 / 1.618;
-			$('.carousel').css({'height':w_sli});
+	//Hidden backgroud when show keyboard
+	var _originalSize = $(window).width() + $(window).height();
+	$(window).resize(function(){
+		if($(window).width() + $(window).height() != _originalSize){
+		  $("body").css("background-size","0");  
+		}else{
+		  $("body").css("background-size","contain");  
 		}
-    });
-	
-	if($('.icon_menu_right').length){
-		$('.div_menu_right').removeClass("Show");
-		$(".icon_menu_right").click(function() {
-			if($('.div_menu_right').hasClass("Show")){
-				$('.div_menu_right').removeClass("Show");
-				$('.offcanvas-collapse').removeClass("open");
-			}
-			else{
-				$('.div_menu_right').addClass("Show");
-				$('.offcanvas-collapse').removeClass("open");
-			}
-		});
-	}
-	$('.navbar-toggler').click(function() {
-		$('.div_menu_right').removeClass("Show");
 	});
+	
+	//disable jump ios
+	$( "#inputs input" ).focus(function() {
+	  $('body').addClass('fixfixed');
+	});
+	
+	
+	//auto close popup
+	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
+	
+	//auto focus OTP
+	setTimeout(function() {$('.focused').focus();}, 1000);
+	
+	//Pin
+	$("#inputs input").jqueryPincodeAutotab();
+
 });
