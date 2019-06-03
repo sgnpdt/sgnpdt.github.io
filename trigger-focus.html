@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script type="text/javascript">
+        function triggerFocus(element) {
+            var eventType = "focus", bubbles = "focus", event;
+
+            if ("createEvent" in document) {
+                event = document.createEvent("Event");
+                event.initEvent(eventType, bubbles, true);
+            }
+            else if ("Event" in window) {
+                event = new Event(eventType, { bubbles: bubbles, cancelable: true });
+            }
+
+            element.focus();
+            element.dispatchEvent(event);
+        }
+
+        function onFocus(evt) {
+            console.log("On focus", evt);
+        }
+
+        $('document').ready(function() {
+            triggerFocus($('#second').get(0));
+        });
+    </script>
+</head>
+<body>
+    <input id="first" value="first" />
+    <input id="second" value="second" onfocus="onFocus()" />
+</body>
+</html>

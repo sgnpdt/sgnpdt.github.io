@@ -1233,6 +1233,9 @@ a:hover {
   height: 10px;
   background-repeat: no-repeat;
 }
+.bg_malienket .btn_huongdan:hover {
+  color: #2a1919 !important;
+}
 .bg_malienket .hd {
   background-image: url(../master/images/hd.png);
   background-image: -webkit-image-set(url(../master/images/hd.png) 1x, url(../master/images/hd@2x.png) 2x, url(../master/images/hd@3x.png) 3x);
@@ -1298,9 +1301,7 @@ input:-ms-input-placeholder {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   caret-color: #ffd200;
 }
-.inputs input.focused {
-  border-bottom: 1px solid #ffd200;
-}
+/*.inputs input.focused{border-bottom: 1px solid #ffd200;	}*/
 .invalid-feedback {
   font-size: 0.775em;
   color: #fe1d03;
@@ -1552,6 +1553,42 @@ html body.change_pass_pass .invalid-feedback {
   background-repeat: no-repeat;
   background-position: center center;
   margin: 10px auto 20px auto;
+}
+.line_number .number {
+  font-size: 24px;
+  color: #ffd200;
+  font-weight: 500;
+  position: relative;
+}
+.line_number .number span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 40px;
+  text-align: center;
+}
+.line_number .number:after {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(52, 52, 52, 0.8);
+  border-radius: 40px;
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  z-index: 2;
+}
+.line_number .number:before {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(52, 52, 52, 0.4);
+  border-radius: 40px;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  z-index: 1;
 }
 ::selection {
   background-color: #ffd200 !important;
