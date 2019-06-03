@@ -131,5 +131,5 @@ $( document ).ready(function() {
 	$("#inputs input").jqueryPincodeAutotab();
 
 	//auto focus OTP
-	setTimeout(function() {$('.focus').focus();alert(0);}, 2000);
+	setTimeout(function() {$('.focus').focus();}, 2000);
 });
