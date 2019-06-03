@@ -600,14 +600,17 @@ a:hover {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #080808;
   z-index: 2;
+  background-color: transparent;
 }
 .appbar .text {
   color: #ffd200;
   font-size: 1em;
   line-height: 56px;
   font-weight: 600;
+}
+.appbar_bg {
+  background-color: #080808;
 }
 .banner_login {
   height: 90px;
@@ -1548,6 +1551,9 @@ html body.change_pass_pass .invalid-feedback {
   background-repeat: no-repeat;
   background-position: center center;
   margin: 10px auto 20px auto;
+}
+::selection {
+  background-color: transparent !important;
 }
 @media (max-width: 320px) {
   .div_input_pos_signup {

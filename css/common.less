@@ -272,10 +272,11 @@ a:hover{color: #ffd200;text-decoration: none;}
 }
 
 
-.appbar{height: 56px;text-align: center;position: fixed;width: 100%;top:0;background-color: #080808;z-index: 2;
+.appbar{height: 56px;text-align: center;position: fixed;width: 100%;top:0;z-index: 2;background-color: transparent;
 	.text{color: @primary-color;font-size: 1em;line-height: 56px;font-weight: 600;}
 	
 }
+.appbar_bg{background-color: #080808;}
 
 .banner_login{height: 90px;background-color: #080808;.source-bg-login();border-bottom: 1px solid rgba(255,255,255,0.1);
 	.circle_logo{height: 58px;width: 58px;.source-logo();background-color: @primary-color;border-radius: 58px;display: inline-block;background-position: center 9px;background-repeat: no-repeat;border-radius: 58px;display: block;overflow: hidden;}
@@ -593,6 +594,11 @@ html body.change_pass_pass {font-size: 0.73em !important;
 	.invalid-feedback{text-align: left;}
 }
 .bg_check_success{height: 59px;width: 59px;.source-check_success();background-repeat: no-repeat;background-position: center center;margin: 10px auto 20px auto}
+
+::selection {
+ 
+  background-color: transparent !important;
+}
 
 @media (max-width: 1400px){
 }
