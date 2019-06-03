@@ -126,7 +126,7 @@ $( document ).ready(function() {
 	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
 	
 	//auto focus OTP
-	setTimeout(function() {$('.focus').focus();}, 2000);
+	setTimeout(function() {$('.focus').focus();alert(0);}, 2000);
 	
 	//Pin
 	$("#inputs input").jqueryPincodeAutotab();
