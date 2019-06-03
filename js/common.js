@@ -128,7 +128,9 @@ $( document ).ready(function() {
 	
 	
 	//Pin
-	$("#inputs input").jqueryPincodeAutotab();
+	if($("#inputs input").length > 0){
+		$("#inputs input").jqueryPincodeAutotab();
+	}
 
 	//auto focus OTP
 	setTimeout(function() {$('.focused').focus();}, 1000);

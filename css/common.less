@@ -596,13 +596,20 @@ html body.change_pass_pass {font-size: 0.73em !important;
 }
 .bg_check_success{height: 59px;width: 59px;.source-check_success();background-repeat: no-repeat;background-position: center center;margin: 10px auto 20px auto}
 
-.line_number {
-	.number{font-size: 24px;color: @primary-color;font-weight: 500;position: relative;
+.line_number {display: block;height: 40px;
+	.number{font-size: 1.52em;color: @primary-color;font-weight: 500;position: relative;
 		span{position: absolute;top:0;left: 0;z-index: 3;width: 40px;text-align: center;}
 		&:after{height: 40px;width: 40px;background-color: rgba(52,52,52,0.8);border-radius: 40px;content: "";position: absolute;top:-4px;left: 4px;z-index: 2;}
 		&:before{height: 40px;width: 40px;background-color: rgba(52,52,52,0.4);border-radius: 40px;content: "";position: absolute;top:3px;left: -6px;z-index: 1;}
 	}
 }
+.section_hd{max-width: 360px;display: block; margin: 0 auto;
+	.title{font-size: 1em;text-align: center;margin-top: 8px;
+		.color{color: @primary-color;}
+	}
+	img{display: block;margin: 32px auto 32px auto;}
+}
+.page_hd{background-image:none;}
 
 ::selection {
   background-color: @primary-color !important;

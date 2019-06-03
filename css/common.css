@@ -1554,8 +1554,12 @@ html body.change_pass_pass .invalid-feedback {
   background-position: center center;
   margin: 10px auto 20px auto;
 }
+.line_number {
+  display: block;
+  height: 40px;
+}
 .line_number .number {
-  font-size: 24px;
+  font-size: 1.52em;
   color: #ffd200;
   font-weight: 500;
   position: relative;
@@ -1589,6 +1593,26 @@ html body.change_pass_pass .invalid-feedback {
   top: 3px;
   left: -6px;
   z-index: 1;
+}
+.section_hd {
+  max-width: 360px;
+  display: block;
+  margin: 0 auto;
+}
+.section_hd .title {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 8px;
+}
+.section_hd .title .color {
+  color: #ffd200;
+}
+.section_hd img {
+  display: block;
+  margin: 32px auto 32px auto;
+}
+.page_hd {
+  background-image: none;
 }
 ::selection {
   background-color: #ffd200 !important;
