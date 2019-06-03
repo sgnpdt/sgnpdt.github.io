@@ -1296,6 +1296,7 @@ input:-ms-input-placeholder {
   text-align: center;
   margin: 0 4px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  caret-color: #ffd200;
 }
 .inputs input.focused {
   border-bottom: 1px solid #ffd200;
@@ -1553,7 +1554,7 @@ html body.change_pass_pass .invalid-feedback {
   margin: 10px auto 20px auto;
 }
 ::selection {
-  background-color: transparent !important;
+  background-color: #ffd200 !important;
 }
 @media (max-width: 320px) {
   .div_input_pos_signup {
