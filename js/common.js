@@ -125,10 +125,11 @@ $( document ).ready(function() {
 	//auto close popup
 	setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
 	
-	//auto focus OTP
-	setTimeout(function() {$('.focus').focus();alert(0);}, 2000);
+	
 	
 	//Pin
 	$("#inputs input").jqueryPincodeAutotab();
 
+	//auto focus OTP
+	setTimeout(function() {$('.focus').focus();alert(0);}, 2000);
 });
