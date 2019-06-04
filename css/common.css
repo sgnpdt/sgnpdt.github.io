@@ -300,6 +300,11 @@ a {
   /* Firefox 18- */
   color: rgba(255, 255, 255, 0.7);
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .hide {
   display: none;
 }
