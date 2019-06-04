@@ -743,6 +743,9 @@ a:hover {
   padding-left: 16px;
   padding-right: 16px;
 }
+.bg_login_form form {
+  height: 100%;
+}
 .bg_mxn_form {
   padding-top: 24px;
 }
