@@ -460,7 +460,7 @@ a:hover{color: #ffd200;text-decoration: none;}
 	.btn_huongdan:hover{color: @dark-text-btn !important;}
 	.hd{.source-icon-hd();width: 12px;height: 8px;display: inline-block;margin-left: 4px;margin-top: 5px;}
 }
-.bg_maOTP{.source-bg-maOTP();background-repeat: no-repeat;width: 100%;height: 160px;background-position: center;position: relative;margin-bottom: 16px;}
+.bg_maOTP{.source-bg-maOTP();background-repeat: no-repeat;width: 100%;height: 120px;background-position: center;position: relative;margin-bottom: 16px;}
 .title_mlk{font-size: 1em;font-weight: 300;color: @light-text;text-align: center;margin-bottom: 6px;
 	.dt{white-space: nowrap;}
 }
@@ -480,16 +480,16 @@ input:-ms-input-placeholder {
   color: #535353 !important;
 }
 
-.inputs{display: block;margin: 0 auto;text-align: center;margin-bottom: 16px;margin-top: 24px;}
+.inputs{display: block;margin: 0 auto;text-align: center;margin-bottom: 16px;margin-top: 16px;}
 .inputs input {
   width: 32px;
-  height: 60px;
+  height: 45px;
   line-height: 100%;
   background-color: transparent;
   border: 0;
   outline: 0;
   color: white;
-  font-size: 54px;
+  font-size:2.5em;
   font-weight: 300;
   word-spacing: 0px;
   overflow: hidden;
@@ -510,9 +510,9 @@ input:-ms-input-placeholder {
 .bg_dk{
 	.div_header{height: 25%;}
 }
-.bg_OTP{position: relative;top:-5%;
+.bg_OTP{position: relative;top:5%;
 	.d-table{width: 100%;height: 100%;}
-	.d-table-cell{vertical-align: middle;}
+	.d-table-cell{vertical-align: top;}
 	.input_relative{height: 30px;}
 }
 .div_header{
@@ -533,6 +533,7 @@ input:-ms-input-placeholder {
 	.text{font-weight: 300;font-size: 0.825em;}
 	.text.error{color: #fe1d03;}
 	.text_color{margin-left: 4px;font-size: 0.885em;white-space: nowrap;}
+	p{margin-bottom: 0.2rem;}
 }
 .modal-dialog-centered{margin: 0 auto;}
 .modal-footer {
@@ -637,6 +638,11 @@ html body.change_pass_pass {font-size: 0.73em !important;
 @media (max-width: 767px){
 		
 }
+@media (max-width: 375px){
+	.bg_malienket{height: 130px;background-size: 180px}
+	.title_mlk{font-size: 0.885em;}
+	.bg_maOTP{height: 100px;background-size: 80px}
+}
 @media (max-width: 320px){
 	.div_input_pos_signup{margin-top: 8px;width: 100%}	
 	.group_bottom{top:70%;}
@@ -646,6 +652,10 @@ html body.change_pass_pass {font-size: 0.73em !important;
 	.div_lienket_hopdong{margin-top: 0px;}
 	.div_profile_selected .div_input_pos_signup{margin-top: 32px;margin-bottom: 0px;}
 	.bg_login_form{padding-left: 5%;padding-right: 5%;}
+	.bg_malienket{height: 110px;background-size: 160px}
+	.inputs input{height: 40px;width: 28px;}
+	.bg_maOTP{height: 80px;background-size: 72px}
+	.bg_OTP{top:3%;}
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),

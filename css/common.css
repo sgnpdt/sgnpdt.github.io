@@ -1258,7 +1258,7 @@ a:hover {
   background-image: -webkit-image-set(url(../master/images/OTP_bg.png) 1x, url(../master/images/OTP_bg@2x.png) 2x, url(../master/images/OTP_bg@3x.png) 3x);
   background-repeat: no-repeat;
   width: 100%;
-  height: 160px;
+  height: 120px;
   background-position: center;
   position: relative;
   margin-bottom: 16px;
@@ -1290,17 +1290,17 @@ input:-ms-input-placeholder {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 16px;
-  margin-top: 24px;
+  margin-top: 16px;
 }
 .inputs input {
   width: 32px;
-  height: 60px;
+  height: 45px;
   line-height: 100%;
   background-color: transparent;
   border: 0;
   outline: 0;
   color: white;
-  font-size: 54px;
+  font-size: 2.5em;
   font-weight: 300;
   word-spacing: 0px;
   overflow: hidden;
@@ -1347,14 +1347,14 @@ input:-ms-input-placeholder {
 }
 .bg_OTP {
   position: relative;
-  top: -5%;
+  top: 5%;
 }
 .bg_OTP .d-table {
   width: 100%;
   height: 100%;
 }
 .bg_OTP .d-table-cell {
-  vertical-align: middle;
+  vertical-align: top;
 }
 .bg_OTP .input_relative {
   height: 30px;
@@ -1410,6 +1410,9 @@ input:-ms-input-placeholder {
   margin-left: 4px;
   font-size: 0.885em;
   white-space: nowrap;
+}
+.send-feedback-OTP p {
+  margin-bottom: 0.2rem;
 }
 .modal-dialog-centered {
   margin: 0 auto;
@@ -1643,6 +1646,19 @@ html body.change_pass_pass .invalid-feedback {
 ::selection {
   background-color: #ffd200 !important;
 }
+@media (max-width: 375px) {
+  .bg_malienket {
+    height: 130px;
+    background-size: 180px;
+  }
+  .title_mlk {
+    font-size: 0.885em;
+  }
+  .bg_maOTP {
+    height: 100px;
+    background-size: 80px;
+  }
+}
 @media (max-width: 320px) {
   .div_input_pos_signup {
     margin-top: 8px;
@@ -1671,6 +1687,21 @@ html body.change_pass_pass .invalid-feedback {
   .bg_login_form {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .bg_malienket {
+    height: 110px;
+    background-size: 160px;
+  }
+  .inputs input {
+    height: 40px;
+    width: 28px;
+  }
+  .bg_maOTP {
+    height: 80px;
+    background-size: 72px;
+  }
+  .bg_OTP {
+    top: 3%;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
