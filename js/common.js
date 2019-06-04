@@ -133,7 +133,26 @@ $( document ).ready(function() {
 	}
 
 	//auto focus OTP
-	setTimeout(function() {$('.focused').focus();}, 1000);
+	//
 	
+	var f = function(event) {
+		setTimeout(function() {$('.focused').focus();event.preventDefault();});
+	};
+	var mobile = false;
+	$("#inputs input").on('click', function(event) {
+		if(mobile) return;
+		f(event);
+	});
+
+	$("#inputs input").on('touchstart', function(event) {
+		mobile = true;
+		f(event);
+	});
+
+	$("#inputs input").on('touchend', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+	});
+
 	
 });

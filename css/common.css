@@ -1617,6 +1617,24 @@ html body.change_pass_pass .invalid-feedback {
 .page_hd {
   background-image: none;
 }
+.bg_error .div_input_pos_signup {
+  height: 55%;
+}
+.bg_error p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.bg_error .group_bottom {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.img_error {
+  display: block;
+  margin: 0 auto;
+}
 ::selection {
   background-color: #ffd200 !important;
 }
