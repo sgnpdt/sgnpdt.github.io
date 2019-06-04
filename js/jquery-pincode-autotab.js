@@ -164,18 +164,22 @@
                             case -1:
                                 if (prevElement) {
                                     $(prevElement).select();
-                                    $(prevElement).focus();
+                                    //$(prevElement).focus();
+									
+									$(prevElement).trigger({type: "backFocus"});
                                 } else {
                                     if(settings.prevElement) {
                                         settings.prevElement.select();
-                                        settings.prevElement.focus();
+                                        //settings.prevElement.focus();
+										settings.prevElement.trigger({type: "backFocus"});
                                     } else if (settings.defaultFlow) {
                                         var focusable = $(":focusable");
                                         for (var j = 0; j < focusable.length; j++) {
                                             if(focusable[j] == this) {
                                                 if(focusable[j - 1]) {
                                                     $(focusable[j - 1]).select();
-                                                    $(focusable[j - 1]).focus();
+                                                    //$(focusable[j - 1]).focus();
+													$(focusable[j - 1]).trigger({type: "backFocus"});
                                                 }
                                                 break;
                                             }

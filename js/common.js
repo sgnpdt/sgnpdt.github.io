@@ -117,9 +117,68 @@ $( document ).ready(function() {
 	});
 	
 	//disable jump ios
-	$( "#inputs input" ).focus(function() {
-	  $('body').addClass('fixfixed');
+	
+	//$( "#inputs input" ).focus(function(evt) {
+//		var i;
+//		let prev = $( "#pin-0").val();
+//		//console.log("prev ", prev);
+//		for(i = 5; i >= 0; i--) {	
+//			prev = $( "#" + "pin-" + i).val();
+//			console.log("prev ", prev);
+//			break;
+//			
+//			//if(!(prev === "" || typeof(prev) === "undefined")) {
+////				//console.log("focus ", i + 1, prev);				
+////
+////				$( "#" + "pin-" + i + 1).focus();
+////				break;
+////			}
+//			//if(prev === 0){
+////				
+////				$( "#pin-0").focus();
+////				break;
+////			}
+//		}
+//		//console.log("check prev ", i);
+//		//evt.preventDefault();
+////		return false;
+//		
+//	  $('body').addClass('fixfixed');
+//	});
+	
+	$( "#inputs input" ).on('backFocus', function (evt) {		
+		console.log("focus on " + evt.target.id, evt);
+		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		$('#pin-' + curr).val("");
+		$('#pin-' + curr).trigger('focus', $.Event('focus'));
 	});
+	
+	
+       
+	$( "#inputs input" ).focus(function (evt,) {
+		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		let found = false;
+		for (let i = 5; i >= 0; i--) {
+			let digit = $('#pin-' + i).val().trim();
+			//console.log(i + " = " + digit);
+			if(digit !== '') {
+				found = i + 1;
+				break;
+			}
+		}
+		
+		if(found !== false && found !== curr) {
+			//console.log("found to focus " + found);
+			$(evt.target).blur();
+			evt.stopPropagation();
+			$('#pin-' + found).trigger('focus', $.Event('focus'));
+		}
+		
+	});
+    $('#pin-0').focus();
+	
+    //set height  html 
+    $('html').css("height",$(document).height());
 	
 	
 	//auto close popup
@@ -133,7 +192,7 @@ $( document ).ready(function() {
 	}
 
 	//auto focus OTP
-	setTimeout(function() {$('.focused').focus();}, 1000);
+	//setTimeout(function() {$('.focused').focus();}, 1000);
 	
 	
 
