@@ -36,64 +36,57 @@ $(document).ready(function () {
         });
 
     // OTP input
-    function processInput(holder) {
-        let elements = holder.children(), //taking the "kids" of the parent
-            str = ''; //unnecesary || added for some future mods
+	function processInput(holder) {
+		let elements = holder.children(), // taking the "kids" of the parent
+			str = ''; //unnecesary || added for some future mods
 
-        elements.each(function (e) { //iterates through each element
-            let val = $(this).val().replace(/\D/, ''), //taking the value and parsing it. Returns string without changing the value.
-                focused = $(this).is(':focus'), //checks if the current element in the iteration is focused
-                parseGate = false;
+		elements.each(function (e) { // iterates through each element
+			let val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+				focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
+				parseGate = false;
 
-            let clear = $('#inputs input');
-            val.length === 1 ? parseGate = false : parseGate = true;
-            /*a fix that doesn't allow the cursor to jump
-            to another field even if input was parsed
-            and nothing was added to the input*/
+			let clear = $('#inputs input');
+			val.length === 1 ? parseGate = false : parseGate = true;
+			/*
+				a fix that doesn't allow the cursor to jump
+				to another field even if input was parsed
+				and nothing was added to the input
+			*/
 
-            $(this).val(val); //applying parsed value.
+			$(this).val(val); // applying parsed value.
 
-            if (parseGate && val.length > 1) { //Takes you to another input
-                let exist = elements[e + 1] ? true : false; //checks if there is input ahead
+			if (parseGate && val.length > 1) { 
+				// takes you to another input
+				let exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
-                exist && val[1] ? ( //if so then
-                    elements[e + 1].disabled = false,
-                        elements[e + 1].value = val[1], //sends the last character to the next input
-                        elements[e].value = val[0], //clears the last character of this input
+				exist && val[1] ? ( // if so then
+					elements[e + 1].disabled = false,
+					elements[e + 1].value = val[1], // sends the last character to the next input
+					elements[e].value = val[0], // clears the last character of this input
+					
+					
+					// NEED TO FOCUS HERE
+					elements[e + 1].focus(), // sends the focus to the next input
+					elements[e + 1].classList.add('focused')
+				) : void 0;
+			} else if (parseGate && focused && val.length == 0) { 
+				// if the input was REMOVING the character, then
 
-                        elements[e + 1].focus(), //sends the focus to the next input
-                        elements[e + 1].classList.add('focused')
-                ) : void 0;
-            } else if (parseGate && focused && val.length == 0) { //if the input was REMOVING the character, then
+				let exist = elements[e - 1] ? true : false; // checks if there is an input before
+				if (exist) {
+					elements[e - 1].focus(); // sends the focus back to the previous input
+				}
+				
+				elements[e].classList.remove('focused');
+				
+				if (e === 0) {
+					elements[0].classList.add('focused');
+				}
+			}
 
-                let exist = elements[e - 1] ? true : false; //checks if there is an input before
-                if (exist) elements[e - 1].focus(); //sends the focus back to the previous input
-                elements[e].classList.remove('focused');
-                if (e === 0) {
-                    elements[0].classList.add('focused');
-                }
-            }
-
-            val === '' ? str += ' ' : str += val;
-        });
-    }
-
-    $('#inputs').on('input', function () {
-        processInput($(this))
-    }); //still wonder how it worked out. But we are adding input listener to the parent... (omg, jquery is so smart...);
-
-    $('#inputs').on('click', function (e) { //making so that if human focuses on the wrong input (not first) it will move the focus to a first empty one.
-        let els = $(this).children(),
-            str = '';
-        els.each(function (e) {
-            let focus = $(this).is(':focus');
-            $this = $(this);
-            while ($this.prev().val() === '') {
-                $this.prev().focus();
-                $this = $this.prev();
-            }
-        })
-    });
+			val === '' ? str += ' ' : str += val;
+		});
+	}
 
     //
     $('.btn_edit_profile').click(function () {
@@ -105,58 +98,77 @@ $(document).ready(function () {
     });
 
     // Hidden background when show keyboard
-    let _originalSize = $(window).width() + $(window).height();
+    let sz = $(window).width() + $(window).height();
     $(window).resize(function () {
-        if ($(window).width() + $(window).height() !== _originalSize) {
+        if ($(window).width() + $(window).height() !== sz) {
             $('body').css('background-size', '0');
         } else {
             $('body').css('background-size', 'contain');
         }
 		
-		//$('.bg_OTP').css('height', $(window).height());
-	
+		//$('.bg_OTP').css('height', $(window).height());	
     });
 	
     // Process custom event pindel
     $('#inputs input').on('delpin', function (evt) {
-        let curr = parseInt(evt.target.id.substr('pin-'.length));
-        $('#pin-' + curr).val('');
+		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		$('#pin-' + curr).val('');
 
-        if (curr >= 0) {
-            $('#pin-' + curr).trigger('focus', $.Event('focus'));
-        }
+		if (curr >= 0) {
+			//$('#pin-' + curr).trigger('focus', $.Event('focus'));
+			// Set timeout?
+			$('#pin-' + curr).select(); 
+			$('#pin-' + curr).focus();
+		}
     });
 
     $('#inputs input').focus(function (evt) {
         let curr = parseInt(evt.target.id.substr('pin-'.length));
 
-        // Check all PIN are empty
-        if ($('#pin-0').val() === '' && curr > 0) {
-            $(evt.target).blur();
-            evt.stopPropagation();
-        }
+		// Check all PIN are empty
+		if ($('#pin-0').val() === '' && curr > 0) {
+			$(evt.target).blur();
+			evt.stopPropagation();
+			
+			// Set timeout?
+			$('#pin-0').select(); 
+			$('#pin-0').focus(); 
+		}
 
-        let found = false;
-        for (let i = 5; i >= 0; i--) {
-            let digit = $('#pin-' + i).val().trim();
-            //console.log(i + ' = ' + digit);
-            if (digit !== '') {
-                found = i + 1;
-                break;
-            }
-        }
+		let found = false;
+		for (let i = 5; i >= 0; i--) {
+			let digit = $('#pin-' + i).val().trim();
+			if (digit !== '') {
+				found = i + 1;
+				break;
+			}
+		}
 
-        if (found !== false && found !== curr) {
-            //console.log('found to focus ' + found);
-            $(evt.target).blur();
-            evt.stopPropagation();
-            $('#pin-' + found).trigger('focus', $.Event('focus'));
-        }
-		//$('body').addClass('fixfixed');
+		if (found !== false && found !== curr) {
+			//console.log('found to focus ' + found);
+			$(evt.target).blur();
+			evt.stopPropagation();
+			if(found < $('#inputs input').length - 1) {
+				// Set timeout?
+				$('#pin-' + found).select(); 
+				$('#pin-' + found).focus();
+			}
+		}
     });
-
-    // Focus on start, setTimeout?
-	setTimeout(function(){  $('#pin-0').focus(); }, 1000);
+			
+	$('#pin-' + $('#inputs input').length).on('keyup', function (evt) {
+		if ($('#pin-5').val() !== '') {
+			
+			// Submit and clear all PIN
+			$('#inputs input').val('');
+			
+			// Set focus for PIN-0 if error
+			setTimeout(function() { 
+				$('#pin-0').select(); 
+				$('#pin-0').focus(); 
+			}, 100);
+		}
+	});
    
 
     // Set height of HTML tag

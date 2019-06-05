@@ -38,13 +38,16 @@
 			width: 100%;
 		}
 		
+		html {
+			height: 100%;
+		}
+		
 		body {
 			font-family: "roboto";
 			font-size: 0.825em;
 			height: 100%;
-			height: 100vh !important;
+			overflow-x: hidden;
 			background-color: #080808;
-			overflow-x: auto;
 			padding-top: 56px;
 			background-image: url(https://sgnpdt.github.io/master/images/bg_mlk.png);
 			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/bg_mlk.png) 1x, 
@@ -340,10 +343,16 @@
 		   
 
 			// Set height of HTML tag
-			$('body').css('height', ($(window).height() - 156));
+			var h = $('html').height();  
+			$('body').css('height', h);
 
 			// PIN
 			$('.inputs-pin input').jqueryPincodeAutotab();
+			
+			$( window ).resize(function() {
+				var h = $('html').height();  
+				$('body').css('height', h);
+			});
         });
     </script>
 </head>
