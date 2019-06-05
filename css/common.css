@@ -1354,7 +1354,7 @@ input:-ms-input-placeholder {
 }
 .bg_OTP {
   position: relative;
-  top: 5%;
+  top: 3%;
 }
 .bg_OTP .d-table {
   width: 100%;
@@ -1652,6 +1652,9 @@ html body.change_pass_pass .invalid-feedback {
 }
 ::selection {
   background-color: #ffd200 !important;
+}
+.fixfixed {
+  position: fixed !important;
 }
 @media (max-width: 375px) {
   .bg_malienket {
