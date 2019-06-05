@@ -1297,7 +1297,6 @@ input:-ms-input-placeholder {
   text-align: center;
   margin-bottom: 16px;
   margin-top: 16px;
-  float: left;
 }
 .inputs input {
   width: 32px;
