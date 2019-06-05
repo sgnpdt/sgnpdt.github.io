@@ -122,10 +122,10 @@ $(document).ready(function () {
     });
 
     $(document).on('blur', 'input', function (evt) {
-        $('body').removeClass('fix-fixed');
+        $('body').removeClass('fixed-fix');
         $('*').filter(function () {
             return $(this).css('position') === 'fixed';
-        }).removeClass('fix-fixed');
+        }).removeClass('fixed-fix');
     });
 
     // Process custom event pindel
