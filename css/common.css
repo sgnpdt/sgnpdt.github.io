@@ -1326,6 +1326,7 @@ input:-ms-input-placeholder {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
+  display: none;
 }
 .text_color {
   color: #ffd200;
