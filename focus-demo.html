@@ -1,6 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0" />
     <title>Title</title>
     <style type="text/css">
         .pin {
@@ -8,6 +9,18 @@
             height: 50px;
             text-align: center;
             font-size: 150%;
+        }
+
+        input[type="text"] {
+            font-size: 150%;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            select:focus,
+            textarea:focus,
+            input:focus {
+                font-size: 150%;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
