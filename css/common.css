@@ -304,6 +304,10 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 .hide {
   display: none;
@@ -1293,6 +1297,7 @@ input:-ms-input-placeholder {
   text-align: center;
   margin-bottom: 16px;
   margin-top: 16px;
+  float: left;
 }
 .inputs input {
   width: 32px;
