@@ -37,30 +37,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script type="text/javascript">
 
-        $.fn.mobileFix = function (opts) {
-            let $parent = $(this);
-
-            $(document)
-                .on('focus', opts.inputElements, function (e) {
-                    $parent.addClass(opts.addClass);
-                })
-                .on('blur', opts.inputElements, function (e) {
-                    $parent.removeClass(opts.addClass);
-
-                    // Fix for some scenarios where you need to start scrolling
-                    setTimeout(function () {
-                        $(document).scrollTop($(document).scrollTop())
-                    }, 1);
-                });
-
-            return this; // Allowing chaining
-        };
-
         $(document).ready(function () {
-            $('body').mobileFix({ // Pass parent to apply to
-                inputElements: 'input, textarea, select', // Pass activation child elements
-                addClass: 'fix-fixed' // Pass class name
-            });
+            /* cache dom references */
+            let $body = $('body');
+
+            /* bind events */
+            $(document)
+                .on('focus', 'input', function() {
+                    $body.addClass('fix-fixed');
+                })
+                .on('blur', 'input', function() {
+                    $body.removeClass('fix-fixed');
+                });
 
             $('.pin').focus(function (evt) {
                 let curr = parseInt(evt.target.id.substr('pin-'.length));
@@ -93,12 +81,12 @@
         });
     </script>
 </head>
-<body class="fix-fixed">
+<body>
 <p style="height: 300px">
     <br/><br/><br/>
 </p>
-<div class="container fix-fixed">
-    <input id="pin-0" value="" class="pin fix-fixed"/>
+<div class="container">
+    <input id="pin-0" value="" class="pin"/>
     <input id="pin-1" value="" class="pin"/>
     <input id="pin-2" value="" class="pin"/>
     <input id="pin-3" value="" class="pin"/>
