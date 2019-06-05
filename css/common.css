@@ -619,11 +619,6 @@ a:hover {
 .appbar_bg {
   background-color: #080808;
 }
-.fix-fixed {
-  position: fixed;
-  top: -1px;
-  width: 100%;
-}
 .banner_login {
   height: 90px;
   background-color: #080808;

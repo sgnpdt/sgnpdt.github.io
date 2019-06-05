@@ -113,21 +113,7 @@ $(document).ready(function () {
             $('body').css('background-size', 'contain');
         }
     });
-
-    $(document).on('focus', 'input', function (evt) {
-        $('body').addClass('fix-fixed');
-        $('*').filter(function () {
-            return $(this).css('position') === 'fixed';
-        }).addClass('fix-fixed');
-    });
-
-    $(document).on('blur', 'input', function (evt) {
-        $('body').removeClass('fix-fixed');
-        $('*').filter(function () {
-            return $(this).css('position') === 'fixed';
-        }).removeClass('fix-fixed');
-    });
-
+	
     // Process custom event pindel
     $('#inputs input').on('delpin', function (evt) {
         let curr = parseInt(evt.target.id.substr('pin-'.length));
