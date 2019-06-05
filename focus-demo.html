@@ -46,9 +46,11 @@
                 });
 
             $('.pin').focus(function (evt) {
-                $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
-                window.scrollTo(0, 0);
-                $body.addClass('fix-fixed');
+                if(document.body.scrollTop !== 0) {
+                    $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
+                    window.scrollTo(0, 0);
+                    $body.addClass('fix-fixed');
+                }
 
                 $('#log').html(document.body.scrollTop);
 
