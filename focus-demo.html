@@ -180,14 +180,13 @@
 		
 		.invalid-feedback, .invalid-feedback-tm {
 			font-size: 0.775em;
-			color: #fe1d03;
+			color: #ffffff;
 			text-align: center;
 			top: 4px;
 			position: relative;
 			margin-top: 0;
 			margin-bottom: 0;
 			width: 100%;
-			display: none;
 		}
 		
 		.invalid-feedback {
@@ -195,7 +194,7 @@
 			top: 0;
 			margin-top: 0px;
 			margin-bottom: 0px;
-			color: #ec2231;
+			color: #ffffff;
 			font-size: 10px;
 		}
 
@@ -209,15 +208,15 @@
 
 		// OTP input
 		function processInput(holder) {
-			let elements = holder.children(), // taking the "kids" of the parent
+			var elements = holder.children(), // taking the "kids" of the parent
 				str = ''; //unnecesary || added for some future mods
 
 			elements.each(function (e) { // iterates through each element
-				let val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+				var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
 					focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
 					parseGate = false;
 
-				let clear = $('#inputs input');
+				var clear = $('#inputs input');
 				val.length === 1 ? parseGate = false : parseGate = true;
 				/*
 					a fix that doesn't allow the cursor to jump
@@ -229,7 +228,7 @@
 
 				if (parseGate && val.length > 1) { 
 					// takes you to another input
-					let exist = elements[e + 1] ? true : false; // checks if there is input ahead
+					var exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
 					exist && val[1] ? ( // if so then
 						elements[e + 1].disabled = false,
@@ -244,7 +243,7 @@
 				} else if (parseGate && focused && val.length == 0) { 
 					// if the input was REMOVING the character, then
 
-					let exist = elements[e - 1] ? true : false; // checks if there is an input before
+					var exist = elements[e - 1] ? true : false; // checks if there is an input before
 					if (exist) {
 						elements[e - 1].focus(); // sends the focus back to the previous input
 					}
@@ -262,7 +261,7 @@
 	
         $(document).ready(function () {
             /* cache dom references */
-            let $body = $('body');
+            var $body = $('body');
 
             /* bind events */
             $(document)
@@ -272,7 +271,7 @@
 			
 			// Process custom event pindel
 			$('.inputs-pin').on('delpin', function (evt) {
-				let curr = parseInt(evt.target.id.substr('pin-'.length));
+				var curr = parseInt(evt.target.id.substr('pin-'.length));
 				$('#pin-' + curr).val('');
 
 				if (curr >= 0) {
@@ -282,19 +281,24 @@
 			
 			// Always set focus on PIN inputs
 			$('.pin').blur(function (evt) {
-				let curr = parseInt(evt.target.id.substr('pin-'.length));
+				var curr = parseInt(evt.target.id.substr('pin-'.length));				
 
 				// Check all PIN are empty
 				if ($('#pin-0').val() === '') {
 					evt.stopPropagation();
 					
-					// Set timeout?
-					$('#pin-0').select(); 
-					$('#pin-0').focus(); 
+					setTimeout(function() { 
+						$('#pin-0').select();
+						$('#pin-0').focus();
+					}, 10);
+					
+					// No set timeout, not work on Safari
+					//$('#pin-0').select(); 
+					//$('#pin-0').focus(); 
 				} else {
-					let found = false;
-					for (let i = 5; i >= 0; i--) {
-						let digit = $('#pin-' + i).val().trim();
+					var found = false;
+					for (var i = 5; i >= 0; i--) {
+						var digit = $('#pin-' + i).val().trim();
 						if (digit !== '') {
 							found = i + 1;
 							break;
@@ -304,16 +308,21 @@
 					if (found !== false) {
 						evt.stopPropagation();
 						if(found < $('.inputs-pin .pin').length - 1) {
-							// Set timeout?
-							$('#pin-' + found).select(); 
-							$('#pin-' + found).focus();
+							setTimeout(function() { 
+								$('#pin-' + found).select(); 
+								$('#pin-' + found).focus();
+							}, 10);
+					
+							// No set timeout, not work on Safari
+							//$('#pin-' + found).select(); 
+							//$('#pin-' + found).focus();
 						}
 					}
 				}
 			});
 
 			$('.pin').focus(function (evt) {
-				let curr = parseInt(evt.target.id.substr('pin-'.length));
+				var curr = parseInt(evt.target.id.substr('pin-'.length));
 
 				// Check all PIN are empty
 				if ($('#pin-0').val() === '' && curr > 0) {
@@ -325,9 +334,9 @@
 					$('#pin-0').focus(); 
 				}
 
-				let found = false;
-				for (let i = 5; i >= 0; i--) {
-					let digit = $('#pin-' + i).val().trim();
+				var found = false;
+				for (var i = 5; i >= 0; i--) {
+					var digit = $('#pin-' + i).val().trim();
 					if (digit !== '') {
 						found = i + 1;
 						break;
@@ -337,39 +346,46 @@
 				if (found !== false && found !== curr) {
 					evt.stopPropagation();
 					if(found < $('.inputs-pin .pin').length - 1) {
-						// Set timeout?
-						$('#pin-' + found).select(); 
-						$('#pin-' + found).focus();
+						setTimeout(function() { 
+							$('#pin-' + found).select(); 
+							$('#pin-' + found).focus();
+						}, 10);
+							
+						// No set timeout, not work on Safari
+						//$('#pin-' + found).select(); 
+						//$('#pin-' + found).focus();
 					}
 				}
 			});
 			
-			$('#pin-5').on('keyup', function (evt) {
+			// Safari maybe not work with only keyup
+			$('#pin-5').on('keyup change', function (evt) {
+				$('.invalid-feedback').html('blur ' + evt.target.id + ' = "' + ($('#pin-5').val()) + '"');
+			
 				if ($('#pin-5').val() !== '') {
-					
 					// Submit and clear all PIN
 					$('.pin').val('');
 					
-					// Set focus for PIN-0
-					setTimeout(function() { 
+					setTimeout(function() {					
+						// Set focus for PIN-0
 						$('#pin-0').select(); 
 						$('#pin-0').focus(); 
-					}, 100);
+					}, 10);
 				}
 			});
 
 			// Focus on start, setTimeout?
-			//setTimeout(function() { 
-			//	$('#pin-0').select();
-			//	$('#pin-0').focus();
-			//}, 100);
+			setTimeout(function() { 
+				$('#pin-0').select();
+				$('#pin-0').focus();
+			}, 10);
+
+			//$('#pin-0').select();
+			//$('#pin-0').focus();
 			
 			
 			$('.inputs-pin').append("<input type='text' id='dummy'>");
 			$("#dummy").css({'position': 'fixed', 'left':'120%'}).focus();
-
-			$('#pin-0').select();
-			$('#pin-0').focus();
 		   
 
 			// Set height of HTML tag

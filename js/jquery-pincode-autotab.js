@@ -10,7 +10,7 @@
 
         return this.each(function (index, value) {
             $(value).on('keydown', function (event) {
-                let move = 0;
+                var move = 0;
                 switch (event.keyCode) {
                     //number 0
                     case 48:
@@ -119,7 +119,7 @@
                     case 91: //command in mac
                         break;
                     case 229: //android device on chrome always returns 229 keycode
-                        let androidKeyCode = $(this).val();
+                        var androidKeyCode = $(this).val();
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         }
@@ -128,9 +128,9 @@
                         event.preventDefault();
                 }
 
-                for (let i = 0; i < listOfElements.length; i++) {
-                    let prevElement;
-                    let nextElement;
+                for (var i = 0; i < listOfElements.length; i++) {
+                    var prevElement;
+                    var nextElement;
                     if (i - 1 >= 0) {
                         prevElement = listOfElements[i - 1];
                     }
@@ -140,7 +140,7 @@
                     }
 
                     if (listOfElements[i] === this) {
-                        let ele, j;
+                        var ele, j;
                         switch (move) {
                             case 1:
                                 if (nextElement) {
@@ -214,10 +214,10 @@
 
             $(value).on('paste', function (event) {
                 event.preventDefault();
-                let clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
-                let pastedData = clipboardData.getData('text/plain');
-                for (let i = 0; i < listOfElements.length; i++) {
-                    let data = function () {
+                var clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
+                var pastedData = clipboardData.getData('text/plain');
+                for (var i = 0; i < listOfElements.length; i++) {
+                    var data = function () {
                         return pastedData[i];
                     };
 
@@ -234,7 +234,7 @@
     }
 
     function focusable(element, isTabIndexNotNaN) {
-        let map, mapName, img, nodeName = element.nodeName.toLowerCase();
+        var map, mapName, img, nodeName = element.nodeName.toLowerCase();
         if ('area' === nodeName) {
             map = element.parentNode;
             mapName = map.name;

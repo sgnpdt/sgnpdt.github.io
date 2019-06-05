@@ -37,15 +37,15 @@ $(document).ready(function () {
 
     // OTP input
 	function processInput(holder) {
-		let elements = holder.children(), // taking the "kids" of the parent
+		var elements = holder.children(), // taking the "kids" of the parent
 			str = ''; //unnecesary || added for some future mods
 
 		elements.each(function (e) { // iterates through each element
-			let val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+			var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
 				focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
 				parseGate = false;
 
-			let clear = $('#inputs input');
+			var clear = $('#inputs input');
 			val.length === 1 ? parseGate = false : parseGate = true;
 			/*
 				a fix that doesn't allow the cursor to jump
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
 			if (parseGate && val.length > 1) { 
 				// takes you to another input
-				let exist = elements[e + 1] ? true : false; // checks if there is input ahead
+				var exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
 				exist && val[1] ? ( // if so then
 					elements[e + 1].disabled = false,
@@ -72,7 +72,7 @@ $(document).ready(function () {
 			} else if (parseGate && focused && val.length == 0) { 
 				// if the input was REMOVING the character, then
 
-				let exist = elements[e - 1] ? true : false; // checks if there is an input before
+				var exist = elements[e - 1] ? true : false; // checks if there is an input before
 				if (exist) {
 					elements[e - 1].focus(); // sends the focus back to the previous input
 				}
@@ -98,7 +98,7 @@ $(document).ready(function () {
     });
 
     // Hidden background when show keyboard
-    let sz = $(window).width() + $(window).height();
+    var sz = $(window).width() + $(window).height();
     $(window).resize(function () {
         if ($(window).width() + $(window).height() !== sz) {
             $('body').css('background-size', '0');
@@ -111,7 +111,7 @@ $(document).ready(function () {
 	
     // Process custom event pindel
     $('#inputs input').on('delpin', function (evt) {
-		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		var curr = parseInt(evt.target.id.substr('pin-'.length));
 		console.log(evt.target.id, 'del');
 		$('#pin-' + curr).val('');
 
@@ -123,11 +123,11 @@ $(document).ready(function () {
 		}
     });
 
-	let pinLen = $('#inputs input').length;
+	var pinLen = $('#inputs input').length;
 	
 	// Always set focus on PIN inputs
 	$('#inputs input').blur(function (evt) {
-		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		var curr = parseInt(evt.target.id.substr('pin-'.length));
 
 		// Check all PIN are empty
 		if ($('#pin-0').val() === '') {
@@ -137,9 +137,9 @@ $(document).ready(function () {
 			$('#pin-0').select(); 
 			$('#pin-0').focus(); 
 		} else {
-			let found = false;
-			for (let i = 5; i >= 0; i--) {
-				let digit = $('#pin-' + i).val().trim();
+			var found = false;
+			for (var i = 5; i >= 0; i--) {
+				var digit = $('#pin-' + i).val().trim();
 				if (digit !== '') {
 					found = i + 1;
 					break;
@@ -158,7 +158,7 @@ $(document).ready(function () {
 	});	
 	
     $('#inputs input').focus(function (evt) {
-        let curr = parseInt(evt.target.id.substr('pin-'.length));
+        var curr = parseInt(evt.target.id.substr('pin-'.length));
 
 		// Check all PIN are empty
 		if ($('#pin-0').val() === '' && curr > 0) {
@@ -170,9 +170,9 @@ $(document).ready(function () {
 			$('#pin-0').focus(); 
 		}
 
-		let found = false;
-		for (let i = 5; i >= 0; i--) {
-			let digit = $('#pin-' + i).val().trim();
+		var found = false;
+		for (var i = 5; i >= 0; i--) {
+			var digit = $('#pin-' + i).val().trim();
 			if (digit !== '') {
 				found = i + 1;
 				break;
