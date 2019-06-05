@@ -10,7 +10,7 @@
 
         return this.each(function (index, value) {
             $(value).on('keydown', function (event) {
-                var move = 0;
+                let move = 0;
                 switch (event.keyCode) {
                     //number 0
                     case 48:
@@ -119,7 +119,7 @@
                     case 91: //command in mac
                         break;
                     case 229: //android device on chrome always returns 229 keycode
-                        var androidKeyCode = $(this).val();
+                        let androidKeyCode = $(this).val();
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         }
@@ -128,9 +128,9 @@
                         event.preventDefault();
                 }
 
-                for (var i = 0; i < listOfElements.length; i++) {
-                    var prevElement;
-                    var nextElement;
+                for (let i = 0; i < listOfElements.length; i++) {
+                    let prevElement;
+                    let nextElement;
                     if (i - 1 >= 0) {
                         prevElement = listOfElements[i - 1];
                     }
@@ -140,7 +140,7 @@
                     }
 
                     if (listOfElements[i] === this) {
-                        var ele, j;
+                        let ele, j;
                         switch (move) {
                             case 1:
                                 if (nextElement) {
@@ -207,10 +207,10 @@
 
             $(value).on('paste', function (event) {
                 event.preventDefault();
-                var clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
-                var pastedData = clipboardData.getData('text/plain');
-                for (var i = 0; i < listOfElements.length; i++) {
-                    var data = function () {
+                let clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
+                let pastedData = clipboardData.getData('text/plain');
+                for (let i = 0; i < listOfElements.length; i++) {
+                    let data = function () {
                         return pastedData[i];
                     };
 
