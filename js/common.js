@@ -161,7 +161,7 @@ $(document).ready(function () {
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
-	$('body').css('height', ($(window).height() - 56));
+	$('body').css('height', ($(window).height() - 156));
 
     // PIN
     if ($('#inputs input').length > 0) {

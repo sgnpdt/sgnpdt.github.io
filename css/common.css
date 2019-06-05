@@ -1358,8 +1358,9 @@ input:-ms-input-placeholder {
   height: 25%;
 }
 .bg_OTP {
-  top: 3%;
-  position: fixed !important;
+  top: 8%;
+  position: absolute!important;
+  width: 100%;
 }
 .bg_OTP .d-table {
   width: 100%;
