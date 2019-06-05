@@ -348,8 +348,9 @@ ul {
   display: block !important;
 }
 .fixfixed {
-  position: absolute !important;
+  position: fixed !important;
   width: 100%;
+  top: 0;
 }
 button:focus {
   outline: none !important;
