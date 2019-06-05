@@ -19,14 +19,19 @@
 
         .container {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .inner {
+            display: table;
+            margin: 0 auto;
         }
 
         .fix-fixed {
             position: fixed;
-            top: 0px;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
@@ -81,12 +86,14 @@
     <br/><br/><br/>
 </p>
 <div class="container">
-    <input id="pin-0" value="" class="pin"/>
-    <input id="pin-1" value="" class="pin"/>
-    <input id="pin-2" value="" class="pin"/>
-    <input id="pin-3" value="" class="pin"/>
-    <input id="pin-4" value="" class="pin"/>
-    <input id="pin-5" value="" class="pin"/>
+    <div class="inner">
+        <input id="pin-0" value="" class="pin"/>
+        <input id="pin-1" value="" class="pin"/>
+        <input id="pin-2" value="" class="pin"/>
+        <input id="pin-3" value="" class="pin"/>
+        <input id="pin-4" value="" class="pin"/>
+        <input id="pin-5" value="" class="pin"/>
+    </div>
 </div>
 </body>
 </html>
