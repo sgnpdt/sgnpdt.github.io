@@ -112,6 +112,7 @@ $(document).ready(function () {
     // Process custom event pindel
     $('#inputs input').on('delpin', function (evt) {
 		let curr = parseInt(evt.target.id.substr('pin-'.length));
+		console.log(evt.target.id, 'del');
 		$('#pin-' + curr).val('');
 
 		if (curr >= 0) {
@@ -122,6 +123,7 @@ $(document).ready(function () {
 		}
     });
 
+	let pinLen = $('#inputs input').length;
     $('#inputs input').focus(function (evt) {
         let curr = parseInt(evt.target.id.substr('pin-'.length));
 
@@ -148,15 +150,16 @@ $(document).ready(function () {
 			//console.log('found to focus ' + found);
 			$(evt.target).blur();
 			evt.stopPropagation();
-			if(found < $('#inputs input').length - 1) {
+			if(found < pinLen - 1) {
 				// Set timeout?
 				$('#pin-' + found).select(); 
 				$('#pin-' + found).focus();
 			}
 		}
     });
-			
-	$('#pin-' + $('#inputs input').length).on('keyup', function (evt) {
+		
+	
+	$('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
 		if ($('#pin-5').val() !== '') {
 			
 			// Submit and clear all PIN
@@ -176,7 +179,11 @@ $(document).ready(function () {
 	$('body').css('height', ($(window).height() - 156));
 
     // PIN
-    if ($('#inputs input').length > 0) {
+    if (pinLen > 0) {
         $('#inputs input').jqueryPincodeAutotab();
     }
+
+	// Focus PIN-0
+	$('#pin-0').select();
+	$('#pin-0').focus();
 });
