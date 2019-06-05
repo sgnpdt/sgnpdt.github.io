@@ -359,7 +359,7 @@
 			});
 			
 			// Safari maybe not work with only keyup
-			$('#pin-5').on('keyup change', function (evt) {
+			$('#pin-5').on('keyup', function (evt) {
 				$('.invalid-feedback').html('blur ' + evt.target.id + ' = "' + ($('#pin-5').val()) + '"');
 			
 				if ($('#pin-5').val() !== '') {

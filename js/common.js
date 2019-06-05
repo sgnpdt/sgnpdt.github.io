@@ -118,8 +118,13 @@ $(document).ready(function () {
 		if (curr >= 0) {
 			//$('#pin-' + curr).trigger('focus', $.Event('focus'));
 			// Set timeout?
-			$('#pin-' + curr).select(); 
-			$('#pin-' + curr).focus();
+			//$('#pin-' + curr).select(); 
+			//$('#pin-' + curr).focus();
+			
+			setTimeout(function() { 
+				$('#pin-' + curr).select(); 
+				$('#pin-' + curr).focus(); 
+			}, 5);
 		}
     });
 
@@ -134,8 +139,13 @@ $(document).ready(function () {
 			evt.stopPropagation();
 			
 			// Set timeout?
-			$('#pin-0').select(); 
-			$('#pin-0').focus(); 
+			//$('#pin-0').select(); 
+			//$('#pin-0').focus(); 
+			
+			setTimeout(function() { 
+				$('#pin-0').select(); 
+				$('#pin-0').focus(); 
+			}, 5);
 		} else {
 			var found = false;
 			for (var i = 5; i >= 0; i--) {
@@ -150,8 +160,13 @@ $(document).ready(function () {
 				evt.stopPropagation();
 				if(found < pinLen - 1) {
 					// Set timeout?
-					$('#pin-' + found).select(); 
-					$('#pin-' + found).focus();
+					//$('#pin-' + found).select(); 
+					//$('#pin-' + found).focus();
+			
+					setTimeout(function() { 
+						$('#pin-' + found).select(); 
+						$('#pin-' + found).focus(); 
+					}, 5);
 				}
 			}
 		}
@@ -166,8 +181,13 @@ $(document).ready(function () {
 			evt.stopPropagation();
 			
 			// Set timeout?
-			$('#pin-0').select(); 
-			$('#pin-0').focus(); 
+			//$('#pin-0').select(); 
+			//$('#pin-0').focus(); 
+			
+			setTimeout(function() { 
+				$('#pin-0').select(); 
+				$('#pin-0').focus(); 
+			}, 5);
 		}
 
 		var found = false;
@@ -185,8 +205,13 @@ $(document).ready(function () {
 			evt.stopPropagation();
 			if(found < pinLen - 1) {
 				// Set timeout?
-				$('#pin-' + found).select(); 
-				$('#pin-' + found).focus();
+				//$('#pin-' + found).select(); 
+				//$('#pin-' + found).focus();
+			
+				setTimeout(function() { 
+					$('#pin-' + found).select(); 
+					$('#pin-' + found).focus(); 
+				}, 5);
 			}
 		}
     });
@@ -202,7 +227,7 @@ $(document).ready(function () {
 			setTimeout(function() { 
 				$('#pin-0').select(); 
 				$('#pin-0').focus(); 
-			}, 100);
+			}, 5);
 		}
 	});
 	
@@ -223,13 +248,13 @@ $(document).ready(function () {
 
 	// HTML5 autofocus attribute is not supported on iOS
 	// https://caniuse.com/#feat=autofocus
+	//$('#pin-0').select();
+	//$('#pin-0').focus();
+	
 	setTimeout(function() { 
 		$('#pin-0').select(); 
 		$('#pin-0').focus(); 
-	}, 100);
-	
-	//$('#pin-0').select();
-	//$('#pin-0').focus();
+	}, 5);
 	
 	// Show soft-keyboard?
 	// The script that calls focus() click() on an input needs 
