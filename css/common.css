@@ -1357,7 +1357,15 @@ input:-ms-input-placeholder {
 .bg_dk .div_header {
   height: 25%;
 }
+html {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+  height: 100% !important;
+}
 .bg_OTP {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+  height: 100% !important;
   position: relative;
   top: 3%;
 }
