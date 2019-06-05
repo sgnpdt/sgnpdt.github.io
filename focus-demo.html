@@ -19,8 +19,6 @@
 
         .container {
             position: fixed;
-            bottom: 0;
-            left: 0;
             width: 100%;
             text-align: center;
         }
@@ -38,6 +36,15 @@
     <script type="text/javascript">
 
         $(document).ready(function () {
+
+            document.addEventListener('touchmove', function (e) {
+                e.preventDefault();
+            }, false);
+
+            document.removeEventListener('touchmove', function (e) {
+                e.preventDefault();
+            });
+
             /* cache dom references */
             let $body = $('body');
 
