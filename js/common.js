@@ -119,7 +119,11 @@ $( document ).ready(function() {
 	});
 	
 	//disable jump ios
+	$( "#inputs input" ).focus(function() {
+		$('body').addClass('fixfixed');
+	});
 	
+	//
 	//$( "#inputs input" ).focus(function(evt) {
 //		var i;
 //		let prev = $( "#pin-0").val();
