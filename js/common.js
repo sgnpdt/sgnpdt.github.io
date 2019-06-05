@@ -114,7 +114,7 @@ $(document).ready(function () {
         }
 		
 		$('.bg_OTP').css('height', $(window).height());
-		
+		alert($(window).height());
     });
 	
     // Process custom event pindel
