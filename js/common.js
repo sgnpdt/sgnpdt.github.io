@@ -112,6 +112,9 @@ $(document).ready(function () {
         } else {
             $('body').css('background-size', 'contain');
         }
+		if ($('.bg_OTP').length > 0) {
+			$('.bg_OTP').css('height', $(window).height());
+		}
     });
 	
     // Process custom event pindel
