@@ -113,8 +113,8 @@ $(document).ready(function () {
             $('body').css('background-size', 'contain');
         }
 		
-		$('.bg_OTP').css('height', $(window).height());
-		alert($(window).height());
+		//$('.bg_OTP').css('height', $(window).height());
+	
     });
 	
     // Process custom event pindel
