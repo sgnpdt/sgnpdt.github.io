@@ -145,10 +145,14 @@
                             case 1:
                                 if (nextElement) {
                                     $(nextElement).select();
+									
+									// Set timeout?
                                     $(nextElement).focus();
                                 } else {
                                     if (settings.nextElement) {
                                         settings.nextElement.select();
+										
+										// Set timeout?
                                         settings.nextElement.focus();
                                     } else if (settings.defaultFlow) {
                                         ele = $(':focusable');
@@ -156,6 +160,8 @@
                                             if (ele[j] === this) {
                                                 if (ele[j + 1]) {
                                                     $(ele[j + 1]).select();
+													
+													// Set timeout?
                                                     $(ele[j + 1]).focus();
                                                 }
 
@@ -170,14 +176,14 @@
                             case -1:
                                 // Delete PIN
                                 if (prevElement) {
-                                    $(prevElement).select();
+                                    //$(prevElement).select();
                                     //$(prevElement).focus();
 
                                     // Custom event
                                     $(prevElement).trigger({type: 'delpin'});
                                 } else {
                                     if (settings.prevElement) {
-                                        settings.prevElement.select();
+                                        //settings.prevElement.select();
                                         //settings.prevElement.focus();
 
                                         // Custom event
@@ -187,7 +193,7 @@
                                         for (j = 0; j < ele.length; j++) {
                                             if (ele[j] === this) {
                                                 if (ele[j - 1]) {
-                                                    $(ele[j - 1]).select();
+                                                    //$(ele[j - 1]).select();
                                                     //$(ele[j - 1]).focus();
 
                                                     // Custom event
