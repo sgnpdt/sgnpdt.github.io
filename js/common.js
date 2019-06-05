@@ -169,7 +169,8 @@ $(document).ready(function () {
     $('#pin-0').focus();
 
     // Set height of HTML tag
-    $('html').css('height', $(document).height());
+    $('html').css('height', $(window).height());
+	$('body').css('height', ($(window).height() - 56));
 
     // PIN
     if ($('#inputs input').length > 0) {
