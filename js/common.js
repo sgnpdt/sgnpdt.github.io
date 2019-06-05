@@ -205,7 +205,12 @@ $(document).ready(function () {
 			}, 100);
 		}
 	});
-   
+	
+	$('body').bind('focusin focus', function(e){
+		e.preventDefault();
+	});
+	
+	const isIos = () => !!window.navigator.userAgent.match(/iPad|iPhone/i);
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
