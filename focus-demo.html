@@ -325,14 +325,16 @@
 			});
 
 			// Focus on start, setTimeout?
-			setTimeout(function() { 
-				$('#pin-0').select(); 
-				$('#pin-0').focus(); 
-			}, 100);
+			//setTimeout(function() { 
+			//	$('#pin-0').select();
+			//	$('#pin-0').focus();
+			//}, 100);
+			
+			$('#pin-0').select();
+			$('#pin-0').focus();
 		   
 
 			// Set height of HTML tag
-			$('html').css('height', $(window).height());
 			$('body').css('height', ($(window).height() - 156));
 
 			// PIN
