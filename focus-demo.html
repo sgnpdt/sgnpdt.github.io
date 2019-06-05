@@ -41,17 +41,19 @@
 
             /* bind events */
             $(document)
-                .on('focus', 'input', function () {
-                    $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
-                    window.scrollTo(0, 0);
-
-                    $body.addClass('fix-fixed');
-                })
                 .on('blur', 'input', function () {
                     $body.removeClass('fix-fixed');
                 });
 
             $('.pin').focus(function (evt) {
+                $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
+                window.scrollTo(0, 0);
+                document.body.scrollTop = 0;
+
+                $body.addClass('fix-fixed');
+
+                alert(document.body.scrollTop);
+
                 let curr = parseInt(evt.target.id.substr('pin-'.length));
 
                 // Check all PIN are empty
