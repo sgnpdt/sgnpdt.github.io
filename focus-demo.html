@@ -1,7 +1,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0" />
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0"/>
     <title>Title</title>
     <style type="text/css">
         .pin {
@@ -9,48 +10,54 @@
             height: 40px;
             text-align: center;
             font-size: 120%;
+            margin-left: 2px;
         }
 
         input[type="text"] {
             font-size: 120%;
         }
 
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
             select:focus,
             textarea:focus,
             input:focus {
                 font-size: 120%;
             }
         }
+
+        .container {
+            display: table;
+            margin: 0 auto;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.pin').focus(function (evt) {
-				let curr = parseInt(evt.target.id.substr('pin-'.length));
+                let curr = parseInt(evt.target.id.substr('pin-'.length));
 
-				// Check all PIN are empty
-				if ($('#pin-0').val() === '' && curr > 0) {
-					$(evt.target).blur();
-					evt.stopPropagation();
-				}
+                // Check all PIN are empty
+                if ($('#pin-0').val() === '' && curr > 0) {
+                    $(evt.target).blur();
+                    evt.stopPropagation();
+                }
 
-				let found = false;
-				for (let i = 5; i >= 0; i--) {
-					let digit = $('#pin-' + i).val().trim();
-					//console.log(i + ' = ' + digit);
-					if (digit !== '') {
-						found = i + 1;
-						break;
-					}
-				}
+                let found = false;
+                for (let i = 5; i >= 0; i--) {
+                    let digit = $('#pin-' + i).val().trim();
+                    //console.log(i + ' = ' + digit);
+                    if (digit !== '') {
+                        found = i + 1;
+                        break;
+                    }
+                }
 
-				if (found !== false && found !== curr) {
-					//console.log('found to focus ' + found);
-					$(evt.target).blur();
-					evt.stopPropagation();
-					$('#pin-' + found).trigger('focus', $.Event('focus'));
-				}
+                if (found !== false && found !== curr) {
+                    //console.log('found to focus ' + found);
+                    $(evt.target).blur();
+                    evt.stopPropagation();
+                    $('#pin-' + found).trigger('focus', $.Event('focus'));
+                }
             });
 
             $('#pin-0').focus();
@@ -58,15 +65,16 @@
     </script>
 </head>
 <body>
-    <p>
-        <br/><br/><br/>
-    </p>
-
-    <input id="pin-0" value="" class="pin" style="margin-left: 100px;" />
-    <input id="pin-1" value="" class="pin" />
-    <input id="pin-2" value="" class="pin" />
-    <input id="pin-3" value="" class="pin" />
-    <input id="pin-4" value="" class="pin" />
-    <input id="pin-5" value="" class="pin" />
+<p>
+    <br/><br/><br/>
+</p>
+<div class="container">
+    <input id="pin-0" value="" class="pin"/>
+    <input id="pin-1" value="" class="pin"/>
+    <input id="pin-2" value="" class="pin"/>
+    <input id="pin-3" value="" class="pin"/>
+    <input id="pin-4" value="" class="pin"/>
+    <input id="pin-5" value="" class="pin"/>
+</div>
 </body>
 </html>
