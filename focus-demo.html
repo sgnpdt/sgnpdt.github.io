@@ -3,38 +3,259 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0"/>
+	<meta name="theme-color" content="#ffd200">
     <title>Title</title>
     <style type="text/css">
+		.app-bar {
+			height: 56px;
+			text-align: center;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 2;
+			background-color: transparent;
+		}
+		
+		.btn-back {
+			background-image: url(https://sgnpdt.github.io/master/images/icon_back.png);
+			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/icon_back.png) 1x, 
+			url(https://sgnpdt.github.io/master/images/icon_back@2x.png) 2x, 
+			url(https://sgnpdt.github.io/master/images/icon_back@3x.png) 3x);
+			width: 40px;
+			height: 40px;
+			position: fixed;
+			top: 8px;
+			left: 8px;
+			display: block;
+			background-position: center center;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}		
+		
+		.bg-code {
+			top: 8%;
+			position: absolute!important;
+			width: 100%;
+		}
+		
+		body {
+			font-family: "roboto";
+			font-size: 0.825em;
+			height: 100%;
+			background-color: #080808;
+			overflow-x: auto;
+			padding-top: 56px;
+			background-image: url(https://sgnpdt.github.io/master/images/bg_mlk.png);
+			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/bg_mlk.png) 1x, 
+			url(https://sgnpdt.github.io/master/images/bg_mlk@2x.png) 2x, 
+			url(https://sgnpdt.github.io/master/images/bg_mlk@3x.png) 3x);
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #212529;
+			text-align: left;
+		}
+		
+		p {
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+		}
+		
+		.bg-guide {
+			background-image: url(https://sgnpdt.github.io/master/images/Malienket.png);
+			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/Malienket.png) 1x, 
+			url(https://sgnpdt.github.io/master/images/Malienket@2x.png) 2x, 
+			url(https://sgnpdt.github.io/master/images/Malienket@3x.png) 3x);
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 160px;
+			background-position: center;
+			position: relative;
+			margin-bottom: 16px;
+		}
+		
+		.div-guide {
+			position: absolute;
+			top: -30px;
+			right: 15%;
+		}
+		
+		.btn-guide {
+			color: #2a1919;
+			background-color: #ffd200;
+			font-size: 12px;
+			padding: 8px 8px;
+			border-radius: 4px 4px 4px 4px;
+			position: relative;
+			cursor: pointer;
+		}
+		
+		.btn-guide:after {
+			position: absolute;
+			bottom: -10px;
+			left: 12px;
+			background-image: url(https://sgnpdt.github.io/master/images/arrowhd.png);
+			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/arrowhd.png) 1x, 
+			url(https://sgnpdt.github.io/master/images/arrowhd@2x.png) 2x, 
+			url(https://sgnpdt.github.io/master/images/arrowhd@3x.png) 3x);
+			content: "";
+			width: 7px;
+			height: 10px;
+			background-repeat: no-repeat;
+		}
+		
+		a {
+			outline: none !important;
+			-webkit-transition: all 0.3s;
+			text-decoration: none;
+		}
+		
+		.div-guide .hd {
+			background-image: url(https://sgnpdt.github.io/master/images/hd.png);
+			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/hd.png) 1x, 
+			url(https://sgnpdt.github.io/master/images/hd@2x.png) 2x, 
+			url(https://sgnpdt.github.io/master/images/hd@3x.png) 3x);
+			width: 12px;
+			height: 8px;
+			display: inline-block;
+			margin-left: 4px;
+			margin-top: 5px;
+		}
+		
+		.title-pin {
+			font-size: 1em;
+			font-weight: 300;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 6px;
+		}
+		
+		.inputs-pin {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 16px;
+			margin-top: 16px;
+		}
+	
         .pin {
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            font-size: 120%;
-            margin-left: 2px;
-        }
-
-        input[type="text"] {
-            font-size: 120%;
-        }
-
-        .container {
-            position: fixed;
-            width: 100%;
-            text-align: center;
-        }
-
-        .inner {
-            display: table;
-            margin: 0 auto;
-        }
+			width: 32px;
+			height: 45px;
+			line-height: 100%;
+			background-color: transparent;
+			border: 0;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+			outline: 0;
+			color: white;
+			font-size: 2.5em;
+			font-weight: 300;
+			word-spacing: 0px;
+			overflow: hidden;
+			text-align: center;
+			margin: 0 4px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+			caret-color: #ffd200;
+		}
+		
+		.input-relative {
+			height: 30px;
+		}
+		
+		.invalid-feedback, .invalid-feedback-tm {
+			font-size: 0.775em;
+			color: #fe1d03;
+			text-align: center;
+			top: 4px;
+			position: relative;
+			margin-top: 0;
+			margin-bottom: 0;
+			width: 100%;
+			display: none;
+		}
+		
+		.invalid-feedback {
+			position: relative;
+			top: 0;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			color: #ec2231;
+			font-size: 10px;
+		}
 
         .fix-fixed {
             position: fixed;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-pincode-autotab.js"></script>
     <script type="text/javascript">
 
+		// OTP input
+		function processInput(holder) {
+			let elements = holder.children(), // taking the "kids" of the parent
+				str = ''; //unnecesary || added for some future mods
+
+			elements.each(function (e) { // iterates through each element
+				let val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+					focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
+					parseGate = false;
+
+				let clear = $('#inputs input');
+				val.length === 1 ? parseGate = false : parseGate = true;
+				/*
+					a fix that doesn't allow the cursor to jump
+					to another field even if input was parsed
+					and nothing was added to the input
+				*/
+
+				$(this).val(val); // applying parsed value.
+
+				if (parseGate && val.length > 1) { 
+					// takes you to another input
+					let exist = elements[e + 1] ? true : false; // checks if there is input ahead
+
+					exist && val[1] ? ( // if so then
+						elements[e + 1].disabled = false,
+						elements[e + 1].value = val[1], // sends the last character to the next input
+						elements[e].value = val[0], // clears the last character of this input
+						
+						
+						// NEED TO FOCUS HERE
+						elements[e + 1].focus(), // sends the focus to the next input
+						elements[e + 1].classList.add('focused')
+					) : void 0;
+				} else if (parseGate && focused && val.length == 0) { 
+					// if the input was REMOVING the character, then
+
+					let exist = elements[e - 1] ? true : false; // checks if there is an input before
+					if (exist) {
+						elements[e - 1].focus(); // sends the focus back to the previous input
+					}
+					
+					elements[e].classList.remove('focused');
+					
+					if (e === 0) {
+						elements[0].classList.add('focused');
+					}
+				}
+
+				val === '' ? str += ' ' : str += val;
+			});
+		}		
+	
         $(document).ready(function () {
             /* cache dom references */
             let $body = $('body');
@@ -44,63 +265,111 @@
                 .on('blur', 'input', function () {
                     $body.removeClass('fix-fixed');
                 });
+			
+			// Process custom event pindel
+			$('.inputs-pin').on('delpin', function (evt) {
+				let curr = parseInt(evt.target.id.substr('pin-'.length));
+				$('#pin-' + curr).val('');
 
-            $('.pin').focus(function (evt) {
-                if(document.body.scrollTop !== 0) {
-                    $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
-                    window.scrollTo(0, 0);
-                    $body.addClass('fix-fixed');
-                }
+				if (curr >= 0) {
+					$('#pin-' + curr).trigger('focus', $.Event('focus'));
+				}
+			});
 
-                $('#log').html(document.body.scrollTop);
+			$('.pin').focus(function (evt) {
+				let curr = parseInt(evt.target.id.substr('pin-'.length));
 
-                let curr = parseInt(evt.target.id.substr('pin-'.length));
+				// Check all PIN are empty
+				if ($('#pin-0').val() === '' && curr > 0) {
+					$(evt.target).blur();
+					evt.stopPropagation();
+					
+					// Set timeout?
+					$('#pin-0').select(); 
+					$('#pin-0').focus(); 
+				}
 
-                // Check all PIN are empty
-                if ($('#pin-0').val() === '' && curr > 0) {
-                    $(evt.target).blur();
-                    evt.stopPropagation();
-                }
+				let found = false;
+				for (let i = 5; i >= 0; i--) {
+					let digit = $('#pin-' + i).val().trim();
+					if (digit !== '') {
+						found = i + 1;
+						break;
+					}
+				}
 
-                let found = false;
-                for (let i = 5; i >= 0; i--) {
-                    let digit = $('#pin-' + i).val().trim();
-                    //console.log(i + ' = ' + digit);
-                    if (digit !== '') {
-                        found = i + 1;
-                        break;
-                    }
-                }
+				if (found !== false && found !== curr) {
+					//console.log('found to focus ' + found);
+					$(evt.target).blur();
+					evt.stopPropagation();
+					if(found < $('.inputs-pin .pin').length - 1) {
+						// Set timeout?
+						$('#pin-' + found).select(); 
+						$('#pin-' + found).focus();
+					}
+				}
+			});
+			
+			$('#pin-5').on('keyup', function (evt) {
+				if ($('#pin-5').val() !== '') {
+					
+					// Submit and clear all PIN
+					$('.pin').val('');
+					
+					// Set focus for PIN-0
+					setTimeout(function() { 
+						$('#pin-0').select(); 
+						$('#pin-0').focus(); 
+					}, 100);
+				}
+			});
 
-                if (found !== false && found !== curr) {
-                    //console.log('found to focus ' + found);
-                    $(evt.target).blur();
-                    evt.stopPropagation();
-                    $('#pin-' + found).trigger('focus', $.Event('focus'));
-                }
-            });
+			// Focus on start, setTimeout?
+			setTimeout(function() { 
+				$('#pin-0').select(); 
+				$('#pin-0').focus(); 
+			}, 100);
+		   
 
-            $('#pin-0').trigger('focus', $.Event('focus'));
-            $('#pin-0').focus();
-            $('#pin-0').get(0).setSelectionRange(0, 999);
+			// Set height of HTML tag
+			$('html').css('height', $(window).height());
+			$('body').css('height', ($(window).height() - 156));
+
+			// PIN
+			$('.inputs-pin input').jqueryPincodeAutotab();
         });
     </script>
 </head>
-<body class="fix-fixed">
-<p style="height: 250px">
-    <br/><br/><br/>
-</p>
-<div class="container">
-    <div class="inner">
-        <input id="pin-0" value="" class="pin"/>
-        <input id="pin-1" value="" class="pin"/>
-        <input id="pin-2" value="" class="pin"/>
-        <input id="pin-3" value="" class="pin"/>
-        <input id="pin-4" value="" class="pin"/>
-        <input id="pin-5" value="" class="pin"/>
+<body class="bg-code">
+<div class="app-bar">
+    <a class="btn-back"></a>
+</div>
+
+<div class="container-pin">
+    <div class="d-table">
+        <div class="d-table-cell">
+			<div class="bg-guide">
+                <div class="div-guide">
+                    <a class="btn-guide" href="https://sgnpdt.github.io/v2_huongdan.html">
+					<span>Hướng dẫn nhận mã</span> <span class="hd"></span></a>
+                </div>
+            </div>		
+            <p class="title-pin">Nhập mã liên kết hiển thị trên màn hình TV gắn với box Truyền hình FPT</p>
+            <div class="inputs-pin">
+                <input id="pin-0" maxlength="1" placeholder="" value="" type="tel" class="pin focused">
+                <input id="pin-1" maxlength="1" placeholder="" value="" type="tel" class="pin">
+                <input id="pin-2" maxlength="1" placeholder="" value="" type="tel" class="pin">
+                <input id="pin-3" maxlength="1" placeholder="" value="" type="tel" class="pin">
+                <input id="pin-4" maxlength="1" placeholder="" value="" type="tel" class="pin">
+                <input id="pin-5" maxlength="1" placeholder="" value="" type="tel" class="pin">
+            </div>
+            <div class="input-relative">
+                <div class="invalid-feedback">
+                    Mã liên kết với TV không đúng
+                </div>
+            </div>
+        </div>
     </div>
-    <br/>
-    <span id="log"></span>
 </div>
 </body>
 </html>
