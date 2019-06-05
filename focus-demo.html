@@ -51,6 +51,8 @@
                 document.body.scrollTop = 0;
                 $body.addClass('fix-fixed');
 
+                $('#log').html(document.body.scrollTop);
+
                 let curr = parseInt(evt.target.id.substr('pin-'.length));
 
                 // Check all PIN are empty
@@ -94,6 +96,8 @@
         <input id="pin-4" value="" class="pin"/>
         <input id="pin-5" value="" class="pin"/>
     </div>
+    <br/>
+    <span id="log"></span>
 </div>
 </body>
 </html>
