@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/focus-demo.html" afterPath="$PROJECT_DIR$/focus-demo.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,18 +30,31 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="136" column="12" lean-forward="true" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
+            <state relative-caret-position="69">
+              <caret line="122" column="12" lean-forward="true" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+              <folding>
+                <marker date="1559722483155" expanded="true" signature="30:5845" ph="{...}" />
+                <marker date="1559722483155" expanded="true" signature="5785:5843" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4725">
+              <caret line="1486" column="13" lean-forward="true" selection-start-line="1486" selection-start-column="13" selection-end-line="1486" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/common.less">
+      <file leaf-file-name="focus-demo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/focus-demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4725">
-              <caret line="1486" column="13" lean-forward="true" selection-start-line="1486" selection-start-column="13" selection-end-line="1486" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -76,6 +90,7 @@
         <option value="$PROJECT_DIR$/js/jquery-pincode-autotab.js" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/css/common.less" />
+        <option value="$PROJECT_DIR$/focus-demo.html" />
       </list>
     </option>
   </component>
@@ -120,16 +135,6 @@
               <item name="sgnpdt.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sgnpdt.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sgnpdt.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgnpdt.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sgnpdt.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sgnpdt.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -170,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559703533610</updated>
-      <workItem from="1559703536143" duration="8978000" />
+      <workItem from="1559703536143" duration="9678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8978000" />
+    <option name="totallyTimeSpent" value="9678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -238,9 +243,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="136" column="12" lean-forward="true" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="122" column="12" lean-forward="true" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+          <folding>
+            <marker date="1559722483155" expanded="true" signature="30:5845" ph="{...}" />
+            <marker date="1559722483155" expanded="true" signature="5785:5843" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -248,6 +256,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4725">
           <caret line="1486" column="13" lean-forward="true" selection-start-line="1486" selection-start-column="13" selection-end-line="1486" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/focus-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding />
         </state>
       </provider>
