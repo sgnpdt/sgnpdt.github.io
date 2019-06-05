@@ -350,9 +350,7 @@ ul {
 .fix-fixed {
   position: fixed;
   top: -1px;
-  height: 1px;
   width: 100%;
-  background: white;
 }
 html,
 body {
