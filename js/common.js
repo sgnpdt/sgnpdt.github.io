@@ -156,7 +156,8 @@ $(document).ready(function () {
     });
 
     // Focus on start, setTimeout?
-    $('#pin-0').focus();
+	setTimeout(function(){  $('#pin-0').focus(); }, 1000);
+   
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
