@@ -148,7 +148,7 @@ $(document).ready(function () {
 
 			if (found !== false) {
 				evt.stopPropagation();
-				if(found < $('.inputs-pin .pin').length - 1) {
+				if(found < pinLen - 1) {
 					// Set timeout?
 					$('#pin-' + found).select(); 
 					$('#pin-' + found).focus();
@@ -214,7 +214,7 @@ $(document).ready(function () {
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
-	$('body').css('height', ($(window).height() - 156));
+	$('body').css('height', ($(window).height() - 250));
 
     // PIN
     if (pinLen > 0) {
