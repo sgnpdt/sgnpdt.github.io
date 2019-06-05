@@ -48,7 +48,6 @@
             $('.pin').focus(function (evt) {
                 $('html, body').animate({scrollTop: 0, scrollLeft: 0}, 'slow');
                 window.scrollTo(0, 0);
-                document.body.scrollTop = 0;
                 $body.addClass('fix-fixed');
 
                 $('#log').html(document.body.scrollTop);
@@ -79,7 +78,7 @@
                 }
             });
 
-            $('#pin-0').focus();
+            $('#pin-0').trigger('focus', $.Event('focus'));
         });
     </script>
 </head>
