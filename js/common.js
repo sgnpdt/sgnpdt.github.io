@@ -122,10 +122,10 @@ $(document).ready(function () {
     });
 
     $(document).on('blur', 'input', function (evt) {
-        $('body').removeClass('fixed-fix');
+        $('body').removeClass('fix-fixed');
         $('*').filter(function () {
             return $(this).css('position') === 'fixed';
-        }).removeClass('fixed-fix');
+        }).removeClass('fix-fixed');
     });
 
     // Process custom event pindel
@@ -169,7 +169,8 @@ $(document).ready(function () {
     $('#pin-0').focus();
 
     // Set height of HTML tag
-    $('html').css('height', $(document).height());
+    $('html').css('height', $(window).height());
+	$('body').css('height', ($(window).height() - 56));
 
     // PIN
     if ($('#inputs input').length > 0) {

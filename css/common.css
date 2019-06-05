@@ -145,7 +145,7 @@
 }
 @media (max-width: 1199px) {
   .hidden-lg-down {
-    display: none!important;
+    display: none !important;
   }
   .Shows-xs {
     display: none !important;
@@ -159,7 +159,7 @@
 }
 @media (max-width: 991px) {
   .hidden-md-down {
-    display: none!important;
+    display: none !important;
   }
   .Shows-xs {
     display: none !important;
@@ -173,7 +173,7 @@
 }
 @media (max-width: 768px) {
   .hidden-sm-down {
-    display: none!important;
+    display: none !important;
   }
   .Shows-xs {
     display: none !important;
@@ -187,7 +187,7 @@
 }
 @media (max-width: 767px) {
   .hidden-xs-down {
-    display: none!important;
+    display: none !important;
   }
   .Shows-xs {
     display: block !important;
@@ -259,7 +259,7 @@ body {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+                                   supported by Chrome and Opera */
 }
 .right {
   float: right;
@@ -301,9 +301,9 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 input {
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .hide {
   display: none;
@@ -347,10 +347,11 @@ ul {
 .show {
   display: block !important;
 }
-.fixfixed {
-  position: fixed !important;
-  width: 100%;
-  top: 0;
+html,
+body {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+  height: 100% !important;
 }
 button:focus {
   outline: none !important;
@@ -617,6 +618,11 @@ a:hover {
 }
 .appbar_bg {
   background-color: #080808;
+}
+.fix-fixed {
+  position: fixed;
+  top: -1px;
+  width: 100%;
 }
 .banner_login {
   height: 90px;
@@ -1299,9 +1305,6 @@ input:-ms-input-placeholder {
   line-height: 100%;
   background-color: transparent;
   border: 0;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
   outline: 0;
   color: white;
   font-size: 2.5em;
