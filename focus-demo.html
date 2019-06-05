@@ -30,25 +30,39 @@
             margin: 0 auto;
         }
 
-        .keyboard-on {
-            position: fixed !important;
+        .fix-fixed {
+            position: absolute;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script type="text/javascript">
 
+        $.fn.mobileFix = function (opts) {
+            let $parent = $(this);
+
+            $(document)
+                .on('focus', opts.inputElements, function (e) {
+                    $parent.addClass(opts.addClass);
+                })
+                .on('blur', opts.inputElements, function (e) {
+                    $parent.removeClass(opts.addClass);
+
+                    // Fix for some scenarios where you need to start scrolling
+                    setTimeout(function () {
+                        $(document).scrollTop($(document).scrollTop())
+                    }, 1);
+                });
+
+            return this; // Allowing chaining
+        };
+
         $(document).ready(function () {
-
-            $('.pin').blur(function (evt) {
-
-                $('body').removeClass('keyboard-on');
+            $('body').mobileFix({ // Pass parent to apply to
+                inputElements: 'input, textarea, select', // Pass activation child elements
+                addClass: 'fix-fixed' // Pass class name
             });
 
             $('.pin').focus(function (evt) {
-                window.scrollTo(0, 0);
-                document.body.scrollTop = 0;
-                $('body').addClass('keyboard-on');
-
                 let curr = parseInt(evt.target.id.substr('pin-'.length));
 
                 // Check all PIN are empty
@@ -79,12 +93,12 @@
         });
     </script>
 </head>
-<body>
+<body class="fix-fixed">
 <p style="height: 300px">
     <br/><br/><br/>
 </p>
-<div class="container">
-    <input id="pin-0" value="" class="pin"/>
+<div class="container fix-fixed">
+    <input id="pin-0" value="" class="pin fix-fixed"/>
     <input id="pin-1" value="" class="pin"/>
     <input id="pin-2" value="" class="pin"/>
     <input id="pin-3" value="" class="pin"/>
