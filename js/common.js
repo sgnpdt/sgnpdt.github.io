@@ -221,9 +221,15 @@ $(document).ready(function () {
         $('#inputs input').jqueryPincodeAutotab();
     }
 
-	// Focus PIN-0
-	$('#pin-0').select();
-	$('#pin-0').focus();
+	// HTML5 autofocus attribute is not supported on iOS
+	// https://caniuse.com/#feat=autofocus
+	setTimeout(function() { 
+		$('#pin-0').select(); 
+		$('#pin-0').focus(); 
+	}, 100);
+	
+	//$('#pin-0').select();
+	//$('#pin-0').focus();
 	
 	// Show soft-keyboard?
 	// The script that calls focus() click() on an input needs 
