@@ -43,7 +43,6 @@ $(document).ready(function () {
         elements.each(function (e) { //iterates through each element
             var val = $(this).val().replace(/\D/, ''), //taking the value and parsing it. Returns string without changing the value.
                 focused = $(this).is(':focus'), //checks if the current element in the iteration is focused
-
                 parseGate = false;
 
             var clear = $('#inputs input');
@@ -84,10 +83,10 @@ $(document).ready(function () {
     }); //still wonder how it worked out. But we are adding input listener to the parent... (omg, jquery is so smart...);
 
     $('#inputs').on('click', function (e) { //making so that if human focuses on the wrong input (not first) it will move the focus to a first empty one.
-        var els = $(this).children(),
+        let els = $(this).children(),
             str = '';
         els.each(function (e) {
-            var focus = $(this).is(':focus');
+            let focus = $(this).is(':focus');
             $this = $(this);
             while ($this.prev().val() === '') {
                 $this.prev().focus();
@@ -106,7 +105,7 @@ $(document).ready(function () {
     });
 
     //Hidden backgroud when show keyboard
-    var _originalSize = $(window).width() + $(window).height();
+    let _originalSize = $(window).width() + $(window).height();
     $(window).resize(function () {
         if ($(window).width() + $(window).height() !== _originalSize) {
             $('body').css('background-size', '0');
@@ -166,23 +165,14 @@ $(document).ready(function () {
         }
     });
 
-    // Focus on start
+    // Focus on start, setTimeout?
     $('#pin-0').focus();
 
     // Set height of HTML tag
     $('html').css('height', $(document).height());
 
-
-    // Auto close popup
-    setTimeout(function () {
-        $('#ShowThanhCong').modal('hide');
-    }, 2000);
-
     // PIN
     if ($('#inputs input').length > 0) {
         $('#inputs input').jqueryPincodeAutotab();
     }
-
-    //auto focus OTP
-    //setTimeout(function() {$('.focused').focus();}, 1000);
 });
