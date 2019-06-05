@@ -114,8 +114,7 @@ $( document ).ready(function() {
 		}else{
 		  $("body").css("background-size","contain");  
 		}
-		 $('html').css("height",$(window).height());
-		$('body').css("height",($(window).height() - 56));
+		
 	});
 	
 	//disable jump ios
