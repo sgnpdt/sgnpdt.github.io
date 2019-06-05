@@ -180,6 +180,7 @@ $( document ).ready(function() {
 //		}
 //		
 //	});
+	
     $('#pin-0').focus();
 	
     //set height  html 
