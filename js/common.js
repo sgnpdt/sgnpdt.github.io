@@ -184,7 +184,7 @@ $( document ).ready(function() {
 	
     //set height  html 
     $('html').css("height",$(window).height());
-	$('body').css("height",($(window).height() - 56));
+	$('body').css("height",($(window).height() - 56)); 
 	
 	//auto close popup
 	//setTimeout(function() {$('#ShowThanhCong').modal('hide');}, 2000);
