@@ -30,19 +30,25 @@
             margin: 0 auto;
         }
 
-        .safari.keyboard .app-container {
-            bottom: 270px;
-        }
-
-        /*To prevent auto-zoom in Safari*/
-        .safari input[type='text'] {
-            font-size: 16px;
+        .keyboard-on {
+            position: fixed !important;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script type="text/javascript">
+
         $(document).ready(function () {
+
+            $('.pin').blur(function (evt) {
+
+                $('body').removeClass('keyboard-on');
+            });
+
             $('.pin').focus(function (evt) {
+                window.scrollTo(0, 0);
+                document.body.scrollTop = 0;
+                $('body').addClass('keyboard-on');
+
                 let curr = parseInt(evt.target.id.substr('pin-'.length));
 
                 // Check all PIN are empty
@@ -71,34 +77,6 @@
 
             $('#pin-0').focus();
         });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setPlatformInfo();
-            var inputBox = document.querySelector('.safari #inputBox');
-            if(inputBox) {
-                inputBox.addEventListener('focus', function(e) {
-                    document.body.classList.add('keyboard');
-                    setTimeout(function() {
-                        window.scrollTo(0, 0);
-                    }, 200);
-                });
-
-                inputBox.addEventListener('blur', function(e) {
-                    document.body.classList.remove('keyboard');
-                });
-            }
-        });
-
-        function setPlatformInfo() {
-            var ua = navigator.userAgent.toLowerCase();
-            if (ua.indexOf('safari') != -1) {
-                if (ua.indexOf('chrome') > -1) {
-                    document.body.classList.add('chrome');
-                } else {
-                    document.body.classList.add('safari');
-                }
-            }
-        }
     </script>
 </head>
 <body>
