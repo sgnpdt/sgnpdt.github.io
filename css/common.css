@@ -1359,6 +1359,7 @@ input:-ms-input-placeholder {
 }
 .bg_OTP {
   top: 3%;
+  position: fixed !important;
 }
 .bg_OTP .d-table {
   width: 100%;
