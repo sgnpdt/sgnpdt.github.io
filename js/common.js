@@ -186,4 +186,8 @@ $(document).ready(function () {
 	// Focus PIN-0
 	$('#pin-0').select();
 	$('#pin-0').focus();
+	
+	// Show soft-keyboard?
+	// The script that calls focus() click() on an input needs 
+	// to be running with user context, ie. triggered by a user interaction.
 });
