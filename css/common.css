@@ -355,7 +355,6 @@ html,
 body {
   -webkit-overflow-scrolling: touch !important;
   overflow: auto !important;
-  height: 100% !important;
 }
 button:focus {
   outline: none !important;
@@ -1297,7 +1296,6 @@ input:-ms-input-placeholder {
   text-align: center;
   margin-bottom: 16px;
   margin-top: 16px;
-  float: left;
 }
 .inputs input {
   width: 32px;

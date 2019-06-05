@@ -149,6 +149,7 @@ $(document).ready(function () {
             evt.stopPropagation();
             $('#pin-' + found).trigger('focus', $.Event('focus'));
         }
+		$('body').addClass('fixfixed');
     });
 
     // Focus on start, setTimeout?
