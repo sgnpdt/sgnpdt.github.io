@@ -258,7 +258,7 @@
 
 				val === '' ? str += ' ' : str += val;
 			});
-		}		
+		}
 	
         $(document).ready(function () {
             /* cache dom references */
@@ -277,6 +277,38 @@
 
 				if (curr >= 0) {
 					$('#pin-' + curr).trigger('focus', $.Event('focus'));
+				}
+			});
+			
+			// Always set focus on PIN inputs
+			$('.pin').blur(function (evt) {
+				let curr = parseInt(evt.target.id.substr('pin-'.length));
+
+				// Check all PIN are empty
+				if ($('#pin-0').val() === '') {
+					evt.stopPropagation();
+					
+					// Set timeout?
+					$('#pin-0').select(); 
+					$('#pin-0').focus(); 
+				} else {
+					let found = false;
+					for (let i = 5; i >= 0; i--) {
+						let digit = $('#pin-' + i).val().trim();
+						if (digit !== '') {
+							found = i + 1;
+							break;
+						}
+					}
+
+					if (found !== false) {
+						evt.stopPropagation();
+						if(found < $('.inputs-pin .pin').length - 1) {
+							// Set timeout?
+							$('#pin-' + found).select(); 
+							$('#pin-' + found).focus();
+						}
+					}
 				}
 			});
 
@@ -303,8 +335,6 @@
 				}
 
 				if (found !== false && found !== curr) {
-					//console.log('found to focus ' + found);
-					$(evt.target).blur();
 					evt.stopPropagation();
 					if(found < $('.inputs-pin .pin').length - 1) {
 						// Set timeout?

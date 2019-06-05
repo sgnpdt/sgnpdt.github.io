@@ -124,6 +124,39 @@ $(document).ready(function () {
     });
 
 	let pinLen = $('#inputs input').length;
+	
+	// Always set focus on PIN inputs
+	$('#inputs input').blur(function (evt) {
+		let curr = parseInt(evt.target.id.substr('pin-'.length));
+
+		// Check all PIN are empty
+		if ($('#pin-0').val() === '') {
+			evt.stopPropagation();
+			
+			// Set timeout?
+			$('#pin-0').select(); 
+			$('#pin-0').focus(); 
+		} else {
+			let found = false;
+			for (let i = 5; i >= 0; i--) {
+				let digit = $('#pin-' + i).val().trim();
+				if (digit !== '') {
+					found = i + 1;
+					break;
+				}
+			}
+
+			if (found !== false) {
+				evt.stopPropagation();
+				if(found < $('.inputs-pin .pin').length - 1) {
+					// Set timeout?
+					$('#pin-' + found).select(); 
+					$('#pin-' + found).focus();
+				}
+			}
+		}
+	});	
+	
     $('#inputs input').focus(function (evt) {
         let curr = parseInt(evt.target.id.substr('pin-'.length));
 
