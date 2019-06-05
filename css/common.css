@@ -347,7 +347,7 @@ ul {
 .show {
   display: block !important;
 }
-.fixed-fix {
+.fix-fixed {
   position: fixed;
   top: -1px;
   height: 1px;
