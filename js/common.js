@@ -221,7 +221,7 @@ $(document).ready(function () {
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
-    $('body').css('height', ($(window).height() - 250));
+    $('body').css('height', ($(window).height() - 200));
 
     // PIN
     if (pinLen > 0) {
