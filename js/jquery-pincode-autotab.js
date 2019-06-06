@@ -141,16 +141,23 @@
 
                     if (listOfElements[i] === this) {
                         var ele, j;
+                        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
                         switch (move) {
                             case 1:
                                 if (nextElement) {
-                                    $(nextElement).select();
+                                    // $(nextElement).select();
+                                    if(isIos) {
+                                        $(nextElement).select();
+                                    }
 									
 									// Set timeout?
                                     $(nextElement).focus();
                                 } else {
                                     if (settings.nextElement) {
-                                        settings.nextElement.select();
+                                        // settings.nextElement.select();
+                                        if(isIos) {
+                                            settings.nextElement.select();
+                                        }
 										
 										// Set timeout?
                                         settings.nextElement.focus();
@@ -159,7 +166,10 @@
                                         for (j = 0; j < ele.length; j++) {
                                             if (ele[j] === this) {
                                                 if (ele[j + 1]) {
-                                                    $(ele[j + 1]).select();
+                                                    //$(ele[j + 1]).select();
+                                                    if(isIos) {
+                                                        $(ele[j + 1]).select();
+                                                    }
 													
 													// Set timeout?
                                                     $(ele[j + 1]).focus();

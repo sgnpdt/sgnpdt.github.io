@@ -3,402 +3,407 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0"/>
-	<meta name="theme-color" content="#ffd200">
     <title>Title</title>
     <style type="text/css">
-		.app-bar {
-			height: 56px;
-			text-align: center;
-			position: fixed;
-			width: 100%;
-			top: 0;
-			z-index: 2;
-			background-color: transparent;
-		}
-		
-		.btn-back {
-			background-image: url(https://sgnpdt.github.io/master/images/icon_back.png);
-			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/icon_back.png) 1x, 
-			url(https://sgnpdt.github.io/master/images/icon_back@2x.png) 2x, 
-			url(https://sgnpdt.github.io/master/images/icon_back@3x.png) 3x);
-			width: 40px;
-			height: 40px;
-			position: fixed;
-			top: 8px;
-			left: 8px;
-			display: block;
-			background-position: center center;
-			background-repeat: no-repeat;
-			display: inline-block;
-		}		
-		
-		.bg-code {
-			top: 8%;
-			position: absolute!important;
-			width: 100%;
-		}
-		
-		html {
-			height: 100%;
-		}
-		
-		body {
-			font-family: "roboto";
-			font-size: 0.825em;
-			height: 100%;
-			overflow-x: hidden;
-			background-color: #080808;
-			padding-top: 56px;
-			background-image: url(https://sgnpdt.github.io/master/images/bg_mlk.png);
-			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/bg_mlk.png) 1x, 
-			url(https://sgnpdt.github.io/master/images/bg_mlk@2x.png) 2x, 
-			url(https://sgnpdt.github.io/master/images/bg_mlk@3x.png) 3x);
-			background-position: bottom center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			font-weight: 400;
-			line-height: 1.5;
-			color: #212529;
-			text-align: left;
-		}
-		
-		p {
-			display: block;
-			margin-block-start: 1em;
-			margin-block-end: 1em;
-			margin-inline-start: 0px;
-			margin-inline-end: 0px;
-		}
-		
-		.bg-guide {
-			background-image: url(https://sgnpdt.github.io/master/images/Malienket.png);
-			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/Malienket.png) 1x, 
-			url(https://sgnpdt.github.io/master/images/Malienket@2x.png) 2x, 
-			url(https://sgnpdt.github.io/master/images/Malienket@3x.png) 3x);
-			background-repeat: no-repeat;
-			width: 100%;
-			height: 160px;
-			background-position: center;
-			position: relative;
-			margin-bottom: 16px;
-		}
-		
-		.div-guide {
-			position: absolute;
-			top: -30px;
-			right: 15%;
-		}
-		
-		.btn-guide {
-			color: #2a1919;
-			background-color: #ffd200;
-			font-size: 12px;
-			padding: 8px 8px;
-			border-radius: 4px 4px 4px 4px;
-			position: relative;
-			cursor: pointer;
-		}
-		
-		.btn-guide:after {
-			position: absolute;
-			bottom: -10px;
-			left: 12px;
-			background-image: url(https://sgnpdt.github.io/master/images/arrowhd.png);
-			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/arrowhd.png) 1x, 
-			url(https://sgnpdt.github.io/master/images/arrowhd@2x.png) 2x, 
-			url(https://sgnpdt.github.io/master/images/arrowhd@3x.png) 3x);
-			content: "";
-			width: 7px;
-			height: 10px;
-			background-repeat: no-repeat;
-		}
-		
-		a {
-			outline: none !important;
-			-webkit-transition: all 0.3s;
-			text-decoration: none;
-		}
-		
-		.div-guide .hd {
-			background-image: url(https://sgnpdt.github.io/master/images/hd.png);
-			background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/hd.png) 1x, 
-			url(https://sgnpdt.github.io/master/images/hd@2x.png) 2x, 
-			url(https://sgnpdt.github.io/master/images/hd@3x.png) 3x);
-			width: 12px;
-			height: 8px;
-			display: inline-block;
-			margin-left: 4px;
-			margin-top: 5px;
-		}
-		
-		.title-pin {
-			font-size: 1em;
-			font-weight: 300;
-			color: #ffffff;
-			text-align: center;
-			margin-bottom: 6px;
-		}
-		
-		.inputs-pin {
-			display: block;
-			margin: 0 auto;
-			text-align: center;
-			margin-bottom: 16px;
-			margin-top: 16px;
-		}
-	
+        .app-bar {
+            height: 56px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            background-color: transparent;
+        }
+
+        .btn-back {
+            background-image: url(https://sgnpdt.github.io/master/images/icon_back.png);
+            background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/icon_back.png) 1x,
+            url(https://sgnpdt.github.io/master/images/icon_back@2x.png) 2x,
+            url(https://sgnpdt.github.io/master/images/icon_back@3x.png) 3x);
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            top: 8px;
+            left: 8px;
+            display: block;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        .bg-code {
+            top: 8%;
+            position: absolute !important;
+            width: 100%;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: "roboto";
+            font-size: 0.825em;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: #080808;
+            padding-top: 56px;
+            background-image: url(https://sgnpdt.github.io/master/images/bg_mlk.png);
+            background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/bg_mlk.png) 1x,
+            url(https://sgnpdt.github.io/master/images/bg_mlk@2x.png) 2x,
+            url(https://sgnpdt.github.io/master/images/bg_mlk@3x.png) 3x);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .bg-guide {
+            background-image: url(https://sgnpdt.github.io/master/images/Malienket.png);
+            background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/Malienket.png) 1x,
+            url(https://sgnpdt.github.io/master/images/Malienket@2x.png) 2x,
+            url(https://sgnpdt.github.io/master/images/Malienket@3x.png) 3x);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 160px;
+            background-position: center;
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .div-guide {
+            position: absolute;
+            top: -30px;
+            right: 15%;
+        }
+
+        .btn-guide {
+            color: #2a1919;
+            background-color: #ffd200;
+            font-size: 12px;
+            padding: 8px 8px;
+            border-radius: 4px 4px 4px 4px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .btn-guide:after {
+            position: absolute;
+            bottom: -10px;
+            left: 12px;
+            background-image: url(https://sgnpdt.github.io/master/images/arrowhd.png);
+            background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/arrowhd.png) 1x,
+            url(https://sgnpdt.github.io/master/images/arrowhd@2x.png) 2x,
+            url(https://sgnpdt.github.io/master/images/arrowhd@3x.png) 3x);
+            content: "";
+            width: 7px;
+            height: 10px;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            outline: none !important;
+            -webkit-transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .div-guide .hd {
+            background-image: url(https://sgnpdt.github.io/master/images/hd.png);
+            background-image: -webkit-image-set(url(https://sgnpdt.github.io/master/images/hd.png) 1x,
+            url(https://sgnpdt.github.io/master/images/hd@2x.png) 2x,
+            url(https://sgnpdt.github.io/master/images/hd@3x.png) 3x);
+            width: 12px;
+            height: 8px;
+            display: inline-block;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .title-pin {
+            font-size: 1em;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .inputs {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
         .pin {
-			width: 32px;
-			height: 45px;
-			line-height: 100%;
-			background-color: transparent;
-			border: 0;
-			border: none;
-			box-shadow: none;
-			border-radius: 0;
-			outline: 0;
-			color: white;
-			font-size: 2.5em;
-			font-weight: 300;
-			word-spacing: 0px;
-			overflow: hidden;
-			text-align: center;
-			margin: 0 4px;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-			caret-color: #ffd200;
-		}
-		
-		.input-relative {
-			height: 30px;
-		}
-		
-		.invalid-feedback, .invalid-feedback-tm {
-			font-size: 0.775em;
-			color: #ffffff;
-			text-align: center;
-			top: 4px;
-			position: relative;
-			margin-top: 0;
-			margin-bottom: 0;
-			width: 100%;
-		}
-		
-		.invalid-feedback {
-			position: relative;
-			top: 0;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			color: #ffffff;
-			font-size: 10px;
-		}
+            width: 32px;
+            height: 45px;
+            line-height: 100%;
+            background-color: transparent;
+            border: 0;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            outline: 0;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 300;
+            word-spacing: 0px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 4px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            caret-color: #ffd200;
+        }
+
+        .input-relative {
+            height: 30px;
+        }
+
+        .invalid-feedback {
+            font-size: 0.775em;
+            color: #ffffff;
+            text-align: center;
+            top: 4px;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .btn-log {
+            font-size: 0.775em;
+            color: #ffffff;
+            text-align: center;
+            top: 4px;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 100%;
+        }
 
         .fix-fixed {
             position: fixed;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery-pincode-autotab.js"></script>
+    <script type="text/javascript" src="js/jquery-pincode-autotab.js"></script>
     <script type="text/javascript">
 
-		// OTP input
-		function processInput(holder) {
-			var elements = holder.children(), // taking the "kids" of the parent
-				str = ''; //unnecesary || added for some future mods
+        // OTP input
+        function processInput(holder) {
+            var elements = holder.children(), // taking the "kids" of the parent
+                str = ''; //unnecesary || added for some future mods
 
-			elements.each(function (e) { // iterates through each element
-				var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
-					focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
-					parseGate = false;
+            elements.each(function (e) { // iterates through each element
+                var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+                    focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
+                    parseGate = false;
 
-				var clear = $('#inputs input');
-				val.length === 1 ? parseGate = false : parseGate = true;
-				/*
-					a fix that doesn't allow the cursor to jump
-					to another field even if input was parsed
-					and nothing was added to the input
-				*/
+                var clear = $('#inputs input');
+                val.length === 1 ? parseGate = false : parseGate = true;
+                /*
+                    a fix that doesn't allow the cursor to jump
+                    to another field even if input was parsed
+                    and nothing was added to the input
+                */
 
-				$(this).val(val); // applying parsed value.
+                $(this).val(val); // applying parsed value.
 
-				if (parseGate && val.length > 1) { 
-					// takes you to another input
-					var exist = elements[e + 1] ? true : false; // checks if there is input ahead
+                if (parseGate && val.length > 1) {
+                    // takes you to another input
+                    var exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
-					exist && val[1] ? ( // if so then
-						elements[e + 1].disabled = false,
-						elements[e + 1].value = val[1], // sends the last character to the next input
-						elements[e].value = val[0], // clears the last character of this input
-						
-						
-						// NEED TO FOCUS HERE
-						elements[e + 1].focus(), // sends the focus to the next input
-						elements[e + 1].classList.add('focused')
-					) : void 0;
-				} else if (parseGate && focused && val.length == 0) { 
-					// if the input was REMOVING the character, then
+                    exist && val[1] ? ( // if so then
+                        elements[e + 1].disabled = false,
+                            elements[e + 1].value = val[1], // sends the last character to the next input
+                            elements[e].value = val[0], // clears the last character of this input
 
-					var exist = elements[e - 1] ? true : false; // checks if there is an input before
-					if (exist) {
-						elements[e - 1].focus(); // sends the focus back to the previous input
-					}
-					
-					elements[e].classList.remove('focused');
-					
-					if (e === 0) {
-						elements[0].classList.add('focused');
-					}
-				}
 
-				val === '' ? str += ' ' : str += val;
-			});
-		}
-	
+                            // NEED TO FOCUS HERE
+                            elements[e + 1].focus(), // sends the focus to the next input
+                            elements[e + 1].classList.add('focused')
+                    ) : void 0;
+                } else if (parseGate && focused && val.length == 0) {
+                    // if the input was REMOVING the character, then
+
+                    var exist = elements[e - 1] ? true : false; // checks if there is an input before
+                    if (exist) {
+                        elements[e - 1].focus(); // sends the focus back to the previous input
+                    }
+
+                    elements[e].classList.remove('focused');
+
+                    if (e === 0) {
+                        elements[0].classList.add('focused');
+                    }
+                }
+
+                val === '' ? str += ' ' : str += val;
+            });
+        }
+
         $(document).ready(function () {
-            /* cache dom references */
-            var $body = $('body');
-
-            /* bind events */
             $(document)
                 .on('blur', 'input', function () {
-                    $body.removeClass('fix-fixed');
+                    $('body').removeClass('fix-fixed');
                 });
-			
-			// Process custom event pindel
-			$('.inputs-pin').on('delpin', function (evt) {
-				var curr = parseInt(evt.target.id.substr('pin-'.length));
-				$('#pin-' + curr).val('');
 
-				if (curr >= 0) {
-					$('#pin-' + curr).trigger('focus', $.Event('focus'));
-				}
-			});
-			
-			// Always set focus on PIN inputs
-			$('.pin').blur(function (evt) {
-				var curr = parseInt(evt.target.id.substr('pin-'.length));				
+            $('.btn-log a').click(function (evt) {
+                var pin = '';
+                for (var i = 0; i <= 5; i++) {
+                    var digit = $('#pin-' + i).val() || '';
+                    pin += digit;
+                }
 
-				// Check all PIN are empty
-				if ($('#pin-0').val() === '') {
-					evt.stopPropagation();
-					
-					setTimeout(function() { 
-						$('#pin-0').select();
-						$('#pin-0').focus();
-					}, 10);
-					
-					// No set timeout, not work on Safari
-					//$('#pin-0').select(); 
-					//$('#pin-0').focus(); 
-				} else {
-					var found = false;
-					for (var i = 5; i >= 0; i--) {
-						var digit = $('#pin-' + i).val().trim();
-						if (digit !== '') {
-							found = i + 1;
-							break;
-						}
-					}
+                $('.invalid-feedback').html('PIN = "' + pin + '"');
+            });
 
-					if (found !== false) {
-						evt.stopPropagation();
-						if(found < $('.inputs-pin .pin').length - 1) {
-							setTimeout(function() { 
-								$('#pin-' + found).select(); 
-								$('#pin-' + found).focus();
-							}, 10);
-					
-							// No set timeout, not work on Safari
-							//$('#pin-' + found).select(); 
-							//$('#pin-' + found).focus();
-						}
-					}
-				}
-			});
+            const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
+            const pinLen = $('.inputs .pin').length;
 
-			$('.pin').focus(function (evt) {
-				var curr = parseInt(evt.target.id.substr('pin-'.length));
+            function setFocus(input) {
+                // No set timeout, not work on Safari
+                if (isIos) {
+                    setTimeout(function () {
+                        input.select();
+                        input.focus();
+                    }, 100);
+                } else {
+                    input.focus();
+                }
+            }
 
-				// Check all PIN are empty
-				if ($('#pin-0').val() === '' && curr > 0) {
-					$(evt.target).blur();
-					evt.stopPropagation();
-					
-					// Set timeout?
-					$('#pin-0').select(); 
-					$('#pin-0').focus(); 
-				}
+            // Process custom event pindel
+            $('.inputs .pin').on('delpin', function (evt) {
+                console.log('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
 
-				var found = false;
-				for (var i = 5; i >= 0; i--) {
-					var digit = $('#pin-' + i).val().trim();
-					if (digit !== '') {
-						found = i + 1;
-						break;
-					}
-				}
+                var curr = parseInt(evt.target.id.substr('pin-'.length));
+                $('#pin-' + curr).val('');
 
-				if (found !== false && found !== curr) {
-					evt.stopPropagation();
-					if(found < $('.inputs-pin .pin').length - 1) {
-						setTimeout(function() { 
-							$('#pin-' + found).select(); 
-							$('#pin-' + found).focus();
-						}, 10);
-							
-						// No set timeout, not work on Safari
-						//$('#pin-' + found).select(); 
-						//$('#pin-' + found).focus();
-					}
-				}
-			});
-			
-			// Safari maybe not work with only keyup
-			$('#pin-5').on('keyup', function (evt) {
-				$('.invalid-feedback').html('blur ' + evt.target.id + ' = "' + ($('#pin-5').val()) + '"');
-			
-				if ($('#pin-5').val() !== '') {
-					// Submit and clear all PIN
-					$('.pin').val('');
-					
-					setTimeout(function() {					
-						// Set focus for PIN-0
-						$('#pin-0').select(); 
-						$('#pin-0').focus(); 
-					}, 10);
-				}
-			});
+                if (curr >= 0) {
+                    console.log('Focus #0 for PIN-' + curr);
+                    setFocus($('#pin-' + curr));
+                }
+            });
 
-			// Focus on start, setTimeout?
-			setTimeout(function() { 
-				$('#pin-0').select();
-				$('#pin-0').focus();
-			}, 10);
+            // Always set focus on PIN inputs
+            $('.inputs .pin').blur(function (evt) {
+                console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+                var curr = parseInt(evt.target.id.substr('pin-'.length));
 
-			//$('#pin-0').select();
-			//$('#pin-0').focus();
-			
-			
-			$('.inputs-pin').append("<input type='text' id='dummy'>");
-			$("#dummy").css({'position': 'fixed', 'left':'120%'}).focus();
-		   
+                // Check all PIN are empty
+                if ($('#pin-0').val() === '') {
+                    evt.stopPropagation();
 
-			// Set height of HTML tag
-			var h = $('html').height();  
-			$('body').css('height', h);
+                    console.log('Focus #1 for PIN-' + 0);
+                    setFocus($('#pin-0'));
+                } else {
+                    var last = false;
+                    for (var i = pinLen - 1; i >= 0; i--) {
+                        var digit = $('#pin-' + i).val() || '';
+                        if (digit !== '') {
+                            last = i + 1;
+                            last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                            break;
+                        }
+                    }
 
-			// PIN
-			$('.inputs-pin input').jqueryPincodeAutotab();
-			
-			$( window ).resize(function() {
-				var h = $('html').height();  
-				$('body').css('height', h);
-			});
+                    if (last !== false) {
+                        if (last !== curr) {
+                            evt.stopPropagation();
+                        }
+
+                        console.log('Focus #2 for PIN-' + last);
+                        setFocus($('#pin-' + last));
+                    }
+                }
+            });
+
+            $('.inputs .pin').focus(function (evt) {
+                console.log('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+                var curr = parseInt(evt.target.id.substr('pin-'.length));
+
+                var last = false;
+                for (var i = pinLen - 1; i >= 0; i--) {
+                    var digit = $('#pin-' + i).val() || '';
+                    if (digit !== '') {
+                        last = i + 1;
+                        last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                        break;
+                    }
+                }
+
+                // Check all PIN are empty
+                if ($('#pin-0').val() === '' && curr > 0) {
+                    console.log('Blur ' + evt.target.id, $(evt.target).val());
+                    $(evt.target).blur();
+                    evt.stopPropagation();
+
+                    if (last === false) {
+                        console.log('Focus #3 for PIN-' + 0);
+                        setFocus($('#pin-0'));
+                    } else {
+                        console.log('ERROR ' + evt.target.id, $(evt.target).val());
+                    }
+                } else if (last !== false) {
+                    if (last !== curr) {
+                        $(evt.target).blur();
+                        evt.stopPropagation();
+
+                        console.log('Focus #4 for PIN-' + last);
+                        setFocus($('#pin-' + last));
+                    }
+                }
+            });
+
+            $('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
+                console.log('On keyup ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+
+                if ($('#pin-5').val() !== '') {
+                    console.log('Focus #5 for PIN-' + 0);
+
+                    // Set focus for PIN-0 if error, submit and clear all PIN
+                    $('.inputs .pin').val('');
+                    setFocus($('#pin-0'));
+                }
+            });
+
+            // Set height of HTML tag
+            $('html').css('height', $(window).height());
+            $('body').css('height', ($(window).height() - 250));
+
+            // PIN
+            if (pinLen > 0) {
+                $('.inputs .pin').jqueryPincodeAutotab();
+            }
+
+            // HTML5 autofocus attribute is not supported on iOS
+            // https://caniuse.com/#feat=autofocus
+            console.log('Focus STARTED');
+            setFocus($('#pin-0'));
+
+            $(window).resize(function () {
+                var h = $('html').height();
+                $('body').css('height', h - 250);
+            });
         });
     </script>
 </head>
@@ -410,14 +415,15 @@
 <div class="container-pin">
     <div class="d-table">
         <div class="d-table-cell">
-			<div class="bg-guide">
+            <div class="bg-guide">
                 <div class="div-guide">
                     <a class="btn-guide" href="https://sgnpdt.github.io/v2_huongdan.html">
-					<span>Hướng dẫn nhận mã</span> <span class="hd"></span></a>
+                        <span>Hướng dẫn nhận mã</span> <span class="hd"></span>
+                    </a>
                 </div>
-            </div>		
+            </div>
             <p class="title-pin">Nhập mã liên kết hiển thị trên màn hình TV gắn với box Truyền hình FPT</p>
-            <div class="inputs-pin">
+            <div class="inputs">
                 <input id="pin-0" maxlength="1" placeholder="" value="" type="tel" class="pin focused">
                 <input id="pin-1" maxlength="1" placeholder="" value="" type="tel" class="pin">
                 <input id="pin-2" maxlength="1" placeholder="" value="" type="tel" class="pin">
@@ -428,6 +434,11 @@
             <div class="input-relative">
                 <div class="invalid-feedback">
                     Mã liên kết với TV không đúng
+                </div>
+                <div class="btn-log">
+                    <a href="javascript:void(0)" style="color: #ffd200">
+                        <span>Get PIN</span>
+                    </a>
                 </div>
             </div>
         </div>

@@ -36,57 +36,57 @@ $(document).ready(function () {
         });
 
     // OTP input
-	function processInput(holder) {
-		var elements = holder.children(), // taking the "kids" of the parent
-			str = ''; //unnecesary || added for some future mods
+    function processInput(holder) {
+        var elements = holder.children(), // taking the "kids" of the parent
+            str = ''; //unnecesary || added for some future mods
 
-		elements.each(function (e) { // iterates through each element
-			var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
-				focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
-				parseGate = false;
+        elements.each(function (e) { // iterates through each element
+            var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
+                focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
+                parseGate = false;
 
-			var clear = $('#inputs input');
-			val.length === 1 ? parseGate = false : parseGate = true;
-			/*
-				a fix that doesn't allow the cursor to jump
-				to another field even if input was parsed
-				and nothing was added to the input
-			*/
+            var clear = $('#inputs input');
+            val.length === 1 ? parseGate = false : parseGate = true;
+            /*
+                a fix that doesn't allow the cursor to jump
+                to another field even if input was parsed
+                and nothing was added to the input
+            */
 
-			$(this).val(val); // applying parsed value.
+            $(this).val(val); // applying parsed value.
 
-			if (parseGate && val.length > 1) { 
-				// takes you to another input
-				var exist = elements[e + 1] ? true : false; // checks if there is input ahead
+            if (parseGate && val.length > 1) {
+                // takes you to another input
+                var exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
-				exist && val[1] ? ( // if so then
-					elements[e + 1].disabled = false,
-					elements[e + 1].value = val[1], // sends the last character to the next input
-					elements[e].value = val[0], // clears the last character of this input
-					
-					
-					// NEED TO FOCUS HERE
-					elements[e + 1].focus(), // sends the focus to the next input
-					elements[e + 1].classList.add('focused')
-				) : void 0;
-			} else if (parseGate && focused && val.length == 0) { 
-				// if the input was REMOVING the character, then
+                exist && val[1] ? ( // if so then
+                    elements[e + 1].disabled = false,
+                        elements[e + 1].value = val[1], // sends the last character to the next input
+                        elements[e].value = val[0], // clears the last character of this input
 
-				var exist = elements[e - 1] ? true : false; // checks if there is an input before
-				if (exist) {
-					elements[e - 1].focus(); // sends the focus back to the previous input
-				}
-				
-				elements[e].classList.remove('focused');
-				
-				if (e === 0) {
-					elements[0].classList.add('focused');
-				}
-			}
 
-			val === '' ? str += ' ' : str += val;
-		});
-	}
+                        // NEED TO FOCUS HERE
+                        elements[e + 1].focus(), // sends the focus to the next input
+                        elements[e + 1].classList.add('focused')
+                ) : void 0;
+            } else if (parseGate && focused && val.length == 0) {
+                // if the input was REMOVING the character, then
+
+                var exist = elements[e - 1] ? true : false; // checks if there is an input before
+                if (exist) {
+                    elements[e - 1].focus(); // sends the focus back to the previous input
+                }
+
+                elements[e].classList.remove('focused');
+
+                if (e === 0) {
+                    elements[0].classList.add('focused');
+                }
+            }
+
+            val === '' ? str += ' ' : str += val;
+        });
+    }
 
     //
     $('.btn_edit_profile').click(function () {
@@ -105,158 +105,135 @@ $(document).ready(function () {
         } else {
             $('body').css('background-size', 'contain');
         }
-		
-		//$('.bg_OTP').css('height', $(window).height());	
+
+        //$('.bg_OTP').css('height', $(window).height());	
     });
-	
+
+    const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
+    const pinLen = $('.inputs .pin').length;
+
+    function setFocus(input) {
+        // No set timeout, not work on Safari
+        if (isIos) {
+            setTimeout(function () {
+                input.select();
+                input.focus();
+            }, 100);
+        } else {
+            input.focus();
+        }
+    }
+
     // Process custom event pindel
-    $('#inputs input').on('delpin', function (evt) {
-		var curr = parseInt(evt.target.id.substr('pin-'.length));
-		console.log(evt.target.id, 'del');
-		$('#pin-' + curr).val('');
+    $('.inputs .pin').on('delpin', function (evt) {
+        console.log('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
 
-		if (curr >= 0) {
-			//$('#pin-' + curr).trigger('focus', $.Event('focus'));
-			// Set timeout?
-			//$('#pin-' + curr).select(); 
-			//$('#pin-' + curr).focus();
-			
-			setTimeout(function() { 
-				$('#pin-' + curr).select(); 
-				$('#pin-' + curr).focus(); 
-			}, 5);
-		}
+        var curr = parseInt(evt.target.id.substr('pin-'.length));
+        $('#pin-' + curr).val('');
+
+        if (curr >= 0) {
+            console.log('Focus #0 for PIN-' + curr);
+            setFocus($('#pin-' + curr));
+        }
     });
 
-	var pinLen = $('#inputs input').length;
-	
-	// Always set focus on PIN inputs
-	$('#inputs input').blur(function (evt) {
-		var curr = parseInt(evt.target.id.substr('pin-'.length));
-
-		// Check all PIN are empty
-		if ($('#pin-0').val() === '') {
-			evt.stopPropagation();
-			
-			// Set timeout?
-			//$('#pin-0').select(); 
-			//$('#pin-0').focus(); 
-			
-			setTimeout(function() { 
-				$('#pin-0').select(); 
-				$('#pin-0').focus(); 
-			}, 5);
-		} else {
-			var found = false;
-			for (var i = 5; i >= 0; i--) {
-				var digit = $('#pin-' + i).val().trim();
-				if (digit !== '') {
-					found = i + 1;
-					break;
-				}
-			}
-
-			if (found !== false) {
-				evt.stopPropagation();
-				if(found < pinLen - 1) {
-					// Set timeout?
-					//$('#pin-' + found).select(); 
-					//$('#pin-' + found).focus();
-			
-					setTimeout(function() { 
-						$('#pin-' + found).select(); 
-						$('#pin-' + found).focus(); 
-					}, 5);
-				}
-			}
-		}
-	});	
-	
-    $('#inputs input').focus(function (evt) {
+    // Always set focus on PIN inputs
+    $('.inputs .pin').blur(function (evt) {
+        console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
         var curr = parseInt(evt.target.id.substr('pin-'.length));
 
-		// Check all PIN are empty
-		if ($('#pin-0').val() === '' && curr > 0) {
-			$(evt.target).blur();
-			evt.stopPropagation();
-			
-			// Set timeout?
-			//$('#pin-0').select(); 
-			//$('#pin-0').focus(); 
-			
-			setTimeout(function() { 
-				$('#pin-0').select(); 
-				$('#pin-0').focus(); 
-			}, 5);
-		}
+        // Check all PIN are empty
+        if ($('#pin-0').val() === '') {
+            evt.stopPropagation();
 
-		var found = false;
-		for (var i = 5; i >= 0; i--) {
-			var digit = $('#pin-' + i).val().trim();
-			if (digit !== '') {
-				found = i + 1;
-				break;
-			}
-		}
+            console.log('Focus #1 for PIN-' + 0);
+            setFocus($('#pin-0'));
+        } else {
+            var last = false;
+            for (var i = pinLen - 1; i >= 0; i--) {
+                var digit = $('#pin-' + i).val() || '';
+                if (digit !== '') {
+                    last = i + 1;
+                    last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                    break;
+                }
+            }
 
-		if (found !== false && found !== curr) {
-			//console.log('found to focus ' + found);
-			$(evt.target).blur();
-			evt.stopPropagation();
-			if(found < pinLen - 1) {
-				// Set timeout?
-				//$('#pin-' + found).select(); 
-				//$('#pin-' + found).focus();
-			
-				setTimeout(function() { 
-					$('#pin-' + found).select(); 
-					$('#pin-' + found).focus(); 
-				}, 5);
-			}
-		}
+            if (last !== false) {
+                if(last !== curr) {
+                    evt.stopPropagation();
+                }
+
+                console.log('Focus #2 for PIN-' + last);
+                setFocus($('#pin-' + last));
+            }
+        }
     });
-		
-	
-	$('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
-		if ($('#pin-5').val() !== '') {
-			
-			// Submit and clear all PIN
-			$('#inputs input').val('');
-			
-			// Set focus for PIN-0 if error
-			setTimeout(function() { 
-				$('#pin-0').select(); 
-				$('#pin-0').focus(); 
-			}, 5);
-		}
-	});
-	
-	$('body').bind('focusin focus', function(e){
-		e.preventDefault();
-	});
-	
-	const isIos = () => !!window.navigator.userAgent.match(/iPad|iPhone/i);
+
+    $('.inputs .pin').focus(function (evt) {
+        console.log('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+        var curr = parseInt(evt.target.id.substr('pin-'.length));
+
+        var last = false;
+        for (var i = pinLen - 1; i >= 0; i--) {
+            var digit = $('#pin-' + i).val() || '';
+            if (digit !== '') {
+                last = i + 1;
+                last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                break;
+            }
+        }
+
+        // Check all PIN are empty
+        if ($('#pin-0').val() === '' && curr > 0) {
+            console.log('Blur ' + evt.target.id, $(evt.target).val());
+            $(evt.target).blur();
+            evt.stopPropagation();
+
+            if(last === false) {
+                console.log('Focus #3 for PIN-' + 0);
+                setFocus($('#pin-0'));
+            } else {
+                console.log('ERROR ' + evt.target.id, $(evt.target).val());
+            }
+        } else  if (last !== false) {
+            if(last !== curr) {
+                $(evt.target).blur();
+                evt.stopPropagation();
+
+                console.log('Focus #4 for PIN-' + last);
+                setFocus($('#pin-' + last));
+            }
+        }
+    });
+
+    $('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
+        console.log('On keyup ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+
+        if ($('#pin-5').val() !== '') {
+            console.log('Focus #5 for PIN-' + 0);
+
+            // Set focus for PIN-0 if error, submit and clear all PIN
+            $('.inputs .pin').val('');
+            setFocus($('#pin-0'));
+        }
+    });
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
-	$('body').css('height', ($(window).height() - 250));
+    $('body').css('height', ($(window).height() - 250));
 
     // PIN
     if (pinLen > 0) {
-        $('#inputs input').jqueryPincodeAutotab();
+        $('.inputs .pin').jqueryPincodeAutotab();
     }
 
-	// HTML5 autofocus attribute is not supported on iOS
-	// https://caniuse.com/#feat=autofocus
-	//$('#pin-0').select();
-	//$('#pin-0').focus();
-	
-	setTimeout(function() { 
-		$('#pin-0').select(); 
-		$('#pin-0').focus(); 
-	}, 5);
-	
-	// Show soft-keyboard?
-	// The script that calls focus() click() on an input needs 
-	// to be running with user context, ie. triggered by a user interaction.
+    // HTML5 autofocus attribute is not supported on iOS
+    // https://caniuse.com/#feat=autofocus
+    console.log('Focus STARTED');
+    setFocus($('#pin-0'));
+
+    // Show soft-keyboard?
+    // The script that calls focus() click() on an input needs 
+    // to be running with user context, ie. triggered by a user interaction.
 });
