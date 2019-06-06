@@ -324,6 +324,10 @@ a:hover {
 .btn-fb.focus, .btn-fb:focus {
   box-shadow: none;
 }
+.btn-fb{
+	td{line-height: 37px;padding: 0 3px;}
+	.logo_fb{position: relative;top:-1px}
+}
 
 .btn-outline:not(:disabled):not(.disabled).active, .btn-outline:not(:disabled):not(.disabled):active, .show > .btn-outline.dropdown-toggle {
   border: 1px solid #ffd200;
@@ -1003,7 +1007,7 @@ a:hover {
   .list-group-item {
     background-color: transparent;
     font-size: 1em;
-    color: #fff;
+    color: #fff !important;
     position: relative;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1020,6 +1024,7 @@ a:hover {
       right: 15px;
     }
   }
+  
 }
 
 .list-group-item:first-child {
@@ -1734,6 +1739,8 @@ html body.change_pass_pass {
     height: 100px;
     background-size: 80px
   }
+	
+  .text_limited{font-size: 0.825em;}
 }
 
 @media (max-width: 320px) {
@@ -1799,11 +1806,12 @@ html body.change_pass_pass {
     font-size: 137%;
   }
 
-  .list_device .list-group-item {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-  }
-
+  .list_device {margin-top: 24px;
+	  .list-group-item {
+		padding-top: 0.6rem;
+		padding-bottom: 0.6rem;
+	  }
+	}
   .modal-270 .text {
     font-size: 1em;
   }

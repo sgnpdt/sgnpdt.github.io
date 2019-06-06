@@ -258,8 +258,7 @@ body {
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently
-                                   supported by Chrome and Opera */
+  /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 .right {
   float: right;
@@ -270,18 +269,16 @@ body {
 p {
   font-size: 1em;
 }
-
 * :focus {
   outline: 0;
   -moz-outline: 0 none;
 }
-
-a, a:active {
+a,
+a:active {
   -webkit-appearance: none;
   outline: 0;
   -moz-outline: 0 none;
 }
-
 a {
   cursor: pointer;
   transition: all 0.3s;
@@ -421,6 +418,14 @@ a:hover {
 .btn-fb.focus,
 .btn-fb:focus {
   box-shadow: none;
+}
+.btn-fb td {
+  line-height: 37px;
+  padding: 0 3px;
+}
+.btn-fb .logo_fb {
+  position: relative;
+  top: -1px;
 }
 .btn-outline:not(:disabled):not(.disabled).active,
 .btn-outline:not(:disabled):not(.disabled):active,
@@ -1046,7 +1051,7 @@ a:hover {
 }
 .list_device .list-group-item {
   background-color: transparent;
-  color: #fff;
+  color: #fff !important;
   position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1371,7 +1376,7 @@ input:-ms-input-placeholder {
 }
 .bg_OTP {
   top: 8%;
-  position: absolute!important;
+  position: absolute !important;
   width: 100%;
 }
 .bg_OTP .d-table {
@@ -1686,6 +1691,9 @@ html body.change_pass_pass .invalid-feedback {
     height: 100px;
     background-size: 80px;
   }
+  .text_limited {
+    font-size: 0.825em;
+  }
 }
 @media (max-width: 320px) {
   .div_input_pos_signup {
@@ -1736,9 +1744,12 @@ html body.change_pass_pass .invalid-feedback {
   html {
     font-size: 137%;
   }
+  .list_device {
+    margin-top: 24px;
+  }
   .list_device .list-group-item {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
   .modal-270 .text {
     font-size: 1em;
