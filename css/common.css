@@ -270,6 +270,18 @@ body {
 p {
   font-size: 1em;
 }
+
+* :focus {
+  outline: 0;
+  -moz-outline: 0 none;
+}
+
+a, a:active {
+  -webkit-appearance: none;
+  outline: 0;
+  -moz-outline: 0 none;
+}
+
 a {
   cursor: pointer;
   transition: all 0.3s;

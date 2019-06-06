@@ -137,38 +137,41 @@ $(document).ready(function () {
         }
     });
 
-    // Always set focus on PIN inputs
-    $('.inputs .pin').blur(function (evt) {
-        console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-        var curr = parseInt(evt.target.id.substr('pin-'.length));
+    var alwaysFocus = false;
+    // Always set focus on PIN inputs?
+    if(alwaysFocus) {
+        $('.inputs .pin').blur(function (evt) {
+            console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+            var curr = parseInt(evt.target.id.substr('pin-'.length));
 
-        // Check all PIN are empty
-        if ($('#pin-0').val() === '') {
-            evt.stopPropagation();
+            // Check all PIN are empty
+            if ($('#pin-0').val() === '') {
+                evt.stopPropagation();
 
-            console.log('Focus #1 for PIN-' + 0);
-            setFocus($('#pin-0'));
-        } else {
-            var last = false;
-            for (var i = pinLen - 1; i >= 0; i--) {
-                var digit = $('#pin-' + i).val() || '';
-                if (digit !== '') {
-                    last = i + 1;
-                    last = last > (pinLen - 1) ? (pinLen - 1) : last;
-                    break;
-                }
-            }
-
-            if (last !== false) {
-                if(last !== curr) {
-                    evt.stopPropagation();
+                console.log('Focus #1 for PIN-' + 0);
+                setFocus($('#pin-0'));
+            } else {
+                var last = false;
+                for (var i = pinLen - 1; i >= 0; i--) {
+                    var digit = $('#pin-' + i).val() || '';
+                    if (digit !== '') {
+                        last = i + 1;
+                        last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                        break;
+                    }
                 }
 
-                console.log('Focus #2 for PIN-' + last);
-                setFocus($('#pin-' + last));
+                if (last !== false) {
+                    if(last !== curr) {
+                        evt.stopPropagation();
+                    }
+
+                    console.log('Focus #2 for PIN-' + last);
+                    setFocus($('#pin-' + last));
+                }
             }
-        }
-    });
+        });
+    }
 
     $('.inputs .pin').focus(function (evt) {
         console.log('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
