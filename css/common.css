@@ -419,10 +419,6 @@ a:hover {
 .btn-fb:focus {
   box-shadow: none;
 }
-.btn-fb td {
-  line-height: 37px;
-  padding: 0 3px;
-}
 .btn-fb .logo_fb {
   position: relative;
   top: -1px;
