@@ -106,6 +106,10 @@
   background-image: url(../master/images/bg_tkfoxy.png);
   background-image: -webkit-image-set(url(../master/images/bg_tkfoxy.png) 1x, url(../master/images/bg_tkfoxy@2x.png) 2x, url(../master/images/bg_tkfoxy@3x.png) 3x);
 }
+.source-bg_dn_tkfoxy {
+  background-image: url(../master/images/bg_dn_tkfoxy.png);
+  background-image: -webkit-image-set(url(../master/images/bg_dn_tkfoxy.png) 1x, url(../master/images/bg_dn_tkfoxy@2x.png) 2x, url(../master/images/bg_dn_tkfoxy@3x.png) 3x);
+}
 .source-bg-maOTP {
   background-image: url(../master/images/OTP_bg.png);
   background-image: -webkit-image-set(url(../master/images/OTP_bg.png) 1x, url(../master/images/OTP_bg@2x.png) 2x, url(../master/images/OTP_bg@3x.png) 3x);
@@ -1347,6 +1351,16 @@ input:-ms-input-placeholder {
 .bg_tkfoxy {
   background-image: url(../master/images/bg_tkfoxy.png);
   background-image: -webkit-image-set(url(../master/images/bg_tkfoxy.png) 1x, url(../master/images/bg_tkfoxy@2x.png) 2x, url(../master/images/bg_tkfoxy@3x.png) 3x);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160px;
+  background-position: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.bg_dn_tkfoxy {
+  background-image: url(../master/images/bg_dn_tkfoxy.png);
+  background-image: -webkit-image-set(url(../master/images/bg_dn_tkfoxy.png) 1x, url(../master/images/bg_dn_tkfoxy@2x.png) 2x, url(../master/images/bg_dn_tkfoxy@3x.png) 3x);
   background-repeat: no-repeat;
   width: 100%;
   height: 160px;
