@@ -1338,6 +1338,22 @@ a:hover {
     padding-right: 24px;
 }
 
+.password-indicator-verified {
+    color: green !important;
+}
+
+.password-indicator td:before {
+    content: "☓ ";
+}
+
+.password-indicator-verified td:before {
+    content: "✓ " !important;
+}
+
+.password-complexity-rule td {
+    padding-left: 20px;
+}
+
 .clearable input[type=text] {
     padding-right: 24px;
     width: 100%;
@@ -1698,7 +1714,7 @@ input:-ms-input-placeholder {
 
 .div_input_pos_signup {
     margin-top: 0px;
-    height: 40%;
+    height: 50%;
 }
 
 .title_success {
