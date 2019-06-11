@@ -145,7 +145,7 @@
   display: none !important;
 }
 .Shows-md {
-  display: none !important;
+  title_mkdisplay: none !important;
 }
 @media (max-width: 1199px) {
   .hidden-lg-down {
@@ -1472,6 +1472,9 @@ input:-ms-input-placeholder {
 .title_mk {
   margin: 50px auto 0 auto;
   display: block;
+}
+.title_mk .text_color {
+  font-weight: 300;
 }
 .bg_mk {
   background-image: url(../master/images/bg_mk.png);
