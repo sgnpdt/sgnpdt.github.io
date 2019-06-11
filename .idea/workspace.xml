@@ -2,26 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_change_pass.html" afterPath="$PROJECT_DIR$/V2_change_pass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_chucmung.html" afterPath="$PROJECT_DIR$/V2_chucmung.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_cotk_foxy.html" afterPath="$PROJECT_DIR$/V2_cotk_foxy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_huongdan.html" afterPath="$PROJECT_DIR$/V2_huongdan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_kichhoat_OTP.html" afterPath="$PROJECT_DIR$/V2_kichhoat_OTP.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_kichhoat_OTP_thanhcong.html" afterPath="$PROJECT_DIR$/V2_kichhoat_OTP_thanhcong.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_kichhoat_code.html" afterPath="$PROJECT_DIR$/V2_kichhoat_code.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_kotk_foxy.html" afterPath="$PROJECT_DIR$/V2_kotk_foxy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_login.html" afterPath="$PROJECT_DIR$/V2_login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_new_device.html" afterPath="$PROJECT_DIR$/V2_new_device.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_new_device_limited.html" afterPath="$PROJECT_DIR$/V2_new_device_limited.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_newacc_fb.html" afterPath="$PROJECT_DIR$/V2_newacc_fb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_profile.html" afterPath="$PROJECT_DIR$/V2_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_qmk.html" afterPath="$PROJECT_DIR$/V2_qmk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_qmk_set_new.html" afterPath="$PROJECT_DIR$/V2_qmk_set_new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_signup.html" afterPath="$PROJECT_DIR$/V2_signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_signup_Countdown.html" afterPath="$PROJECT_DIR$/V2_signup_Countdown.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/V2_thoathuannguoidung.html" afterPath="$PROJECT_DIR$/V2_thoathuannguoidung.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/focus-demo.html" afterPath="$PROJECT_DIR$/focus-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="$PROJECT_DIR$/css/fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/library_up.less" afterPath="$PROJECT_DIR$/css/library_up.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/reset.css" afterPath="$PROJECT_DIR$/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/link.html" afterPath="$PROJECT_DIR$/link.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_change_pass.html" afterPath="$PROJECT_DIR$/v2_change_pass.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_chucmung.html" afterPath="$PROJECT_DIR$/v2_profile_name.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_cotk_foxy.html" afterPath="$PROJECT_DIR$/v2_login_foxy.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_huongdan.html" afterPath="$PROJECT_DIR$/v2_huong_dan.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_kichhoat_OTP.html" afterPath="$PROJECT_DIR$/v2_kich_hoat_otp.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_kichhoat_OTP_thanhcong.html" afterPath="$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_kichhoat_code.html" afterPath="$PROJECT_DIR$/v2_tv_link_code.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_kotk_foxy.html" afterPath="$PROJECT_DIR$/v2_sign_up_foxy.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_login.html" afterPath="$PROJECT_DIR$/v2_login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_new_device.html" afterPath="$PROJECT_DIR$/v2_new_device.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_new_device_limited.html" afterPath="$PROJECT_DIR$/v2_device_limit.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_newacc_fb.html" afterPath="$PROJECT_DIR$/v2_fb_mobile_number.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_profile.html" afterPath="$PROJECT_DIR$/v2_chon_profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_profile_full.html" afterPath="$PROJECT_DIR$/v2_chon_profile_full.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_qmk.html" afterPath="$PROJECT_DIR$/v2_forgot_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_qmk_set_new.html" afterPath="$PROJECT_DIR$/v2_reset_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_signup.html" afterPath="$PROJECT_DIR$/v2_sign_up.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_signup_Countdown.html" afterPath="$PROJECT_DIR$/v2_sign_up_otp_count_down.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/V2_thoathuannguoidung.html" afterPath="$PROJECT_DIR$/v2_thoa_thuan_nguoi_dung.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,106 +42,110 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="V2_new_device_limited.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_new_device_limited.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="v2_kich_hoat_otp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="116">
+              <caret line="59" column="54" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_newacc_fb.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_newacc_fb.html">
+      <file leaf-file-name="v2_new_device.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_new_device.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="166">
+              <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_kichhoat_OTP.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/V2_kichhoat_OTP.html">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="149">
+              <caret line="1092" column="1" lean-forward="false" selection-start-line="1092" selection-start-column="1" selection-end-line="1092" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_profile.html">
+      <file leaf-file-name="v2_kich_hoat_otp_thanh_cong.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="124">
+              <caret line="57" column="54" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_qmk.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_qmk.html">
+      <file leaf-file-name="library_up.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/library_up.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="260" column="36" lean-forward="false" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_qmk_set_new.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_qmk_set_new.html">
+      <file leaf-file-name="v2_login_foxy.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_login_foxy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V2_signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_signup.html">
+      <file leaf-file-name="v2_sign_up.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v2_sign_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V2_signup_Countdown.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_signup_Countdown.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V2_thoathuannguoidung.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_thoathuannguoidung.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V2_huongdan.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/V2_huongdan.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="-119">
+              <caret line="87" column="92" lean-forward="false" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
               <folding>
-                <element signature="e#2118#2125#0" expanded="true" />
-                <element signature="e#2200#2207#0" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="1334" column="1" lean-forward="true" selection-start-line="1334" selection-start-column="1" selection-end-line="1338" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="link.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/link.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,28 +154,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#inputs input</find>
-      <find>inputs</find>
-      <find>fixfixed</find>
-      <find>e</find>
-      <find>ShowThanhCong</find>
-      <find>&quot;</find>
-      <find>fixed-fix</find>
-      <find>fix-fixed</find>
-      <find>fixed</find>
-      <find>#inputs</find>
-      <find>.inputs</find>
-      <find>'#inputs input'</find>
-      <find>.inputs pin</find>
-      <find>console.log('focus #</find>
-      <find>'focus #</find>
-      <find>setTimeout</find>
       <find>select</find>
       <find>.trim()</find>
       <find>for (var i =</find>
       <find>last = i + 1;</find>
       <find>last = i + 1</find>
       <find>&lt;meta name=&quot;viewport&quot;</find>
+      <find>.group_form_null</find>
+      <find>clearable</find>
+      <find>btn_edit_profile</find>
+      <find>editmode</find>
+      <find>edit_mode</find>
+      <find>title_mk</find>
+      <find>Shows-xs</find>
+      <find>.send-feedback-OTP</find>
+      <find>@primary-text</find>
+      <find>link_primary</find>
+      <find>gửi lại</find>
+      <find>Gửi lại</find>
+      <find>link_content</find>
+      <find>\n  padding\-left\: 0\.5rem\;\n  padding\-right\: 0\.5rem\;</find>
+      <find>group_form_null</find>
+      <find>group_form</find>
+      <find>background-color: #1c52c2;</find>
+      <find>btn-fb</find>
+      <find>cotk</find>
+      <find>.clearable input</find>
+      <find>input[type=text]</find>
+      <find>14px;</find>
+      <find>input_mk</find>
+      <find>.clearable</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -179,11 +199,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/common.less" />
         <option value="$PROJECT_DIR$/js/jquery-pincode-autotab.js" />
         <option value="$PROJECT_DIR$/focus-demo.html" />
-        <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/link.html" />
         <option value="$PROJECT_DIR$/V2_change_pass.html" />
         <option value="$PROJECT_DIR$/V2_chucmung.html" />
         <option value="$PROJECT_DIR$/V2_cotk_foxy.html" />
@@ -202,6 +219,18 @@
         <option value="$PROJECT_DIR$/V2_huongdan.html" />
         <option value="$PROJECT_DIR$/V2_newacc_fb.html" />
         <option value="$PROJECT_DIR$/V2_kichhoat_OTP.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/fonts.css" />
+        <option value="$PROJECT_DIR$/css/reset.css" />
+        <option value="$PROJECT_DIR$/v2_sign_up_otp_count_down.html" />
+        <option value="$PROJECT_DIR$/css/library_up.less" />
+        <option value="$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html" />
+        <option value="$PROJECT_DIR$/v2_kich_hoat_otp.html" />
+        <option value="$PROJECT_DIR$/v2_new_device.html" />
+        <option value="$PROJECT_DIR$/link.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/css/common.less" />
+        <option value="$PROJECT_DIR$/v2_sign_up.html" />
       </list>
     </option>
   </component>
@@ -249,7 +278,12 @@
             <path>
               <item name="sgnpdt.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="sgnpdt.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sgnpdt.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgnpdt.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,10 +298,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="D:/dev/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.11.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -292,26 +331,33 @@
       <option name="presentableId" value="Default" />
       <updated>1559703533610</updated>
       <workItem from="1559703536143" duration="27969000" />
+      <workItem from="1560265390135" duration="10341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27969000" />
+    <option name="totallyTimeSpent" value="38310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,19 +371,93 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+    <entry file="file://$PROJECT_DIR$/v2_device_limit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="721" column="0" lean-forward="false" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.less">
+    <entry file="file://$PROJECT_DIR$/v2_fb_mobile_number.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4725">
-          <caret line="1483" column="13" lean-forward="false" selection-start-line="1483" selection-start-column="13" selection-end-line="1483" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_chon_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_forgot_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_reset_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_sign_up_otp_count_down.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_thoa_thuan_nguoi_dung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_huong_dan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#2118#2125#0" expanded="false" />
+            <element signature="e#2200#2207#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="721" column="0" lean-forward="false" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -345,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="2443" column="0" lean-forward="false" selection-start-line="2443" selection-start-column="0" selection-end-line="2443" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -365,14 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="181" column="65" lean-forward="false" selection-start-line="181" selection-start-column="65" selection-end-line="181" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/focus-demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -381,7 +492,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/link.html">
+    <entry file="file://$PROJECT_DIR$/v2_change_pass.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -389,7 +500,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_change_pass.html">
+    <entry file="file://$PROJECT_DIR$/v2_profile_name.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -397,23 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_chucmung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_cotk_foxy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_kichhoat_code.html">
+    <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="50" column="101" lean-forward="false" selection-start-line="50" selection-start-column="101" selection-end-line="50" selection-end-column="101" />
@@ -421,23 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_kichhoat_OTP_thanhcong.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_kotk_foxy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_login.html">
+    <entry file="file://$PROJECT_DIR$/v2_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
@@ -445,31 +524,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_new_device.html">
+    <entry file="file://$PROJECT_DIR$/v2_device_limit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_new_device_limited.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="527">
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_qmk.html">
+    <entry file="file://$PROJECT_DIR$/v2_thoa_thuan_nguoi_dung.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
@@ -477,7 +540,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_qmk_set_new.html">
+    <entry file="file://$PROJECT_DIR$/v2_huong_dan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#2118#2125#0" expanded="false" />
+            <element signature="e#2200#2207#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_sign_up_foxy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_fb_mobile_number.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_chon_profile_full.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_chon_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -485,54 +583,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_signup.html">
+    <entry file="file://$PROJECT_DIR$/v2_forgot_password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_signup_Countdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_thoathuannguoidung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/V2_huongdan.html">
+    <entry file="file://$PROJECT_DIR$/v2_reset_password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.mCustomScrollbar.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6964">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_sign_up_otp_count_down.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="57" column="54" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="59" column="54" lean-forward="true" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_new_device.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/library_up.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="260" column="36" lean-forward="false" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_login_foxy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/link.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1334" column="1" lean-forward="true" selection-start-line="1334" selection-start-column="1" selection-end-line="1338" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="1092" column="1" lean-forward="false" selection-start-line="1092" selection-start-column="1" selection-end-line="1092" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_sign_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="87" column="92" lean-forward="false" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
           <folding>
-            <element signature="e#2118#2125#0" expanded="true" />
-            <element signature="e#2200#2207#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_newacc_fb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/V2_kichhoat_OTP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>

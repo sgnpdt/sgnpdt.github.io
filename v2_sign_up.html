@@ -40,7 +40,6 @@
 </div>
 
 <div class="bg_login_form bg_dk ">
-
     <div class="div_header">
         <div class="d-table">
             <div class="d-table-cell">
@@ -58,62 +57,60 @@
                     <div class="input_relative">
                         <input class="form-control input_mk" type="tel" placeholder="Số di động" value=""
                                required=""/>
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback show">
                             Số di động không hợp lệ
                         </div>
                     </div>
-
                 </div>
                 <div class="group_form_null clearable">
                     <div class="input_relative">
                         <input class="form-control input_mk" type="password" placeholder="Mật khẩu" value=""
                                required=""/>
-                        <div class="invalid-feedback">
-                            Mật khẩu không hợp lệ
+                        <div class="invalid-feedback show">
+                            <table class="password-indicator" style="text-align: left; margin: 0 auto;">
+                                <tr class="password-length">
+                                    <td style="color: green;">✓ Chiều dài từ 6 đến 20 ký tự</td>
+                                </tr>
+                                <!-- https://auth0.com/docs/connections/database/password-strength -->
+                                <tr class="password-complexity">
+                                    <td>☓ Bao gồm từ 2 đến 4 loại ký tự</td>
+                                </tr>
+                                <tr class="password-complexity-lower-case">
+                                    <td style="padding-left: 20px; color: green;">✓ Ký tự chữ thường (a-z)</td>
+                                </tr>
+                                <tr class="password-complexity-upper-case">
+                                    <td style="padding-left: 20px">☓ Ký tự chữ hoa (A-Z)</td>
+                                </tr>
+                                <tr class="password-complexity-number">
+                                    <td style="padding-left: 20px">☓ Số (0-9)</td>
+                                </tr>
+                                <tr class="password-complexity-special-chars">
+                                    <td style="padding-left: 20px">☓ Ký tự đặc biệt (như !@#)</td>
+                                </tr>
+                            </table>
                         </div>
                         <i class="show_pass"></i>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
     <div class="group_bottom">
-        <div class="btn_cus btn-primary" data-toggle="modal" data-target="#ShowCountDown">Đăng ký</div>
+        <div class="btn_cus btn-primary">Đăng ký</div>
         <div class="">
             <div class="hc-input--square policy">
                 <div class="hc-input-single">
                     <input type="checkbox" name="fieldset-2" id="radio2-example-one" checked="checked">
-                    <label for="radio2-example-one">Bạn đã đồng ý với <a class="link_content"
-                                                                         href="thoathuannguoidung.html">Thoả thuận người
-                        dùng</a> và <a class="link_content" href="chinhsachriengtu.html">Chính sách riêng tư</a></label>
+                    <label for="radio2-example-one">Bạn đã đồng ý với
+                        <a class="link_content" href="v2_thoa_thuan_nguoi_dung.html">Thoả thuận người dùng</a> và
+                        <a class="link_content" href="v2_chinh_sach_rieng_tu.html">Chính sách riêng tư</a></label>
                 </div>
             </div>
         </div>
     </div>
 
 </div>
-<!-- Modal -->
-<div class="modal fade" id="ShowCountDown" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-270" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="text text-center">Vui lòng thử lại sau</p>
-                <p class="text text-center">00:00:60 giây</p>
-            </div>
-            <div class="modal-footer">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col align-self-center">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Đồng ý</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- InstanceEndEditable -->
 
 <!--Footer-->

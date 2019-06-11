@@ -45,9 +45,9 @@
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="avatar">
-                    <img src="master/images/avatar_dk.png" alt=""/>
+                    <img src="master/images/avatar_add.png" alt=""/>
                 </div>
-                <p class="title_mlk">Đăng nhập</p>
+                <p class="title_mlk">Đăng ký tài khoản mới bằng số di động</p>
             </div>
         </div>
     </div>
@@ -56,8 +56,8 @@
             <div class="d-table-cell">
                 <div class="group_form clearable">
                     <div class="input_relative">
-                        <input class="form-control input_mk" type="tel" placeholder="Số di động/tên tài khoản"
-                               value="" required=""/>
+                        <input class="form-control input_mk" type="tel" placeholder="Số di động" value=""
+                               required=""/>
                         <div class="invalid-feedback">
                             Số di động không hợp lệ
                         </div>
@@ -79,12 +79,41 @@
         </div>
     </div>
     <div class="group_bottom">
-        <button class="btn_cus btn-primary">Đăng nhập</button>
-        <p class="title_mk  text-center"><a href="V2_qmk.html" class="text_color">Quên mật khẩu?</a></p>
+        <div class="btn_cus btn-primary" data-toggle="modal" data-target="#ShowCountDown">Đăng ký</div>
+        <div class="">
+            <div class="hc-input--square policy">
+                <div class="hc-input-single">
+                    <input type="checkbox" name="fieldset-2" id="radio2-example-one" checked="checked">
+                    <label for="radio2-example-one">Bạn đã đồng ý với
+                        <a class="link_content" href="v2_thoa_thuan_nguoi_dung.html">Thoả thuận người dùng</a> và <a
+                                class="link_content" href="v2_chinh_sach_rieng_tu.html">Chính sách riêng tư</a></label>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
-
+<!-- Modal -->
+<div class="modal fade" id="ShowCountDown" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-270" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="text text-center">Vui lòng thử lại sau</p>
+                <p class="text text-center">00:00:60 giây</p>
+            </div>
+            <div class="modal-footer">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col align-self-center">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Đồng ý</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- InstanceEndEditable -->
 
 <!--Footer-->

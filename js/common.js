@@ -1,20 +1,20 @@
 $(document).ready(function () {
 
     $('.clearable').each(function () {
-        var $inp = $(this).find('input'),
-            $cle = $(this).find('.clearable__clear');
+        var inp = $(this).find('input'),
+            cle = $(this).find('.clearable__clear');
 
-        $inp.on('input', function () {
-            $cle.toggle(!!this.value);
+        inp.on('input', function () {
+            cle.toggle(!!this.value);
         });
 
-        $cle.on('touchstart click', function (e) {
+        cle.on('touchstart click', function (e) {
             e.preventDefault();
-            $inp.val('').trigger('input');
+            inp.val('').trigger('input');
         });
     });
 
-    //Show pass
+    // Toogle password visible, eye-open/eye-close
     $('.show_pass').click(function () {
         if ($(this).hasClass('hidden') === false) {
             $(this).parents('.group_form_null ').find('.input_mk').attr('type', 'text');
@@ -25,7 +25,6 @@ $(document).ready(function () {
             $(this).removeClass('hidden');
         }
     });
-
 
     $('.show_pass')
         .mouseup(function () {
@@ -89,12 +88,12 @@ $(document).ready(function () {
     }
 
     //
-    $('.btn_edit_profile').click(function () {
-        $('body').addClass('editmode');
+    $('.btn_edit_profile_name').click(function () {
+        $('body').addClass('edit_mode');
     });
 
     $('.btn_un_editmode').click(function () {
-        $('body').removeClass('editmode');
+        $('body').removeClass('edit_mode');
     });
 
     // Hidden background when show keyboard
@@ -139,7 +138,7 @@ $(document).ready(function () {
 
     var alwaysFocus = false;
     // Always set focus on PIN inputs?
-    if(alwaysFocus) {
+    if (alwaysFocus) {
         $('.inputs .pin').blur(function (evt) {
             console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
             var curr = parseInt(evt.target.id.substr('pin-'.length));
@@ -162,7 +161,7 @@ $(document).ready(function () {
                 }
 
                 if (last !== false) {
-                    if(last !== curr) {
+                    if (last !== curr) {
                         evt.stopPropagation();
                     }
 
@@ -193,14 +192,14 @@ $(document).ready(function () {
             $(evt.target).blur();
             evt.stopPropagation();
 
-            if(last === false) {
+            if (last === false) {
                 console.log('Focus #3 for PIN-' + 0);
                 setFocus($('#pin-0'));
             } else {
                 console.log('ERROR ' + evt.target.id, $(evt.target).val());
             }
-        } else  if (last !== false) {
-            if(last !== curr) {
+        } else if (last !== false) {
+            if (last !== curr) {
                 $(evt.target).blur();
                 evt.stopPropagation();
 
