@@ -1343,7 +1343,7 @@ a:hover {
 }
 
 .password-indicator td:before {
-    content: "☓ ";
+    content: "✗ ";
 }
 
 .password-indicator-verified td:before {

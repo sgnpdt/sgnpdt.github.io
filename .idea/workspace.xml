@@ -4,7 +4,6 @@
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up.html" afterPath="$PROJECT_DIR$/v2_sign_up.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="1432" column="21" lean-forward="false" selection-start-line="1432" selection-start-column="1" selection-end-line="1432" selection-end-column="21" />
+            <state relative-caret-position="194">
+              <caret line="1441" column="0" lean-forward="false" selection-start-line="1441" selection-start-column="0" selection-end-line="1447" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -93,8 +92,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="1712" column="1" lean-forward="true" selection-start-line="1712" selection-start-column="1" selection-end-line="1712" selection-end-column="1" />
+            <state relative-caret-position="176">
+              <caret line="1350" column="1" lean-forward="false" selection-start-line="1350" selection-start-column="1" selection-end-line="1350" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -301,12 +300,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559703533610</updated>
       <workItem from="1559703536143" duration="27969000" />
-      <workItem from="1560265390135" duration="11856000" />
+      <workItem from="1560265390135" duration="12429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39825000" />
+    <option name="totallyTimeSpent" value="40398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -677,16 +676,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="1432" column="21" lean-forward="false" selection-start-line="1432" selection-start-column="1" selection-end-line="1432" selection-end-column="21" />
+        <state relative-caret-position="194">
+          <caret line="1441" column="0" lean-forward="false" selection-start-line="1441" selection-start-column="0" selection-end-line="1447" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="1712" column="1" lean-forward="true" selection-start-line="1712" selection-start-column="1" selection-end-line="1712" selection-end-column="1" />
+        <state relative-caret-position="176">
+          <caret line="1350" column="1" lean-forward="false" selection-start-line="1350" selection-start-column="1" selection-end-line="1350" selection-end-column="1" />
           <folding />
         </state>
       </provider>
