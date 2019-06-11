@@ -1388,6 +1388,8 @@ input:-ms-input-placeholder {
   top: 8%;
   position: absolute !important;
   width: 100%;
+  left: 0;
+  right: 0;
 }
 .bg_OTP .d-table {
   width: 100%;
@@ -1544,12 +1546,14 @@ input:-ms-input-placeholder {
 }
 .input_profile .form-control {
   margin-bottom: 0.42rem;
-  background-color: rgba(37, 17, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 4px;
   height: 2rem;
   text-align: left;
   padding-left: 12px !important;
+  color: #1b1414;
+  font-weight: 400;
 }
 .input_profile .invalid-feedback {
   text-align: left;
@@ -1565,6 +1569,11 @@ input:-ms-input-placeholder {
 }
 .input_profile input:-ms-input-placeholder {
   color: #ffffff !important;
+}
+.ds_content {
+  max-width: inherit !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .ds_content p {
   font-size: 0.885em;
@@ -1691,6 +1700,23 @@ html body.change_pass_pass .invalid-feedback {
 }
 .fixfixed {
   position: fixed !important;
+}
+.list-group-item {
+  border: none;
+}
+@media (max-width: 1024px) {
+  .bg_login_form {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .bg_login_form {
+    max-width: 580px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 375px) {
   .bg_malienket {
