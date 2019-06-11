@@ -34,6 +34,78 @@ $(document).ready(function () {
             $(this).parents('.group_form_null ').find('.input_mk').attr('type', 'text');
         });
 
+    // Password complexity indicator
+    $('.div_input_pos_signup .input_mk').on('keyup change', function (evt) {
+        var val = $(evt.target).val();
+        var result = {
+            verified: false,
+            rules: {
+                len: false,
+                lower_case: false,
+                upper_case: false,
+                number: false,
+                special_chars: false
+            }
+        };
+
+        var rules = result.rules;
+        rules.len = val.length >= 6 && val.length <= 20;
+
+        rules.lower_case = /[a-z]/.test(val);
+        rules.upper_case = /[A-Z]/.test(val);
+        rules.number = /[0-9]/.test(val);
+        rules.special_chars = /[^a-zA-Z0-9]/.test(val);
+
+        // Update the text indicator
+        if(rules.len) {
+            $('.div_input_pos_signup .password-length').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .password-length').removeClass('password-indicator-verified');
+        }
+
+        var count = 0;
+        if(rules.lower_case) {
+            count++;
+            $('.div_input_pos_signup .rule-lower-case').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .rule-lower-case').removeClass('password-indicator-verified');
+        }
+
+        if(rules.upper_case) {
+            count++;
+            $('.div_input_pos_signup .rule-upper-case').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .rule-upper-case').removeClass('password-indicator-verified');
+        }
+
+        if(rules.number) {
+            count++;
+            $('.div_input_pos_signup .rule-number').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .rule-number').removeClass('password-indicator-verified');
+        }
+
+        if(rules.special_chars) {
+            count++;
+            $('.div_input_pos_signup .rule-special-chars').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .rule-special-chars').removeClass('password-indicator-verified');
+        }
+
+        rules.complexity = count >= 2;
+
+        if(rules.complexity) {
+            $('.div_input_pos_signup .password-complexity').addClass('password-indicator-verified');
+        } else {
+            $('.div_input_pos_signup .password-complexity').removeClass('password-indicator-verified');
+        }
+
+        // Update the password strength meter
+        result.verified = rules.len && rules.complexity;
+
+        return result;
+    });
+
     // OTP input
     function processInput(holder) {
         var elements = holder.children(), // taking the "kids" of the parent
@@ -92,7 +164,7 @@ $(document).ready(function () {
         $('body').addClass('edit_mode');
     });
 
-    $('.btn_un_editmode').click(function () {
+    $('.btn_un_edit_mode').click(function () {
         $('body').removeClass('edit_mode');
     });
 

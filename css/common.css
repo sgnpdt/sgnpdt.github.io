@@ -894,7 +894,7 @@ a:hover {
     display: inline-block;
 }
 
-.btn_un_editmode {
+.btn_un_edit_mode {
     background-image: url(../master/images/icon_back.png);
     background-image: -webkit-image-set(url(../master/images/icon_back.png) 1x, url(../master/images/icon_back@2x.png) 2x, url(../master/images/icon_back@3x.png) 3x);
     width: 40px;
@@ -1339,7 +1339,7 @@ a:hover {
 }
 
 .password-indicator-verified {
-    color: green !important;
+    color: #525C83 !important;
 }
 
 .password-indicator td:before {
@@ -1863,7 +1863,7 @@ input:-ms-input-placeholder {
     display: none;
 }
 
-.edit_mode .btn_un_editmode {
+.edit_mode .btn_un_edit_mode {
     display: inline-block;
 }
 
