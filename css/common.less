@@ -1333,7 +1333,7 @@ input:-ms-input-placeholder {
 /*.inputs input.focused{border-bottom: 1px solid #ffd200;	}*/
 
 .invalid-feedback, .invalid-feedback-tm {
-  font-size: 0.775em;
+  font-size: 0.720em;
   color: #fe1d03;
   text-align: center;
   top: 4px;
@@ -1438,14 +1438,15 @@ input:-ms-input-placeholder {
 .password-indicator {
   text-align: left;
   margin: 0 auto;
+	td{padding-right: 5px;}
 }
 
 .password-indicator-verified {
-  color: #525C83 !important;
+  color: @primary-color !important;
 }
 
 .password-empty span {
-  color: #cccccc !important;
+  color: @light-text-secondary !important;
 }
 
 .password-empty span:before {
@@ -1456,19 +1457,26 @@ input:-ms-input-placeholder {
   content: "✗ ";
 }
 
-span.password-indicator-verified:before {
+div.password-indicator-verified > span:before {
   content: "✓ " !important;
 }
 
 .password-indicator-lower-case,
 .password-indicator-number {
-  padding-left: 15px;
-}
-
-.password-indicator-upper-case,
-.password-indicator-special-chars {
   padding-left: 10px;
 }
+
+.password-indicator-verified table span {
+	color: @light-text-disble !important;
+	&::before{  content: "• " !important;}
+}
+
+.password-indicator-verified .password-indicator-verified span {
+	color: @primary-color !important;
+	&::before{content: "✓ " !important;}
+}
+
+
 
 .title_success {
   font-size: 1.5em;

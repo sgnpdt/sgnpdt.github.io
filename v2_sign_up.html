@@ -70,31 +70,36 @@
                             <table class="password-indicator password-empty">
                                 <tr>
                                     <td colspan="2">
-                                        <span class="password-indicator-length">Chiều dài từ 6 đến 20 ký tự</span>
+                                        <div class="password-indicator-length"><span>Chiều dài từ 6 đến 20 ký tự</span></div>
                                     </td>
                                 </tr>
                                 <!-- https://auth0.com/docs/connections/database/password-strength -->
                                 <tr>
                                     <td colspan="2">
-                                        <span class="password-indicator-complexity">Bao gồm từ 2 đến 4 loại ký tự</span>
+                                        <div class="password-indicator-complexity"><span>Bao gồm từ 2 đến 4 loại ký tự</span>
+											<table>
+												<tr>
+													<td>
+														<div class="password-indicator-lower-case"><span>Chữ thường (a-z)</span></div>
+													</td>
+													<td>
+														<div class="password-indicator-upper-case"><span>Chữ hoa (A-Z)</span></div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="password-indicator-number"><span>Số (0-9)</span></div>
+													</td>
+													<td>
+														<div class="password-indicator-special-chars"><span>Ký tự khác (như !@#)</span></div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <span class="password-indicator-lower-case">Chữ thường (a-z)</span>
-                                    </td>
-                                    <td>
-                                        <span class="password-indicator-upper-case">Chữ hoa (A-Z)</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="password-indicator-number">Số (0-9)</span>
-                                    </td>
-                                    <td>
-                                        <span class="password-indicator-special-chars">Ký tự khác (như !@#)</span>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </div>
                         <i class="show_pass"></i>
