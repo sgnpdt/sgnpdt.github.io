@@ -1722,13 +1722,18 @@ input:-ms-input-placeholder {
     content: "✗ ";
 }
 
-.password-indicator-verified span:before {
+span.password-indicator-verified:before {
     content: "✓ " !important;
 }
 
-.password-indicator-lower-case, .password-indicator-upper-case,
-.password-indicator-number, .password-indicator-special-chars {
-    padding-left: 20px;
+.password-indicator-lower-case,
+.password-indicator-number {
+    padding-left: 15px;
+}
+
+.password-indicator-upper-case,
+.password-indicator-special-chars {
+    padding-left: 10px;
 }
 
 .title_success {
