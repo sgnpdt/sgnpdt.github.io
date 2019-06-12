@@ -160,7 +160,7 @@ $(document).ready(function () {
     }
 
     //
-    $('.btn_edit_profile_name').click(function () {
+    $('.btn_edit_profile').click(function () {
         $('body').addClass('edit_mode');
     });
 
