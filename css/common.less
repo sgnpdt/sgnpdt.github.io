@@ -1435,19 +1435,35 @@ input:-ms-input-placeholder {
   height: 50%;
 }
 
+
+
+.password-indicator {
+  text-align: left;
+  margin: 0 auto;
+}
+
 .password-indicator-verified {
   color: #525C83 !important;
 }
 
-.password-indicator td:before {
+.password-empty span {
+  color: #cccccc !important;
+}
+
+.password-empty span:before {
+  content: "• " !important;
+}
+
+.password-indicator span:before {
   content: "✗ ";
 }
 
-.password-indicator-verified td:before {
+.password-indicator-verified span:before {
   content: "✓ " !important;
 }
 
-.password-complexity-rule td {
+.password-indicator-lower-case, .password-indicator-upper-case,
+.password-indicator-number, .password-indicator-special-chars {
   padding-left: 20px;
 }
 
@@ -1518,7 +1534,8 @@ input:-ms-input-placeholder {
   display: block;
   .text_color {
     font-weight: 300;
-	color: @link-color;font-size: 0.885em;
+    color: @link-color;
+    font-size: 0.885em;
   }
 }
 
@@ -1691,7 +1708,8 @@ html body.change_pass_pass {
       left: 0;
       z-index: 3;
       width: 40px;
-      text-align: center;line-height: 40px;
+      text-align: center;
+      line-height: 40px;
     }
     &:after {
       height: 40px;

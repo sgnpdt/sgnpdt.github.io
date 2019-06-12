@@ -48,6 +48,14 @@ $(document).ready(function () {
             }
         };
 
+        if(val === '') {
+            $('.password-indicator').addClass('password-empty');
+            $('.password-indicator-verified').removeClass('password-indicator-verified');
+            return;
+        } else {
+            $('.password-indicator').removeClass('password-empty');
+        }
+
         var rules = result.rules;
         rules.len = val.length >= 6 && val.length <= 20;
 
@@ -58,46 +66,46 @@ $(document).ready(function () {
 
         // Update the text indicator
         if(rules.len) {
-            $('.div_input_pos_signup .password-length').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-length').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .password-length').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-length').removeClass('password-indicator-verified');
         }
 
         var count = 0;
         if(rules.lower_case) {
             count++;
-            $('.div_input_pos_signup .rule-lower-case').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-lower-case').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .rule-lower-case').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-lower-case').removeClass('password-indicator-verified');
         }
 
         if(rules.upper_case) {
             count++;
-            $('.div_input_pos_signup .rule-upper-case').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-upper-case').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .rule-upper-case').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-upper-case').removeClass('password-indicator-verified');
         }
 
         if(rules.number) {
             count++;
-            $('.div_input_pos_signup .rule-number').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-number').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .rule-number').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-number').removeClass('password-indicator-verified');
         }
 
         if(rules.special_chars) {
             count++;
-            $('.div_input_pos_signup .rule-special-chars').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-special-chars').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .rule-special-chars').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-special-chars').removeClass('password-indicator-verified');
         }
 
         rules.complexity = count >= 2;
 
         if(rules.complexity) {
-            $('.div_input_pos_signup .password-complexity').addClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-complexity').addClass('password-indicator-verified');
         } else {
-            $('.div_input_pos_signup .password-complexity').removeClass('password-indicator-verified');
+            $('.div_input_pos_signup .password-indicator-complexity').removeClass('password-indicator-verified');
         }
 
         // Update the password strength meter

@@ -55,8 +55,8 @@
             <div class="d-table-cell">
                 <div class="group_form clearable">
                     <div class="input_relative">
-                        <input class="form-control input_mk" type="tel" placeholder="Số di động" value=""
-                               required=""/>
+                        <input class="form-control" type="tel" placeholder="Số di động" value=""
+                               required="" maxlength="15"/>
                         <div class="invalid-feedback show">
                             Số di động không hợp lệ
                         </div>
@@ -65,27 +65,28 @@
                 <div class="group_form_null clearable">
                     <div class="input_relative">
                         <input class="form-control input_mk" type="password" placeholder="Mật khẩu" value=""
-                               required=""/>
+                               required="" maxlength="20"/>
                         <div class="invalid-feedback show">
-                            <table class="password-indicator" style="text-align: left; margin: 0 auto;">
-                                <tr class="password-length">
-                                    <td>Chiều dài từ 6 đến 20 ký tự</td>
+                            <table class="password-indicator password-empty">
+                                <tr>
+                                    <td class="password-indicator-length"><span>Chiều dài từ 6 đến 20 ký tự</span></td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <!-- https://auth0.com/docs/connections/database/password-strength -->
-                                <tr class="password-complexity">
-                                    <td>Bao gồm từ 2 đến 4 loại ký tự</td>
+                                <tr>
+                                    <td class="password-indicator-complexity"><span>Bao gồm từ 2 đến 4 loại ký tự</span></td>
+                                    <td>&nbsp;</td>
                                 </tr>
-                                <tr class="password-complexity-rule rule-lower-case">
-                                    <td>Ký tự chữ thường (a-z)</td>
+                                <tr>
+                                    <td class="password-indicator-lower-case">
+                                        <span>Ký tự chữ thường (a-z)</span></td>
+                                    <td class="password-indicator-upper-case">
+                                        <span>Ký tự chữ hoa (A-Z)</span></td>
                                 </tr>
-                                <tr class="password-complexity-rule rule-upper-case">
-                                    <td>Ký tự chữ hoa (A-Z)</td>
-                                </tr>
-                                <tr class="password-complexity-rule rule-number">
-                                    <td>Số (0-9)</td>
-                                </tr>
-                                <tr class="password-complexity-rule rule-special-chars">
-                                    <td>Ký tự khác (như !@#)</td>
+                                <tr>
+                                    <td class="password-indicator-number"><span>Số (0-9)</span></td>
+                                    <td class="password-indicator-special-chars">
+                                        <span>Ký tự khác (như !@#)</span></td>
                                 </tr>
                             </table>
                         </div>
