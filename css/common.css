@@ -636,7 +636,7 @@ a:hover {
   text-align: center;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 24px;
   z-index: 2;
   background-color: transparent;
 }
@@ -736,7 +736,7 @@ a:hover {
   width: 40px;
   height: 40px;
   position: fixed;
-  top: 8px;
+  top: 32px;
   right: 8px;
   display: block;
   background-position: center center;
@@ -749,7 +749,7 @@ a:hover {
   width: 40px;
   height: 40px;
   position: fixed;
-  top: 8px;
+  top: 32px;
   left: 8px;
   display: block;
   background-position: center center;
