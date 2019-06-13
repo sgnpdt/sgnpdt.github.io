@@ -1514,6 +1514,11 @@ div.password-indicator-verified > span:before {
   font-size: 0.885em;
   white-space: nowrap;
 }
+.send-feedback-OTP .link_content.disable,
+.send-feedback-OTP .link_content.disable:hover {
+  color: #666!important;
+  border: none !important;
+}
 .send-feedback-OTP p {
   margin-bottom: 0.2rem;
 }
