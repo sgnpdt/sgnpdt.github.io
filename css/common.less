@@ -311,30 +311,9 @@ a:hover {
   box-shadow: none;
 }
 
-.btn-fb:not(:disabled):not(.disabled).active, .btn-fb:not(:disabled):not(.disabled):active, .show > .btn-fb.dropdown-toggle {
-  border: none;
-  background-color: #1c52c2;
-  color: @light-text !important;
-}
-
-.btn-fb:not(:disabled):not(.disabled).active:focus, .btn-fb:not(:disabled):not(.disabled):active:focus, .show > .btn-fb.dropdown-toggle:focus {
-  box-shadow: none;
-}
-
-.btn-fb.focus, .btn-fb:focus {
-  box-shadow: none;
-}
-
-.btn-fb {
-  .logo_fb {
-    position: relative;
-    top: -1px
-  }
-}
-
-.btn-fb:hover {
-  background-color: #1c52c2;
-  color: #fff !important;
+.btn-login{
+	img{position: relative;top:-1px;left: -1px;-webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);}
 }
 
 .btn-outline:not(:disabled):not(.disabled).active, .btn-outline:not(:disabled):not(.disabled):active, .show > .btn-outline.dropdown-toggle {
@@ -398,6 +377,33 @@ a:hover {
     color: @dark-text !important;
     cursor: pointer;
   }
+}
+
+
+.btn-fb:not(:disabled):not(.disabled).active, .btn-fb:not(:disabled):not(.disabled):active, .show > .btn-fb.dropdown-toggle {
+  border: none;
+  background-color: #1c52c2;
+  color: @light-text !important;
+}
+
+.btn-fb:not(:disabled):not(.disabled).active:focus, .btn-fb:not(:disabled):not(.disabled):active:focus, .show > .btn-fb.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-fb.focus, .btn-fb:focus {
+  box-shadow: none;
+}
+
+.btn-fb {
+  .logo_fb {
+    position: relative;
+    top: -1px
+  }
+}
+
+.btn-fb:hover {
+  background-color: #1c52c2 !important;
+  color: #fff !important;
 }
 
 .disable {
@@ -1392,7 +1398,7 @@ input:-ms-input-placeholder {
 .bg_OTP {
   top: 14%;
   position: absolute !important;
-  width: 100%;
+  width: 100%;height: 70%;
   left: 0;
   right: 0;
   .d-table {
