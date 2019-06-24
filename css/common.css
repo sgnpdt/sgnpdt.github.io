@@ -489,7 +489,8 @@ a:hover {
 }
 .btn-fb .logo_fb {
   position: relative;
-  top: -1px;
+  top: -2px;
+  left: -3px;
 }
 .btn-fb:hover {
   background-color: #1c52c2 !important;
