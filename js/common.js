@@ -122,7 +122,7 @@ $(document).ready(function () {
             setTimeout(function () {
                 input.select(); // select first
                 input.focus();
-            }, 100);
+            }, 50);
         } else {
             input.focus();
         }
@@ -204,7 +204,6 @@ $(document).ready(function () {
     });
 
     const pinLen = $('.inputs .pin').length;
-
     function setLog(msg) {
         console.log(msg);
         $('.pin-log').html(msg + '<br />' + $('.log').html());
