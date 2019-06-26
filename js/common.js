@@ -303,33 +303,6 @@ $(document).ready(function () {
         }
     });
 
-    // DIV click (optional)
-    $('.inputs').click(function (evt) {
-
-        // Check all PIN are empty
-        if ($('#pin-0').val() === '') {
-            evt.stopPropagation();
-
-            console.log('Focus #6 for PIN-' + 0);
-            setPinFocus($('#pin-0'));
-        } else {
-            var last = false;
-            for (var i = pinLen - 1; i >= 0; i--) {
-                var digit = $('#pin-' + i).val() || '';
-                if (digit !== '') {
-                    last = i + 1;
-                    last = last > (pinLen - 1) ? (pinLen - 1) : last;
-                    break;
-                }
-            }
-
-            if (last !== false) {
-                console.log('Focus #7 for PIN-' + last);
-                setPinFocus($('#pin-' + last));
-            }
-        }
-    });
-
     // Set height of HTML tag
     $('html').css('height', $(window).height());
     $('body.bg_OTP').css('height', ($(window).height() - 150));
