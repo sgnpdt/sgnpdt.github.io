@@ -190,15 +190,15 @@ $(document).ready(function () {
 
     const pinLen = $('.inputs .pin').length;
 
-    function setFocus(input) {
+    function setPinFocus(input) {
         const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
-        
+
         // Not work on Safari?
         if (isIos) {
             setTimeout(function () {
                 input.select(); // select first
                 input.focus();
-            }, 300);
+            }, 100);
         } else {
             input.focus();
         }
@@ -213,7 +213,7 @@ $(document).ready(function () {
 
         if (curr >= 0) {
             console.log('Focus #0 for PIN-' + curr);
-            setFocus($('#pin-' + curr));
+            setPinFocus($('#pin-' + curr));
         }
     });
 
@@ -229,7 +229,7 @@ $(document).ready(function () {
                 evt.stopPropagation();
 
                 console.log('Focus #1 for PIN-' + 0);
-                setFocus($('#pin-0'));
+                setPinFocus($('#pin-0'));
             } else {
                 var last = false;
                 for (var i = pinLen - 1; i >= 0; i--) {
@@ -247,7 +247,7 @@ $(document).ready(function () {
                     }
 
                     console.log('Focus #2 for PIN-' + last);
-                    setFocus($('#pin-' + last));
+                    setPinFocus($('#pin-' + last));
                 }
             }
         });
@@ -275,7 +275,7 @@ $(document).ready(function () {
 
             if (last === false) {
                 console.log('Focus #3 for PIN-' + 0);
-                setFocus($('#pin-0'));
+                setPinFocus($('#pin-0'));
             } else {
                 console.log('ERROR ' + evt.target.id, $(evt.target).val());
             }
@@ -285,7 +285,7 @@ $(document).ready(function () {
                 evt.stopPropagation();
 
                 console.log('Focus #4 for PIN-' + last);
-                setFocus($('#pin-' + last));
+                setPinFocus($('#pin-' + last));
             }
         }
     });
@@ -298,7 +298,34 @@ $(document).ready(function () {
 
             // Set focus for PIN-0 if error, submit and clear all PIN
             $('.inputs .pin').val('');
-            setFocus($('#pin-0'));
+            setPinFocus($('#pin-0'));
+        }
+    });
+
+    // DIV click
+    $('.inputs').click(function (evt) {
+
+        // Check all PIN are empty
+        if ($('#pin-0').val() === '') {
+            evt.stopPropagation();
+
+            console.log('Focus #6 for PIN-' + 0);
+            setPinFocus($('#pin-0'));
+        } else {
+            var last = false;
+            for (var i = pinLen - 1; i >= 0; i--) {
+                var digit = $('#pin-' + i).val() || '';
+                if (digit !== '') {
+                    last = i + 1;
+                    last = last > (pinLen - 1) ? (pinLen - 1) : last;
+                    break;
+                }
+            }
+
+            if (last !== false) {
+                console.log('Focus #7 for PIN-' + last);
+                setPinFocus($('#pin-' + last));
+            }
         }
     });
 
@@ -314,7 +341,7 @@ $(document).ready(function () {
     // HTML5 autofocus attribute is not supported on iOS
     // https://caniuse.com/#feat=autofocus
     console.log('Focus STARTED');
-    setFocus($('#pin-0'));
+    setPinFocus($('#pin-0'));
 
     // Show soft-keyboard?
     // The script that calls focus() click() on an input needs 

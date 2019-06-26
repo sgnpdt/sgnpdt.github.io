@@ -137,7 +137,7 @@
                         setTimeout(function () {
                             input.select(); // select first
                             input.focus();
-                        }, 300);
+                        }, 100);
                     } else {
                         input.focus();
                     }
