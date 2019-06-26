@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_tv_link_code.html" afterPath="$PROJECT_DIR$/v2_tv_link_code.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -363,12 +365,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v2_tv_link_code.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="v2_tv_link_code.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="56" column="95" lean-forward="true" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
-              <folding />
+            <state relative-caret-position="461">
+              <caret line="63" column="60" lean-forward="false" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -383,11 +387,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="284" column="39" lean-forward="true" selection-start-line="284" selection-start-column="39" selection-end-line="284" selection-end-column="39" />
+            <state relative-caret-position="250">
+              <caret line="208" column="25" lean-forward="true" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v2_kich_hoat_otp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-561">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -397,7 +411,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>link_primary</find>
       <find>gửi lại</find>
       <find>Gửi lại</find>
       <find>link_content</find>
@@ -427,12 +440,14 @@
       <find>focusable</find>
       <find>isIos</find>
       <find>focused</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
       <replace>'.inputs pin'</replace>
       <replace>.inputs .pin</replace>
       <replace>'Focus #</replace>
+      <replace>setLog</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -474,9 +489,9 @@
         <option value="$PROJECT_DIR$/v2_sign_up.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/common.less" />
-        <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
         <option value="$PROJECT_DIR$/js/jquery-pincode-autotab.js" />
         <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
       </list>
     </option>
   </component>
@@ -583,12 +598,12 @@
       <workItem from="1559703536143" duration="27969000" />
       <workItem from="1560265390135" duration="15030000" />
       <workItem from="1560321913761" duration="9662000" />
-      <workItem from="1561514897096" duration="5355000" />
+      <workItem from="1561514897096" duration="5907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58016000" />
+    <option name="totallyTimeSpent" value="58568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1090,6 +1105,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
           <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,7 +1118,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2_sign_up_otp_count_down.html" />
     <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html" />
-    <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html" />
     <entry file="file://$PROJECT_DIR$/v2_new_device.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1454,14 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="56" column="95" lean-forward="true" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-pincode-autotab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1472,9 +1479,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="284" column="39" lean-forward="true" selection-start-line="284" selection-start-column="39" selection-end-line="284" selection-end-column="39" />
+        <state relative-caret-position="250">
+          <caret line="208" column="25" lean-forward="true" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_kich_hoat_otp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="63" column="60" lean-forward="false" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

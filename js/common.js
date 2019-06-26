@@ -205,15 +205,20 @@ $(document).ready(function () {
 
     const pinLen = $('.inputs .pin').length;
 
+    function setLog(msg) {
+        console.log(msg);
+        $('.log').html(msg + '<br />' + $('.log').html());
+    }
+
     // Process custom event pindel
     $('.inputs .pin').on('delpin', function (evt) {
-        console.log('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+        setLog('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
 
         var curr = parseInt(evt.target.id.substr('pin-'.length));
         $('#pin-' + curr).val('');
 
         if (curr >= 0) {
-            console.log('Focus #0 for PIN-' + curr);
+            setLog('Focus #0 for PIN-' + curr);
             setPinFocus($('#pin-' + curr));
         }
     });
@@ -222,14 +227,14 @@ $(document).ready(function () {
     // Always set focus on PIN inputs?
     if (alwaysFocus) {
         $('.inputs .pin').blur(function (evt) {
-            console.log('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+            setLog('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
             var curr = parseInt(evt.target.id.substr('pin-'.length));
 
             // Check all PIN are empty
             if ($('#pin-0').val() === '') {
                 evt.stopPropagation();
 
-                console.log('Focus #1 for PIN-' + 0);
+                setLog('Focus #1 for PIN-' + 0);
                 setPinFocus($('#pin-0'));
             } else {
                 var last = false;
@@ -247,7 +252,7 @@ $(document).ready(function () {
                         evt.stopPropagation();
                     }
 
-                    console.log('Focus #2 for PIN-' + last);
+                    setLog('Focus #2 for PIN-' + last);
                     setPinFocus($('#pin-' + last));
                 }
             }
@@ -255,7 +260,7 @@ $(document).ready(function () {
     }
 
     $('.inputs .pin').focus(function (evt) {
-        console.log('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+        setLog('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
         var curr = parseInt(evt.target.id.substr('pin-'.length));
 
         var last = false;
@@ -270,32 +275,32 @@ $(document).ready(function () {
 
         // Check all PIN are empty
         if ($('#pin-0').val() === '' && curr > 0) {
-            console.log('Blur ' + evt.target.id, $(evt.target).val());
+            setLog('Blur ' + evt.target.id, $(evt.target).val());
             //$(evt.target).blur();
             //evt.stopPropagation();
 
             if (last === false) {
-                console.log('Focus #3 for PIN-' + 0);
+                setLog('Focus #3 for PIN-' + 0);
                 setPinFocus($('#pin-0'));
             } else {
-                console.log('ERROR ' + evt.target.id, $(evt.target).val());
+                setLog('ERROR ' + evt.target.id, $(evt.target).val());
             }
         } else if (last !== false) {
             if (last !== curr) {
                 //$(evt.target).blur();
                 //evt.stopPropagation();
 
-                console.log('Focus #4 for PIN-' + last);
+                setLog('Focus #4 for PIN-' + last);
                 setPinFocus($('#pin-' + last));
             }
         }
     });
 
     $('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
-        console.log('On keyup ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+        setLog('On keyup ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
 
         if ($('#pin-5').val() !== '') {
-            console.log('Focus #5 for PIN-' + 0);
+            setLog('Focus #5 for PIN-' + 0);
 
             // Set focus for PIN-0 if error, submit and clear all PIN
             $('.inputs .pin').val('');
@@ -314,7 +319,7 @@ $(document).ready(function () {
 
     // HTML5 autofocus attribute is not supported on iOS
     // https://caniuse.com/#feat=autofocus
-    console.log('Focus STARTED');
+    setLog('Focus STARTED');
     setPinFocus($('#pin-0'));
 
     // Show soft-keyboard?
