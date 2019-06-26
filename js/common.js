@@ -209,6 +209,21 @@ $(document).ready(function () {
         $('.pin-log').html(msg + '<br />' + $('.log').html());
     }
 
+    function debounce(fn, delay) {
+        var timer = null;
+        return function () {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                fn.apply(context, args);
+            }, delay);
+        };
+    }
+
+    $('.inputs .pin').on.keypress(debounce(function (event) {
+
+    }, 100));
+
     // Process custom event pindel
     $('.inputs .pin').on('delpin', function (evt) {
         setLog('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');

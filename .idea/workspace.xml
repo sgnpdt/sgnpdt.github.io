@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-pincode-autotab.js" afterPath="$PROJECT_DIR$/js/jquery-pincode-autotab.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -374,21 +373,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-pincode-autotab.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery-pincode-autotab.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery-pincode-autotab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="-578">
               <caret line="140" column="28" lean-forward="true" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="124" column="17" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="17" />
+            <state relative-caret-position="284">
+              <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -408,7 +407,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gửi lại</find>
       <find>Gửi lại</find>
       <find>link_content</find>
       <find>\n  padding\-left\: 0\.5rem\;\n  padding\-right\: 0\.5rem\;</find>
@@ -438,6 +436,7 @@
       <find>isIos</find>
       <find>focused</find>
       <find>console.log</find>
+      <find>setTimeout</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -487,8 +486,8 @@
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/common.less" />
         <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
-        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/js/jquery-pincode-autotab.js" />
+        <option value="$PROJECT_DIR$/js/common.js" />
       </list>
     </option>
   </component>
@@ -595,12 +594,12 @@
       <workItem from="1559703536143" duration="27969000" />
       <workItem from="1560265390135" duration="15030000" />
       <workItem from="1560321913761" duration="9662000" />
-      <workItem from="1561514897096" duration="6235000" />
+      <workItem from="1561514897096" duration="6915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58896000" />
+    <option name="totallyTimeSpent" value="59576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1482,18 +1481,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/js/jquery-pincode-autotab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="124" column="17" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="17" />
+        <state relative-caret-position="-578">
+          <caret line="140" column="28" lean-forward="true" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery-pincode-autotab.js">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="140" column="28" lean-forward="true" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
+        <state relative-caret-position="284">
+          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding />
         </state>
       </provider>
