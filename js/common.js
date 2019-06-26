@@ -207,7 +207,7 @@ $(document).ready(function () {
 
     function setLog(msg) {
         console.log(msg);
-        $('.log').html(msg + '<br />' + $('.log').html());
+        $('.pin-log').html(msg + '<br />' + $('.log').html());
     }
 
     // Process custom event pindel
@@ -319,7 +319,7 @@ $(document).ready(function () {
 
     // HTML5 autofocus attribute is not supported on iOS
     // https://caniuse.com/#feat=autofocus
-    setLog('Focus STARTED');
+    setLog('-- Auto focus STARTED --');
     setPinFocus($('#pin-0'));
 
     // Show soft-keyboard?
