@@ -119,10 +119,11 @@ $(document).ready(function () {
 
         // Not work on Safari?
         if (isIos) {
+            // 4ms is specified by the HTML5 spec
             setTimeout(function () {
                 input.select(); // select first
                 input.focus();
-            }, 50);
+            }, 10);
         } else {
             input.focus();
         }
@@ -208,21 +209,6 @@ $(document).ready(function () {
         console.log(msg);
         $('.pin-log').html(msg + '<br />' + $('.log').html());
     }
-
-    function debounce(fn, delay) {
-        var timer = null;
-        return function () {
-            var context = this, args = arguments;
-            clearTimeout(timer);
-            timer = setTimeout(function () {
-                fn.apply(context, args);
-            }, delay);
-        };
-    }
-
-    $('.inputs .pin').on.keypress(debounce(function (event) {
-
-    }, 100));
 
     // Process custom event pindel
     $('.inputs .pin').on('delpin', function (evt) {

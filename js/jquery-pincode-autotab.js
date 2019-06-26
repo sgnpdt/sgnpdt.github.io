@@ -134,10 +134,11 @@
 
                     // Not work on Safari?
                     if (isIos) {
+                        // 4ms is specified by the HTML5 spec
                         setTimeout(function () {
                             input.select(); // select first
                             input.focus();
-                        }, 50);
+                        }, 10);
                     } else {
                         input.focus();
                     }
