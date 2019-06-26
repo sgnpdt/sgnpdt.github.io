@@ -48,7 +48,7 @@ $(document).ready(function () {
             }
         };
 
-        if(val === '') {
+        if (val === '') {
             $('.password-indicator').addClass('password-empty');
             $('.password-indicator-verified').removeClass('password-indicator-verified');
             return;
@@ -65,35 +65,35 @@ $(document).ready(function () {
         rules.special_chars = /[^a-zA-Z0-9]/.test(val);
 
         // Update the text indicator
-        if(rules.len) {
+        if (rules.len) {
             $('.div_input_pos_signup .password-indicator-length').addClass('password-indicator-verified');
         } else {
             $('.div_input_pos_signup .password-indicator-length').removeClass('password-indicator-verified');
         }
 
         var count = 0;
-        if(rules.lower_case) {
+        if (rules.lower_case) {
             count++;
             $('.div_input_pos_signup .password-indicator-lower-case').addClass('password-indicator-verified');
         } else {
             $('.div_input_pos_signup .password-indicator-lower-case').removeClass('password-indicator-verified');
         }
 
-        if(rules.upper_case) {
+        if (rules.upper_case) {
             count++;
             $('.div_input_pos_signup .password-indicator-upper-case').addClass('password-indicator-verified');
         } else {
             $('.div_input_pos_signup .password-indicator-upper-case').removeClass('password-indicator-verified');
         }
 
-        if(rules.number) {
+        if (rules.number) {
             count++;
             $('.div_input_pos_signup .password-indicator-number').addClass('password-indicator-verified');
         } else {
             $('.div_input_pos_signup .password-indicator-number').removeClass('password-indicator-verified');
         }
 
-        if(rules.special_chars) {
+        if (rules.special_chars) {
             count++;
             $('.div_input_pos_signup .password-indicator-special-chars').addClass('password-indicator-verified');
         } else {
@@ -102,7 +102,7 @@ $(document).ready(function () {
 
         rules.complexity = count >= 2;
 
-        if(rules.complexity) {
+        if (rules.complexity) {
             $('.div_input_pos_signup .password-indicator-complexity').addClass('password-indicator-verified');
         } else {
             $('.div_input_pos_signup .password-indicator-complexity').removeClass('password-indicator-verified');
@@ -120,12 +120,11 @@ $(document).ready(function () {
             str = ''; //unnecesary || added for some future mods
 
         elements.each(function (e) { // iterates through each element
-            var val = $(this).val().replace(/\D/, ''), // taking the value and parsing it. Returns string without changing the value.
-                focused = $(this).is(':focus'), // checks if the current element in the iteration is focused
-                parseGate = false;
+            var val = $(this).val().replace(/\D/, ''); // taking the value and parsing it. Returns string without changing the value.
+            var focused = $(this).is(':focus'); // checks if the current element in the iteration is focused
 
             var clear = $('#inputs input');
-            val.length === 1 ? parseGate = false : parseGate = true;
+            var parseGate = val.length !== 1;
             /*
                 a fix that doesn't allow the cursor to jump
                 to another field even if input was parsed
@@ -134,9 +133,10 @@ $(document).ready(function () {
 
             $(this).val(val); // applying parsed value.
 
+            var exist; // checks if there is input
             if (parseGate && val.length > 1) {
                 // takes you to another input
-                var exist = elements[e + 1] ? true : false; // checks if there is input ahead
+                exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
                 exist && val[1] ? ( // if so then
                     elements[e + 1].disabled = false,
@@ -148,10 +148,10 @@ $(document).ready(function () {
                         elements[e + 1].focus(), // sends the focus to the next input
                         elements[e + 1].classList.add('focused')
                 ) : void 0;
-            } else if (parseGate && focused && val.length == 0) {
+            } else if (parseGate && focused && val.length === 0) {
                 // if the input was REMOVING the character, then
 
-                var exist = elements[e - 1] ? true : false; // checks if there is an input before
+                exist = elements[e - 1] ? true : false; // checks if there is an input before
                 if (exist) {
                     elements[e - 1].focus(); // sends the focus back to the previous input
                 }
@@ -192,12 +192,12 @@ $(document).ready(function () {
     const pinLen = $('.inputs .pin').length;
 
     function setFocus(input) {
-        // No set timeout, not work on Safari
+        // Not work on Safari?
         if (isIos) {
             setTimeout(function () {
-                input.select();
+                input.select(); // select first
                 input.focus();
-            }, 100);
+            }, 300);
         } else {
             input.focus();
         }
