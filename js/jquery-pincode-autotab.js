@@ -130,6 +130,8 @@
                 }
 
                 var setPinFocus = function (input) {
+                    const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
+
                     // Not work on Safari?
                     if (isIos) {
                         setTimeout(function () {
@@ -154,7 +156,6 @@
 
                     if (listOfElements[i] === this) {
                         var ele, j;
-                        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
                         switch (move) {
                             case 1:
                                 if (nextElement) {

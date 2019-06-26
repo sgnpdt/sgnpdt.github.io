@@ -188,10 +188,11 @@ $(document).ready(function () {
         //$('.bg_OTP').css('height', $(window).height());	
     });
 
-    const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
     const pinLen = $('.inputs .pin').length;
 
     function setFocus(input) {
+        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
+        
         // Not work on Safari?
         if (isIos) {
             setTimeout(function () {
