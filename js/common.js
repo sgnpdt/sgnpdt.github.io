@@ -271,8 +271,8 @@ $(document).ready(function () {
         // Check all PIN are empty
         if ($('#pin-0').val() === '' && curr > 0) {
             console.log('Blur ' + evt.target.id, $(evt.target).val());
-            $(evt.target).blur();
-            evt.stopPropagation();
+            //$(evt.target).blur();
+            //evt.stopPropagation();
 
             if (last === false) {
                 console.log('Focus #3 for PIN-' + 0);
@@ -282,8 +282,8 @@ $(document).ready(function () {
             }
         } else if (last !== false) {
             if (last !== curr) {
-                $(evt.target).blur();
-                evt.stopPropagation();
+                //$(evt.target).blur();
+                //evt.stopPropagation();
 
                 console.log('Focus #4 for PIN-' + last);
                 setPinFocus($('#pin-' + last));
