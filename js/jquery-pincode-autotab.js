@@ -113,6 +113,7 @@
                             event.preventDefault();
                         }
                         break;
+
                     case 13: //enter
                     case 16: //shift
                     case 17: //ctrl
@@ -127,6 +128,18 @@
                     default:
                         event.preventDefault();
                 }
+
+                var setPinFocus = function (input) {
+                    // Not work on Safari?
+                    if (isIos) {
+                        setTimeout(function () {
+                            input.select(); // select first
+                            input.focus();
+                        }, 300);
+                    } else {
+                        input.focus();
+                    }
+                };
 
                 for (var i = 0; i < listOfElements.length; i++) {
                     var prevElement;
@@ -146,33 +159,37 @@
                             case 1:
                                 if (nextElement) {
                                     // $(nextElement).select();
-                                    if(isIos) {
-                                        $(nextElement).select();
-                                    }
-									
-									// Set timeout?
-                                    $(nextElement).focus();
+                                    // if (isIos) {
+                                    //     $(nextElement).select();
+                                    // }
+                                    //
+                                    // // Set timeout?
+                                    // $(nextElement).focus();
+
+                                    setPinFocus($(nextElement));
                                 } else {
                                     if (settings.nextElement) {
                                         // settings.nextElement.select();
-                                        if(isIos) {
-                                            settings.nextElement.select();
-                                        }
-										
-										// Set timeout?
-                                        settings.nextElement.focus();
+                                        // if (isIos) {
+                                        //     settings.nextElement.select();
+                                        // }
+                                        //
+                                        // // Set timeout?
+                                        // settings.nextElement.focus();
+                                        setPinFocus(settings.nextElement);
                                     } else if (settings.defaultFlow) {
                                         ele = $(':focusable');
                                         for (j = 0; j < ele.length; j++) {
                                             if (ele[j] === this) {
                                                 if (ele[j + 1]) {
                                                     //$(ele[j + 1]).select();
-                                                    if(isIos) {
-                                                        $(ele[j + 1]).select();
-                                                    }
-													
-													// Set timeout?
-                                                    $(ele[j + 1]).focus();
+                                                    // if (isIos) {
+                                                    //     $(ele[j + 1]).select();
+                                                    // }
+                                                    //
+                                                    // // Set timeout?
+                                                    // $(ele[j + 1]).focus();
+                                                    setPinFocus($(ele[j + 1]));
                                                 }
 
                                                 break;
@@ -245,9 +262,11 @@
 
     function focusable(element, isTabIndexNotNaN) {
         var map, mapName, img, nodeName = element.nodeName.toLowerCase();
+
         if ('area' === nodeName) {
             map = element.parentNode;
             mapName = map.name;
+
             if (!element.href || !mapName || map.nodeName.toLowerCase() !== 'map') {
                 return false;
             }
@@ -255,13 +274,11 @@
             img = $('img[usemap=#' + mapName + ']')[0];
             return !!img && visible(img);
         }
+
         return (/input|select|textarea|button|object/.test(nodeName) ?
-            !element.disabled :
-            'a' === nodeName ?
-                element.href || isTabIndexNotNaN :
-                isTabIndexNotNaN) &&
-            // the element and all of its ancestors must be visible
-            visible(element);
+            !element.disabled : 'a' === nodeName ?
+                element.href || isTabIndexNotNaN : isTabIndexNotNaN) && visible(element);
+        // the element and all of its ancestors must be visible
     }
 
     $.extend($.expr[':'], {
