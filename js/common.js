@@ -114,6 +114,20 @@ $(document).ready(function () {
         return result;
     });
 
+    function setPinFocus(input) {
+        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
+
+        // Not work on Safari?
+        if (isIos) {
+            setTimeout(function () {
+                input.select(); // select first
+                input.focus();
+            }, 100);
+        } else {
+            input.focus();
+        }
+    }
+
     // OTP input
     function processInput(holder) {
         var elements = holder.children(), // taking the "kids" of the parent
@@ -122,7 +136,6 @@ $(document).ready(function () {
         elements.each(function (e) { // iterates through each element
             var val = $(this).val().replace(/\D/, ''); // taking the value and parsing it. Returns string without changing the value.
             var focused = $(this).is(':focus'); // checks if the current element in the iteration is focused
-
             var clear = $('#inputs input');
             var parseGate = val.length !== 1;
             /*
@@ -138,16 +151,18 @@ $(document).ready(function () {
                 // takes you to another input
                 exist = elements[e + 1] ? true : false; // checks if there is input ahead
 
-                exist && val[1] ? ( // if so then
-                    elements[e + 1].disabled = false,
-                        elements[e + 1].value = val[1], // sends the last character to the next input
-                        elements[e].value = val[0], // clears the last character of this input
+                if (exist && val[1]) {
+                    // if so then
+                    elements[e + 1].disabled = false;
+                    elements[e + 1].value = val[1]; // sends the last character to the next input
+                    elements[e].value = val[0]; // clears the last character of this input
 
 
-                        // NEED TO FOCUS HERE
-                        elements[e + 1].focus(), // sends the focus to the next input
-                        elements[e + 1].classList.add('focused')
-                ) : void 0;
+                    // NEED TO FOCUS HERE
+                    //elements[e + 1].focus(); // sends the focus to the next input
+                    setPinFocus(elements[e + 1]);
+                    elements[e + 1].classList.add('focused');
+                }
             } else if (parseGate && focused && val.length === 0) {
                 // if the input was REMOVING the character, then
 
@@ -185,24 +200,10 @@ $(document).ready(function () {
             $('body').css('background-size', 'contain');
         }
 
-        //$('.bg_OTP').css('height', $(window).height());	
+        //$('.bg_OTP').css('height', $(window).height());
     });
 
     const pinLen = $('.inputs .pin').length;
-
-    function setPinFocus(input) {
-        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
-
-        // Not work on Safari?
-        if (isIos) {
-            setTimeout(function () {
-                input.select(); // select first
-                input.focus();
-            }, 100);
-        } else {
-            input.focus();
-        }
-    }
 
     // Process custom event pindel
     $('.inputs .pin').on('delpin', function (evt) {
@@ -302,7 +303,7 @@ $(document).ready(function () {
         }
     });
 
-    // DIV click
+    // DIV click (optional)
     $('.inputs').click(function (evt) {
 
         // Check all PIN are empty
@@ -344,6 +345,6 @@ $(document).ready(function () {
     setPinFocus($('#pin-0'));
 
     // Show soft-keyboard?
-    // The script that calls focus() click() on an input needs 
+    // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
 });
