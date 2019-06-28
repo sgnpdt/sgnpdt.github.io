@@ -396,7 +396,7 @@ a:hover {
 .show > .btn-primary.dropdown-toggle {
   border: none;
   background-color: #FFD200;
-  color: #000000 !important;
+  color: #262626 !important;
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -411,13 +411,14 @@ a:hover {
   position: relative;
   top: -1px;
   left: -1px;
+  width: 17px;
 }
 .btn-outline:not(:disabled):not(.disabled).active,
 .btn-outline:not(:disabled):not(.disabled):active,
 .show > .btn-outline.dropdown-toggle {
   border: 1px solid #ffd200;
   background-color: transparent;
-  color: #000000 !important;
+  color: #262626 !important;
 }
 .btn-outline:not(:disabled):not(.disabled).active:focus,
 .btn-outline:not(:disabled):not(.disabled):active:focus,
@@ -450,10 +451,15 @@ a:hover {
   text-align: center;
   border-radius: 2px;
   font-weight: normal;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
 }
 .btn-primary:hover {
-  background-color: #FFD200;
-  color: #000000 !important;
+  background-color: #d6b000;
+  color: #262626 !important;
   cursor: pointer;
 }
 .btn-secondary {
@@ -465,10 +471,15 @@ a:hover {
   border-radius: 2px;
   font-weight: normal;
   border: 1px solid #FFD200;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
 }
 .btn-secondary:hover {
   background-color: #FFD200;
-  color: #000000 !important;
+  color: #262626 !important;
   cursor: pointer;
 }
 .btn-fb:not(:disabled):not(.disabled).active,
@@ -487,13 +498,17 @@ a:hover {
 .btn-fb:focus {
   box-shadow: none;
 }
+.btn-fb {
+  background-color: #1c52c2;
+  color: #fff !important;
+}
 .btn-fb .logo_fb {
   position: relative;
   top: -1px;
   left: -3px;
 }
 .btn-fb:hover {
-  background-color: #1c52c2 !important;
+  background-color: #1848a8 !important;
   color: #fff !important;
 }
 .disable {
@@ -505,10 +520,6 @@ a:hover {
   background-color: transparent !important;
   color: #666 !important;
   border: 1px solid #666 !important;
-}
-.btn-fb {
-  background-color: #1c52c2;
-  color: #fff !important;
 }
 .group_form {
   position: relative;
@@ -727,7 +738,7 @@ a:hover {
 }
 .subtext {
   font-size: 16px;
-  color: #000000;
+  color: #262626;
 }
 .btn_close {
   background-image: url(../master/images/icon_close.png);
@@ -891,12 +902,22 @@ a:hover {
 .link_primary {
   color: #FFD200 !important;
   font-size: 0.875em;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
 }
 .link_content {
-  color: #e5bb00;
+  color: #FFD200;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
 }
 .link_content:hover {
-  color: #0EB1AA !important;
+  color: #d6b000 !important;
 }
 .div_title_sub {
   margin-top: 32px;
@@ -1066,11 +1087,25 @@ a:hover {
 }
 .list_device .list-group-item {
   background-color: transparent;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
   color: #fff !important;
   position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1em;
+}
+.list_device .list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.list_device .list-group-item:first-child {
+  border-radius: 0;
+}
+.list_device .list-group-item:last-child {
+  border-radius: 0;
 }
 .list_device .list-group-item:after {
   background-image: url(../master/images/icon_unlink.png);
@@ -1083,6 +1118,7 @@ a:hover {
   display: inline-block;
   position: absolute;
   right: 15px;
+  top: 19px;
 }
 .list-group-item:first-child {
   border-bottom-right-radius: 0;
@@ -1227,6 +1263,9 @@ a:hover {
   font-size: 64px;
   color: rgba(255, 255, 255, 0.8);
 }
+.div_profile_selected .div_add_profile .avatar:hover {
+  background-color: #d6b000;
+}
 .div_profile_selected .profile {
   max-width: 110px;
   display: block;
@@ -1267,6 +1306,11 @@ a:hover {
   border-radius: 4px 4px 4px 4px;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
 }
 .bg_malienket .btn_huongdan:after {
   position: absolute;
@@ -1280,6 +1324,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 .bg_malienket .btn_huongdan:hover {
+  background-color: #d6b000;
   color: #2a1919 !important;
 }
 .bg_malienket .hd {
@@ -1544,7 +1589,7 @@ div.password-indicator-verified > span:before {
 }
 .title_mk .text_color {
   font-weight: 300;
-  color: #e5bb00;
+  color: #FFD200;
   font-size: 0.885em;
 }
 .bg_mk {
@@ -1597,6 +1642,9 @@ div.password-indicator-verified > span:before {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+.div_profile_selected .avatar .bg_edit:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .edit_mode .bg_edit {
   display: block !important;

@@ -312,7 +312,7 @@ a:hover {
 }
 
 .btn-login{
-	img{position: relative;top:-1px;left: -1px;}
+	img{position: relative;top:-1px;left: -1px;width: 17px;}
 }
 
 .btn-outline:not(:disabled):not(.disabled).active, .btn-outline:not(:disabled):not(.disabled):active, .show > .btn-outline.dropdown-toggle {
@@ -355,8 +355,9 @@ a:hover {
   text-align: center;
   border-radius: 2px;
   font-weight: normal;
+  .animation(all);
   &:hover {
-    background-color: @primary-color;
+    background-color: @press-color;
     color: @dark-text !important;
     cursor: pointer;
   }
@@ -371,6 +372,7 @@ a:hover {
   border-radius: 2px;
   font-weight: normal;
   border: 1px solid @primary-color;
+  .animation(all);
   &:hover {
     background-color: @primary-color;
     color: @dark-text !important;
@@ -394,14 +396,17 @@ a:hover {
 }
 
 .btn-fb {
+  background-color: #1c52c2;
+  color: #fff !important;
   .logo_fb {
+	
     position: relative;
     top: -1px;left: -3px;
   }
 }
 
 .btn-fb:hover {
-  background-color: #1c52c2 !important;
+  background-color: #1848a8 !important;
   color: #fff !important;
 }
 
@@ -416,10 +421,6 @@ a:hover {
   }
 }
 
-.btn-fb {
-  background-color: #1c52c2;
-  color: #fff !important;
-}
 
 //input form
 .group_form {
@@ -844,14 +845,15 @@ a:hover {
 .link_primary {
   color: @primary-color !important;
   font-size: 0.875em;
+  .animation(all);
 }
 
 .link_content {
-  color: @link-color;
+  color: @link-color;.animation(all);
 }
 
 .link_content:hover {
-  color: @primary-text !important;
+  color: @press-color !important;
 }
 
 .div_title_sub {
@@ -1025,12 +1027,17 @@ a:hover {
   margin-top: 32px;
   .list-group-item {
     background-color: transparent;
+	.animation(all);
+	  
     font-size: 1em;
     color: #fff !important;
     position: relative;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1em;
+	&:hover{background-color: rgba(255,255,255,0.12);}
+	&:first-child{border-radius: 0;}
+	&:last-child{border-radius: 0;}
     &:after {
       .source-icon-device();
       content: "";
@@ -1041,6 +1048,7 @@ a:hover {
       display: inline-block;
       position: absolute;
       right: 15px;
+	  top:19px;
     }
   }
 
@@ -1203,6 +1211,12 @@ a:hover {
       font-size: 64px;
       color: rgba(255, 255, 255, 0.8);
     }
+	
+  }
+  .div_add_profile{
+	.avatar{
+		&:hover{background-color:@press-color; }
+	}
   }
   .profile {
     max-width: 110px;
@@ -1245,6 +1259,7 @@ a:hover {
     border-radius: @radius-4;
     position: relative;
     cursor: pointer;
+	.animation(all);
     &:after {
       position: absolute;
       bottom: -10px;
@@ -1257,7 +1272,11 @@ a:hover {
     }
   }
   .btn_huongdan:hover {
+	background-color: @press-color;
     color: @dark-text-btn !important;
+	  &:after {
+
+	  }
   }
   .hd {
     .source-icon-hd();
@@ -1606,7 +1625,9 @@ div.password-indicator-verified > span:before {
         background-position: center;
         background-repeat: no-repeat;
       }
+	  &:hover{background-color: rgba(0,0,0,0.3);}
     }
+	
 
   }
 }
