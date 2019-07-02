@@ -457,7 +457,8 @@ a:hover {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #d6b000;
   color: #262626 !important;
   cursor: pointer;
@@ -512,7 +513,8 @@ a:hover {
   top: -1px;
   left: -3px;
 }
-.btn-fb:hover {
+.btn-fb:hover,
+.btn-fb:focus {
   background-color: #1848a8 !important;
   color: #fff !important;
 }
@@ -544,7 +546,8 @@ a:hover {
   padding-bottom: 16px;
 }
 .form-control,
-.form-control:focus {
+.form-control:focus,
+.form-control.invalid-feedback {
   height: 50px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -1411,7 +1414,7 @@ input:-ms-input-placeholder {
   font-size: 0.720em;
   color: #fe1d03;
   text-align: center;
-  top: 4px;
+  top: 0;
   position: relative;
   margin-top: 0;
   margin-bottom: 0;

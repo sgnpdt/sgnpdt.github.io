@@ -356,7 +356,7 @@ a:hover {
   border-radius: 2px;
   font-weight: normal;
   .animation(all);
-  &:hover {
+  &:hover,&:focus {
     background-color: @press-color;
     color: @dark-text !important;
     cursor: pointer;
@@ -406,7 +406,7 @@ a:hover {
   }
 }
 
-.btn-fb:hover {
+.btn-fb:hover,.btn-fb:focus {
   background-color: #1848a8 !important;
   color: #fff !important;
 }
@@ -439,7 +439,7 @@ a:hover {
   }
 }
 
-.form-control, .form-control:focus {
+.form-control, .form-control:focus, .form-control.invalid-feedback {
   height: 50px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -453,6 +453,7 @@ a:hover {
   text-align: center;
   font-weight: 300;
 }
+
 
 .invalid-feedback {
   position: relative;
@@ -1363,7 +1364,7 @@ input:-ms-input-placeholder {
   font-size: 0.720em;
   color: #fe1d03;
   text-align: center;
-  top: 4px;
+  top: 0;
   position: relative;
   margin-top: 0;
   margin-bottom: 0;
