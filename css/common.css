@@ -458,7 +458,8 @@ a:hover {
   -ms-transition: all 0.3s;
 }
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #d6b000;
   color: #262626 !important;
   cursor: pointer;
@@ -514,7 +515,8 @@ a:hover {
   left: -3px;
 }
 .btn-fb:hover,
-.btn-fb:focus {
+.btn-fb:focus,
+.btn-fb:active {
   background-color: #1848a8 !important;
   color: #fff !important;
 }
