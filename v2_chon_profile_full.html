@@ -108,7 +108,8 @@
             <div class="modal-body">
                 <div class="group_form clearable">
                     <div class="input_relative input_profile">
-                        <input class="form-control input_mk " type="text" placeholder="Tên hiển thị" value="" required=""/>
+                        <input class="form-control input_mk " type="text" placeholder="Tên hiển thị" value="" required="" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Tên hiển thị'" />/>
                         <div class="invalid-feedback show">
                             Tên không hợp lệ
                         </div>
@@ -139,7 +140,8 @@
                 <div class="group_form clearable">
                     <div class="input_relative input_profile">
                         <input class="form-control input_mk " type="text" placeholder="Tên hiển thị" value="Moon"
-                               required=""/>
+                               required="" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Tên hiển thị'" />/>
                         <div class="invalid-feedback show">
                             Tên không hợp lệ
                         </div>

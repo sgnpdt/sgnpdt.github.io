@@ -57,7 +57,8 @@
                 <div class="group_form clearable">
                     <div class="input_relative">
                         <input class="form-control invalid-feedback show" type="text" placeholder="Số di động/tên đăng nhập"
-                               value="" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+                               value="" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Số di động/tên đăng nhập'"/>
                         <label id="Username-error" class="invalid-feedback show" for="Username">Tên tài khoản hoặc số di động không được để trống</label>
                     </div>
 
@@ -65,7 +66,8 @@
                 <div class="group_form_null clearable">
                     <div class="input_relative">
                         <input class="form-control input_mk " type="password" placeholder="Mật khẩu" value=""
-                               required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+                               required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Mật khẩu'"/>
                         <div class="invalid-feedback">
                             Mật khẩu không hợp lệ
                         </div>
