@@ -563,6 +563,11 @@ a:hover {
   text-align: center;
   font-weight: 300;
 }
+input.form-control,
+textarea,
+[contenteditable] {
+  caret-color: #FFD200;
+}
 .invalid-feedback {
   position: relative;
   top: 0;
