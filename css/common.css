@@ -809,6 +809,7 @@ textarea,
 .bg_login_form {
   padding-top: 0px;
   height: 100%;
+  min-height: 512px;
   padding-right: 10%;
   padding-left: 10%;
 }
@@ -1473,6 +1474,7 @@ input:-ms-input-placeholder {
 }
 .bg_dk .div_header {
   height: 25%;
+  min-height: 128px;
 }
 .bg_OTP {
   top: 14%;
@@ -1514,6 +1516,7 @@ input:-ms-input-placeholder {
 .div_input_pos_signup {
   margin-top: 0px;
   height: 50%;
+  min-height: 256px;
 }
 .password-indicator {
   text-align: left;
