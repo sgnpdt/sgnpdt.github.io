@@ -678,10 +678,10 @@ textarea,
   background-color: transparent;
 }
 .appbar .text {
-  color: #FFD200;
-  font-size: 1em;
+  color: #ffffff;
+  font-size: 1.258em;
   line-height: 56px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .appbar_bg {
   background-color: #080808;
