@@ -1763,6 +1763,7 @@ div.password-indicator-verified > span:before {
 }
 .ds_content p {
   font-size: 0.885em;
+  color: rgba(255, 255, 255, 0.87);
 }
 .change_pass_pass .div_input_pos {
   padding: 0 18px;
