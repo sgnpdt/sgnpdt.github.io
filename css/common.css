@@ -1895,6 +1895,82 @@ html body.change_pass_pass .invalid-feedback {
 .list-group-item {
   border: none;
 }
+.div_menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 10%;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#menu {
+  position: relative;
+}
+#menu li {
+  border-radius: 50px !important;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  height: 1.925rem;
+  line-height: 1.925rem;
+  margin-bottom: 1.1rem;
+  background-color: #FFD200;
+  color: #2a1919 !important;
+  font-size: 1em;
+  padding: 0px 24px;
+  text-align: center;
+  border-radius: 2px;
+  font-weight: normal;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  position: absolute;
+  z-index: 1;
+}
+#menu li a {
+  color: #262626;
+  font-size: 16px;
+}
+#menu li.active + li {
+  z-index: 2;
+}
+.huongdan {
+  background-image: none;
+}
+.fp-tableCell {
+  padding-top: 30%;
+  vertical-align: top !important;
+}
+.intro {
+  height: 65%;
+}
+.intro img {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.intro .table {
+  min-height: 280px;
+  height: 75%;
+}
+.intro .table .table-cell {
+  vertical-align: middle;
+}
+.intro h6 {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.intro p {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 70%;
