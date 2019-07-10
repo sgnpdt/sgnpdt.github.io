@@ -1956,6 +1956,9 @@ html body.change_pass_pass .invalid-feedback {
 .intro .table {
   min-height: 280px;
   height: 75%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro .table .table-cell {
   vertical-align: middle;
