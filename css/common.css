@@ -1935,6 +1935,8 @@ html body.change_pass_pass .invalid-feedback {
 #menu li a {
   color: #262626;
   font-size: 16px;
+  width: 100%;
+  display: block;
 }
 #menu li.active + li {
   z-index: 2;
