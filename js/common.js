@@ -4,7 +4,7 @@ $(document).ready(function () {
         menu: '#menu',
         anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
         autoScrolling: false,
-		fitToSectionDelay: 300,
+		fitToSectionDelay: 500,
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
     });
 	
