@@ -698,6 +698,18 @@ textarea,
   background-repeat: no-repeat;
   display: inline-block;
 }
+.btn_question {
+  .source-icon-question();
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
 
 .btn_back {
   .source-icon-back();
@@ -1852,7 +1864,7 @@ html body.change_pass_pass {
     bottom: 0;
     left: 0;
     z-index: 2;
-    height: 10%;width:100%;padding-left: 10%;padding-right: 10%;}
+    height: 15%;width:100%;padding-left: 10%;padding-right: 10%;}
 #menu{position: relative;
 	li{border-radius: 50px !important;
     width: 100%;
@@ -1874,12 +1886,43 @@ html body.change_pass_pass {
     -o-transition: all 0.3s;
     -ms-transition: all 0.3s;
 	position: absolute;z-index: 1;
-		a{color: #262626;font-size: 16px;width: 100%;display: block;}
+		
+		a,a:hover{color: #262626 !important;font-size: 16px;width: 100%;display: block;}
 	}
-	li.active + li{z-index: 2;}	
+	li:hover{background-color: #d6b000;}
+	li.active + li{z-index: 2;}
+	li:last-child{position: relative;
+		&:after{content:"";width: 25px;height: 25px;background: url(../master/images/arrow.png) no-repeat;background-size: contain;position: absolute;left: 50%;bottom: -40px;margin-left: -13px;animation: bounce 3s infinite;}
+	}
+	li.active + li{
+		&:after{display: none;}
+	}
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  
+  10% {
+    transform: translateY(2px);
+  }
+	
+	50% {
+    transform: translateY(10px);
+  }
+
+		90% {
+    transform: translateY(2px);
+  }
+		100% {
+    transform: translateY(0px);
+  }
+ 
+  
 }
 .huongdan{background-image:none;}
-.fp-tableCell{padding-top: 30%;vertical-align: top !important; }
+.fp-tableCell{padding-top: 25%;vertical-align: top !important; }
 .intro{height: 65%;
 	img{padding-left: 10%;padding-right: 10%;}
 	.table{min-height: 280px;height: 75%;max-width: 480px;margin-left: auto;margin-right: auto;
