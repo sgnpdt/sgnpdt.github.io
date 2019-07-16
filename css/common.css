@@ -2081,6 +2081,9 @@ html body.change_pass_pass .invalid-feedback {
 .bg_white .title {
   text-align: center;
 }
+.bg_white .icon_logo {
+  margin-bottom: 32px;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 70%;
