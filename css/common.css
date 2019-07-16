@@ -2044,6 +2044,43 @@ html body.change_pass_pass .invalid-feedback {
   line-height: 40px;
   font-size: 0.8em;
 }
+.bg_thongbao .div_body {
+  height: 80%;
+  min-height: 128px;
+}
+.bg_thongbao .div_body .d-table {
+  height: 100%;
+  width: 100%;
+}
+.bg_thongbao .div_body .d-table-cell {
+  vertical-align: middle;
+  width: 100%;
+}
+.bg_white {
+  background-color: #fff;
+  background-image: none;
+  padding: 0;
+}
+.bg_white .logo {
+  margin-top: 16px;
+}
+.bg_white .Header_navigation {
+  position: fixed;
+  width: 100%;
+}
+.bg_white .body_tablet {
+  height: 100%;
+}
+.bg_white .d-table {
+  height: 100%;
+  width: 100%;
+}
+.bg_white .d-table-cell {
+  vertical-align: middle;
+}
+.bg_white .title {
+  text-align: center;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 70%;
