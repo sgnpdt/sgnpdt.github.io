@@ -2096,11 +2096,17 @@ html body.change_pass_pass .invalid-feedback {
 .bg_white .d-table-cell {
   vertical-align: middle;
 }
+.bg_white .content {
+  color: inherit;
+  position: relative;
+  top: -32px;
+}
 .bg_white .title {
   text-align: center;
+  color: #212529;
 }
 .bg_white .icon_logo {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 @media (max-width: 1024px) {
   .bg_login_form {
@@ -2114,6 +2120,16 @@ html body.change_pass_pass .invalid-feedback {
     max-width: 580px;
     display: block;
     margin: 0 auto;
+  }
+  .bg_white .title {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: inherit;
+  }
+}
+@media (max-width: 414px) {
+  .bg_white .logo {
+    width: 120px;
   }
 }
 @media (max-width: 375px) {

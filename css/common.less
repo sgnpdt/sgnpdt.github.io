@@ -1961,9 +1961,12 @@ html body.change_pass_pass {
 	.body_tablet{height: 100%;}
 	.d-table{height: 100%;width: 100%;}
 	.d-table-cell{vertical-align: middle;}
-	.title{text-align: center;}
-	.icon_logo{margin-bottom: 32px;}
+	.content{color: inherit;position: relative;top:-32px;}
+	.title{text-align: center;color: #212529;}
+	.icon_logo{margin-bottom: 48px;}
 }
+
+
 
 @media (max-width: 1400px) {
 }
@@ -1987,8 +1990,17 @@ html body.change_pass_pass {
     display: block;
     margin: 0 auto;
   }
-
+  .bg_white{
+	.title{font-size: 1rem;font-weight: normal;line-height: inherit;}
+  }
 }
+
+@media (max-width: 414px) {
+	.bg_white .logo{
+		width: 120px;
+	}
+}
+
 
 @media (max-width: 375px) {
   .bg_malienket {
@@ -2008,6 +2020,8 @@ html body.change_pass_pass {
   .text_limited {
     font-size: 0.825em;
   }
+  
+	
 }
 
 @media (max-width: 320px) {
