@@ -796,6 +796,7 @@ textarea,
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
+  background-size: inherit;
 }
 .btn_back {
   background-image: url(../master/images/icon_back.png);
