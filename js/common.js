@@ -1,16 +1,19 @@
 $(document).ready(function () {
 	
-	var myFullpage = new fullpage('#fullpage', {
-        menu: '#menu',
-        anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
-        autoScrolling: false,
-		fitToSectionDelay: 1000,
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
-    });
+	if($('#fullpage').length > 0){
+	
+		var myFullpage = new fullpage('#fullpage', {
+			menu: '#menu',
+			anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage'],
+			autoScrolling: false,
+			fitToSectionDelay: 1000,
+			licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+		});
+	}
 	
     $('.clearable').each(function () {
         var inp = $(this).find('input'),
-            cle = $(this).find('.clearable__clear');
+            cle = $(this).find('.clearable__clear'); 
 
         inp.on('input', function () {
             cle.toggle(!!this.value);

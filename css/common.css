@@ -1414,7 +1414,7 @@ input:-ms-input-placeholder {
   color: #535353 !important;
 }
 .inputs {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 16px;
@@ -1422,7 +1422,7 @@ input:-ms-input-placeholder {
 }
 .inputs input {
   width: 32px;
-  height: 45px;
+  height: 40px;
   line-height: 100%;
   background-color: transparent;
   border: 0;
@@ -1431,14 +1431,32 @@ input:-ms-input-placeholder {
   border-radius: 0;
   outline: 0;
   color: white;
-  font-size: 2.5em;
+  font-size: 1em;
   font-weight: 300;
   word-spacing: 0px;
   overflow: hidden;
   text-align: center;
-  margin: 0 4px;
+  margin: 0 6px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   caret-color: #FFD200;
+  position: relative;
+  float: left;
+}
+.inputs input:not(:placeholder-shown) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.inputs input:valid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  font-size: 2.6em;
+}
+.table_input {
+  display: table;
+  width: 100%;
+}
+.table_cell_input {
+  display: table-cell;
+  width: 100%;
+  text-align: center;
 }
 /*.inputs input.focused{border-bottom: 1px solid #ffd200;	}*/
 .invalid-feedback,
