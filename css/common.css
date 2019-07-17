@@ -2104,6 +2104,8 @@ html body.change_pass_pass .invalid-feedback {
 .bg_white .title {
   text-align: center;
   color: #212529;
+  line-height: inherit;
+  font-weight: normal;
 }
 .bg_white .icon_logo {
   margin-bottom: 48px;
