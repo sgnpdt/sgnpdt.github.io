@@ -25,6 +25,17 @@
     <!-- InstanceEndEditable -->
     <script type="text/javascript" src="js/common.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var fp = new fullpage('#fullpage', {
+                menu: '#menu',
+                anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
+                autoScrolling: false,
+                fitToSectionDelay: 750,
+                licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
+            });
+        });
+    </script>
 </head>
 <!-- InstanceBeginEditable name="set class" -->
 <body class="huongdan">
@@ -43,11 +54,11 @@
     <div class="div_menu">
         <ul id="menu">
             <li data-menuanchor="page-1" class="active"><a href="#page-1">Bắt đầu</a></li>
-            <li data-menuanchor="page-2"><a href="#page-2">Đã mở TV</a></li>
-            <li data-menuanchor="page-3"><a href="#page-3">Tôi đã hiểu bước đầu tiên</a></li>
-            <li data-menuanchor="page-4"><a href="#page-4">Tôi đã hiểu bước thứ 2</a></li>
-            <li data-menuanchor="page-5"><a href="#page-5">Tôi đã có gói Foxy</a></li>
-            <li><a href="v2_tv_link_code.html">Tôi đã hiểu</a></li>
+            <li data-menuanchor="page-2"><a href="#page-2">Mở ứng dụng Foxy</a></li>
+            <li data-menuanchor="page-3"><a href="#page-3">Lấy mã liên kết</a></li>
+            <li data-menuanchor="page-4"><a href="#page-4">Chọn gói sử dụng</a></li>
+            <li data-menuanchor="page-5"><a href="#page-5">Dùng mã liên kết</a></li>
+            <li><a href="v2_tv_link_code.html">Kết thúc</a></li>
         </ul>
     </div>
     <div id="fullpage">
@@ -57,7 +68,7 @@
                     <div class="table-cell"><img src="master/images/step_1.png" alt="1"/></div>
                 </div>
                 <h6>Bạn có đang ngồi trước màn hình TV?</h6>
-                <p>Hãy mở TV, xem và làm theo hướng dẫn<br>để có thể đăng ký dịch vụ Foxy dễ dàng hơn.</p>
+                <p>Hãy mở TV, xem và làm theo hướng dẫn<br/>để có thể đăng ký dịch vụ Foxy dễ dàng hơn.</p>
             </div>
         </div>
         <div class="section" id="section-2">
@@ -65,19 +76,19 @@
                 <div class="table">
                     <div class="table-cell"><img src="master/images/step_2.png" alt="1"/></div>
                 </div>
-                <h6>Sử dụng điều khiển (remote)TV</h6>
-                <p>Bấm chọn phím <strong style="color: #ffd200;">HOME</strong><br> mở màn hình chính của FPTTV</p>
+                <h6>Mở màn hình Home</h6>
+                <p>Trên điều khiển (remote), hãy bấm chọn phím <strong style="color: #ffd200;">Home</strong><br/> để mở
+                    màn hình này</p>
             </div>
-
         </div>
         <div class="section" id="section-3">
             <div class="intro">
                 <div class="table">
                     <div class="table-cell"><img src="master/images/step_3.png" alt="1"/></div>
                 </div>
-                <h6>Chọn đăng ký ứng dụng Foxy</h6>
-                <p>Chọn ứng dụng <strong style="color: #ffd200;">Quản lý gói</strong> ><br> chọn ứng dụng Foxy > Chọn
-                    <strong style="color: #ffd200;">Đăng Ký ngay</strong></p>
+                <h6>Đăng ký dịch vụ Foxy</h6>
+                <p>Chọn ứng dụng <strong style="color: #ffd200;">Quản lý dịch vụ</strong> &raquo;<br/> chọn Foxy &raquo;
+                    chọn <strong style="color: #ffd200;">Lấy mã đăng lý ngay</strong></p>
             </div>
         </div>
         <div class="section" id="section-4">
@@ -86,8 +97,8 @@
                     <div class="table-cell"><img src="master/images/step_4.png" alt="1"/></div>
                 </div>
                 <h6>Chọn gói Foxy phù hợp với bạn</h6>
-                <p>Hãy chọn Đăng ký <br> gói <strong style="color: #ffd200;">Foxy 2</strong> hoặc gói <strong
-                        style="color: #ffd200;">Foxy 4</strong></p>
+                <p>Hãy chọn gói tối ưu với nhu cầu<br/>sử dụng của bạn: gói <strong style="color: #ffd200;">Foxy
+                    2</strong> hoặc gói <strong style="color: #ffd200;">Foxy 4</strong></p>
             </div>
         </div>
         <div class="section" id="section-5">
@@ -95,12 +106,12 @@
                 <div class="table">
                     <div class="table-cell"><img src="master/images/step_5.png" alt="1"/></div>
                 </div>
-                <h6>Chọn gói Foxy phù hợp với bạn</h6>
-                <p>Sử dụng <strong style="color: #ffd200;">Mã kích hoạt </strong>hiển thị<br> trên màn hình TV </p>
+                <h6>Sử dụng liên kết</h6>
+                <p>Nhập <strong style="color: #ffd200;">Mã liên kết</strong> hiển thị<br/> trên màn hình TV để đăng ký
+                    tài khoản trên ứng dụng này </p>
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- InstanceEndEditable -->

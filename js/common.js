@@ -1,16 +1,5 @@
 $(document).ready(function () {
 
-    if ($('#fullpage').length > 0) {
-
-        var fp = new fullpage('#fullpage', {
-            menu: '#menu',
-            anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
-            autoScrolling: false,
-            fitToSectionDelay: 500,
-            licenseKey: 'YOUR_KEY_HERE'
-        });
-    }
-
     $('.clearable').each(function () {
         var inp = $(this).find('input'),
             cle = $(this).find('.clearable__clear');
