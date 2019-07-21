@@ -1936,7 +1936,7 @@ html body.change_pass_pass {
 
 .div_menu {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   z-index: 2;
   height: 15%;
@@ -1978,31 +1978,90 @@ html body.change_pass_pass {
       display: block;
     }
   }
+
   li:hover {
     background-color: #d6b000;
   }
+
   li.active + li {
     z-index: 2;
   }
+
   li:last-child {
     position: relative;
     &:after {
       content: "";
       width: 25px;
       height: 25px;
-      background: url(../master/images/arrow.png) no-repeat;
+      background: url(../master/images/chevron-down.svg) no-repeat;
       background-size: contain;
       position: absolute;
       left: 50%;
-      bottom: -40px;
+      bottom: -30px;
       margin-left: -13px;
       animation: bounce 3s infinite;
+      -moz-animation: bounce 3s infinite;
+      -webkit-animation: bounce 3s infinite;
     }
   }
   li.active + li {
     &:after {
       display: none;
     }
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -moz-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  50% {
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  90% {
+    -moz-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  90% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 

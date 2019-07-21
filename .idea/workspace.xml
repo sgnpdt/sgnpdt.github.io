@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_huongdan_v2.html" afterPath="$PROJECT_DIR$/v2_huongdan_v2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="1903" column="1" lean-forward="true" selection-start-line="1889" selection-start-column="0" selection-end-line="1903" selection-end-column="1" />
+            <state relative-caret-position="196">
+              <caret line="2335" column="15" lean-forward="false" selection-start-line="2335" selection-start-column="13" selection-end-line="2335" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="1592" column="1" lean-forward="true" selection-start-line="1592" selection-start-column="1" selection-end-line="1592" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="1999" column="17" lean-forward="false" selection-start-line="1999" selection-start-column="17" selection-end-line="1999" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
       <file leaf-file-name="v2_huongdan_v2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="204">
+              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4180#4187#0" expanded="true" />
@@ -98,9 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isIos</find>
-      <find>focused</find>
-      <find>console.log</find>
       <find>setTimeout</find>
       <find>.password-indicator-verified</find>
       <find>span:before</find>
@@ -128,6 +125,9 @@
       <find>../master/images/arrow.png</find>
       <find>pwd-</find>
       <find>.password-indicator</find>
+      <find>.div_menu</find>
+      <find>#menu</find>
+      <find>li:last-child</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -187,11 +187,11 @@
         <option value="$PROJECT_DIR$/master/images/pwd-shield.svg" />
         <option value="$PROJECT_DIR$/master/images/pwd-exclamation.svg" />
         <option value="$PROJECT_DIR$/master/images/pwd-tips.svg" />
-        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/master/images/pwd-baseline.svg" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
         <option value="$PROJECT_DIR$/v2_huongdan_v2.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/css/common.less" />
       </list>
     </option>
@@ -301,12 +301,12 @@
       <workItem from="1560265390135" duration="15030000" />
       <workItem from="1560321913761" duration="9662000" />
       <workItem from="1561514897096" duration="7114000" />
-      <workItem from="1563617401699" duration="23904000" />
+      <workItem from="1563617401699" duration="24702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83679000" />
+    <option name="totallyTimeSpent" value="84477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -636,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4180#4187#0" expanded="true" />
@@ -650,18 +650,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.less">
+    <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="1592" column="1" lean-forward="true" selection-start-line="1592" selection-start-column="1" selection-end-line="1592" selection-end-column="1" />
+        <state relative-caret-position="196">
+          <caret line="2335" column="15" lean-forward="false" selection-start-line="2335" selection-start-column="13" selection-end-line="2335" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
+    <entry file="file://$PROJECT_DIR$/css/common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="1903" column="1" lean-forward="true" selection-start-line="1889" selection-start-column="0" selection-end-line="1903" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="1999" column="17" lean-forward="false" selection-start-line="1999" selection-start-column="17" selection-end-line="1999" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -2269,7 +2269,7 @@ html body.change_pass_pass .invalid-feedback {
 
 .div_menu {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     z-index: 2;
     height: 15%;
@@ -2333,7 +2333,7 @@ html body.change_pass_pass .invalid-feedback {
     background-size: contain;
     position: absolute;
     left: 50%;
-    bottom: -40px;
+    bottom: -30px;
     margin-left: -13px;
     animation: bounce 3s infinite;
     -moz-animation: bounce 3s infinite;
