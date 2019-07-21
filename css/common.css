@@ -938,7 +938,6 @@ textarea,
     position: fixed;
     top: 8px;
     right: 8px;
-    display: block;
     background-position: center center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -946,10 +945,9 @@ textarea,
 }
 
 .btn_question svg {
-    width: 32px;
-    height: 32px;
-    padding-top: 8px;
-    padding-left: 8px;
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
 }
 
 .btn_back {
