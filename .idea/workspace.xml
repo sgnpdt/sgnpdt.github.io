@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/master/images/chevron-down.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/master/images/help.svg" afterPath="$PROJECT_DIR$/master/images/help.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/master/images/pwd-exclamation.svg" afterPath="$PROJECT_DIR$/master/images/pwd-exclamation.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/master/images/pwd-shield.svg" afterPath="$PROJECT_DIR$/master/images/pwd-shield.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/master/images/pwd-tips.svg" afterPath="$PROJECT_DIR$/master/images/pwd-tips.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_huongdan_v2.html" afterPath="$PROJECT_DIR$/v2_huongdan_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_tv_link_code.html" afterPath="$PROJECT_DIR$/v2_tv_link_code.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +49,8 @@
       <file leaf-file-name="v2_tv_link_code.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#g#1;n#svg#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -70,11 +61,11 @@
       <file leaf-file-name="v2_huongdan_v2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+            <state relative-caret-position="153">
+              <caret line="36" column="116" lean-forward="false" selection-start-line="36" selection-start-column="116" selection-end-line="36" selection-end-column="116" />
               <folding>
-                <element signature="e#3836#3843#0" expanded="true" />
-                <element signature="e#3859#3866#0" expanded="true" />
+                <element signature="e#4028#4035#0" expanded="true" />
+                <element signature="e#4051#4058#0" expanded="true" />
                 <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -307,12 +298,12 @@
       <workItem from="1560265390135" duration="15030000" />
       <workItem from="1560321913761" duration="9662000" />
       <workItem from="1561514897096" duration="7114000" />
-      <workItem from="1563617401699" duration="22577000" />
+      <workItem from="1563617401699" duration="23229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82352000" />
+    <option name="totallyTimeSpent" value="83004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -648,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#g#1;n#svg#0;n#a#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -658,11 +649,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+        <state relative-caret-position="153">
+          <caret line="36" column="116" lean-forward="false" selection-start-line="36" selection-start-column="116" selection-end-line="36" selection-end-column="116" />
           <folding>
-            <element signature="e#3836#3843#0" expanded="true" />
-            <element signature="e#3859#3866#0" expanded="true" />
+            <element signature="e#4028#4035#0" expanded="true" />
+            <element signature="e#4051#4058#0" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
