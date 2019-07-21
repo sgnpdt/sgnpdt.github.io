@@ -1562,40 +1562,38 @@ input:-ms-input-placeholder {
   line-height: 1.8em;
 }
 
-.password-indicator.password-empty span:before {
-  content: url(../master/images/pwd-tips.svg) !important;
-  background-size: 9px 9px;
-  display: inline;
+.password-indicator span:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-top: .35em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.password-indicator.password-empty span:before, .password-indicator-verified table span:before {
+  background-image: url(../master/images/pwd-baseline.svg) !important;
 }
 
 .password-indicator span:before {
-  content: url(../master/images/pwd-exclamation.svg) !important;
-  background-size: 9px 9px;
-  display: inline;
+  background-image: url(../master/images/pwd-exclamation.svg) !important;
 }
 
 div.password-indicator-verified > span:before {
-  content: url(../master/images/pwd-shield.svg) !important;
-  background-size: 9px 9px;
-  display: inline;
+  background-image: url(../master/images/pwd-shield.svg) !important;
+}
+
+.password-indicator-verified .password-indicator-verified span:before {
+  background-image: url(../master/images/pwd-shield.svg) !important;
 }
 
 .password-indicator-verified table span:before {
   color: @light-text-disble !important;
-  &::before {
-    content: url(../master/images/pwd-tips.svg) !important;
-    background-size: 9px 9px;
-    display: inline;
-  }
 }
 
 .password-indicator-verified .password-indicator-verified span {
   color: @primary-color !important;
-  &::before {
-    content: url(../master/images/pwd-shield.svg) !important;
-    background-size: 9px 9px;
-    display: inline;
-  }
 }
 
 .password-indicator-lower-case,

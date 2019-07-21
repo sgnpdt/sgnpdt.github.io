@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_huongdan_v2.html" afterPath="$PROJECT_DIR$/v2_huongdan_v2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="1884" column="19" lean-forward="false" selection-start-line="1884" selection-start-column="19" selection-end-line="1884" selection-end-column="19" />
+            <state relative-caret-position="316">
+              <caret line="1903" column="1" lean-forward="true" selection-start-line="1889" selection-start-column="0" selection-end-line="1903" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="714" column="13" lean-forward="false" selection-start-line="714" selection-start-column="13" selection-end-line="714" selection-end-column="13" />
+            <state relative-caret-position="544">
+              <caret line="1592" column="1" lean-forward="true" selection-start-line="1592" selection-start-column="1" selection-end-line="1592" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -58,15 +59,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v2_huongdan_v2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="v2_huongdan_v2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="116" lean-forward="false" selection-start-line="36" selection-start-column="116" selection-end-line="36" selection-end-column="116" />
+            <state relative-caret-position="170">
+              <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
               <folding>
-                <element signature="e#4028#4035#0" expanded="true" />
-                <element signature="e#4051#4058#0" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4180#4187#0" expanded="true" />
                 <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4264#4271#0" expanded="true" />
+                <element signature="n#style#0;n#strong#2;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -95,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>focusable</find>
       <find>isIos</find>
       <find>focused</find>
       <find>console.log</find>
@@ -125,6 +127,7 @@
       <find>arrow</find>
       <find>../master/images/arrow.png</find>
       <find>pwd-</find>
+      <find>.password-indicator</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -178,7 +181,6 @@
         <option value="$PROJECT_DIR$/v2_sign_up_sdt.html" />
         <option value="$PROJECT_DIR$/v2_sign_up_step_password.html" />
         <option value="$PROJECT_DIR$/a.html" />
-        <option value="$PROJECT_DIR$/css/common.less" />
         <option value="$PROJECT_DIR$/master/images/help.svg" />
         <option value="$PROJECT_DIR$/master/images/down.svg" />
         <option value="$PROJECT_DIR$/master/images/chevron-down.svg" />
@@ -190,6 +192,7 @@
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
         <option value="$PROJECT_DIR$/v2_huongdan_v2.html" />
+        <option value="$PROJECT_DIR$/css/common.less" />
       </list>
     </option>
   </component>
@@ -298,12 +301,12 @@
       <workItem from="1560265390135" duration="15030000" />
       <workItem from="1560321913761" duration="9662000" />
       <workItem from="1561514897096" duration="7114000" />
-      <workItem from="1563617401699" duration="23229000" />
+      <workItem from="1563617401699" duration="23904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83004000" />
+    <option name="totallyTimeSpent" value="83679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -552,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="714" column="13" lean-forward="false" selection-start-line="714" selection-start-column="13" selection-end-line="714" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/master/images/arrow.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -621,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="1884" column="19" lean-forward="false" selection-start-line="1884" selection-start-column="19" selection-end-line="1884" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -649,15 +636,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="116" lean-forward="false" selection-start-line="36" selection-start-column="116" selection-end-line="36" selection-end-column="116" />
+        <state relative-caret-position="170">
+          <caret line="37" column="38" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding>
-            <element signature="e#4028#4035#0" expanded="true" />
-            <element signature="e#4051#4058#0" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4180#4187#0" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4264#4271#0" expanded="true" />
+            <element signature="n#style#0;n#strong#2;n#p#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#1;n#p#0;n#div#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="1592" column="1" lean-forward="true" selection-start-line="1592" selection-start-column="1" selection-end-line="1592" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="1903" column="1" lean-forward="true" selection-start-line="1889" selection-start-column="0" selection-end-line="1903" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
