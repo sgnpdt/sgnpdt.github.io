@@ -52,14 +52,19 @@ $(document).ready(function () {
             licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
         });
 
-        // Prevent click navigation
-        var nav = document.querySelector('#fp-nav');
-        nav.style.display = 'inline';
+        // Prevent click navigation, disable anchor click
+        var nav = $('#fp-nav');
+        var anchors = $('#menu a');
+        nav.css('display','inline');
+        anchors.css('pointer-events','');
 
         document.addEventListener('scroll', function () {
-            nav.style.display = 'none';
+            nav.css('display','none');
+            anchors.css('pointer-events','none');
+
             setTimeout(function () {
-                nav.style.display = 'inline'
+                nav.css('display','inline');
+                anchors.css('pointer-events','');
             }, 1000);
         });
     }
