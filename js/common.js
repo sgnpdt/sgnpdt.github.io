@@ -1,5 +1,34 @@
 $(document).ready(function () {
 
+    // Animation help icon
+    if ($('#help-icons').length > 0) {
+        var ids = ['help', 'explore'];
+        var currentId = 0;
+        var morph = new SVGMorpheus('#help-icons');
+
+        setInterval(function () {
+            var nextId = currentId === 1 ? 0 : 1
+            currentId = nextId;
+            morph.to(ids[currentId], {duration: 750, easing: 'quad-in-out'});
+        }, 5000);
+    }
+
+    // Fullpage init
+    var fp = new fullpage('#fullpage', {
+        menu: '#menu',
+        anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
+        autoScrolling: false,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        scrollOverflow: false,
+        easing: 'easeInOutCubic',
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Bắt đầu', 'Mở ứng dụng Foxy', 'Chọn gói sử dụng', 'Lấy mã liên kết', 'Kết thúc'],
+        licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
+    });
+
     $('.clearable').each(function () {
         var inp = $(this).find('input'),
             cle = $(this).find('.clearable__clear');
