@@ -38,7 +38,7 @@ $(document).ready(function () {
             // When set to true the current active section will always fill the whole viewport.
             // Otherwise the user will be free to stop in the middle of a section.
             fitToSection: true,
-            fitToSectionDelay: 1000,
+            fitToSectionDelay: 600,
             // Whether to use scrollbar for the site or not. In case of using scroll bar, the
             // autoScrolling functionality will still work as expected.
             scrollBar: false,
