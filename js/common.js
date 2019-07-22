@@ -31,8 +31,10 @@ $(document).ready(function () {
 			fitToSection: true,
 			fitToSectionDelay: 1000,
 			scrollBar: false,
+            // Allow scrolling in these sections
 			scrollOverflow: false,
 			easing: 'easeInOutCubic',
+            // Section navigation and indicator
 			navigation: true,
 			navigationPosition: 'right',
 

@@ -133,7 +133,7 @@ html {
 }
 
 body {
-  font-family: "roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 0.825em;
   height: 100%;
   background-color: @whitebg;
@@ -1588,7 +1588,7 @@ div.password-indicator-verified > span:before {
   background-image: url(../master/images/pwd-shield.svg) !important;
 }
 
-.password-indicator-verified table span:before {
+.password-indicator-verified table span, .password-indicator-verified table span:before {
   color: @light-text-disble !important;
 }
 
@@ -1956,7 +1956,7 @@ html body.change_pass_pass {
     height: 1.925rem;
     line-height: 1.925rem;
     margin-bottom: 1.1rem;
-    background-color: #FFD200;
+    background-color: #ffd200;
     color: #2a1919 !important;
     font-size: 1em;
     padding: 0px 24px;
@@ -2084,7 +2084,17 @@ html body.change_pass_pass {
   100% {
     transform: translateY(0px);
   }
+}
 
+.section {
+  overflow-y: hidden;
+  /* This is the magic bit for Firefox */
+  scrollbar-width: none;
+}
+
+.section::-webkit-scrollbar {
+  /* This is the magic bit for WebKit */
+  display: none;
 }
 
 .huongdan {
