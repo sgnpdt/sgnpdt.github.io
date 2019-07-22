@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	
-	//window.addEventListener("popstate", function() {
+
+    //window.addEventListener("popstate", function() {
 //      if(location.hash.endsWith("#page-5")) {
 //            history.replaceState(null, document.title, location.pathname);
 //            setTimeout(function(){
@@ -9,38 +9,60 @@ $(document).ready(function () {
 //      }
 //    }, false);
 
+    /*
     // Animation help icon
-    //if ($('#help-icons').length > 0) {
-//        var ids = ['help', 'explore'];
-//        var currentId = 0;
-//        var morph = new SVGMorpheus('#help-icons');
-//
-//        setInterval(function () {
-//            var nextId = currentId === 1 ? 0 : 1
-//            currentId = nextId;
-//            morph.to(ids[currentId], {duration: 750, easing: 'quad-in-out'});
-//        }, 5000);
-//    }
+    if ($('#help-icons').length > 0) {
+       var ids = ['help', 'explore'];
+       var currentId = 0;
+       var morph = new SVGMorpheus('#help-icons');
+
+       setInterval(function () {
+           var nextId = currentId === 1 ? 0 : 1
+           currentId = nextId;
+           morph.to(ids[currentId], {duration: 750, easing: 'quad-in-out'});
+       }, 5000);
+   }
+   */
 
     // Fullpage init
-	if ($('#fullpage').length > 0) {
-		var fp = new fullpage('#fullpage', {
-			menu: '#menu',
-			anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
-			autoScrolling: false,
-			fitToSection: true,
-			fitToSectionDelay: 1000,
-			scrollBar: false,
-            // Allow scrolling in these sections
-			scrollOverflow: false,
-			easing: 'easeInOutCubic',
+    if ($('#fullpage').length > 0) {
+        var fp = new fullpage('#fullpage', {
+            menu: '#menu',
+            anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
+            // Whether to use the "automatic" scrolling or the "normal" one.
+            // It also has affects the way the sections fit in the browser/device window
+            // in tablets and mobile phones. (true = "automatic" scrolling)
+            autoScrolling: false,
+            scrollingSpeed: 700,
+            // Whether or not to fit sections to the viewport or not.
+            // When set to true the current active section will always fill the whole viewport.
+            // Otherwise the user will be free to stop in the middle of a section.
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            // Whether to use scrollbar for the site or not. In case of using scroll bar, the
+            // autoScrolling functionality will still work as expected.
+            scrollBar: false,
+            // Whether or not to create a scroll for the section/slide in case its
+            // content is bigger than the height of it.
+            scrollOverflow: false,
+            easing: 'easeInOutCubic',
             // Section navigation and indicator
-			navigation: true,
-			navigationPosition: 'right',
+            navigation: true,
+            navigationPosition: 'right',
+            licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
+        });
 
-			licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
-		});
-	}
+        // Prevent click navigation
+        var nav = document.querySelector('#fp-nav');
+        nav.style.display = 'inline';
+
+        document.addEventListener('scroll', function () {
+            nav.style.display = 'none';
+            setTimeout(function () {
+                nav.style.display = 'inline'
+            }, 1000);
+        });
+    }
 
     $('.clearable').each(function () {
         var inp = $(this).find('input'),
