@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-<<<<<<< HEAD
     // Animation help icon
     if ($('#help-icons').length > 0) {
         var ids = ['help', 'explore'];
@@ -30,21 +29,6 @@ $(document).ready(function () {
         licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
     });
 
-=======
-	
-	
-	if ($('#fullpage').length > 0) {
-
-        var fp = new fullpage('#fullpage', {
-            menu: '#menu',
-            anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
-            autoScrolling: false,
-            fitToSectionDelay: 500,
-            licenseKey: 'YOUR_KEY_HERE'
-        });
-    }
-	
->>>>>>> 1ad832dd6db4d55d497db726abb6ceaab45551de
     $('.clearable').each(function () {
         var inp = $(this).find('input'),
             cle = $(this).find('.clearable__clear');
