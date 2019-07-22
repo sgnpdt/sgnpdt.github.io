@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.less" afterPath="$PROJECT_DIR$/css/common.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5117">
-              <caret line="301" column="20" lean-forward="false" selection-start-line="301" selection-start-column="20" selection-end-line="301" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="463" column="7" lean-forward="false" selection-start-line="463" selection-start-column="0" selection-end-line="463" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -44,10 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3451">
+              <caret line="1977" column="14" lean-forward="false" selection-start-line="1977" selection-start-column="7" selection-end-line="1977" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="1156">
               <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
               <folding />
             </state>
@@ -88,8 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input_mk</find>
-      <find>section4</find>
       <find>Đã mở</find>
       <find>page-1</find>
       <find>examplesList</find>
@@ -118,6 +126,8 @@
       <find>hideScrollbars</find>
       <find>disabled</find>
       <find>pointer-events</find>
+      <find>:hover</find>
+      <find>a:hover</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -182,9 +192,9 @@
         <option value="$PROJECT_DIR$/v2_sign_up.html" />
         <option value="$PROJECT_DIR$/v2_tv_link_code.html" />
         <option value="$PROJECT_DIR$/v2_huongdan_v2.html" />
-        <option value="$PROJECT_DIR$/css/common.less" />
-        <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/css/common.less" />
       </list>
     </option>
   </component>
@@ -298,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93495000" />
+    <option name="totallyTimeSpent" value="94304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -595,10 +605,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
+    <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5117">
-          <caret line="301" column="20" lean-forward="false" selection-start-line="301" selection-start-column="20" selection-end-line="301" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3451">
+          <caret line="1977" column="14" lean-forward="false" selection-start-line="1977" selection-start-column="7" selection-end-line="1977" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -618,29 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.less">
+    <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4112">
-          <caret line="2011" column="1" lean-forward="true" selection-start-line="2011" selection-start-column="1" selection-end-line="2011" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2_huongdan_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="95" column="27" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#p#0;n#div#0;n#div#4;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        <state relative-caret-position="119">
+          <caret line="463" column="7" lean-forward="false" selection-start-line="463" selection-start-column="0" selection-end-line="463" selection-end-column="7" />
           <folding />
         </state>
       </provider>

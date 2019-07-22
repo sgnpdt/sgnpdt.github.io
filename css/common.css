@@ -366,6 +366,10 @@ a {
         color: #ffd200 !important;
         text-decoration: none;
     }
+
+    a {
+        -webkit-tap-highlight-color: #ffd200;
+    }
 }
 
 ::-webkit-input-placeholder {
@@ -460,6 +464,10 @@ button:focus {
 a:hover {
     color: #ffd200;
     text-decoration: none;
+}
+
+a {
+    -webkit-tap-highlight-color: #ffd200;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
