@@ -1,14 +1,5 @@
 $(document).ready(function () {
 
-    //window.addEventListener("popstate", function() {
-//      if(location.hash.endsWith("#page-5")) {
-//            history.replaceState(null, document.title, location.pathname);
-//            setTimeout(function(){
-//              location.replace(location.substr(0, location.indexOf("#page-5")));
-//            },0);
-//      }
-//    }, false);
-
     /*
     // Animation help icon
     if ($('#help-icons').length > 0) {
@@ -23,6 +14,14 @@ $(document).ready(function () {
        }, 5000);
    }
    */
+
+    // Save
+    var previousUrl = '';
+    if (window.location.href.indexOf('tv_link_code.html') !== -1 || window.location.href.indexOf('v2_huongdan_v2.html') !== -1) {
+        // Get previous URL
+        previousUrl = $.cookie('previousUrl') || '';
+        $.cookie('previousUrl', window.location.pathname);
+    }
 
     // Fullpage init
     if ($('#fullpage').length > 0) {
@@ -55,18 +54,32 @@ $(document).ready(function () {
         // Prevent click navigation, disable anchor click
         var nav = $('#fp-nav');
         var anchors = $('#menu a');
-        nav.css('display','inline');
-        anchors.css('pointer-events','');
+        nav.css('display', 'inline');
+        anchors.css('pointer-events', '');
 
         document.addEventListener('scroll', function () {
-            nav.css('display','none');
-            anchors.css('pointer-events','none');
+            nav.css('display', 'none');
+            anchors.css('pointer-events', 'none');
 
             setTimeout(function () {
-                nav.css('display','inline');
-                anchors.css('pointer-events','');
+                nav.css('display', 'inline');
+                anchors.css('pointer-events', '');
             }, 1000);
         });
+
+        if (window.location.href.indexOf('v2_huongdan_v2.html') !== -1) {
+            window.addEventListener('popstate', function () {
+                if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf('tv_link_code.html') !== -1) {
+                    history.replaceState({}, document.title, location.pathname);
+
+                    // Reset?
+                    previousUrl = '';
+
+                    // Scroll to top
+                    fp.moveTo('page-1');
+                }
+            }, false);
+        }
     }
 
     $('.clearable').each(function () {
