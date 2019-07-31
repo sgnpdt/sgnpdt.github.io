@@ -15,9 +15,12 @@ $(document).ready(function () {
    }
    */
 
-    // Save
+    // Save previous URL to cookie
+    var guidePage = 'v2_huongdan_v2.html';
+    var linkPage = 'tv_link_code.html';
+
     var previousUrl = '';
-    if (window.location.href.indexOf('tv_link_code.html') !== -1 || window.location.href.indexOf('v2_huongdan_v2.html') !== -1) {
+    if (window.location.href.indexOf(linkPage) !== -1 || window.location.href.indexOf(guidePage) !== -1) {
         // Get previous URL
         previousUrl = $.cookie('previousUrl') || '';
         $.cookie('previousUrl', window.location.pathname);
@@ -48,7 +51,7 @@ $(document).ready(function () {
             // Section navigation and indicator
             navigation: true,
             navigationPosition: 'right',
-            licenseKey: 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
         });
 
         // Prevent click navigation, disable anchor click
@@ -61,15 +64,16 @@ $(document).ready(function () {
             nav.css('display', 'none');
             anchors.css('pointer-events', 'none');
 
+            // Disable for 600ms
             setTimeout(function () {
                 nav.css('display', 'inline');
                 anchors.css('pointer-events', '');
-            }, 1000);
+            }, 600);
         });
 
-        if (window.location.href.indexOf('v2_huongdan_v2.html') !== -1) {
+        if (window.location.href.indexOf(guidePage) !== -1) {
             window.addEventListener('popstate', function () {
-                if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf('tv_link_code.html') !== -1) {
+                if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf(linkPage) !== -1) {
                     history.replaceState({}, document.title, location.pathname);
 
                     // Reset?
