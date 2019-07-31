@@ -68,7 +68,7 @@ $(document).ready(function () {
             setTimeout(function () {
                 nav.css('display', 'inline');
                 anchors.css('pointer-events', '');
-            }, 600);
+            }, 1000);
         });
 
         if (window.location.href.indexOf(guidePage) !== -1) {
