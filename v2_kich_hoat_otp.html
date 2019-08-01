@@ -47,22 +47,27 @@
             </div>
             <p class="title_mlk">Mã xác nhận của bạn đã được gửi đến số di động <span class="dt">093***7749</span></p>
             <form action="#" autocomplete="off">
-                <div class="inputs" id="inputs">
-                    <input maxlength="2" placeholder="" required type="tel" class="focused">
-                    <input maxlength="2" placeholder="" required type="tel">
-                    <input maxlength="2" placeholder="" required type="tel">
-                    <input maxlength="2" placeholder="" required type="tel">
-                    <input maxlength="2" placeholder="" required type="tel">
-                    <input maxlength="1" placeholder="" required type="tel">
-                </div>
+				<div class="table_input">
+                	<div class="table_cell_input">
+						<div class="inputs" id="inputs">
+							<input id="pin-0" maxlength="1" placeholder="" required type="tel" class="pin focused">
+							<input id="pin-1" maxlength="1" placeholder="" required type="tel" class="pin">
+							<input id="pin-2" maxlength="1" placeholder="" required type="tel" class="pin">
+							<input id="pin-3" maxlength="1" placeholder="" required type="tel" class="pin">
+							<input id="pin-4" maxlength="1" placeholder="" required type="tel" class="pin">
+							<input id="pin-5" maxlength="1" placeholder="" required type="tel" class="pin">
+						</div>
+					</div>
+				</div>
+				<div class="send-feedback-OTP">
+					<p>
+						<span class="text">Không nhận được mã xác nhận?</span>
+						<span class="link_content">GỬI LẠI</span>
+					</p>
+					<p><span class="countdown text_color">60s</span></p>
+				</div>
             </form>
-            <div class="send-feedback-OTP">
-                <p>
-                    <span class="text error">Không nhận được mã xác nhận?</span>
-                    <span class="link_content">Gửi lại</span>
-                </p>
-                <p><span class="countdown text_color">60s</span></p>
-            </div>
+            
         </div>
     </div>
 </div>
