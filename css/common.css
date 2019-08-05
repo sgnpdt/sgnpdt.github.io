@@ -379,9 +379,6 @@ a:hover {
   color: #ffd200;
   text-decoration: none;
 }
-a {
-  -webkit-tap-highlight-color: #ffd200;
-}
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
@@ -833,8 +830,8 @@ textarea,
   padding-top: 0px;
   height: 100%;
   min-height: 512px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .bg_login_form .container {
   padding-left: 16px;
