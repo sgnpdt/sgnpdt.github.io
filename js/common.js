@@ -412,4 +412,10 @@ $(document).ready(function () {
     // Show soft-keyboard?
     // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
+	
+	
+	$.getJSON('animation-player.json', function() {	
+     
+   });
+	
 });

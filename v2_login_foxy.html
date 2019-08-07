@@ -20,8 +20,8 @@
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <!-- InstanceBeginEditable name="js" -->
-
-    <!-- InstanceEndEditable -->
+<script src="js/lottie-player.js"></script>	
+<!-- InstanceEndEditable -->
 <script type="text/javascript" src="js/common.js"></script>
 
 </head>
@@ -58,8 +58,8 @@
 			<img class="logo_fb" src="master/images/logo_foxy.svg" width="17" />
 			Đăng nhập với Foxy
 		</div>
-        <form class="form_btn">
-            <button class="btn_cus btn-primary btn-fb">
+       
+            <button class="btn_cus btn-primary btn-fb" data-toggle="modal" data-target="#ShowLoading">
 				<!--<img class="logo_fb" src="master/images/logo_fb.png" />-->
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" class="_5h0m logo_fb" color="#FFFFFF" width="17"><path fill="#FFFFFF" d="
           M204.1 0H11.9C5.3 0 0 5.3 0 11.9v192.2c0 6.6 5.3 11.9 11.9
@@ -69,11 +69,19 @@
           11.9-11.9V11.9C216 5.3 210.7 0 204.1 0z"></path></svg>
 				Đăng nhập với Facebook
 			</button>
-        </form>
+        
     </div>
 
 </div>
-
+<!-- Modal -->
+<div class="modal fade" id="ShowLoading" tabindex="-1" role="dialog" aria-labelledby="ShowLoading"
+     aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered modal-270" role="document">
+		<lottie-player 
+			src="master/images/animation-player.json" class="ico_loading"  background="transparent"  speed="1"  style="width: 48px; height: 48px;"  loop  autoplay >
+		</lottie-player>
+    </div>
+</div>
 <!-- InstanceEndEditable -->
    
     <!--Footer-->
