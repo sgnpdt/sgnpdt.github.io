@@ -415,8 +415,11 @@ $(document).ready(function () {
 	
 	//loading icon
 	$.getJSON('animation-player.json', function() {	});
-	$('#ShowLoading').on('shown.bs.modal', function (e) {
-	  $('.btn_refesh').show();
+	$('#ShowLoading').on('show.bs.modal', function (e) {
+	  
+		setTimeout(function(){
+			$('.btn_refesh').show();
+		},5000);
 	})
 
 });

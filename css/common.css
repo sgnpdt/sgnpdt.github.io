@@ -2172,6 +2172,9 @@ html body.change_pass_pass .invalid-feedback {
   top: 80px;
   left: 0;
 }
+.hide {
+  display: none;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 70%;
