@@ -2156,7 +2156,7 @@ html body.change_pass_pass .invalid-feedback {
   margin-bottom: 48px;
 }
 .modal-backdrop.show {
-  opacity: 0.7;
+  opacity: 0.85;
 }
 .ico_loading {
   display: block;
