@@ -413,9 +413,8 @@ $(document).ready(function () {
     // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
 	
+	//loading icon
+	$.getJSON('animation-player.json', function() {	});
 	
-	$.getJSON('animation-player.json', function() {	
-     
-   });
-	
+
 });
