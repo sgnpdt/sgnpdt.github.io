@@ -2176,6 +2176,9 @@ html body.change_pass_pass .invalid-feedback {
 .hide {
   display: none;
 }
+.modal-content-loading {
+  background-color: transparent !important;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 70%;
