@@ -414,7 +414,7 @@ $(document).ready(function () {
     // to be running with user context, ie. triggered by a user interaction.
 	
 	//loading icon
-	$.getJSON('/images/animation-player.json', function() {	});
+	$.getJSON('/master/images/animation-player.json', function() {	});
 	$('#ShowLoading').on('show.bs.modal', function (e) {
 	  
 		setTimeout(function(){
