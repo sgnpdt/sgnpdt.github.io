@@ -683,7 +683,7 @@ textarea,
 }
 .appbar .text {
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.29em;
   line-height: 56px;
   font-weight: 400;
 }
@@ -1801,17 +1801,13 @@ div.password-indicator-verified > span:before {
 html body.change_pass_pass {
   font-size: 0.73em !important;
 }
-html body.change_pass_pass .btn-primary {
-  border-radius: 4px !important;
-}
-html body.change_pass_pass .btn-secondary {
-  border-radius: 4px !important;
-}
 html body.change_pass_pass .btn-left {
-  padding-right: 5px;
+  padding-right: 13px;
+  padding-left: 30px;
 }
 html body.change_pass_pass .btn-right {
-  padding-left: 5px;
+  padding-left: 13px;
+  padding-right: 30px;
 }
 html body.change_pass_pass .invalid-feedback {
   text-align: left;
