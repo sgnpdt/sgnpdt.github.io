@@ -54,22 +54,22 @@ $(document).ready(function () {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
         });
 
-        // Prevent click navigation, disable anchor click
-        var nav = $('#fp-nav');
-        var anchors = $('#menu a');
-        nav.css('display', 'inline');
-        anchors.css('pointer-events', '');
-
-        document.addEventListener('scroll', function () {
-            //nav.css('display', 'none');
-            anchors.css('pointer-events', 'none');
-
-            // Disable for 600ms
-            setTimeout(function () {
-                nav.css('display', 'inline');
-                anchors.css('pointer-events', '');
-            }, 1500);
-        });
+        //// Prevent click navigation, disable anchor click
+//        var nav = $('#fp-nav');
+//        var anchors = $('#menu a');
+//        nav.css('display', 'inline');
+//        anchors.css('pointer-events', '');
+//
+//        document.addEventListener('scroll', function () {
+//            nav.css('display', 'none');
+//            anchors.css('pointer-events', 'none');
+//
+//            // Disable for 600ms
+//            setTimeout(function () {
+//                nav.css('display', 'inline');
+//                anchors.css('pointer-events', '');
+//            }, 1500);
+//        });
 
         if (window.location.href.indexOf(guidePage) !== -1) {
             window.addEventListener('popstate', function () {
