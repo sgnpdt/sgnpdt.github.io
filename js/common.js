@@ -61,7 +61,7 @@ $(document).ready(function () {
         anchors.css('pointer-events', '');
 
         document.addEventListener('scroll', function () {
-            nav.css('display', 'none');
+            //nav.css('display', 'none');
             anchors.css('pointer-events', 'none');
 
             // Disable for 600ms
