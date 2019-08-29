@@ -2177,14 +2177,14 @@ html body.change_pass_pass .invalid-feedback {
 }
 @media (max-width: 1024px) {
   .bg_login_form {
-    max-width: 70%;
+    max-width: 580px;
     display: block;
     margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
   .bg_login_form {
-    max-width: 580px;
+    max-width: 480px;
     display: block;
     margin: 0 auto;
   }
