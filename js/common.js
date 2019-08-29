@@ -397,6 +397,12 @@ $(document).ready(function () {
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
+	
+	//Resize 
+	$( window ).resize(function() {
+	  $('html').css('height', $(window).height());
+	});
+	
     $('body.bg_OTP').css('height', ($(window).height() - 150));
 
     // PIN
