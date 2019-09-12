@@ -10,95 +10,95 @@
   -ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 .source-icon-hotline {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@3x.png) 3x);
+  background-image: url(../images/hotline.png);
+  background-image: -webkit-image-set(url(../images/hotline.png) 1x, url(../images/hotline@2x.png) 2x, url(../images/hotline@3x.png) 3x);
 }
 .source-icon-email {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@3x.png) 3x);
+  background-image: url(../images/email.png);
+  background-image: -webkit-image-set(url(../images/email.png) 1x, url(../images/email@2x.png) 2x, url(../images/email@3x.png) 3x);
 }
 .source-icon-dropdown {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@3x.png) 3x);
+  background-image: url(../images/icon_dropdown.png);
+  background-image: -webkit-image-set(url(../images/icon_dropdown.png) 1x, url(../images/icon_dropdown@2x.png) 2x, url(../images/icon_dropdown@3x.png) 3x);
 }
 .source-icon-ngonngu {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@3x.png) 3x);
+  background-image: url(../images/lang.png);
+  background-image: -webkit-image-set(url(../images/lang.png) 1x, url(../images/lang@2x.png) 2x, url(../images/lang@3x.png) 3x);
 }
 .source-menu-right {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@3x.png) 3x);
+  background-image: url(../images/menu_right.png);
+  background-image: -webkit-image-set(url(../images/menu_right.png) 1x, url(../images/menu_right@2x.png) 2x, url(../images/menu_right@3x.png) 3x);
 }
 .source-icon-truyenhinh {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@3x.png) 3x);
+  background-image: url(../images/truyenhinh.png);
+  background-image: -webkit-image-set(url(../images/truyenhinh.png) 1x, url(../images/truyenhinh@2x.png) 2x, url(../images/truyenhinh@3x.png) 3x);
 }
 .source-icon-vod {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@3x.png) 3x);
+  background-image: url(../images/vod.png);
+  background-image: -webkit-image-set(url(../images/vod.png) 1x, url(../images/vod@2x.png) 2x, url(../images/vod@3x.png) 3x);
 }
 .source-icon-sukien {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@3x.png) 3x);
+  background-image: url(../images/sukien.png);
+  background-image: -webkit-image-set(url(../images/sukien.png) 1x, url(../images/sukien@2x.png) 2x, url(../images/sukien@3x.png) 3x);
 }
 .source-icon-thethao {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@3x.png) 3x);
+  background-image: url(../images/thethao.png);
+  background-image: -webkit-image-set(url(../images/thethao.png) 1x, url(../images/thethao@2x.png) 2x, url(../images/thethao@3x.png) 3x);
 }
 .source-icon-truyenhinh-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@3x.png) 3x);
+  background-image: url(../images/truyenhinh_w.png);
+  background-image: -webkit-image-set(url(../images/truyenhinh_w.png) 1x, url(../images/truyenhinh_w@2x.png) 2x, url(../images/truyenhinh_w@3x.png) 3x);
 }
 .source-icon-vod-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@3x.png) 3x);
+  background-image: url(../images/vod_w.png);
+  background-image: -webkit-image-set(url(../images/vod_w.png) 1x, url(../images/vod_w@2x.png) 2x, url(../images/vod_w@3x.png) 3x);
 }
 .source-icon-sukien-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@3x.png) 3x);
+  background-image: url(../images/sukien_w.png);
+  background-image: -webkit-image-set(url(../images/sukien_w.png) 1x, url(../images/sukien_w@2x.png) 2x, url(../images/sukien_w@3x.png) 3x);
 }
 .source-icon-thethao-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@3x.png) 3x);
+  background-image: url(../images/thethao_w.png);
+  background-image: -webkit-image-set(url(../images/thethao_w.png) 1x, url(../images/thethao_w@2x.png) 2x, url(../images/thethao_w@3x.png) 3x);
 }
 .source-bg-khampha {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/demo/khampha_bg.png);
+  background-image: url(../images/demo/khampha_bg.png);
 }
 .source-icon-huongdan {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@3x.png) 3x);
+  background-image: url(../images/icon_hd.png);
+  background-image: -webkit-image-set(url(../images/icon_hd.png) 1x, url(../images/icon_hd@2x.png) 2x, url(../images/icon_hd@3x.png) 3x);
 }
 .source-icon-phonggd {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@3x.png) 3x);
+  background-image: url(../images/icon_gd.png);
+  background-image: -webkit-image-set(url(../images/icon_gd.png) 1x, url(../images/icon_gd@2x.png) 2x, url(../images/icon_gd@3x.png) 3x);
 }
 .source-icon-khuyenmai {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@3x.png) 3x);
+  background-image: url(../images/icon_gift.png);
+  background-image: -webkit-image-set(url(../images/icon_gift.png) 1x, url(../images/icon_gift@2x.png) 2x, url(../images/icon_gift@3x.png) 3x);
 }
 .source-icon-huongdan-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@3x.png) 3x);
+  background-image: url(../images/icon_hd_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_hd_ac.png) 1x, url(../images/icon_hd_ac@2x.png) 2x, url(../images/icon_hd_ac@3x.png) 3x);
 }
 .source-icon-phonggd-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@3x.png) 3x);
+  background-image: url(../images/icon_gd_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_gd_ac.png) 1x, url(../images/icon_gd_ac@2x.png) 2x, url(../images/icon_gd_ac@3x.png) 3x);
 }
 .source-icon-khuyenmai-ac {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@3x.png) 3x);
+  background-image: url(../images/icon_gift_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_gift_ac.png) 1x, url(../images/icon_gift_ac@2x.png) 2x, url(../images/icon_gift_ac@3x.png) 3x);
 }
 .source-icon-youtube {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@3x.png) 3x);
+  background-image: url(../images/youtube.png);
+  background-image: -webkit-image-set(url(../images/youtube.png) 1x, url(../images/youtube@2x.png) 2x, url(../images/youtube@3x.png) 3x);
 }
 .source-icon-fb {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@3x.png) 3x);
+  background-image: url(../images/fb.png);
+  background-image: -webkit-image-set(url(../images/fb.png) 1x, url(../images/fb@2x.png) 2x, url(../images/fb@3x.png) 3x);
 }
 .source-menu-mobile {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@3x.png) 3x);
+  background-image: url(../images/menu_mobile.png);
+  background-image: -webkit-image-set(url(../images/menu_mobile.png) 1x, url(../images/menu_mobile@2x.png) 2x, url(../images/menu_mobile@3x.png) 3x);
 }
 .chuong_trinh {
   padding-top: 64px;
@@ -130,20 +130,20 @@
   background-position: center center;
 }
 .chuong_trinh .icon_1 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@3x.png) 3x);
+  background-image: url(../images/truyenhinh.png);
+  background-image: -webkit-image-set(url(../images/truyenhinh.png) 1x, url(../images/truyenhinh@2x.png) 2x, url(../images/truyenhinh@3x.png) 3x);
 }
 .chuong_trinh .icon_2 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@3x.png) 3x);
+  background-image: url(../images/vod.png);
+  background-image: -webkit-image-set(url(../images/vod.png) 1x, url(../images/vod@2x.png) 2x, url(../images/vod@3x.png) 3x);
 }
 .chuong_trinh .icon_3 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@3x.png) 3x);
+  background-image: url(../images/sukien.png);
+  background-image: -webkit-image-set(url(../images/sukien.png) 1x, url(../images/sukien@2x.png) 2x, url(../images/sukien@3x.png) 3x);
 }
 .chuong_trinh .icon_4 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@3x.png) 3x);
+  background-image: url(../images/thethao.png);
+  background-image: -webkit-image-set(url(../images/thethao.png) 1x, url(../images/thethao@2x.png) 2x, url(../images/thethao@3x.png) 3x);
 }
 .chuong_trinh .item {
   border: 1px solid #ebebeb;
@@ -184,20 +184,20 @@
   color: #fff;
 }
 .chuong_trinh .item:hover .icon_1 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@3x.png) 3x);
+  background-image: url(../images/truyenhinh_w.png);
+  background-image: -webkit-image-set(url(../images/truyenhinh_w.png) 1x, url(../images/truyenhinh_w@2x.png) 2x, url(../images/truyenhinh_w@3x.png) 3x);
 }
 .chuong_trinh .item:hover .icon_2 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@3x.png) 3x);
+  background-image: url(../images/vod_w.png);
+  background-image: -webkit-image-set(url(../images/vod_w.png) 1x, url(../images/vod_w@2x.png) 2x, url(../images/vod_w@3x.png) 3x);
 }
 .chuong_trinh .item:hover .icon_3 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@3x.png) 3x);
+  background-image: url(../images/sukien_w.png);
+  background-image: -webkit-image-set(url(../images/sukien_w.png) 1x, url(../images/sukien_w@2x.png) 2x, url(../images/sukien_w@3x.png) 3x);
 }
 .chuong_trinh .item:hover .icon_4 {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@3x.png) 3x);
+  background-image: url(../images/thethao_w.png);
+  background-image: -webkit-image-set(url(../images/thethao_w.png) 1x, url(../images/thethao_w@2x.png) 2x, url(../images/thethao_w@3x.png) 3x);
 }
 .chuong_trinh .line_btn {
   margin-top: 60px;
@@ -551,16 +551,16 @@
   overflow: hidden;
 }
 .item_col .icon_huongdan {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@3x.png) 3x);
+  background-image: url(../images/icon_hd.png);
+  background-image: -webkit-image-set(url(../images/icon_hd.png) 1x, url(../images/icon_hd@2x.png) 2x, url(../images/icon_hd@3x.png) 3x);
 }
 .item_col .icon_phonggd {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@3x.png) 3x);
+  background-image: url(../images/icon_gd.png);
+  background-image: -webkit-image-set(url(../images/icon_gd.png) 1x, url(../images/icon_gd@2x.png) 2x, url(../images/icon_gd@3x.png) 3x);
 }
 .item_col .icon_khuyenmai {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@3x.png) 3x);
+  background-image: url(../images/icon_gift.png);
+  background-image: -webkit-image-set(url(../images/icon_gift.png) 1x, url(../images/icon_gift@2x.png) 2x, url(../images/icon_gift@3x.png) 3x);
 }
 .item_col .bg_click {
   position: absolute;
@@ -570,16 +570,16 @@
   display: block;
 }
 .item_col:hover .icon_huongdan {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@3x.png) 3x);
+  background-image: url(../images/icon_hd_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_hd_ac.png) 1x, url(../images/icon_hd_ac@2x.png) 2x, url(../images/icon_hd_ac@3x.png) 3x);
 }
 .item_col:hover .icon_phonggd {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@3x.png) 3x);
+  background-image: url(../images/icon_gd_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_gd_ac.png) 1x, url(../images/icon_gd_ac@2x.png) 2x, url(../images/icon_gd_ac@3x.png) 3x);
 }
 .item_col:hover .icon_khuyenmai {
-  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png);
-  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@3x.png) 3x);
+  background-image: url(../images/icon_gift_ac.png);
+  background-image: -webkit-image-set(url(../images/icon_gift_ac.png) 1x, url(../images/icon_gift_ac@2x.png) 2x, url(../images/icon_gift_ac@3x.png) 3x);
 }
 .item_col:hover .title {
   color: #ff8201;

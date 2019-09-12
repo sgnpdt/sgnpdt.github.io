@@ -7,30 +7,30 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
 <!-- TemplateEndEditable -->
-<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/reset.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/fonts.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/offcanvas.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/ie10-viewport-bug-workaround.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/aos.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/common.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/offcanvas.css">
+<link rel="stylesheet" type="text/css" href="../css/ie10-viewport-bug-workaround.css">
+<link rel="stylesheet" type="text/css" href="../css/aos.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/css/Footer.css">
+<link rel="stylesheet" type="text/css" href="../css/Footer.css">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/Popper.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/offcanvas.js"></script> 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/swiper.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/aos.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/slider.js"></script> 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/js/common.js"></script>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/Popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../js/offcanvas.js"></script> 
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/aos.js"></script>
+<script type="text/javascript" src="../js/slider.js"></script> 
+<script type="text/javascript" src="../js/common.js"></script>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
         	<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<img class="logo hidden-xs-down" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/logo.png" />
+						<img class="logo hidden-xs-down" src="../images/logo.png" />
 						<div class="navigation hidden-xs-down">
 							<ul>
 								<li class="par">
@@ -167,7 +167,7 @@
 									</div>
 								</div>
 							</div>
-							<img class="logo" src="https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/logo.png" />
+							<img class="logo" src="../images/logo.png" />
 							<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
 								<span class="navbar-toggler-icon"></span>
 							</button>
