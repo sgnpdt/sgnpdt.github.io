@@ -1,0 +1,833 @@
+.shadow-navigation {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.b-shadow-5 {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.source-icon-hotline {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/hotline@3x.png) 3x);
+}
+.source-icon-email {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/email@3x.png) 3x);
+}
+.source-icon-dropdown {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_dropdown@3x.png) 3x);
+}
+.source-icon-ngonngu {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/lang@3x.png) 3x);
+}
+.source-menu-right {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_right@3x.png) 3x);
+}
+.source-icon-truyenhinh {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@3x.png) 3x);
+}
+.source-icon-vod {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@3x.png) 3x);
+}
+.source-icon-sukien {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@3x.png) 3x);
+}
+.source-icon-thethao {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@3x.png) 3x);
+}
+.source-icon-truyenhinh-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@3x.png) 3x);
+}
+.source-icon-vod-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@3x.png) 3x);
+}
+.source-icon-sukien-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@3x.png) 3x);
+}
+.source-icon-thethao-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@3x.png) 3x);
+}
+.source-bg-khampha {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/demo/khampha_bg.png);
+}
+.source-icon-huongdan {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@3x.png) 3x);
+}
+.source-icon-phonggd {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@3x.png) 3x);
+}
+.source-icon-khuyenmai {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@3x.png) 3x);
+}
+.source-icon-huongdan-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@3x.png) 3x);
+}
+.source-icon-phonggd-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@3x.png) 3x);
+}
+.source-icon-khuyenmai-ac {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@3x.png) 3x);
+}
+.source-icon-youtube {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/youtube@3x.png) 3x);
+}
+.source-icon-fb {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/fb@3x.png) 3x);
+}
+.source-menu-mobile {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/menu_mobile@3x.png) 3x);
+}
+.chuong_trinh {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f7f7f7;
+}
+.chuong_trinh .col-lg-3 {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.chuong_trinh .title {
+  margin-bottom: 48px;
+}
+.chuong_trinh .title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 34px;
+  font-weight: bold;
+}
+.chuong_trinh .icon_1,
+.chuong_trinh .icon_2,
+.chuong_trinh .icon_3,
+.chuong_trinh .icon_4 {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 32px auto 16px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.chuong_trinh .icon_1 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh@3x.png) 3x);
+}
+.chuong_trinh .icon_2 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod@3x.png) 3x);
+}
+.chuong_trinh .icon_3 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien@3x.png) 3x);
+}
+.chuong_trinh .icon_4 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao@3x.png) 3x);
+}
+.chuong_trinh .item {
+  border: 1px solid #ebebeb;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  transition: all 0.3s;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.18);
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+}
+.chuong_trinh .item .tit {
+  font-weight: bold;
+  color: #0eb1aa;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.chuong_trinh .item .text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  height: 72px;
+  display: block;
+  overflow: hidden;
+  transition: all 0.1s;
+}
+.chuong_trinh .item:hover {
+  background-color: #0eb1aa;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+  border: 1px solid #0eb1aa;
+}
+.chuong_trinh .item:hover .tit {
+  color: #fff;
+}
+.chuong_trinh .item:hover .text {
+  color: #fff;
+}
+.chuong_trinh .item:hover .icon_1 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/truyenhinh_w@3x.png) 3x);
+}
+.chuong_trinh .item:hover .icon_2 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/vod_w@3x.png) 3x);
+}
+.chuong_trinh .item:hover .icon_3 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/sukien_w@3x.png) 3x);
+}
+.chuong_trinh .item:hover .icon_4 {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/thethao_w@3x.png) 3x);
+}
+.chuong_trinh .line_btn {
+  margin-top: 60px;
+}
+.FPT_TH {
+  margin-top: 64px;
+}
+.FPT_TH .list_bg {
+  margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.FPT_TH .list_bg .item {
+  position: relative;
+}
+.FPT_TH .list_bg .item img {
+  border: 5px solid #fff;
+}
+.FPT_TH .list_bg .color_org {
+  color: #ff8200;
+  text-align: center;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 26px;
+}
+.FPT_TH .list_bg .color_cyan {
+  color: #0eb1aa;
+  text-align: center;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 26px;
+}
+.FPT_TH .list_bg .d-table-cell {
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.FPT_TH .list_bg .bg_w {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.FPT_TH .list_bg .item_hidden .bg_w {
+  opacity: 0;
+  border: 5px solid #fff;
+  transition: all 0.3s;
+}
+.FPT_TH .list_bg .item_hidden:hover .bg_w {
+  opacity: 1;
+  border: 5px solid #f4f4f4;
+}
+.FPT_TH .list_bg .item_show .bg_w {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.FPT_TH .list_bg .item_show:hover .bg_w {
+  opacity: 0;
+}
+.FPT_TH .bg {
+  width: 100%;
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.FPT_TH .why_FPT {
+  margin-top: 48px;
+}
+.FPT_TH .why_FPT p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.FPT_TH .why_FPT p span {
+  color: rgba(0, 0, 0, 0.7);
+}
+.FPT_TH .why_FPT .title {
+  font-weight: bold;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.FPT_TH .why_FPT .icon_time {
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin-bottom: 12px;
+  background-image: url(../images/time.png);
+  background-image: -webkit-image-set(url(../images/time.png) 1x, url(../images/time@2x.png) 2x, url(../images/time@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.FPT_TH .why_FPT .icon_play {
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin-bottom: 12px;
+  background-image: url(../images/play.png);
+  background-image: -webkit-image-set(url(../images/play.png) 1x, url(../images/play@2x.png) 2x, url(../images/play@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.FPT_TH .why_FPT .line_btn {
+  margin-top: 48px;
+}
+.Slider_gioithieu {
+  margin-top: 80px;
+  position: relative;
+  background-image: url(../images/demo/bg_black.png);
+}
+.Goi_dv {
+  padding-top: 80px;
+  background-color: #f7f7f7;
+  padding-bottom: 60px;
+}
+.Goi_dv .subtext {
+  margin-bottom: 32px;
+}
+.Goi_dv .item {
+  background-color: #fff;
+  box-shadow: 0 0 3px #ccc;
+  height: 340px;
+  padding-left: 72px;
+  padding-right: 48px;
+  transition: all 0.2s;
+}
+.Goi_dv .item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.Goi_dv .list_pack {
+  margin-top: 20px;
+  position: relative;
+}
+.Goi_dv .list_pack .item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 36px 36px;
+  border-color: transparent transparent #0eb1aa transparent;
+}
+.Goi_dv .title {
+  color: #0eb1aa;
+  font-size: 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  padding-top: 24px;
+}
+.Goi_dv .title_view {
+  text-align: center;
+  color: #0eb1aa !important;
+  font-size: 30px;
+  font-weight: 300;
+  display: block;
+  text-decoration: underline !important;
+}
+.Goi_dv ul {
+  margin-left: 20px;
+}
+.Goi_dv li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.Goi_dv li:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #0eb1aa;
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  border-radius: 10px;
+}
+.Goi_dv .d-table {
+  height: 100%;
+  width: 100%;
+}
+.Goi_dv .d-table-cell {
+  vertical-align: middle;
+}
+.Goi_dv .line_btn {
+  margin-top: 24px;
+}
+.Goi_dv .pack1 {
+  background: url(../images/demo/pack_1.png) no-repeat center center;
+  height: 340px;
+}
+.Goi_dv .pack2 {
+  background: url(../images/demo/pack_2.png) no-repeat center center;
+  height: 340px;
+}
+.Goi_dv .bg_w {
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ;
+}
+.Goi_dv .pack {
+  box-shadow: 0 0 3px #ccc;
+  transition: all 0.2s;
+}
+.Goi_dv .pack:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+.Goi_dv .pack:hover .bg_w {
+  opacity: 1;
+}
+.Goi_dv .col-lg-6 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.Goi_dv .list_pack_2 {
+  margin-top: 20px;
+}
+.Goi_dv .list_pack_2 .title {
+  color: #ff8201;
+}
+.Goi_dv .list_pack_2 li:after {
+  background-color: #ff8201;
+}
+.Goi_dv .list_pack_2 .btn-primary {
+  background-color: #ff8201;
+  border: 1px solid #ff8201;
+}
+.Goi_dv .list_pack_2 .btn-primary:hover {
+  background-color: #fff;
+  color: #ff8201 !important;
+}
+.Goi_dv .list_pack_2 .title_view {
+  color: #ff8201 !important;
+}
+.Goi_dv .list_pack_2 .item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 36px 36px 0 0;
+  border-color: #ff8200 transparent transparent transparent;
+}
+.congnghe {
+  padding: 60px 0;
+}
+.congnghe .d-table {
+  height: 505px;
+}
+.congnghe .d-table-cell {
+  vertical-align: middle;
+}
+.congnghe .title {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin-bottom: 36px;
+  margin-top: 24px;
+}
+.congnghe .line_btn {
+  margin-top: 28px;
+}
+/*.Khampha{
+	.icon_HDSD{		background-repeat: no-repeat;
+					background-image: url(../images/hdsd.png);
+					background-image: -webkit-image-set(url(../images/hdsd.png) 1x,
+						url(../images/hdsd@2x.png) 2x,
+						url(../images/hdsd@3x.png) 3x);
+					background-position: 20px center;
+					width: 100%;height: 56px;background-color: rgba(255,255,255,0.15);display: block;}
+	.icon_PGD{background-repeat: no-repeat;
+				background-image: url(../images/PGD.png);
+				background-image: -webkit-image-set(url(../images/PGD.png) 1x,
+					url(../images/PGD@2x.png) 2x,
+					url(../images/PGD@3x.png) 3x);
+				background-position: 20px center;
+				width: 100%;height: 56px;background-color: rgba(255,255,255,0.15);display: block;}
+	.icon_KM{background-repeat: no-repeat;
+					background-image: url(../images/gift.png);
+					background-image: -webkit-image-set(url(../images/gift.png) 1x,
+						url(../images/gift@2x.png) 2x,
+						url(../images/gift@3x.png) 3x);
+					background-position: 20px center; width: 100%;height: 56px;background-color: rgba(255,255,255,0.15);display: block;}
+	.txt{margin-top: 28px;height: 72px;display: block;overflow: hidden;}
+	.list_link{
+		li{margin-bottom: 14px;
+			&:last-child{margin-bottom: 0;}
+		}
+		a{padding-left: 80px;position: relative;
+			&:after{content: "";position: absolute;top:17px;right:21px;width: 12px;height: 22px;opacity: 0; transition: all 0.3s;
+					background-repeat: no-repeat;
+					background-image: url(../images/arrow_w_right.png);
+					background-image: -webkit-image-set(url(../images/arrow_w_right.png) 1x,
+						url(../images/arrow_w_right@2x.png) 2x,
+						url(../images/arrow_w_right@3x.png) 3x);
+			}
+		}
+		a span{font-size: 18px;font-weight: 500;color: #fff;line-height: 54px;}
+		li:hover{
+			a{background-color: rgba(14,177,170,0.77);
+				&:after{opacity: 1;}
+			}
+		}
+	}
+}*/
+.Khampha_v1 {
+  padding-bottom: 72px;
+}
+.Khampha_v1 .line {
+  border-top: 1px solid rgba(41, 41, 43, 0.1);
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+.item_col {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.item_col .icon_circle {
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+.item_col .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+.item_col .txt {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  height: 72px;
+  display: block;
+  overflow: hidden;
+}
+.item_col .icon_huongdan {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd@3x.png) 3x);
+}
+.item_col .icon_phonggd {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd@3x.png) 3x);
+}
+.item_col .icon_khuyenmai {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift@3x.png) 3x);
+}
+.item_col .bg_click {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.item_col:hover .icon_huongdan {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_hd_ac@3x.png) 3x);
+}
+.item_col:hover .icon_phonggd {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gd_ac@3x.png) 3x);
+}
+.item_col:hover .icon_khuyenmai {
+  background-image: url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png);
+  background-image: -webkit-image-set(url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac.png) 1x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@2x.png) 2x, url(https://cdn.jsdelivr.net/gh/sgnpdt/sgnpdt.github.io@master/images/icon_gift_ac@3x.png) 3x);
+}
+.item_col:hover .title {
+  color: #ff8201;
+}
+.Tintuc {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Tintuc .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.Tintuc .title_tintuc {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #dd3333;
+  padding: 6px 12px;
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.Tintuc .col-lg-6 {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.Tintuc .col-lg-6:last-child {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.Tintuc .item {
+  box-shadow: 0 0 3px #ccc;
+}
+.Tintuc .row_tintuc {
+  margin-bottom: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.Tintuc .row_tintuc:last-child {
+  margin-bottom: 0;
+}
+.Tintuc .row_tintuc .col-lg-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Tintuc .row_tintuc .col-lg-6:last-child {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 1440px) {
+  .FPT_TH .list_bg .color_cyan,
+  .FPT_TH .list_bg .color_org {
+    font-size: 24px;
+  }
+  .Goi_dv .title_view {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  .FPT_TH .list_bg .color_cyan,
+  .FPT_TH .list_bg .color_org {
+    font-size: 20px;
+  }
+  .Goi_dv .title_view {
+    font-size: 24px;
+  }
+  .item_col .txt {
+    font-size: 14px;
+    height: 64px;
+  }
+  .chuong_trinh .title {
+    font-size: 28px;
+  }
+  .chuong_trinh .item .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .FPT_TH .list_bg {
+    margin-top: 36px;
+  }
+  .FPT_TH .list_bg .item {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .FPT_TH .why_FPT .title {
+    text-align: center;
+  }
+  .FPT_TH .why_FPT p {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+  .FPT_TH .why_FPT .icon_time,
+  .FPT_TH .why_FPT .icon_play {
+    margin: auto;
+  }
+  .FPT_TH .why_FPT .line_btn {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .chuong_trinh .item {
+    margin-bottom: 18px;
+  }
+  .chuong_trinh .item .text {
+    height: 62px;
+  }
+  .chuong_trinh .item .tit {
+    margin-bottom: 8px;
+  }
+  .chuong_trinh .line_btn {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .chuong_trinh .icon_1,
+  .chuong_trinh .icon_2,
+  .chuong_trinh .icon_3,
+  .chuong_trinh .icon_4 {
+    margin-bottom: 12px;
+  }
+  .Goi_dv .item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Goi_dv li {
+    font-size: 15px;
+  }
+  .congnghe .d-table {
+    height: inherit;
+    text-align: center;
+  }
+  .congnghe .title {
+    margin-top: 0;
+  }
+  .Khampha_v1 .item_col {
+    padding: 0;
+  }
+  .Khampha_v1 .item_col .title {
+    font-size: 16px;
+  }
+  .Khampha_v1 .col-md-4 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .chuong_trinh {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .chuong_trinh .title {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .chuong_trinh .item .tit {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .chuong_trinh .item .text {
+    display: none;
+  }
+  .chuong_trinh .line_btn {
+    margin-top: 0;
+  }
+  .FPT_TH {
+    margin-top: 32px;
+  }
+  .FPT_TH .list_bg {
+    margin-top: 8px;
+  }
+  .FPT_TH .list_bg .item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .FPT_TH .list_bg .color_cyan,
+  .FPT_TH .list_bg .color_org {
+    font-size: 24px;
+  }
+  .FPT_TH .why_FPT {
+    margin-top: 0;
+  }
+  .FPT_TH .why_FPT .title {
+    font-size: 24px;
+  }
+  .FPT_TH .why_FPT .line_btn {
+    margin-top: 24px;
+  }
+  .Slider_gioithieu {
+    margin-top: 48px;
+  }
+  .Goi_dv {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .Goi_dv .subtext {
+    margin-bottom: 8px;
+  }
+  .Goi_dv .item {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 300px;
+  }
+  .Goi_dv li {
+    font-size: 14px;
+  }
+  .Goi_dv .title {
+    margin-bottom: 12px;
+    padding-top: 8px;
+    font-size: 22px;
+  }
+  .Goi_dv .line_btn {
+    margin-top: 16px;
+  }
+  .Goi_dv .pack1 {
+    height: 300px;
+  }
+  .Goi_dv .pack2 {
+    height: 300px;
+  }
+  .Goi_dv .list_pack .item:after {
+    border-width: 0 0 28px 28px;
+  }
+  .Goi_dv .list_pack_2 .item:after {
+    border-width: 28px 28px 0 0;
+  }
+  .congnghe {
+    padding: 32px 0;
+  }
+  .congnghe .title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .Khampha_v1 {
+    padding-bottom: 16px;
+  }
+  .Khampha_v1 .line {
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 480px) {
+  .chuong_trinh .item .tit {
+    font-size: 14px;
+  }
+}
