@@ -1712,6 +1712,12 @@ div.password-indicator-verified > span:before {
 .div_profile_selected .avatar i {
   font-size: 32px;
 }
+.div_profile_selected .avatar .img {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
 .div_profile_selected .avatar .bg_edit {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
