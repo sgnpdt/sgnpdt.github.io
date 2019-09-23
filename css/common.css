@@ -1813,6 +1813,10 @@ div.password-indicator-verified > span:before {
   padding-left: 0;
   text-align: left;
 }
+.change_pass_pass .bg_change_pass .container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
 html body.change_pass_pass {
   font-size: 0.73em !important;
 }
