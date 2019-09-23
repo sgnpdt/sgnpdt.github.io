@@ -2181,6 +2181,10 @@ html body.change_pass_pass .invalid-feedback {
 .modal-content-loading {
   background-color: transparent !important;
 }
+.div_ds_lienket {
+  max-width: 580px;
+  margin: 0 auto;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 580px;
