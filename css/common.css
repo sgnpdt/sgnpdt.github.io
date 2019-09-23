@@ -1800,11 +1800,13 @@ div.password-indicator-verified > span:before {
   color: rgba(255, 255, 255, 0.87);
 }
 .change_pass_pass .div_input_pos {
-  padding: 0 18px;
   width: 100%;
   margin-top: 18px;
   height: auto;
   padding-bottom: 16px;
+}
+.change_pass_pass .div_input_pos .group_form_null {
+  padding: 0;
 }
 .change_pass_pass .form-control,
 .change_pass_pass .form-control:focus {
