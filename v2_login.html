@@ -35,7 +35,7 @@
     <!-- InstanceBeginEditable name="Body" -->
 
 <div class="appbar">
-    <a class="btn_back"></a>
+    <button class="btn_back" onclick="goBack()"></button>
 </div>
 
 <div class="bg_login_form bg_dk ">
@@ -97,4 +97,10 @@ onblur="this.placeholder = 'Mật khẩu'"/>
 
 <!-- InstanceEndEditable -->
 
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+<script>
+	function goBack() {
+	  window.history.back();
+	}
+</script>
+</html>
