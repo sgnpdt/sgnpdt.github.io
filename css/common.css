@@ -35,8 +35,8 @@
 						url(../master/images/icon_hidden_pass@3x.png) 3x);
 }*/
 .source-icon-back {
-  background-image: url(../master/images/icon_back.png);
-  background-image: -webkit-image-set(url(../master/images/icon_back.png) 1x, url(../master/images/icon_back@2x.png) 2x, url(../master/images/icon_back@3x.png) 3x);
+  background-image: url(../master/images/icon_back@3x.png);
+  background-size: 23%;
 }
 .source-icon-close {
   background-image: url(../master/images/icon_close.png);
@@ -802,8 +802,8 @@ textarea,
   margin-top: 8px;
 }
 .btn_back {
-  background-image: url(../master/images/icon_back.png);
-  background-image: -webkit-image-set(url(../master/images/icon_back.png) 1x, url(../master/images/icon_back@2x.png) 2x, url(../master/images/icon_back@3x.png) 3x);
+  background-image: url(../master/images/icon_back@3x.png);
+  background-size: 23%;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -815,8 +815,8 @@ textarea,
   display: inline-block;
 }
 .btn_un_edit_mode {
-  background-image: url(../master/images/icon_back.png);
-  background-image: -webkit-image-set(url(../master/images/icon_back.png) 1x, url(../master/images/icon_back@2x.png) 2x, url(../master/images/icon_back@3x.png) 3x);
+  background-image: url(../master/images/icon_back@3x.png);
+  background-size: 23%;
   width: 40px;
   height: 40px;
   position: fixed;
