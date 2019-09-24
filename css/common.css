@@ -39,8 +39,8 @@
   background-size: 23%;
 }
 .source-icon-close {
-  background-image: url(../master/images/icon_close.png);
-  background-image: -webkit-image-set(url(../master/images/icon_close.png) 1x, url(../master/images/icon_close@2x.png) 2x, url(../master/images/icon_close@3x.png) 3x);
+  background-image: url(../master/images/icon_close@3x.png);
+  background-size: 30%;
 }
 .source-icon-question {
   background-image: url(../master/images/icon_question.png);
@@ -772,8 +772,8 @@ textarea,
   color: #262626;
 }
 .btn_close {
-  background-image: url(../master/images/icon_close.png);
-  background-image: -webkit-image-set(url(../master/images/icon_close.png) 1x, url(../master/images/icon_close@2x.png) 2x, url(../master/images/icon_close@3x.png) 3x);
+  background-image: url(../master/images/icon_close@3x.png);
+  background-size: 30%;
   width: 40px;
   height: 40px;
   position: fixed;
