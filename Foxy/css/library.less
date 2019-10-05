@@ -1,0 +1,82 @@
+//theme cyan/orange
+@primary-color: #ffd200;
+@press-color: #d6b000;
+@link-color: #ffd200;
+
+
+@primary-text: #ffffff;
+@secondary-text: #ff8201;
+@hotline-text: #dd3333;
+@black-color: #000000;
+
+
+//color text
+@dark-text: rgba(38, 38, 38, 1);
+@light-text: rgba(255, 255, 255, 1);
+@light-text-secondary: rgba(255, 255, 255, 0.7);
+@light-text-disble: rgba(255, 255, 255, 0.3);
+@dark-text-btn: #2a1919;
+
+//backgroud
+@whitebg: rgba(8, 8, 8, 1);
+
+//shadow
+@shadow-5: 0px 1px 5px rgba(0, 0, 0, 0.3);
+@shadow-3: 0px 0px 3px rgba(0, 0, 0, 0.3);
+
+//border radius 
+@radius-4: 4px 4px 4px 4px;
+
+//border color
+@line-border: 1px solid rgba(41, 41, 43, 0.1);
+
+//shadow-navigation
+.shadow-navigation {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+//Animation
+
+.animation(@a) {
+  transition: @a 0.3s;
+  -webkit-transition: @a 0.3s;
+  -moz-transition: @a 0.3s;
+  -o-transition: @a 0.3s;
+  -ms-transition: @a 0.3s;
+}
+
+//Shadow
+.b-shadow-5 {
+  box-shadow: @shadow-5;
+  -moz-box-shadow: @shadow-5;
+  -webkit-box-shadow: @shadow-5;
+  -o-box-shadow: @shadow-5;
+  -ms-box-shadow: @shadow-5;
+
+}
+
+
+.source-icon-home {
+  background-image: url(../images/icon_home.png);
+  background-image: -webkit-image-set(url(../images/icon_home.png) 1x,
+  url(../images/icon_home@2x.png) 2x,
+  url(../images/icon_home@3x.png) 3x);
+  background-repeat: no-repeat;background-size: 100%;
+}
+
+.source-icon-phone {
+  background-image: url(../images/Icon_phone.png);
+  background-image: -webkit-image-set(url(../images/Icon_phone.png) 1x,
+  url(../images/Icon_phone@2x.png) 2x,
+  url(../images/Icon_phone@3x.png) 3x);
+  background-repeat: no-repeat;background-size: 100%;
+}
+
+.source-icon-help {
+  background-image: url(../images/help.png);
+  background-image: -webkit-image-set(url(../images/help.png) 1x,
+  url(../images/help@2x.png) 2x,
+  url(../images/help@3x.png) 3x);
+  background-repeat: no-repeat;background-size: 100%;
+}

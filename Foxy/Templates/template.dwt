@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,initial-scale=1.0,user-scalable=no">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="../css/fullpage.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+
+<link rel="stylesheet" type="text/css" href="../css/Footer.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../js/fullpage.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<!--All Header-->
+<div class="HeaderPage">
+
+        <!--Header-->
+        
+        <!--Header End-->
+        <!--Navigation-->
+        <div class="HeaderNav">
+        	<div class="container">
+				<div class="row">
+            	<div class="navbar-header">
+                  <a class="logomobile hidden Shows-xs"><img src="../images/logo.png" alt="logo" width="80"></a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse show" id="navbar">
+                 <a class="logo hidden-xs-down"><img src="../images/logo.png" alt="logo" width="68"></a>
+                  <ul class="nav navbar-nav" id="menu">
+                    <li data-menuanchor="firstPage" class=" active"><a class="icon_home" href="#firstPage"></a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">PRICING</a></li>
+                    
+                    <li><a href="#">REGISTER</a></li>
+                    <li class="none"><a href="#"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a></li>
+                    
+                  </ul>
+                  
+                </div>
+                </div>
+                
+            </div>
+        </div>
+       
+    </div>
+    <!--All Header End-->
+    <!-- TemplateBeginEditable name="Body" -->  
+	<!-- TemplateEndEditable -->
+   
+    <!--Footer-->
+	
+    <!--Footer End-->  
+    
+    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> 
+	<!-- Modal -->
+
+</body>
+<div class="modal fade" id="ShowRegister" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-270" role="document">
+        <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+            <div class="modal-body">
+				<div class="position-relative">
+					<div class="icon_help"></div>
+					<div class="text_help"><p>Bạn có phải là thành viên đang sử dụng dịch vụ FPT không ?</p></div>
+				</div>
+            </div>
+            <div class="modal-footer">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ShowFPTmember">Có</button>
+                        </div>
+						<div class="col-6">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+<div class="modal fade" id="ShowFPTmember" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+            <div class="modal-body">
+				<img src="../images/member_bg.png" />
+            </div>
+        </div>
+    </div>
+</div>
+</html>
