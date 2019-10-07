@@ -16,10 +16,11 @@ $(document).ready(function () {
         var fp = new fullpage('#fullpage', {
             menu: '#menu',
             anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
+			dragAndMove: true,
             // Whether to use the "automatic" scrolling or the "normal" one.
             // It also has affects the way the sections fit in the browser/device window
             // in tablets and mobile phones. (true = "automatic" scrolling)
-            autoScrolling: false,
+            //autoScrolling: false,
             scrollingSpeed: 700,
             // Whether or not to fit sections to the viewport or not.
             // When set to true the current active section will always fill the whole viewport.
