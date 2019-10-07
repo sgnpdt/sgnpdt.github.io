@@ -1,22 +1,7 @@
 $(document).ready(function () {
 
-    /*
-    // Animation help icon
-    if ($('#help-icons').length > 0) {
-       var ids = ['help', 'explore'];
-       var currentId = 0;
-       var morph = new SVGMorpheus('#help-icons');
-
-       setInterval(function () {
-           var nextId = currentId === 1 ? 0 : 1
-           currentId = nextId;
-           morph.to(ids[currentId], {duration: 750, easing: 'quad-in-out'});
-       }, 5000);
-   }
-   */
-
     // Save previous URL to cookie
-    var guidePage = 'v2_huongdan_v2.html';
+    var guidePage = 'v2_huong_dan_v2.html';
     var linkPage = 'tv_link_code.html';
 
     var previousUrl = '';
@@ -54,7 +39,7 @@ $(document).ready(function () {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
         });
 
-        //// Prevent click navigation, disable anchor click
+        // Prevent click navigation, disable anchor click
 //        var nav = $('#fp-nav');
 //        var anchors = $('#menu a');
 //        nav.css('display', 'inline');
@@ -71,6 +56,7 @@ $(document).ready(function () {
 //            }, 1500);
 //        });
 
+        // Back to top
         if (window.location.href.indexOf(guidePage) !== -1) {
             window.addEventListener('popstate', function () {
                 if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf(linkPage) !== -1) {
@@ -293,8 +279,8 @@ $(document).ready(function () {
     const pinLen = $('.inputs .pin').length;
 
     function setLog(msg) {
-        console.log(msg);
-        $('.pin-log').html(msg + '<br />' + $('.log').html());
+        //console.log(msg);
+        //$('.pin-log').html(msg + '<br />' + $('.log').html());
     }
 
     // Process custom event pindel
@@ -310,41 +296,41 @@ $(document).ready(function () {
         }
     });
 
-    var alwaysFocus = false;
     // Always set focus on PIN inputs?
-    if (alwaysFocus) {
-        $('.inputs .pin').blur(function (evt) {
-            setLog('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-            var curr = parseInt(evt.target.id.substr('pin-'.length));
-
-            // Check all PIN are empty
-            if ($('#pin-0').val() === '') {
-                evt.stopPropagation();
-
-                setLog('Focus #1 for PIN-' + 0);
-                setPinFocus($('#pin-0'));
-            } else {
-                var last = false;
-                for (var i = pinLen - 1; i >= 0; i--) {
-                    var digit = $('#pin-' + i).val() || '';
-                    if (digit !== '') {
-                        last = i + 1;
-                        last = last > (pinLen - 1) ? (pinLen - 1) : last;
-                        break;
-                    }
-                }
-
-                if (last !== false) {
-                    if (last !== curr) {
-                        evt.stopPropagation();
-                    }
-
-                    setLog('Focus #2 for PIN-' + last);
-                    setPinFocus($('#pin-' + last));
-                }
-            }
-        });
-    }
+    // var alwaysFocus = false;
+    // if (alwaysFocus) {
+    //     $('.inputs .pin').blur(function (evt) {
+    //         setLog('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+    //         var curr = parseInt(evt.target.id.substr('pin-'.length));
+    //
+    //         // Check all PIN are empty
+    //         if ($('#pin-0').val() === '') {
+    //             evt.stopPropagation();
+    //
+    //             setLog('Focus #1 for PIN-' + 0);
+    //             setPinFocus($('#pin-0'));
+    //         } else {
+    //             var last = false;
+    //             for (var i = pinLen - 1; i >= 0; i--) {
+    //                 var digit = $('#pin-' + i).val() || '';
+    //                 if (digit !== '') {
+    //                     last = i + 1;
+    //                     last = last > (pinLen - 1) ? (pinLen - 1) : last;
+    //                     break;
+    //                 }
+    //             }
+    //
+    //             if (last !== false) {
+    //                 if (last !== curr) {
+    //                     evt.stopPropagation();
+    //                 }
+    //
+    //                 setLog('Focus #2 for PIN-' + last);
+    //                 setPinFocus($('#pin-' + last));
+    //             }
+    //         }
+    //     });
+    // }
 
     $('.inputs .pin').focus(function (evt) {
         setLog('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
@@ -397,12 +383,12 @@ $(document).ready(function () {
 
     // Set height of HTML tag
     $('html').css('height', $(window).height());
-	
-	//Resize 
-	$( window ).resize(function() {
-	  $('html').css('height', $(window).height());
-	});
-	
+
+    //Resize
+    $(window).resize(function () {
+        $('html').css('height', $(window).height());
+    });
+
     $('body.bg_OTP').css('height', ($(window).height() - 150));
 
     // PIN
@@ -418,14 +404,16 @@ $(document).ready(function () {
     // Show soft-keyboard?
     // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
-	
-	//loading icon
-	$.getJSON('/master/images/animation-player.json', function() {	});
-	$('#ShowLoading').on('show.bs.modal', function (e) {
-	  
-		setTimeout(function(){
-			$('.btn_refesh').show();
-		},5000);
-	})
+
+    // Loading icon
+    $.getJSON('/master/images/animation-player.json', function () {
+        // do nothing
+    });
+
+    $('#ShowLoading').on('show.bs.modal', function (e) {
+        setTimeout(function () {
+            $('.btn_refesh').show();
+        }, 5000);
+    });
 
 });
