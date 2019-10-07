@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,initial-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#fed722 ">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
 <!-- InstanceEndEditable -->
@@ -40,11 +41,11 @@
         
         <!--Header End-->
         <!--Navigation-->
-        <div class="HeaderNav">
+        <!--<div class="HeaderNav">
         	<div class="container">
 				<div class="row">
             	<div class="navbar-header">
-                  <a class="logomobile hidden Shows-xs"><img src="images/logo.png" alt="logo" width="80"></a>
+                  <a class="logomobile hidden Shows-xs"><img src="../images/logo.png" alt="logo" width="80"></a>
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -53,13 +54,13 @@
                   </button>
                 </div>
                 <div class="collapse navbar-collapse show" id="navbar">
-                 <a class="logo hidden-xs-down"><img src="images/logo.png" alt="logo" width="68"></a>
+                 <a class="logo hidden-xs-down"><img src="../images/logo.png" alt="logo" width="68"></a>
                   <ul class="nav navbar-nav" id="menu">
                     <li data-menuanchor="firstPage" class=" active"><a class="icon_home" href="#firstPage"></a></li>
                     <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
                     <li data-menuanchor="3rdPage"><a href="#3rdPage">PRICING</a></li>
                     
-                    <li><a href="#">REGISTER</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ShowRegister">REGISTER</a></li>
                     <li class="none"><a href="#"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a></li>
                     
                   </ul>
@@ -70,6 +71,40 @@
             </div>
         </div>
        
+    </div>-->
+    <div class="HeaderNav">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-sm navbar-dark HeaderNav">
+				  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" width="80"></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav mr-auto" id="menu">
+					  <li data-menuanchor="firstPage" class=" active">
+						<a class="icon_home" href="#firstPage"></a>
+					  </li>
+					  <li data-menuanchor="secondPage" class=" ">
+						<a class="" href="#secondPage">About</a>
+					  </li>
+					  <li data-menuanchor="3rdPage" class=" ">
+						<a class="" href="#3rdPage">PRICING</a>
+					  </li>
+					  <li class=" ">
+						<a href="#" data-toggle="modal" data-target="#ShowRegister">REGISTER</a>
+					  </li>
+					  <li class="none">
+						<a href="#"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a>
+					  </li>
+					</ul>
+
+				  </div>
+				</nav>
+			</div>
+		</div>
+    </div>
     </div>
     <!--All Header End-->
     <!-- InstanceBeginEditable name="Body" -->
@@ -81,15 +116,15 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 								<div class="row row_bg align-items-center">	
-									<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 " >
+									<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 										
 										<h2 class="title_big">Một sản phẩm của <br>Truyền hinh FPT </h2>
 										<p class="text_content">Thưởng thức kho giải trí của Truyền hình FPT không gián đoạn từ tivi sang các thiết bị di động như điện thoại máy tính bảng.</p>
 										<div class="row list_btn">
-											<div class="col-lg-6">
+											<div class="col-lg-6 col-md-6 col-12">
 												<div class="btn-primary" data-toggle="modal" data-target="#ShowRegister">Đăng ký</div>
 											</div>
-											<div class="col-lg-6">
+											<div class="col-lg-6 col-md-6 col-12">
 												<a data-menuanchor="secondPage" class="btn-default" href="#secondPage">Tìm hiểu thêm</a>
 											</div>
 										</div>
@@ -112,7 +147,7 @@
 										</div>
 											
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 offset-md-1" >
+									<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 offset-md-1 img_top" >
 										<div class="swiperphanmem">
 											<div class="swiper-container swiper_phanmem_sp">
 												<div class="swiper-wrapper">
@@ -166,24 +201,24 @@
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="row row_bg align-items-center">	
-												<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 " >
+												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 													<h2 class="title_big">Giải trí liên tục <br>không gián đoạn</h2>
 													<p class="text_content">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
 												</div>
 
-												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center" >
+												<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 img_top text-center" >
 													<img src="images/giai_tri.png" alt="" width="640">
 												</div>
 											</div>	
 										</div>
 										<div class="swiper-slide">
 											<div class="row row_bg align-items-center">	
-												<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 " >
+												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 													<h2 class="title_big">Giải trí liên tục <br>không gián đoạn 1</h2>
 													<p class="text_content">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
 												</div>
 
-												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center" >
+												<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 img_top text-center" >
 													<img src="images/dt_1.png" alt="" width="300">
 												</div>
 											</div>	
@@ -191,12 +226,12 @@
 										<div class="swiper-slide">
 
 											<div class="row row_bg align-items-center">	
-												<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 " >
+												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 													<h2 class="title_big">Giải trí liên tục <br>không gián đoạn 2</h2>
 													<p class="text_content">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
 												</div>
 
-												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center" >
+												<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 img_top text-center" >
 													<img src="images/dt_2.png" alt="" width="300">
 												</div>
 											</div>	
@@ -205,19 +240,19 @@
 										<div class="swiper-slide">
 
 											<div class="row row_bg align-items-center">	
-												<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 " >
+												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 													<h2 class="title_big">Giải trí liên tục <br>không gián đoạn 3</h2>
 													<p class="text_content">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
 												</div>
 
-												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center" >
+												<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 img_top text-center" >
 													<img src="images/dt_3.png" alt="" width="300">
 												</div>
 											</div>	
 
 										</div>
 									</div>
-									<!--<div class="swiper-pagination swiper-pagination-phanmem_sp"></div>-->
+									<div class="swiper-pagination swiper-pagination-canhan"></div>
 
 								</div>
 							</div>
@@ -234,10 +269,10 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 							<div class="row row_bg align-items-center">	
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+								<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12" >
 									<img src="images/Foxy2.png" alt="" width="">
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+								<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12" >
 									<img src="images/Foxy4.png" alt="" width="">
 								</div>
 							</div>
@@ -255,7 +290,7 @@
 	
     <!--Footer End-->  
     
-    <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> 
+   
 	<!-- Modal -->
 
 </body>
@@ -279,7 +314,7 @@
                             <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ShowFPTmember">Có</button>
                         </div>
 						<div class="col-6">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#Showregister">Không</button>
                         </div>
                     </div>
                 </div>
@@ -297,6 +332,32 @@
 			</button>
             <div class="modal-body">
 				<img src="images/member_bg.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Showregister" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+            <div class="modal-body">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="info_cus">
+							<h5>Lorem Ipsum is simply dummy text of the printing </h5>
+							<input type="text" class="form-control" placeholder="Họ tên">
+							<input type="text" class="form-control" placeholder="Số điện thoại">
+							<input type="text" class="form-control" placeholder="Email">
+							<button type="button" class="btn btn-primary btn-send" >Gửi Đi</button>
+						</div>
+					</div>
+					<div class="col-lg-6 hidden-xs-down">
+						<img src="images/bg_dk.png" />
+					</div>
+				</div>
             </div>
         </div>
     </div>

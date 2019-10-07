@@ -499,7 +499,7 @@ a[x-apple-data-detectors] {
 }
 .btn-top {
   background-image: url(../images/ic_keyboard_arrow_up_white_24px.svg);
-  background-color: #16b5f0;
+  background-color: #ffd200;
   background-size: 100%;
   border-radius: 50px;
   background-repeat: no-repeat;
@@ -579,11 +579,10 @@ a[x-apple-data-detectors] {
   padding-bottom: 32px;
 }
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: transparent!important;
-  border: 1px solid #00aeef;
+  background-color: #333333 !important;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: #00aeef !important;
+  background: #ffd200 !important;
 }
 .swiper-pagination-bullet {
   background-color: #ccc !important;
@@ -656,7 +655,6 @@ a[x-apple-data-detectors] {
   text-align: center;
   cursor: pointer !important;
   text-transform: uppercase;
-  border: none;
   height: 40px;
   padding: 8px 20px;
   line-height: 24px;
@@ -665,6 +663,11 @@ a[x-apple-data-detectors] {
   -webkit-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+.btn-primary:hover {
+  background-color: #fed722;
+  border: 1px solid #ffd200;
+  color: #000;
 }
 .btn-default {
   background-color: #000000;
@@ -686,10 +689,6 @@ a[x-apple-data-detectors] {
 }
 a.btn-default {
   display: block;
-}
-.btn-primary:hover {
-  background-color: #00aeef !important;
-  color: #fff !important;
 }
 .modal {
   text-align: center;
@@ -1210,6 +1209,44 @@ button.close span {
   color: #fff;
   text-shadow: none;
 }
+#Showregister .modal-body {
+  background-color: #06080d;
+  padding: 64px;
+}
+#Showregister button.close span {
+  color: #fff;
+  text-shadow: none;
+}
+#Showregister h5 {
+  color: #fff;
+  margin-bottom: 42px;
+}
+#Showregister input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #8b8b8b;
+  color: #fff;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 24px;
+}
+#Showregister .info_cus {
+  margin-top: 48px;
+  padding-right: 24px;
+}
+#Showregister .btn-send {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ffd200;
+  color: #ffd200;
+  margin-top: 32px;
+}
+@media (max-width: 1440px) {
+  #fp-nav.fp-left {
+    left: 4px;
+  }
+}
 @media (max-width: 1400px) {
   .item.big img {
     height: 555px;
@@ -1257,6 +1294,22 @@ button.close span {
   }
   .DK_SDT .title {
     font-size: 15px;
+  }
+  .content_scan .table-cell-scan {
+    min-width: 140px;
+    width: 140px;
+  }
+  .content_scan .table-cell-scan img {
+    width: 122px;
+  }
+  .download_store a img {
+    max-height: 33px;
+  }
+  .scan {
+    font-size: 18px;
+  }
+  .title_big {
+    font-size: 32px;
   }
 }
 @media (max-width: 768px) {
@@ -1330,6 +1383,38 @@ button.close span {
   .div_input .form-control {
     font-size: 16px;
   }
+  .content_scan {
+    display: none;
+  }
+  .row_bg {
+    height: auto;
+  }
+  .title_big br {
+    display: none;
+  }
+  .content_top {
+    margin: 96px 0 64px 0;
+  }
+  .img_top {
+    margin: 0;
+  }
+  .img_top img {
+    max-width: 520px;
+    max-height: 560px;
+    width: auto;
+  }
+  .row_bg img {
+    display: block;
+    margin: 48px auto 0 auto;
+    max-width: 520px;
+    max-height: 560px;
+    width: auto;
+  }
+  #Showregister .info_cus {
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-bottom: 56px;
+  }
 }
 @media (max-width: 475px) {
   .item.big {
@@ -1390,5 +1475,46 @@ button.close span {
   }
   .page404_content {
     background-position-x: -96px;
+  }
+  .content_top {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .title_big {
+    text-align: center;
+    font-size: 26px;
+  }
+  .text_content {
+    text-align: center;
+    font-size: 16px;
+  }
+  .col-12 {
+    margin-bottom: 16px;
+  }
+  .row_bg img {
+    margin-top: 0;
+    max-height: 280px;
+    max-width: 100%;
+  }
+  .fp-section {
+    background-color: #06080d;
+  }
+  .row_bg {
+    height: 540px;
+  }
+  .row_bg img {
+    max-width: 85%;
+  }
+  #fp-nav.fp-left {
+    left: 4px;
+  }
+  .modal-dialog {
+    width: auto;
+  }
+  #Showregister .modal-body {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .text_help p {
+    padding-right: 24px;
   }
 }
