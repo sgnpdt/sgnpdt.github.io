@@ -1598,6 +1598,8 @@ input:-ms-input-placeholder {
 }
 .password-indicator span:before {
   background-image: url(../master/images/pwd-exclamation.svg) !important;
+  position: relative;
+  top: 2px;
 }
 div.password-indicator-verified > span:before {
   background-image: url(../master/images/pwd-shield.svg) !important;
