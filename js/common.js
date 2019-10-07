@@ -1,43 +1,65 @@
 $(document).ready(function () {
 
     // Save previous URL to cookie
-    var guidePage = 'v2_huong_dan_v2.html';
-    var linkPage = 'tv_link_code.html';
+    const guidePage = 'v2_huong_dan_v2.html';
+    const linkPage = 'v2_tv_link_code.html';
 
-    var previousUrl = '';
+    let previousUrl = '';
     if (window.location.href.indexOf(linkPage) !== -1 || window.location.href.indexOf(guidePage) !== -1) {
         // Get previous URL
         previousUrl = $.cookie('previousUrl') || '';
         $.cookie('previousUrl', window.location.pathname);
     }
 
+    function randomString(length) {
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        let result = '';
+        for (let i = length; i > 0; --i) {
+            result += chars[Math.floor(Math.random() * chars.length)];
+        }
+
+        return result;
+    }
+
     // Fullpage init
     if ($('#fullpage').length > 0) {
-        var fp = new fullpage('#fullpage', {
+        const fp = new fullpage('#fullpage', {
             menu: '#menu',
             anchors: ['page-1', 'page-2', 'page-3', 'page-4', 'page-5'],
-			dragAndMove: true,
             // Whether to use the "automatic" scrolling or the "normal" one.
             // It also has affects the way the sections fit in the browser/device window
             // in tablets and mobile phones. (true = "automatic" scrolling)
-            //autoScrolling: false,
+            // (default true)
+            autoScrolling: true,
+            // Speed in milliseconds for the scrolling transitions.
+            // (default 700)
             scrollingSpeed: 700,
             // Whether or not to fit sections to the viewport or not.
             // When set to true the current active section will always fill the whole viewport.
             // Otherwise the user will be free to stop in the middle of a section.
+            // (default true)
             fitToSection: true,
+            // If fitToSection is set to true, this delays the fitting by the configured milliseconds.
+            // (default 1000)
             fitToSectionDelay: 600,
-            // Whether to use scrollbar for the site or not. In case of using scroll bar, the
-            // autoScrolling functionality will still work as expected.
+            // Determines whether to use scrollbar for the site or not. In case of using scroll bar,
+            // the autoScrolling functionality will still work as expected.
+            // (default false)
             scrollBar: false,
             // Whether or not to create a scroll for the section/slide in case its
             // content is bigger than the height of it.
+            // (default false)
             scrollOverflow: false,
             easing: 'easeInOutCubic',
             // Section navigation and indicator
             navigation: true,
             navigationPosition: 'right',
-            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+            // Make a random
+            licenseKey: 'P9722JYT-' + randomString(8) + '-M11QX8RJ-' + randomString(8),
+            // EXTENSIONS
+            // Enables or disables the dragging and flicking of sections and slides by using mouse or fingers.
+            // (default false)
+            //dragAndMove: true,
         });
 
         // Prevent click navigation, disable anchor click
@@ -404,7 +426,7 @@ $(document).ready(function () {
     // to be running with user context, ie. triggered by a user interaction.
 
     // Loading icon
-    $.getJSON('/master/images/animation-player.json', function () {
+    $.getJSON('images/animation-player.json', function () {
         // do nothing here?
     });
 
