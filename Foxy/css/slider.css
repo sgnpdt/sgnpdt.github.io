@@ -155,21 +155,21 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   text-align: center;
-  bottom: -16px;
+  bottom: 0px;
   position: relative;
 }
 .swiper-pagination-bullet {
   border: none;
   opacity: 0.87;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #ff58ca;
+  background: #ffd200;
   opacity: 1;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 8px;
+  margin: 0 6px;
 }
 @media (max-width: 1024px) {
   .bg_div_info .div_info {

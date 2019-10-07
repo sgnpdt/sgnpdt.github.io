@@ -297,8 +297,8 @@ a[x-apple-data-detectors] {
 .swiper_sp_moi{padding-bottom: 32px;}
 
 .swiper-pagination{
-	.swiper-pagination-bullet{background-color: transparent!important;border: 1px solid #00aeef;}
-	.swiper-pagination-bullet-active{background: #00aeef !important;}
+	.swiper-pagination-bullet{background-color: #333333 !important;}
+	.swiper-pagination-bullet-active{background: #ffd200 !important;}
 }
 .swiper-pagination-bullet{background-color: #ccc !important;}
 .swiper-button-next-spmoi{background: url(../images/arrow_right.png) no-repeat;
@@ -324,13 +324,15 @@ a[x-apple-data-detectors] {
     font-size: 16px;text-align: center;
     cursor: pointer !important;
     text-transform: uppercase;
-    border: none;height: 40px;
+    height: 40px;
     padding: 8px 20px;line-height: 24px;
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     -ms-border-radius: 8px;
-    -o-border-radius: 8px;}
+    -o-border-radius: 8px;
+	&:hover{background-color: #fed722;border: 1px solid #ffd200;color:#000;}
+}
 .btn-default{background-color: #000000;color:@primary-text;border: 1px solid #fff;
     font-size: 16px;text-align: center;display: inline-block;
     cursor: pointer !important;
@@ -343,10 +345,7 @@ a[x-apple-data-detectors] {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;}
 a.btn-default{display: block;}
-.btn-primary:hover {
-    background-color: #00aeef !important;
-    color: #fff !important;
-}
+
 
 .modal {
     text-align: center;
@@ -558,10 +557,13 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.info_cus{margin-top:48px;padding-right: 24px;}
 	.btn-send{width: 100%;background-color: transparent;border:1px solid #ffd200;color: #ffd200;margin-top: 32px;}
 }
-
+@media (max-width: 1440px){
+	#fp-nav.fp-left{left: 4px;}
+}
 @media (max-width: 1400px){
 	.item.big img {height: 555px;width: 555px;}
 	.item img{height: 234px;width: 234px;}
+	
 }
 @media (max-width: 1200px){
 	.item.big img {height: 455px;width: 455px;}
@@ -577,6 +579,14 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.swiper-button-prev-spmoi{display: none;}
 	.swiper-button-next-spmoi{display: none;}
 	.DK_SDT .title{font-size: 15px;}
+	.content_scan {
+		.table-cell-scan {min-width: 140px;width: 140px;
+			img{width: 122px;}
+		}
+	}
+	.download_store a img{max-height: 33px;}
+	.scan{font-size: 18px;}
+	.title_big{font-size: 32px;}
 }
 @media (max-width: 768px){
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{margin-right:0;margin-left: 0; }
