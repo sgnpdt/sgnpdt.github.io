@@ -7,8 +7,10 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
 <!-- TemplateEndEditable -->
-<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+<!--<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">-->
+<link rel="icon" type="image/ico" sizes="32x32" href="../images/favicon/favicon-32x32.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="../images/favicon/favicon-16x16.ico">
 
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../css/fonts.css">
@@ -73,15 +75,15 @@
     <div class="HeaderNav">
 		<div class="container">
 			<div class="row">
-				<nav class="navbar navbar-expand-sm navbar-dark HeaderNav">
-				  <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo" width="80"></a>
+				<nav class="navbar navbar-expand-sm navbar-dark HeaderNav" >
+				  <a  class="navbar-brand" href="#firstPage"><img src="../images/logo.png" alt="logo" width="80"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
 
 				  <div class="collapse navbar-collapse" id="navbarsExample03">
 					<ul class="navbar-nav mr-auto" id="menu">
-					  <li data-menuanchor="firstPage" class=" active">
+					  <li data-menuanchor="firstPage" class="hidden-xs-down active">
 						<a class="icon_home" href="#firstPage"></a>
 					  </li>
 					  <li data-menuanchor="secondPage" class=" ">
@@ -93,7 +95,7 @@
 					  <li class=" ">
 						<a href="#" data-toggle="modal" data-target="#ShowRegister">REGISTER</a>
 					  </li>
-					  <li class="none">
+					  <li class="none bg_color">
 						<a href="#"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a>
 					  </li>
 					</ul>

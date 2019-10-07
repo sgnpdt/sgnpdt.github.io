@@ -15,6 +15,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-home-b {
+  background-image: url(../images/Icon_phone_b.png);
+  background-image: -webkit-image-set(url(../images/Icon_phone_b.png) 1x, url(../images/Icon_phone_b@2x.png) 2x, url(../images/Icon_phone_b@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .source-icon-phone {
   background-image: url(../images/Icon_phone.png);
   background-image: -webkit-image-set(url(../images/Icon_phone.png) 1x, url(../images/Icon_phone@2x.png) 2x, url(../images/Icon_phone@3x.png) 3x);
@@ -499,7 +505,7 @@ a[x-apple-data-detectors] {
 }
 .btn-top {
   background-image: url(../images/ic_keyboard_arrow_up_white_24px.svg);
-  background-color: #ffd200;
+  background-color: #fed722;
   background-size: 100%;
   border-radius: 50px;
   background-repeat: no-repeat;
@@ -582,7 +588,7 @@ a[x-apple-data-detectors] {
   background-color: #333333 !important;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: #ffd200 !important;
+  background: #fed722 !important;
 }
 .swiper-pagination-bullet {
   background-color: #ccc !important;
@@ -648,9 +654,9 @@ a[x-apple-data-detectors] {
   background-color: #00aeef;
 }
 .btn-primary {
-  background-color: #ffd200;
+  background-color: #fed722;
   color: #000;
-  border: 1px solid #ffd200;
+  border: 1px solid #fed722;
   font-size: 16px;
   text-align: center;
   cursor: pointer !important;
@@ -665,8 +671,8 @@ a[x-apple-data-detectors] {
   -o-border-radius: 8px;
 }
 .btn-primary:hover {
-  background-color: #fed722;
-  border: 1px solid #ffd200;
+  background-color: #ffd200;
+  border: 1px solid #fed722;
   color: #000;
 }
 .btn-default {
@@ -687,8 +693,16 @@ a[x-apple-data-detectors] {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.btn-default:hover {
+  background-color: #000000;
+  border: 1px solid #fed722;
+  color: #fed722 !important;
+}
 a.btn-default {
   display: block;
+}
+button:focus {
+  outline: 0px;
 }
 .modal {
   text-align: center;
@@ -1134,7 +1148,7 @@ a.btn-default {
 .fp-slidesNav ul li:hover a.active span {
   width: 12px;
   height: 12px;
-  background-color: #ffd200;
+  background-color: #fed722;
 }
 .icon_help {
   background-image: url(../images/help.png);
@@ -1179,12 +1193,12 @@ button.close span {
 #ShowRegister .btn-primary {
   background-color: #0a0e16;
   border: 1px solid #0a0e16;
-  color: #ffd200;
+  color: #fed722;
 }
 #ShowRegister .btn-primary:hover {
-  background-color: #ffd200 !important;
+  background-color: #fed722 !important;
   color: #000000 !important;
-  border: 1px solid #ffd200;
+  border: 1px solid #fed722;
 }
 #ShowRegister .btn-default {
   background-color: #fff;
@@ -1192,9 +1206,9 @@ button.close span {
   color: #000000;
 }
 #ShowRegister .btn-default:hover {
-  background-color: #ffd200 !important;
+  background-color: #fed722 !important;
   color: #000000 !important;
-  border: 1px solid #ffd200;
+  border: 1px solid #fed722;
 }
 #ShowRegister .modal-footer {
   border: none;
@@ -1238,8 +1252,8 @@ button.close span {
 #Showregister .btn-send {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #ffd200;
-  color: #ffd200;
+  border: 1px solid #fed722;
+  color: #fed722;
   margin-top: 32px;
 }
 @media (max-width: 1440px) {
@@ -1482,11 +1496,11 @@ button.close span {
   }
   .title_big {
     text-align: center;
-    font-size: 26px;
+    font-size: 20px;
   }
   .text_content {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
   }
   .col-12 {
     margin-bottom: 16px;
@@ -1516,5 +1530,12 @@ button.close span {
   }
   .text_help p {
     padding-right: 24px;
+  }
+  .list_btn {
+    margin-top: 24px;
+  }
+  .swiperphanmem,
+  .swiperquanly {
+    margin-top: 48px;
   }
 }
