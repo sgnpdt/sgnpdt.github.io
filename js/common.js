@@ -81,18 +81,16 @@ $(document).ready(function () {
 
         // This page must be the guide page
         if (window.location.href.indexOf(guidePage) !== -1) {
-            window.addEventListener('popstate', function () {
-                // Contains hashtag and previous page must be link page
-                if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf(linkPage) !== -1) {
-                    history.replaceState({}, document.title, location.pathname);
+            // Contains hashtag and previous page must be link page
+            if (window.location.hash.indexOf('#page-') !== -1 && previousUrl.indexOf(linkPage) !== -1) {
+                history.replaceState({}, document.title, location.pathname);
 
-                    // Reset?
-                    previousUrl = '';
+                // Reset?
+                previousUrl = '';
 
-                    // Scroll to top
-                    fp.moveTo('page-1');
-                }
-            }, false);
+                // Scroll to top
+                fp.moveTo('page-1');
+            }
         }
     }
 

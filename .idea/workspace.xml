@@ -3,40 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97af53f8-12b7-4657-b930-0decce0545d7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Foxy/Templates/template.dwt" afterPath="$PROJECT_DIR$/Foxy/Templates/template.dwt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Foxy/index.html" afterPath="$PROJECT_DIR$/Foxy/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/template.dwt" afterPath="$PROJECT_DIR$/Templates/template.dwt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/link.html" afterPath="$PROJECT_DIR$/link.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/Templates/template.dwt" afterPath="$PROJECT_DIR$/v1/Templates/template.dwt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/index.html" afterPath="$PROJECT_DIR$/v1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_change_pass.html" afterPath="$PROJECT_DIR$/v2_change_pass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_chon_profile.html" afterPath="$PROJECT_DIR$/v2_chon_profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_chon_profile_full.html" afterPath="$PROJECT_DIR$/v2_chon_profile_full.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_device_limit.html" afterPath="$PROJECT_DIR$/v2_device_limit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_device_limit_ftel.html" afterPath="$PROJECT_DIR$/v2_device_limit_ftel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_email_thanh_cong.html" afterPath="$PROJECT_DIR$/v2_email_thanh_cong.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_email_that_bai.html" afterPath="$PROJECT_DIR$/v2_email_that_bai.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_fb_mobile_number.html" afterPath="$PROJECT_DIR$/v2_fb_mobile_number.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_forgot_password.html" afterPath="$PROJECT_DIR$/v2_forgot_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_huong_dan.html" afterPath="$PROJECT_DIR$/v2_huong_dan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_huong_dan_v2.html" afterPath="$PROJECT_DIR$/v2_huong_dan_v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_kich_hoat_otp.html" afterPath="$PROJECT_DIR$/v2_kich_hoat_otp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html" afterPath="$PROJECT_DIR$/v2_kich_hoat_otp_thanh_cong.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_login.html" afterPath="$PROJECT_DIR$/v2_login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_login_foxy.html" afterPath="$PROJECT_DIR$/v2_login_foxy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_new_device.html" afterPath="$PROJECT_DIR$/v2_new_device.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_privacy_policy.html" afterPath="$PROJECT_DIR$/v2_privacy_policy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_profile_name.html" afterPath="$PROJECT_DIR$/v2_profile_name.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_reset_password.html" afterPath="$PROJECT_DIR$/v2_reset_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_foxy.html" afterPath="$PROJECT_DIR$/v2_sign_up_foxy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_mobile.html" afterPath="$PROJECT_DIR$/v2_sign_up_mobile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_otp_count_down.html" afterPath="$PROJECT_DIR$/v2_sign_up_otp_count_down.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_step_mobile.html" afterPath="$PROJECT_DIR$/v2_sign_up_step_mobile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_step_password.html" afterPath="$PROJECT_DIR$/v2_sign_up_step_password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_sign_up_thongbao.html" afterPath="$PROJECT_DIR$/v2_sign_up_thongbao.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_terms_of_use.html" afterPath="$PROJECT_DIR$/v2_terms_of_use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2_tv_link_code.html" afterPath="$PROJECT_DIR$/v2_tv_link_code.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,43 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="v2_huong_dan_v2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v2_huong_dan_v2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v2_tv_link_code.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v2_tv_link_code.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fullpage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/fullpage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="92" column="133" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="133" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+            <state relative-caret-position="1083">
+              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v2_huong_dan_v2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v2_huong_dan_v2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -103,11 +48,11 @@
       <find>previousUrl</find>
       <find>fp</find>
       <find>licenseKey</find>
-      <find>version 3 has changed its license to GPLv3 and it requires a</find>
       <find>cookie</find>
       <find>jquery.cookie.min.js</find>
       <find>guidePage</find>
       <find>&lt;!doctype html&gt;</find>
+      <find>version 3 has changed its license to GPLv3 and it requires a</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,7 +147,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -254,12 +199,13 @@
       <workItem from="1564547333433" duration="668000" />
       <workItem from="1570361644361" duration="3901000" />
       <workItem from="1570412206435" duration="27798000" />
-      <workItem from="1570461366177" duration="5286000" />
+      <workItem from="1570461366177" duration="5388000" />
+      <workItem from="1570467530557" duration="345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5286000" />
+    <option name="totallyTimeSpent" value="5733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -267,19 +213,19 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -316,17 +262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="92" column="133" lean-forward="false" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="133" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2_huong_dan_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -334,14 +269,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2_huong_dan_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        <state relative-caret-position="1083">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
