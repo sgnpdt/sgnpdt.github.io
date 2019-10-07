@@ -1818,9 +1818,6 @@ div.password-indicator-verified > span:before {
   padding-left: 8%;
   padding-right: 8%;
 }
-html body.change_pass_pass {
-  font-size: 0.73em !important;
-}
 html body.change_pass_pass .btn-left {
   padding-right: 13px;
   padding-left: 30px;
