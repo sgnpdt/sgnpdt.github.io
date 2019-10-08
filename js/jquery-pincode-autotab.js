@@ -8,109 +8,155 @@
             defaultFlow: true
         }, options);
 
+        var lastInputValue = '';
+        var hasBackspaceSupport;
+        var isIos = function () {
+            return !!window.navigator.userAgent.match(/iPad|iPhone/i);
+        };
+
+        var isAndroid = function () {
+            return window.navigator && /android/i.test(window.navigator.userAgent);
+        };
+
+        // On Android chrome, the keyup and keydown events always return key code 229
+        // as a composition that buffers the user’s keystrokes
+        var isAndroidBackspaceKeydown = function (lastInputValue, currentInputValue) {
+            if (!isAndroid() || !lastInputValue || !currentInputValue) {
+                return false;
+            }
+
+            return currentInputValue === lastInputValue.slice(0, -1);
+        };
+
+        var setPinFocus = function (input) {
+            // Not work on Safari?
+            if (isIos()) {
+                // 4ms is specified by the HTML5 spec
+                setTimeout(function () {
+                    input.select(); // select first
+                    input.focus();
+                }, 10);
+            } else {
+                input.focus();
+            }
+        };
+
         return this.each(function (index, value) {
-            $(value).on('keydown', function (event) {
+            $(value).on('keydown', function (evt) {
                 var move = 0;
-                switch (event.keyCode) {
-                    //number 0
+
+                var currentValue = $(this).val();
+                // If we got any charCode === 8, this means, that this device correctly
+                // sends backspace keys in event, so we do not need to apply any hacks
+                var charCode = evt.which || evt.keyCode;
+                hasBackspaceSupport = hasBackspaceSupport || charCode === 8;
+                if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
+                    charCode = 8;
+                }
+
+                // Update last input value
+                lastInputValue = currentValue;
+
+                switch (evt.keyCode) {
+                    // number 0
                     case 48:
                     case 96:
                         $(this).val('0');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 1
+                    // number 1
                     case 49:
                     case 97:
                         $(this).val('1');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 2
+                    // number 2
                     case 50:
                     case 98:
                         $(this).val('2');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 3
+                    // number 3
                     case 51:
                     case 99:
                         $(this).val('3');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 4
+                    // number 4
                     case 52:
                     case 100:
                         $(this).val('4');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 5
+                    // number 5
                     case 53:
                     case 101:
                         $(this).val('5');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 6
+                    // number 6
                     case 54:
                     case 102:
                         $(this).val('6');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 7
+                    // number 7
                     case 55:
                     case 103:
                         $(this).val('7');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 8
+                    // number 8
                     case 56:
                     case 104:
                         $(this).val('8');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    //number 9
+                    // number 9
                     case 57:
                     case 105:
                         $(this).val('9');
                         move = 1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    case 8: //backspace
-                    case 46: //delete
+                    case 8: // backspace
+                    case 46: // delete
                         $(this).val('');
                         move = -1;
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
-                    case 9: //tab
-                        if (event.shiftKey) {
+                    case 9: // tab
+                        if (evt.shiftKey) {
                             move = -1;
                         } else {
                             move = 1;
                         }
-                        event.preventDefault();
+                        evt.preventDefault();
                         break;
 
                     case 86: //v
-                        if (!(event.ctrlKey || event.metaKey)) {
-                            event.preventDefault();
+                        if (!(evt.ctrlKey || evt.metaKey)) {
+                            evt.preventDefault();
                         }
                         break;
 
@@ -119,30 +165,15 @@
                     case 17: //ctrl
                     case 91: //command in mac
                         break;
-                    case 229: //android device on chrome always returns 229 keycode
+                    case 229: // Android device on Chrome always returns 229 keycode
                         var androidKeyCode = $(this).val();
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         }
                         break;
                     default:
-                        event.preventDefault();
+                        evt.preventDefault();
                 }
-
-                var setPinFocus = function (input) {
-                    const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
-
-                    // Not work on Safari?
-                    if (isIos) {
-                        // 4ms is specified by the HTML5 spec
-                        setTimeout(function () {
-                            input.select(); // select first
-                            input.focus();
-                        }, 10);
-                    } else {
-                        input.focus();
-                    }
-                };
 
                 for (var i = 0; i < listOfElements.length; i++) {
                     var prevElement;
