@@ -1549,7 +1549,9 @@ button.close span {
     height: 540px;
   }
   .row_bg img {
-    max-width: 85%;
+    max-width: 80%;
+    float: none !important;
+    margin-bottom: 16px;
   }
   #fp-nav.fp-left {
     left: 4px;
@@ -1569,6 +1571,12 @@ button.close span {
   .swiperphanmem,
   .swiperquanly {
     margin-top: 48px;
+  }
+  .btn_left {
+    padding-right: 8px;
+  }
+  .btn_right {
+    padding-left: 8px;
   }
   #ShowFPTmember .modal-dialog {
     width: 90%;
@@ -1718,5 +1726,24 @@ button.close span {
     font-weight: 400;
     color: #000000;
     margin-bottom: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .btn-default,
+  .btn-primary {
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .swiperphanmem,
+  .swiperquanly {
+    margin-top: 0;
+  }
+  .title_big {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .row_bg {
+    height: 460px;
   }
 }
