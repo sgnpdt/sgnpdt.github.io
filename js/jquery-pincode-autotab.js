@@ -180,6 +180,8 @@
                         } else {
                             $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '----, move' + move + '<br />' + $('.pin-log').html());
                             evt.preventDefault();
+
+                            $('.pin-log').html('Ignore input key' + '<br />' + $('.pin-log').html());
                             // Ignore input key
                             return false;
                         }
