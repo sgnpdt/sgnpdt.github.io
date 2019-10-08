@@ -42,10 +42,6 @@
         };
 
         return this.each(function (index, value) {
-            $(value).on('input', function (evt) {
-
-            });
-
             $(value).on('keydown', function (evt) {
                 var move = 0;
 
@@ -184,12 +180,16 @@
                         } else {
                             $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '----, move' + move + '<br />' + $('.pin-log').html());
                             evt.preventDefault();
+                            // Ignore input key
+                            return false;
                         }
 
                         break;
 
                     default:
                         evt.preventDefault();
+                        // Ignore input key
+                        return false;
                 }
 
                 for (var i = 0; i < listOfElements.length; i++) {
