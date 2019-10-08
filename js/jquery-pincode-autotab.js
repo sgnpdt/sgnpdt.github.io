@@ -176,12 +176,12 @@
                     // case 91: // command in mac
                     //     break;
 
-                    // case 229: // Android device on Chrome always returns 229 keycode
-                    //     var androidKeyCode = $(this).val();
-                    //     if ($.isNumeric(androidKeyCode)) {
-                    //         move = 1;
-                    //     }
-                    //     break;
+                    case 229: // Android device on Chrome always returns 229 keycode
+                        var androidKeyCode = $(this).val();
+                        if ($.isNumeric(androidKeyCode)) {
+                            move = 1;
+                        }
+                        break;
 
                     default:
                         evt.preventDefault();
