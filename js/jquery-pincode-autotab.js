@@ -178,7 +178,7 @@
 
                     case 229: // Android device on Chrome always returns 229 keycode
                         var androidKeyCode = $(this).val();
-                        $('.pin-log').html('androidKeyCode' + androidKeyCode + '<br />' + $('.pin-log').html());
+                        $('.pin-log').html('androidKeyCode' + androidKeyCode + '/' + $.isNumeric(androidKeyCode) + '<br />' + $('.pin-log').html());
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         }
