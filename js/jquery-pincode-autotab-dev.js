@@ -17,6 +17,16 @@
             return window.navigator && /android/i.test(window.navigator.userAgent);
         };
 
+        // On Android chrome, the keyup and keydown events always return key code 229
+        // as a composition that buffers the user's keystrokes
+        const isAndroidBackspaceKeydown = function (lastInputValue, currentInputValue) {
+            if (!isAndroid() || !lastInputValue || !currentInputValue) {
+                return false;
+            }
+
+            return currentInputValue === lastInputValue.slice(0, -1);
+        };
+
         const setPinFocus = function (input) {
             // Not work on Safari?
             if (isIos()) {
@@ -35,9 +45,107 @@
                 $(value).attr('type', 'number');
             }
 
-            $(value).on('keydown', function (evt) {
+            $(value).on('input', function (evt) {
                 let move = 0;
-                switch (evt.keyCode) {
+
+                let currentValue = $(this).val();
+                // If we got any charCode === 8, this means, that this device correctly
+                // sends backspace keys in event, so we do not need to apply any hacks
+                let keyCode = evt.which || evt.keyCode;
+
+                let log = 'input ------' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                $('.pin-log').html(log + '<br />' + $('.pin-log').html());
+
+                hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
+                if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
+                    keyCode = 8;
+                } else {
+                    keyCode = evt.keyCode;
+                }
+
+                // Update last input value
+                lastInputValue = currentValue;
+                switch (keyCode) {
+
+                    case 8: // backspace
+                    case 46: // delete
+                        $(this).val('');
+                        move = -1;
+                        break;
+
+                    default:
+                        return;
+                }
+
+                for (let i = 0; i < listOfElements.length; i++) {
+                    var prevElement;
+                    var nextElement;
+                    if (i - 1 >= 0) {
+                        prevElement = listOfElements[i - 1];
+                    }
+
+                    if (i + 1 <= listOfElements.length) {
+                        nextElement = listOfElements[i + 1];
+                    }
+
+                    if (listOfElements[i] === this) {
+                        var ele, j;
+                        // Delete PIN
+                        if (prevElement) {
+                            //$(prevElement).select();
+                            //$(prevElement).focus();
+
+                            // Custom event
+                            $(prevElement).trigger({type: 'delpin'});
+                        } else {
+                            if (settings.prevElement) {
+                                //settings.prevElement.select();
+                                //settings.prevElement.focus();
+
+                                // Custom event
+                                settings.prevElement.trigger({type: 'delpin'});
+                            } else if (settings.defaultFlow) {
+                                ele = $(':focusable');
+                                for (j = 0; j < ele.length; j++) {
+                                    if (ele[j] === this) {
+                                        if (ele[j - 1]) {
+                                            //$(ele[j - 1]).select();
+                                            //$(ele[j - 1]).focus();
+
+                                            // Custom event
+                                            $(ele[j - 1]).trigger({type: 'delpin'});
+                                        }
+
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            $(value).on('keydown', function (evt) {
+                var move = 0;
+
+                var currentValue = $(this).val();
+                // If we got any charCode === 8, this means, that this device correctly
+                // sends backspace keys in event, so we do not need to apply any hacks
+                var keyCode = evt.which || evt.keyCode;
+
+                var log = 'keydown-----' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                $('.pin-log').html(log + '<br />' + $('.pin-log').html());
+
+                hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
+                if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
+                    keyCode = 8;
+                } else {
+                    keyCode = evt.keyCode;
+                }
+
+                // Update last input value
+                lastInputValue = currentValue;
+                switch (keyCode) {
                     // number 0
                     case 48:
                     case 96:
@@ -134,7 +242,7 @@
                         evt.preventDefault();
                         break;
 
-                    // case 86: // v: Ctrl + V (paste), disable on mobile
+                    // case 86: // v
                     //     if (!(evt.ctrlKey || evt.metaKey)) {
                     //         evt.preventDefault();
                     //     }
@@ -150,11 +258,15 @@
                     // This is a standard behavior for some input methods like entering Japaneese or Chinese hieroglyphs.
                     case 229: // Chrome on Android device always returns 229 keycode
                         var androidKeyCode = $(this).val();
+                        $('.pin-log').html('androidKeyCode/' + androidKeyCode + '/' + $.isNumeric(androidKeyCode).toString() + '<br />' + $('.pin-log').html());
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         } else {
-                            // Ignore input key too
+                            // Ignore input key
                             evt.preventDefault();
+
+                            $('.pin-log').html('send del key <br />' + $('.pin-log').html());
+                            $(this).trigger({type: 'delpin'}); // clear for sure
                         }
 
                         break;
@@ -163,9 +275,9 @@
                         evt.preventDefault();
                 }
 
-                for (let i = 0; i < listOfElements.length; i++) {
-                    let prevElement;
-                    let nextElement;
+                for (var i = 0; i < listOfElements.length; i++) {
+                    var prevElement;
+                    var nextElement;
                     if (i - 1 >= 0) {
                         prevElement = listOfElements[i - 1];
                     }
@@ -175,7 +287,7 @@
                     }
 
                     if (listOfElements[i] === this) {
-                        let ele, j;
+                        var ele, j;
                         switch (move) {
                             case 1:
                                 if (nextElement) {
@@ -260,12 +372,12 @@
                 }
             });
 
-            $(value).on('paste', function (evt) {
-                evt.preventDefault();
-                const clipboardData = evt.clipboardData || evt.originalEvent.clipboardData || window.clipboardData;
-                const pastedData = clipboardData.getData('text/plain');
+            $(value).on('paste', function (event) {
+                event.preventDefault();
+                var clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
+                var pastedData = clipboardData.getData('text/plain');
                 for (var i = 0; i < listOfElements.length; i++) {
-                    const data = function () {
+                    var data = function () {
                         return pastedData[i];
                     };
 
@@ -282,7 +394,7 @@
     }
 
     function focusable(element, isTabIndexNotNaN) {
-        let map, mapName, img, nodeName = element.nodeName.toLowerCase();
+        var map, mapName, img, nodeName = element.nodeName.toLowerCase();
 
         if ('area' === nodeName) {
             map = element.parentNode;

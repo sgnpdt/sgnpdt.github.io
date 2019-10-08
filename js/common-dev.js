@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
 
     function randomString(length) {
-        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         let result = '';
         for (let i = length; i > 0; --i) {
             result += chars[Math.floor(Math.random() * chars.length)];
@@ -296,11 +296,12 @@ $(document).ready(function () {
     });
 
     const pinLen = $('.inputs .pin').length;
+
     function setLog(msg) {
         //console.log(msg);
-        // if($('.pin-log')) {
-        //     $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
-        // }
+        if($('.pin-log')) {
+            $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
+        }
     }
 
     // Process custom event pindel
@@ -428,6 +429,11 @@ $(document).ready(function () {
     // Show soft-keyboard?
     // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
+
+    // Loading icon
+    $.getJSON('images/animation-player.json', function () {
+        // do nothing here?
+    });
 
     $('#ShowLoading').on('show.bs.modal', function (e) {
         setTimeout(function () {
