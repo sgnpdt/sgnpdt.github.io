@@ -308,16 +308,16 @@ $(document).ready(function () {
     $('.inputs .pin').on('delpin', function (evt) {
         setLog('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
 
-        var curr = parseInt(evt.target.id.substr('pin-'.length));
-        $('#pin-' + curr).val('');
-
-        if($('#pin-' + curr).val() !== '') {
-            $('#pin-' + curr).attr('value', ''); // for sure
+        $(evt.target).val('');
+        if($(evt.target).val() !== '') {
+            setLog('Cannot clear value ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
+            $(evt.target).attr('value', ''); // for sure
         }
 
+        var curr = parseInt(evt.target.id.substr('pin-'.length));
         if (curr >= 0) {
             setLog('Focus #0 for PIN-' + curr);
-            setPinFocus($('#pin-' + curr));
+            setPinFocus($(evt.target));
         }
     });
 
