@@ -45,7 +45,7 @@
                 $(value).prop('type', 'number');
             }
 
-            $(value).on('input', function (evt) {
+            $(value).on('input DOMSubtreeModified', function (evt) {
                 let move = 0;
 
                 let currentValue = $(this).val();
