@@ -678,13 +678,15 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.row_bg img{margin-top: 0;max-height: 280px;max-width: 100%;}
 	.fp-section{background-color: #06080d} 
 	.row_bg{height: 540px;}
-	.row_bg img{max-width: 85%;}
+	.row_bg img{max-width: 80%; float: none !important;margin-bottom: 16px;}
 	#fp-nav.fp-left{left: 4px;}
 	.modal-dialog{width: auto;}
 	#Showregister .modal-body{padding:2rem 1rem 1rem 1rem;}
 	.text_help p{padding-right: 24px;}
 	.list_btn{margin-top: 24px;}
 	.swiperphanmem, .swiperquanly{margin-top: 48px;}
+	.btn_left{padding-right: 8px;}
+	.btn_right{padding-left: 8px}
 	#ShowFPTmember .modal-dialog{width: 90%;margin: 0 auto;}
 	#ShowFPTmember{
 		.modal-content{background-color: transparent;}
@@ -719,4 +721,11 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 		
 	}
 	
+}
+
+@media (max-width: 320px){
+	.btn-default,.btn-primary{font-size: 14px;padding-left: 12px;padding-right: 12px;}
+	.swiperphanmem, .swiperquanly{margin-top: 0;}
+	.title_big{font-size: 18px;margin-bottom: 16px;}
+	.row_bg{height: 460px}
 }
