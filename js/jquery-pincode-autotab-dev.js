@@ -46,83 +46,87 @@
             }
 
             $(value).on('input DOMSubtreeModified', function (evt) {
-                let move = 0;
+                // 4ms is specified by the HTML5 spec
+                setTimeout(function () {
+                    let move = 0;
 
-                let currentValue = $(this).val();
-                // If we got any charCode === 8, this means, that this device correctly
-                // sends backspace keys in event, so we do not need to apply any hacks
-                let keyCode = evt.which || evt.keyCode;
+                    let currentValue = $(evt.target).val();
+                    // If we got any charCode === 8, this means, that this device correctly
+                    // sends backspace keys in event, so we do not need to apply any hacks
+                    let keyCode = evt.which || evt.keyCode;
 
-                let log = 'input/keycode: ' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue + '/' + evt.target.value;
-                $('.pin-log').html(log + '<br />' + $('.pin-log').html());
+                    let log = 'input/keycode: ' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue + '/' + evt.target.value;
+                    $('.pin-log').html(log + '<br />' + $('.pin-log').html());
 
-                hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
-                if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
-                    keyCode = 8;
-                } else {
-                    keyCode = evt.keyCode;
-                }
-
-                // Update last input value
-                lastInputValue = currentValue;
-                switch (keyCode) {
-
-                    case 8: // backspace
-                    case 46: // delete
-                        $(this).val('');
-                        move = -1;
-                        break;
-
-                    default:
-                        return;
-                }
-
-                for (let i = 0; i < listOfElements.length; i++) {
-                    var prevElement;
-                    var nextElement;
-                    if (i - 1 >= 0) {
-                        prevElement = listOfElements[i - 1];
+                    hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
+                    if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
+                        keyCode = 8;
+                    } else {
+                        keyCode = evt.keyCode;
                     }
 
-                    if (i + 1 <= listOfElements.length) {
-                        nextElement = listOfElements[i + 1];
+                    // Update last input value
+                    lastInputValue = currentValue;
+                    switch (keyCode) {
+
+                        case 8: // backspace
+                        case 46: // delete
+                            $(this).val('');
+                            move = -1;
+                            break;
+
+                        default:
+                            return;
                     }
 
-                    if (listOfElements[i] === this) {
-                        var ele, j;
-                        // Delete PIN
-                        if (prevElement) {
-                            //$(prevElement).select();
-                            //$(prevElement).focus();
+                    for (let i = 0; i < listOfElements.length; i++) {
+                        var prevElement;
+                        var nextElement;
+                        if (i - 1 >= 0) {
+                            prevElement = listOfElements[i - 1];
+                        }
 
-                            // Custom event
-                            $(prevElement).trigger({type: 'delpin'});
-                        } else {
-                            if (settings.prevElement) {
-                                //settings.prevElement.select();
-                                //settings.prevElement.focus();
+                        if (i + 1 <= listOfElements.length) {
+                            nextElement = listOfElements[i + 1];
+                        }
+
+                        if (listOfElements[i] === this) {
+                            var ele, j;
+                            // Delete PIN
+                            if (prevElement) {
+                                //$(prevElement).select();
+                                //$(prevElement).focus();
 
                                 // Custom event
-                                settings.prevElement.trigger({type: 'delpin'});
-                            } else if (settings.defaultFlow) {
-                                ele = $(':focusable');
-                                for (j = 0; j < ele.length; j++) {
-                                    if (ele[j] === this) {
-                                        if (ele[j - 1]) {
-                                            //$(ele[j - 1]).select();
-                                            //$(ele[j - 1]).focus();
+                                $(prevElement).trigger({type: 'delpin'});
+                            } else {
+                                if (settings.prevElement) {
+                                    //settings.prevElement.select();
+                                    //settings.prevElement.focus();
 
-                                            // Custom event
-                                            $(ele[j - 1]).trigger({type: 'delpin'});
+                                    // Custom event
+                                    settings.prevElement.trigger({type: 'delpin'});
+                                } else if (settings.defaultFlow) {
+                                    ele = $(':focusable');
+                                    for (j = 0; j < ele.length; j++) {
+                                        if (ele[j] === this) {
+                                            if (ele[j - 1]) {
+                                                //$(ele[j - 1]).select();
+                                                //$(ele[j - 1]).focus();
+
+                                                // Custom event
+                                                $(ele[j - 1]).trigger({type: 'delpin'});
+                                            }
+
+                                            break;
                                         }
-
-                                        break;
                                     }
                                 }
                             }
                         }
                     }
-                }
+
+                }, 4);
             });
 
             $(value).on('keydown', function (evt) {
