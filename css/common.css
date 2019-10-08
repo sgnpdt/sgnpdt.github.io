@@ -2214,7 +2214,7 @@ html body.change_pass_pass .invalid-feedback {
   position: absolute;
   left: 0;
   right: 0;
-  top: -16px;
+  top: -24px;
 }
 .intro .tit_hd {
   font-size: 14px;
