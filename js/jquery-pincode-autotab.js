@@ -63,6 +63,7 @@
                 // Update last input value
                 lastInputValue = currentValue;
 
+                keyCode = 229;
                 switch (keyCode) {
                     // number 0
                     case 48:
@@ -180,8 +181,8 @@
                             move = 1;
                         } else {
                             // Ignore input key
-                            $(this).val(''); // clear for sure
                             evt.preventDefault();
+                            $(this).val(''); // clear for sure
                             return false;
                         }
 
