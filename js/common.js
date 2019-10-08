@@ -299,7 +299,9 @@ $(document).ready(function () {
 
     function setLog(msg) {
         //console.log(msg);
-        //$('.pin-log').html(msg + '<br />' + $('.log').html());
+        if($('.pin-log')) {
+            $('.pin-log').html(msg + '<br />' + $('.log').html());
+        }
     }
 
     // Process custom event pindel
