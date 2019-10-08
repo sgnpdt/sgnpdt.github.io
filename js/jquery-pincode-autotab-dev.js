@@ -265,11 +265,11 @@
                             // Ignore input key
                             evt.preventDefault();
 
-                            $('.pin-log').html('clear content <br />' + $('.pin-log').html());
+                            //$('.pin-log').html('clear content <br />' + $('.pin-log').html());
 
-                            $(this).val(''); // clear for sure
-                            $(this).val(null);
-                            $(this).attr('value', '');
+                            //$(this).val(''); // clear for sure
+                            //$(this).val(null);
+                            //$(this).attr('value', '');
                         }
 
                         break;
