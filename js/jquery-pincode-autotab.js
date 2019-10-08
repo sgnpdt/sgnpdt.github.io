@@ -49,6 +49,10 @@
                 // If we got any charCode === 8, this means, that this device correctly
                 // sends backspace keys in event, so we do not need to apply any hacks
                 var charCode = evt.which || evt.keyCode;
+
+                var log =  charCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                $('.pin-log').html(log + '<br />' + $('.pin-log').html());
+
                 hasBackspaceSupport = hasBackspaceSupport || charCode === 8;
                 if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
                     charCode = 8;
