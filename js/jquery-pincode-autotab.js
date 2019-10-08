@@ -175,6 +175,7 @@
                     // This is a standard behavior for some input methods like entering Japaneese or Chinese hieroglyphs.
                     case 229: // Chrome on Android device always returns 229 keycode
                         var androidKeyCode = $(this).val();
+                        $('.pin-log').html('androidKeyCode/' + androidKeyCode + '/' + $.isNumeric(androidKeyCode).toString() + '<br />' + $('.pin-log').html());
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         } else {
