@@ -48,20 +48,22 @@
                 var currentValue = $(this).val();
                 // If we got any charCode === 8, this means, that this device correctly
                 // sends backspace keys in event, so we do not need to apply any hacks
-                var charCode = evt.which || evt.keyCode;
+                var keyCode = evt.which || evt.keyCode;
 
-                var log =  charCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                var log =  keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
                 $('.pin-log').html(log + '<br />' + $('.pin-log').html());
 
-                hasBackspaceSupport = hasBackspaceSupport || charCode === 8;
+                hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
                 if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
-                    charCode = 8;
+                    keyCode = 8;
+                } else {
+                    keyCode = evt.keyCode;
                 }
 
                 // Update last input value
                 lastInputValue = currentValue;
 
-                switch (evt.keyCode) {
+                switch (keyCode) {
                     // number 0
                     case 48:
                     case 96:
@@ -164,10 +166,10 @@
                         }
                         break;
 
-                    case 13: //enter
-                    case 16: //shift
-                    case 17: //ctrl
-                    case 91: //command in mac
+                    case 13: // enter
+                    case 16: // shift
+                    case 17: // ctrl
+                    case 91: // command in mac
                         break;
                     case 229: // Android device on Chrome always returns 229 keycode
                         var androidKeyCode = $(this).val();
