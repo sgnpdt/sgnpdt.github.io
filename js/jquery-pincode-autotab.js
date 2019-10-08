@@ -172,17 +172,16 @@
                     // case 91: // command in mac
                     //     break;
 
-                    case 229: // Android device on Chrome always returns 229 keycode
+                    // keyCode 229 means that user pressed some button, but input method is still processing that.
+                    // This is a standard behavior for some input methods like entering Japaneese or Chinese hieroglyphs.
+                    case 229: // Chrome on Android device always returns 229 keycode
                         var androidKeyCode = $(this).val();
-                        $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '---- /' + $.isNumeric(androidKeyCode) + '<br />' + $('.pin-log').html());
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         } else {
-                            $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '----, move' + move + '<br />' + $('.pin-log').html());
-                            evt.preventDefault();
-
-                            $('.pin-log').html('Ignore input key' + '<br />' + $('.pin-log').html());
                             // Ignore input key
+                            $(this).val(''); // clear for sure
+                            evt.preventDefault();
                             return false;
                         }
 
