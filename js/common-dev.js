@@ -430,11 +430,6 @@ $(document).ready(function () {
     // The script that calls focus() click() on an input needs
     // to be running with user context, ie. triggered by a user interaction.
 
-    // Loading icon
-    $.getJSON('images/animation-player.json', function () {
-        // do nothing here?
-    });
-
     $('#ShowLoading').on('show.bs.modal', function (e) {
         setTimeout(function () {
             $('.btn_refesh').show();

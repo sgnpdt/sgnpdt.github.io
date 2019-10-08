@@ -32,7 +32,7 @@
 
         return this.each(function (index, value) {
             if(isAndroid) {
-                $(value).attr('type', 'number');
+                $(value).prop('type', 'number');
             }
 
             $(value).on('keydown', function (evt) {
