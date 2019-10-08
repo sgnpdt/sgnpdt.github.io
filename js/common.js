@@ -300,7 +300,7 @@ $(document).ready(function () {
     function setLog(msg) {
         //console.log(msg);
         if($('.pin-log')) {
-            $('.pin-log').html(msg + '<br />' + $('.log').html());
+            $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
         }
     }
 
