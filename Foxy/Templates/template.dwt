@@ -150,28 +150,71 @@
 <div class="modal fade" id="ShowFPTmember" tabindex="-1" role="dialog" aria-labelledby=""
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+		
         <div class="modal-content">
+			<div class="balloon Shows-xs"></div>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
 			</button>
-            <div class="modal-body">
-				<img src="../images/member_bg.png" />
+            <div class="modal-body modal-body-mobile">
+				<img class="hidden-xs-down" src="../images/member_bg.png" />
+				<div class="Shows-xs">
+					<div class="title_gift">Tặng ngay</div>
+					<h3 class="title_b">30 ngày sử dụng</h3>
+					<p class="content_b">Dành cho khách hàng tải và đăng ký <br>kích hoạt lần đầu tiên ứng dụng FOXY.</p>
+					<div class="col-12">
+						<div class="btn-primary" data-toggle="modal" data-target="#ShowRegister">Tải ngay ứng dụng</div>
+					</div>
+					<div class="col-12">
+						<div class="btn-default" data-toggle="modal" data-target="#ShowRegister">Tôi cần được hỗ trợ</div>
+					</div>
+				</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="Showregister" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<!--<div class="modal fade" id="Showregister" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
 			</button>
-            <div class="modal-body">
+            <div class="modal-body ">
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="info_cus">
 							<h5>Lorem Ipsum is simply dummy text of the printing </h5>
+							<input type="text" class="form-control" placeholder="Họ tên">
+							<input type="text" class="form-control" placeholder="Số điện thoại">
+							<input type="text" class="form-control" placeholder="Email">
+							<button type="button" class="btn btn-primary btn-send" >Gửi Đi</button>
+						</div>
+					</div>
+					<div class="col-lg-6 hidden-xs-down">
+						<img src="../images/bg_dk.png" />
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>-->
+	
+<div class="modal fade" id="Showregister" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+			<div class="phone_mem Shows-xs"></div>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+            <div class="modal-body modal-body-mobile">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="info_cus">
+							<div class="title_mem">
+							<h5>Đăng Ký</h5>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+							</div>
 							<input type="text" class="form-control" placeholder="Họ tên">
 							<input type="text" class="form-control" placeholder="Số điện thoại">
 							<input type="text" class="form-control" placeholder="Email">

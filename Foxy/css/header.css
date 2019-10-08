@@ -33,6 +33,18 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-balloon {
+  background-image: url(../images/balloon.png);
+  background-image: -webkit-image-set(url(../images/balloon.png) 1x, url(../images/balloon@2x.png) 2x, url(../images/balloon@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.source-icon-phone-mem {
+  background-image: url(../images/phone_mem.png);
+  background-image: -webkit-image-set(url(../images/phone_mem.png) 1x, url(../images/phone_mem@2x.png) 2x, url(../images/phone_mem@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;

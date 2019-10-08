@@ -33,6 +33,18 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-balloon {
+  background-image: url(../images/balloon.png);
+  background-image: -webkit-image-set(url(../images/balloon.png) 1x, url(../images/balloon@2x.png) 2x, url(../images/balloon@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.source-icon-phone-mem {
+  background-image: url(../images/phone_mem.png);
+  background-image: -webkit-image-set(url(../images/phone_mem.png) 1x, url(../images/phone_mem@2x.png) 2x, url(../images/phone_mem@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -669,8 +681,16 @@ a[x-apple-data-detectors] {
   -webkit-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  box-shadow: none !important;
 }
 .btn-primary:hover {
+  background-color: #ffd200;
+  border: 1px solid #fed722;
+  color: #000;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
   background-color: #ffd200;
   border: 1px solid #fed722;
   color: #000;
@@ -1184,6 +1204,9 @@ button.close span {
   font-size: 40px;
   font-weight: 300;
 }
+.img_foxy {
+  max-width: 480px;
+}
 #ShowRegister .modal-body {
   padding-top: 32px;
 }
@@ -1213,15 +1236,23 @@ button.close span {
 #ShowRegister .modal-footer {
   border: none;
 }
+#ShowFPTmember .modal-dialog {
+  width: 769px;
+}
 #ShowFPTmember .modal-body {
   background-color: #000000;
+  text-align: center;
 }
 #ShowFPTmember button.close {
   opacity: 0.5;
 }
 #ShowFPTmember button.close span {
-  color: #fff;
+  color: #000;
   text-shadow: none;
+}
+#ShowFPTmember button.close {
+  top: 16px;
+  right: 16px;
 }
 #Showregister .modal-body {
   background-color: #06080d;
@@ -1237,13 +1268,9 @@ button.close span {
 }
 #Showregister input {
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #8b8b8b;
-  color: #fff;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 24px;
+  border: 1px solid #818a93;
+  color: #414141;
+  margin-bottom: 16px;
 }
 #Showregister .info_cus {
   margin-top: 48px;
@@ -1251,10 +1278,15 @@ button.close span {
 }
 #Showregister .btn-send {
   width: 100%;
-  background-color: transparent;
+  background-color: #fed722;
   border: 1px solid #fed722;
-  color: #fed722;
-  margin-top: 32px;
+  color: #000000;
+}
+#Showregister .btn-send:hover,
+#Showregister .btn-send:focus {
+  color: #000000 !important;
+  background-color: #ffd200;
+  border: 1px solid #fed722;
 }
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
@@ -1537,5 +1569,154 @@ button.close span {
   .swiperphanmem,
   .swiperquanly {
     margin-top: 48px;
+  }
+  #ShowFPTmember .modal-dialog {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #ShowFPTmember .modal-content {
+    background-color: transparent;
+  }
+  #ShowFPTmember .balloon {
+    width: 110px;
+    height: 180px;
+    background-image: url(../images/balloon.png);
+    background-image: -webkit-image-set(url(../images/balloon.png) 1x, url(../images/balloon@2x.png) 2x, url(../images/balloon@3x.png) 3x);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: -53px;
+    left: -8px;
+    z-index: 2;
+  }
+  #ShowFPTmember .modal-body-mobile {
+    background-color: #ebebeb;
+  }
+  #ShowFPTmember button.close {
+    top: 0;
+    right: 0;
+  }
+  #ShowFPTmember .modal-body-mobile {
+    border-radius: 0.3rem;
+    position: relative;
+    padding-top: 48px;
+    height: auto;
+    background: url(../images/bg_30@3x.png) no-repeat;
+    background-size: cover;
+  }
+  #ShowFPTmember .modal-body-mobile .title_gift {
+    font-size: 20px;
+    background-color: #06080d;
+    color: #fed722;
+    text-align: center;
+    padding: 3px 28px 5px 28px;
+    border-radius: 0 0 12px 12px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    font-weight: bold;
+  }
+  #ShowFPTmember .modal-body-mobile .title_b {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 14px;
+  }
+  #ShowFPTmember .modal-body-mobile .content_b {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 52px;
+  }
+  #ShowFPTmember .modal-body-mobile .btn-default {
+    width: 100%;
+  }
+  #Showregister button.close span {
+    color: #000;
+  }
+  #Showregister .modal-dialog {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #Showregister .modal-content {
+    background-color: transparent;
+  }
+  #Showregister .phone_mem {
+    width: 214px;
+    height: 250px;
+    background-image: url(../images/phone_mem.png);
+    background-image: -webkit-image-set(url(../images/phone_mem.png) 1x, url(../images/phone_mem@2x.png) 2x, url(../images/phone_mem@3x.png) 3x);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: -157px;
+    left: 7px;
+    z-index: 2;
+  }
+  #Showregister .modal-body-mobile {
+    background-color: #ebebeb;
+  }
+  #Showregister button.close {
+    top: 0;
+    right: 0;
+  }
+  #Showregister .modal-body-mobile {
+    border-radius: 0.3rem;
+    position: relative;
+    padding-top: 16px;
+    height: auto;
+    background: url(../images/bg_30@3x.png) no-repeat;
+    background-size: cover;
+  }
+  #Showregister .modal-body-mobile .info_cus {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  #Showregister .modal-body-mobile .title_gift {
+    font-size: 20px;
+    background-color: #06080d;
+    color: #fed722;
+    text-align: center;
+    padding: 3px 28px 5px 28px;
+    border-radius: 0 0 12px 12px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 90px;
+    font-weight: bold;
+  }
+  #Showregister .modal-body-mobile .title_b {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 14px;
+  }
+  #Showregister .modal-body-mobile .content_b {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 52px;
+  }
+  #Showregister .modal-body-mobile .btn-default {
+    width: 100%;
+  }
+  #Showregister .modal-body-mobile .title_mem {
+    padding-left: 96px;
+  }
+  #Showregister .modal-body-mobile .title_mem h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  #Showregister .modal-body-mobile .title_mem p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 16px;
   }
 }
