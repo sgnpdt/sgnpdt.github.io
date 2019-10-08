@@ -42,6 +42,10 @@
         };
 
         return this.each(function (index, value) {
+            $(value).on('input', function (evt) {
+
+            });
+
             $(value).on('keydown', function (evt) {
                 var move = 0;
 
@@ -160,23 +164,25 @@
                         evt.preventDefault();
                         break;
 
-                    case 86: //v
-                        if (!(evt.ctrlKey || evt.metaKey)) {
-                            evt.preventDefault();
-                        }
-                        break;
+                    // case 86: // v
+                    //     if (!(evt.ctrlKey || evt.metaKey)) {
+                    //         evt.preventDefault();
+                    //     }
+                    //     break;
 
-                    case 13: // enter
-                    case 16: // shift
-                    case 17: // ctrl
-                    case 91: // command in mac
-                        break;
-                    case 229: // Android device on Chrome always returns 229 keycode
-                        var androidKeyCode = $(this).val();
-                        if ($.isNumeric(androidKeyCode)) {
-                            move = 1;
-                        }
-                        break;
+                    // case 13: // enter
+                    // case 16: // shift
+                    // case 17: // ctrl
+                    // case 91: // command in mac
+                    //     break;
+
+                    // case 229: // Android device on Chrome always returns 229 keycode
+                    //     var androidKeyCode = $(this).val();
+                    //     if ($.isNumeric(androidKeyCode)) {
+                    //         move = 1;
+                    //     }
+                    //     break;
+
                     default:
                         evt.preventDefault();
                 }
