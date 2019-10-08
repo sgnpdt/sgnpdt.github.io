@@ -265,8 +265,11 @@
                             // Ignore input key
                             evt.preventDefault();
 
-                            $('.pin-log').html('send del key <br />' + $('.pin-log').html());
-                            $(this).trigger({type: 'delpin'}); // clear for sure
+                            $('.pin-log').html('clear content <br />' + $('.pin-log').html());
+
+                            $(this).val(''); // clear for sure
+                            $(this).val(null);
+                            $(this).attr('value', '');
                         }
 
                         break;
