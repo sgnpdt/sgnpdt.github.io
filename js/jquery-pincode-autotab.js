@@ -181,16 +181,15 @@
                         } else {
                             // Ignore input key
                             evt.preventDefault();
+
+                            $('.pin-log').html('send del key <br />' + $('.pin-log').html());
                             $(this).trigger({type: 'delpin'}); // clear for sure
-                            return false;
                         }
 
                         break;
 
                     default:
                         evt.preventDefault();
-                        // Ignore input key
-                        return false;
                 }
 
                 for (var i = 0; i < listOfElements.length; i++) {
