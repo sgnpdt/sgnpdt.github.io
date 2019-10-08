@@ -311,6 +311,10 @@ $(document).ready(function () {
         var curr = parseInt(evt.target.id.substr('pin-'.length));
         $('#pin-' + curr).val('');
 
+        if($('#pin-' + curr).val() !== '') {
+            $('#pin-' + curr).attr('value', ''); // for sure
+        }
+
         if (curr >= 0) {
             setLog('Focus #0 for PIN-' + curr);
             setPinFocus($('#pin-' + curr));
