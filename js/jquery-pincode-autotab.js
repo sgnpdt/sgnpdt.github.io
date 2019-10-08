@@ -182,6 +182,7 @@
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
                         } else {
+                            $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '----, move' + move + '<br />' + $('.pin-log').html());
                             evt.preventDefault();
                         }
 
