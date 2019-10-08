@@ -62,8 +62,6 @@
 
                 // Update last input value
                 lastInputValue = currentValue;
-
-                keyCode = 229;
                 switch (keyCode) {
                     // number 0
                     case 48:
@@ -182,7 +180,7 @@
                         } else {
                             // Ignore input key
                             evt.preventDefault();
-                            $(this).val(''); // clear for sure
+                            $(this).trigger({type: 'delpin'}); // clear for sure
                             return false;
                         }
 
