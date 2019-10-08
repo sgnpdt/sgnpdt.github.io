@@ -53,7 +53,7 @@
                 // sends backspace keys in event, so we do not need to apply any hacks
                 let keyCode = evt.which || evt.keyCode;
 
-                let log = 'input/keycode: ' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                let log = 'input/keycode: ' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue + '/' + evt.target.value;
                 $('.pin-log').html(log + '<br />' + $('.pin-log').html());
 
                 hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
