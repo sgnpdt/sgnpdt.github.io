@@ -54,7 +54,7 @@
                 // sends backspace keys in event, so we do not need to apply any hacks
                 var keyCode = evt.which || evt.keyCode;
 
-                var log =  keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
+                var log = keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
                 $('.pin-log').html(log + '<br />' + $('.pin-log').html());
 
                 hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
@@ -181,7 +181,10 @@
                         $('.pin-log').html('androidKeyCode: ----' + androidKeyCode.toString() + '---- /' + $.isNumeric(androidKeyCode) + '<br />' + $('.pin-log').html());
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
+                        } else {
+                            evt.preventDefault();
                         }
+
                         break;
 
                     default:
