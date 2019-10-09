@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
 
     function randomString(length) {
-        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         let result = '';
         for (let i = length; i > 0; --i) {
             result += chars[Math.floor(Math.random() * chars.length)];
@@ -205,75 +205,6 @@ $(document).ready(function () {
         return result;
     });
 
-    function setPinFocus(input) {
-        const isIos = !!window.navigator.userAgent.match(/iPad|iPhone/i);
-
-        // Not work on Safari?
-        if (isIos) {
-            // 4ms is specified by the HTML5 spec
-            setTimeout(function () {
-                input.select(); // select first
-                input.focus();
-            }, 10);
-        } else {
-            input.focus();
-        }
-    }
-
-    // OTP input
-    function processInput(holder) {
-        var elements = holder.children(), // taking the "kids" of the parent
-            str = ''; //unnecesary || added for some future mods
-
-        elements.each(function (evt) { // iterates through each element
-            var val = $(this).val().replace(/\D/, ''); // taking the value and parsing it. Returns string without changing the value.
-            var focused = $(this).is(':focus'); // checks if the current element in the iteration is focused
-            var clear = $('#inputs input');
-            var parseGate = val.length !== 1;
-            /*
-                a fix that doesn't allow the cursor to jump
-                to another field even if input was parsed
-                and nothing was added to the input
-            */
-
-            $(this).val(val); // applying parsed value.
-
-            var exist; // checks if there is input
-            if (parseGate && val.length > 1) {
-                // takes you to another input
-                exist = elements[evt + 1] ? true : false; // checks if there is input ahead
-
-                if (exist && val[1]) {
-                    // if so then
-                    elements[evt + 1].disabled = false;
-                    elements[evt + 1].value = val[1]; // sends the last character to the next input
-                    elements[evt].value = val[0]; // clears the last character of this input
-
-
-                    // NEED TO FOCUS HERE
-                    //elements[e + 1].focus(); // sends the focus to the next input
-                    setPinFocus(elements[evt + 1]);
-                    elements[evt + 1].classList.add('focused');
-                }
-            } else if (parseGate && focused && val.length === 0) {
-                // if the input was REMOVING the character, then
-
-                exist = elements[evt - 1] ? true : false; // checks if there is an input before
-                if (exist) {
-                    elements[evt - 1].focus(); // sends the focus back to the previous input
-                }
-
-                elements[evt].classList.remove('focused');
-
-                if (evt === 0) {
-                    elements[0].classList.add('focused');
-                }
-            }
-
-            val === '' ? str += ' ' : str += val;
-        });
-    }
-
     //
     $('.btn_edit_profile').click(function () {
         $('body').addClass('edit_mode');
@@ -295,117 +226,6 @@ $(document).ready(function () {
         //$('.bg_OTP').css('height', $(window).height());
     });
 
-    const pinLen = $('.inputs .pin').length;
-
-    function setLog(msg) {
-        //console.log(msg);
-        if($('.pin-log')) {
-            $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
-        }
-    }
-
-    // Process custom event pindel
-    $('.inputs .pin').on('delpin', function (evt) {
-        setLog('On delpin ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-
-        $(evt.target).val('');
-        if($(evt.target).val() !== '') {
-            setLog('Cannot clear value ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-            $(evt.target).attr('value', ''); // for sure
-        }
-
-        var curr = parseInt(evt.target.id.substr('pin-'.length));
-        if (curr >= 0) {
-            setLog('Focus #0 for PIN-' + curr);
-            setPinFocus($(evt.target));
-        }
-    });
-
-    // Always set focus on PIN inputs?
-    // var alwaysFocus = false;
-    // if (alwaysFocus) {
-    //     $('.inputs .pin').blur(function (evt) {
-    //         setLog('On blur ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-    //         var curr = parseInt(evt.target.id.substr('pin-'.length));
-    //
-    //         // Check all PIN are empty
-    //         if ($('#pin-0').val() === '') {
-    //             evt.stopPropagation();
-    //
-    //             setLog('Focus #1 for PIN-' + 0);
-    //             setPinFocus($('#pin-0'));
-    //         } else {
-    //             var last = false;
-    //             for (var i = pinLen - 1; i >= 0; i--) {
-    //                 var digit = $('#pin-' + i).val() || '';
-    //                 if (digit !== '') {
-    //                     last = i + 1;
-    //                     last = last > (pinLen - 1) ? (pinLen - 1) : last;
-    //                     break;
-    //                 }
-    //             }
-    //
-    //             if (last !== false) {
-    //                 if (last !== curr) {
-    //                     evt.stopPropagation();
-    //                 }
-    //
-    //                 setLog('Focus #2 for PIN-' + last);
-    //                 setPinFocus($('#pin-' + last));
-    //             }
-    //         }
-    //     });
-    // }
-
-    $('.inputs .pin').focus(function (evt) {
-        setLog('On focus ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-        var curr = parseInt(evt.target.id.substr('pin-'.length));
-
-        var last = false;
-        for (var i = pinLen - 1; i >= 0; i--) {
-            var digit = $('#pin-' + i).val() || '';
-            if (digit !== '') {
-                last = i + 1;
-                last = last > (pinLen - 1) ? (pinLen - 1) : last;
-                break;
-            }
-        }
-
-        // Check all PIN are empty
-        if ($('#pin-0').val() === '' && curr > 0) {
-            setLog('Blur ' + evt.target.id, $(evt.target).val());
-            //$(evt.target).blur();
-            //evt.stopPropagation();
-
-            if (last === false) {
-                setLog('Focus #3 for PIN-' + 0);
-                setPinFocus($('#pin-0'));
-            } else {
-                setLog('ERROR ' + evt.target.id, $(evt.target).val());
-            }
-        } else if (last !== false) {
-            if (last !== curr) {
-                //$(evt.target).blur();
-                //evt.stopPropagation();
-
-                setLog('Focus #4 for PIN-' + last);
-                setPinFocus($('#pin-' + last));
-            }
-        }
-    });
-
-    $('#pin-' + (pinLen - 1)).on('keyup', function (evt) {
-        setLog('On keyup ' + evt.target.id + ' = "' + $(evt.target).val() + '"');
-
-        if ($('#pin-5').val() !== '') {
-            setLog('Focus #5 for PIN-' + 0);
-
-            // Set focus for PIN-0 if error, submit and clear all PIN
-            $('.inputs .pin').val('');
-            setPinFocus($('#pin-0'));
-        }
-    });
-
     // Set height of HTML tag
     $('html').css('height', $(window).height());
 
@@ -417,14 +237,9 @@ $(document).ready(function () {
     $('body.bg_OTP').css('height', ($(window).height() - 150));
 
     // PIN
-    if (pinLen > 0) {
+    if ($('.inputs .pin').length > 0) {
         $('.inputs .pin').jqueryPincodeAutotab();
     }
-
-    // HTML5 autofocus attribute is not supported on iOS
-    // https://caniuse.com/#feat=autofocus
-    setLog('-- Auto focus STARTED --');
-    setPinFocus($('#pin-0'));
 
     // Show soft-keyboard?
     // The script that calls focus() click() on an input needs

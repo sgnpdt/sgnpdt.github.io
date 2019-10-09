@@ -220,60 +220,6 @@ $(document).ready(function () {
         }
     }
 
-    // OTP input
-    function processInput(holder) {
-        var elements = holder.children(), // taking the "kids" of the parent
-            str = ''; //unnecesary || added for some future mods
-
-        elements.each(function (evt) { // iterates through each element
-            var val = $(this).val().replace(/\D/, ''); // taking the value and parsing it. Returns string without changing the value.
-            var focused = $(this).is(':focus'); // checks if the current element in the iteration is focused
-            var clear = $('#inputs input');
-            var parseGate = val.length !== 1;
-            /*
-                a fix that doesn't allow the cursor to jump
-                to another field even if input was parsed
-                and nothing was added to the input
-            */
-
-            $(this).val(val); // applying parsed value.
-
-            var exist; // checks if there is input
-            if (parseGate && val.length > 1) {
-                // takes you to another input
-                exist = elements[evt + 1] ? true : false; // checks if there is input ahead
-
-                if (exist && val[1]) {
-                    // if so then
-                    elements[evt + 1].disabled = false;
-                    elements[evt + 1].value = val[1]; // sends the last character to the next input
-                    elements[evt].value = val[0]; // clears the last character of this input
-
-
-                    // NEED TO FOCUS HERE
-                    //elements[e + 1].focus(); // sends the focus to the next input
-                    setPinFocus(elements[evt + 1]);
-                    elements[evt + 1].classList.add('focused');
-                }
-            } else if (parseGate && focused && val.length === 0) {
-                // if the input was REMOVING the character, then
-
-                exist = elements[evt - 1] ? true : false; // checks if there is an input before
-                if (exist) {
-                    elements[evt - 1].focus(); // sends the focus back to the previous input
-                }
-
-                elements[evt].classList.remove('focused');
-
-                if (evt === 0) {
-                    elements[0].classList.add('focused');
-                }
-            }
-
-            val === '' ? str += ' ' : str += val;
-        });
-    }
-
     //
     $('.btn_edit_profile').click(function () {
         $('body').addClass('edit_mode');
