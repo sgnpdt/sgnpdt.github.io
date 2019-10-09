@@ -6,6 +6,22 @@ $( document ).ready(function() {
          navMain.collapse('hide');
      });
 	
+	$('#submit-info').on('submit', function(e){
+	  $('#Showregister').modal('hide');
+      $('#Showthank').modal('show');
+      e.preventDefault();
+  	});
+	
+	function randomString(length) {
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let result = '';
+        for (let i = length; i > 0; --i) {
+            result += chars[Math.floor(Math.random() * chars.length)];
+        }
+
+        return result;
+    }
+	
 	var myFullpage = new fullpage('#fullpage', {
 		menu: '#menu',
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
@@ -13,7 +29,7 @@ $( document ).ready(function() {
 		// Section navigation and indicator
 		navigation: true,
 		navigationPosition: 'left',
-		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+		licenseKey: 'P9722JYT-' + randomString(8) + '-M11QX8RJ-' + randomString(8)
     });
 	
 	if($(".btn-top").length){

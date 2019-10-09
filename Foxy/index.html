@@ -27,12 +27,13 @@
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <!-- InstanceEndEditable -->
 
-<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="js/fullpage.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/common.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
 		<div class="container">
 			<div class="row">
 				<nav class="navbar navbar-expand-sm navbar-dark HeaderNav" >
-				  <a  class="navbar-brand" href="#firstPage"><img src="images/logo.png" alt="logo" width="80"></a>
+				  <a  class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="80"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -89,16 +90,16 @@
 						<a class="icon_home" href="#firstPage"></a>
 					  </li>
 					  <li data-menuanchor="secondPage" class=" ">
-						<a class="" href="#secondPage">About</a>
+						<a class="" href="#secondPage">Về Foxy</a>
 					  </li>
 					  <li data-menuanchor="3rdPage" class=" ">
-						<a class="" href="#3rdPage">PRICING</a>
+						<a class="" href="#3rdPage">Các gói dịch vụ</a>
 					  </li>
 					  <li class=" ">
-						<a href="#" data-toggle="modal" data-target="#ShowRegister">REGISTER</a>
+						<a href="#" data-toggle="modal" data-target="#ShowRegister">Đăng ký Foxy</a>
 					  </li>
 					  <li class="none bg_color">
-						<a href="#"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a>
+						<a href="tel:19006600"><span class="icon_phone"></span><span class="line"></span><span class="hotline">19006600</span></a>
 					  </li>
 					</ul>
 
@@ -121,10 +122,10 @@
 									<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
 										
 										<h2 class="title_big">Một sản phẩm của <br>Truyền hinh FPT </h2>
-										<p class="text_content">Thưởng thức kho giải trí của Truyền hình FPT không gián đoạn từ tivi sang các thiết bị di động như điện thoại máy tính bảng.</p>
+										<p class="text_content">Thưởng thức ngay các kênh truyền hình và nội dung phim truyện, kho giải trí cao cấp của Truyền hình FPT.</p>
 										<div class="row list_btn">
 											<div class="col-lg-6 col-md-6 col-6 btn_left">
-												<div class="btn-primary" data-toggle="modal" data-target="#ShowRegister">Đăng ký</div>
+												<div class="btn-primary" data-toggle="modal" data-target="#ShowRegister_Q">Đăng ký</div>
 											</div>
 											<div class="col-lg-6 col-md-6 col-6 btn_right">
 												<a data-menuanchor="secondPage" class="btn-default" href="#secondPage">Tìm hiểu thêm</a>
@@ -215,8 +216,17 @@
 										</div>
 										<div class="swiper-slide">
 											<div class="row row_bg align-items-center">	
-												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top" >
-													<h2 class="title_big">Giải trí liên tục <br>không gián đoạn 1</h2>
+												<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 content_top">
+													<!--<div class="table">
+														<div class="table-cell"></div>
+														<div class="table-cell">
+															<div class="ribbon">
+																<span class="title">Tính năng</span>
+																<h2 class="content">Yêu thích</h2>
+															</div>
+														</div>
+													</div>-->
+													<h2 class="title_big">Cá nhân hóa <br>nội dung giải trí</h2>
 													<p class="text_content">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
 												</div>
 
@@ -274,17 +284,31 @@
 							<div class="row row_bg align-items-center justify-content-md-center">	
 								
 								<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" >
-									<h2 class="title_big text-center">Giải trí liên tục không gián đoạn 3</h2>
-									<p class="text_content text-center">Người dùng có thể xem những nội dung yêu thích trên Truyền hình FPT bất cứ lúc nào và bất cứ nơi đâu liên tục từ Tivi sang thiết bị di động.</p>
+									<h2 class="title_big text-center">Gói dịch vụ phong phú</h2>
+									<p class="text_content text-center">Dễ dàng lựa chọn các gói dịch vụ để thưởng thức kho nội dung, giải trí đa dạng của Truyền hình FPT mọi lúc mọi nơi</p>
 								</div>
 								
 								<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12" >
-									<img class="img_foxy float-right Shows-xs" src="images/Foxy2_m.png" alt="" width="">
-									<img class="img_foxy float-right hidden-xs-down" src="images/Foxy2.png" alt="" width="">
+									<div class="package_foxy">
+										<img class="img_foxy" src="images/Foxy2.png" alt="" width="">
+										<div class="content">
+											<ul>
+												<li><p>Kết nối được <b class="text_color">02</b> thiết bị</p></li>
+												<li class="not_show"><p>Miễn phí 30 ngày sử dụng</p></li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12" >
-									<img class="img_foxy float-left Shows-xs" src="images/Foxy4_m.png" alt="" width="">
-									<img class="img_foxy float-right hidden-xs-down" src="images/Foxy4.png" alt="" width="">
+									<div class="package_foxy">
+										<img class="img_foxy" src="images/Foxy4.png" alt="" width="">
+										<div class="content">
+											<ul>
+												<li><p>Kết nối được <b class="text_color">04</b> thiết bị</p></li>
+												<li class="not_show"><p>Miễn phí 30 ngày sử dụng</p></li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -305,7 +329,7 @@
 	<!-- Modal -->
 
 </body>
-<div class="modal fade" id="ShowRegister" tabindex="-1" role="dialog" aria-labelledby=""
+<div class="modal fade" id="ShowRegister_Q" tabindex="-1" role="dialog" aria-labelledby=""
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-270" role="document">
         <div class="modal-content">
@@ -315,16 +339,16 @@
             <div class="modal-body">
 				<div class="position-relative">
 					<div class="icon_help"></div>
-					<div class="text_help"><p>Bạn có phải là thành viên đang sử dụng dịch vụ FPT không ?</p></div>
+					<div class="text_help"><p>Bạn đang sử dụng Truyền hình FPT?</p></div>
 				</div>
             </div>
             <div class="modal-footer">
                 <div class="container">
                     <div class="row justify-content-md-center">
-                        <div class="col-6">
+                        <div class="col-6 btn_left">
                             <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ShowFPTmember">Có</button>
                         </div>
-						<div class="col-6">
+						<div class="col-6 btn_right">
                             <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#Showregister">Không</button>
                         </div>
                     </div>
@@ -347,14 +371,18 @@
 				<!--<img class="hidden-xs-down" src="../images/member_bg.png" />-->
 				<div class="">
 					<div class="title_gift">Tặng ngay</div>
-					<h3 class="title_b">30 ngày sử dụng</h3>
+					<h3 class="title_b">30 ngày sử dụng miễn phí</h3>
 					<p class="content_b">Dành cho khách hàng tải và đăng ký <br>kích hoạt lần đầu tiên ứng dụng FOXY.</p>
-					<div class="row">
+					<div class="hidden-xs-down">
+						<img src="images/QR_CODE.png" />
+						<p class="scan_tit">Scan để tải ngay</p>
+					</div>
+					<div class="row Shows-xs">
 						<div class="col-md-6 col-12">
 							<div class="btn-primary">Tải ngay ứng dụng</div>
 						</div>
 						<div class="col-md-6 col-12">
-							<div class="btn-default">Tôi cần được hỗ trợ</div>
+							<div class="btn-default">Bạn cần hỗ trợ?</div>
 						</div>
 					</div>
 				</div>
@@ -399,16 +427,19 @@
             <div class="modal-body modal-body-mobile">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="info_cus">
-							<div class="title_mem">
-							<h5>Đăng Ký</h5>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
+						<form id="submit-info">
+							<div class="info_cus">
+								<div class="title_mem">
+								<h5>Thông tin liên hệ</h5>
+								<p>Gửi lại thông tin của bạn để được liên hệ và tư vấn rõ hơn về FOXY nhé! </p>
+								</div>
+								<input type="text" class="form-control" placeholder="Họ tên" required>
+								<input type="number" class="form-control" placeholder="Số điện thoại" required>
+								<input type="email" class="form-control" placeholder="Email" required>
+								<!--Re-Captcha here-->
+								<button type="submit" class="btn btn-primary btn-send">Gửi Đi</button>
 							</div>
-							<input type="text" class="form-control" placeholder="Họ tên">
-							<input type="text" class="form-control" placeholder="Số điện thoại">
-							<input type="text" class="form-control" placeholder="Email">
-							<button type="button" class="btn btn-primary btn-send" >Gửi Đi</button>
-						</div>
+						</form>
 					</div>
 					<!--<div class="col-lg-6 hidden-xs-down">
 						<img src="../images/bg_dk.png" />
@@ -418,4 +449,30 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="Showthank" tabindex="-1" role="dialog" aria-labelledby=""
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+		
+        <div class="modal-content">
+			<div class="balloon "></div>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+            <div class="modal-body modal-body-mobile">
+				
+				<div class="">
+					
+					<h3 class="title_b">GỬI THÀNH CÔNG</h3>
+					<p class="content_b">FOXY xin cám ơn bạn <b>Customer...</b> đã để lại thông tin. Chúng tôi sẽ liên hệ và phản hồi trong thời gian sớm nhất. 
+</p>
+					<a class="btn-primary" href="#">Về trang chủ</a>
+				
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+	
+	
 <!-- InstanceEnd --></html>
