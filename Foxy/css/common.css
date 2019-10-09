@@ -1517,7 +1517,7 @@ button.close span {
 }
 .package_foxy .color {
   color: #ffd200;
-  text-shadow: 0 0 3px #000;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
   font-size: 18px;
   position: relative;
   top: -2px;
