@@ -237,8 +237,8 @@ $(document).ready(function () {
     $('body.bg_OTP').css('height', ($(window).height() - 150));
 
     // PIN
-    if ($('.inputs .pin').length > 0) {
-        $('.inputs .pin').jqueryPincodeAutotab();
+    if ($('.inputs')) {
+        $('.inputs').pincode();
     }
 
     // Show soft-keyboard?
