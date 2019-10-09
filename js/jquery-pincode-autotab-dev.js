@@ -35,7 +35,7 @@
             if ($('.pin-log')) {
                 let msg = args && args.length > 0 ? args[0] : '';
                 if(args.length > 1) {
-                    msg += JSON.stringify(args.slice(1, -1));
+                    msg += ', data: ' + JSON.stringify(args.slice(1));
                 }
 
                 $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
