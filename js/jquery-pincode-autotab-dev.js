@@ -34,7 +34,7 @@
         function log(...args) {
             if ($('.pin-log')) {
                 let msg = args && args.length > 0 ? args[0] : '';
-                if(args.length > 1) {
+                if (args.length > 1) {
                     msg += ', data: ' + JSON.stringify(args.slice(1));
                 }
 
@@ -339,7 +339,9 @@
         $(this).on('input DOMSubtreeModified', function (evt) {
             const index = parseInt(evt.target.id.substr('pin-'.length));
             let currentValue = $(this).val();
-            log('On input PIN-' + index + ', last: ' + lastInputValue + ', current: ' + currentValue, evt);
+            log('On input PIN-' + index + ', last: ' + lastInputValue + ', current: ' + currentValue,
+                evt.target.value,
+                document.getElementById(evt.target.id).value);
 
             const pattern = new RegExp($(this).prop('pattern'));
             currentValue = unmask(currentValue);
