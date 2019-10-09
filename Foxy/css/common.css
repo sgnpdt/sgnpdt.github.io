@@ -1803,7 +1803,7 @@ button.close span {
     background-color: #06080d;
   }
   .row_bg {
-    height: 540px;
+    min-height: 540px;
   }
   .row_bg img {
     max-width: 80%;
@@ -2036,7 +2036,7 @@ button.close span {
     margin-bottom: 24px;
   }
   .package_foxy {
-    width: 100%;
+    width: 90%;
   }
   .package_foxy .content p {
     line-height: 40px;
@@ -2057,6 +2057,9 @@ button.close span {
   }
   .text_help p {
     padding-left: 48px;
+  }
+  .copyright p {
+    font-size: 12px;
   }
 }
 @media (max-width: 320px) {
@@ -2086,5 +2089,12 @@ button.close span {
   }
   .not_show {
     display: none;
+  }
+  .package_foxy {
+    width: 100%;
+  }
+  .row_bg {
+    min-height: 450px;
+    height: auto;
   }
 }
