@@ -31,8 +31,13 @@
             return currentInputValue === lastInputValue.slice(0, -1);
         }
 
-        function setLog(msg) {
+        function log(...args) {
             if ($('.pin-log')) {
+                let msg = args && args.length > 0 ? args[0] : '';
+                if(args.length > 1) {
+                    msg += JSON.stringify(args.slice(1, -1));
+                }
+
                 $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
             }
         }
@@ -41,7 +46,7 @@
             return $('#pin-' + index);
         }
 
-        function setFocus(index) {
+        function focus(index) {
             const pin = getPin(index);
             // Not work on Safari?
             if (isIos()) {
@@ -82,30 +87,30 @@
 
         $(this).on('delpin', function (evt) {
             const index = parseInt(evt.target.id.substr('pin-'.length));
-            setLog('On delpin PIN-' + index + ': value=' + $(this).val());
+            log('On delpin PIN-' + index + ': value=' + $(this).val());
 
             $(this).val('');
             if ($(this).val() !== '') {
-                setLog('On delpin PIN-' + index + ': cannot clear value PIN-' + index);
+                log('On delpin PIN-' + index + ': cannot clear value PIN-' + index);
                 $(evt.target).attr('value', ''); // for sure
             }
 
-            setLog('On delpin PIN-' + index + ': set focus PIN-' + index);
-            setFocus(index);
+            log('On delpin PIN-' + index + ': set focus PIN-' + index);
+            focus(index);
         });
 
         if (settings.alwaysFocus) {
             // Always set focus on PIN inputs?
             $(this).blur(function (evt) {
                 const index = parseInt(evt.target.id.substr('pin-'.length));
-                setLog('On blur PIN-' + index + ': value=' + $(this).val());
+                log('On blur PIN-' + index + ': value=' + $(this).val());
 
                 // Check all PIN are empty
                 if (getPin(0).val() === '') {
                     evt.stopPropagation();
 
-                    setLog('On blur PIN-' + index + ': set focus PIN-' + 0);
-                    setFocus(0);
+                    log('On blur PIN-' + index + ': set focus PIN-' + 0);
+                    focus(0);
                 } else {
                     let lastNotEmpty = getLastIndexNotEmpty();
                     if (lastNotEmpty !== -1) {
@@ -113,8 +118,8 @@
                             evt.stopPropagation();
                         }
 
-                        setLog('On blur PIN-' + index + ': set focus PIN-' + lastNotEmpty);
-                        setFocus(lastNotEmpty);
+                        log('On blur PIN-' + index + ': set focus PIN-' + lastNotEmpty);
+                        focus(lastNotEmpty);
                     }
                 }
             });
@@ -122,8 +127,8 @@
 
         $(this).focus(function (evt) {
             const index = parseInt(evt.target.id.substr('pin-'.length));
-            setLog('On focus PIN-' + index + ': value=' + $(this).val());
-            let lastIndexNotEmpty = getLastIndexNotEmpty();
+            log('On focus PIN-' + index + ': value=' + $(this).val());
+            const lastIndexNotEmpty = getLastIndexNotEmpty();
 
             // Check all PIN are empty
             if (getPin(0).val() === '' && index > 0) {
@@ -131,18 +136,18 @@
                 //evt.stopPropagation();
 
                 if (lastIndexNotEmpty === -1) {
-                    setLog('On focus PIN-' + index + ': set focus PIN-' + 0);
-                    setFocus(0);
+                    log('On focus PIN-' + index + ': set focus PIN-' + 0);
+                    focus(0);
                 } else {
-                    setLog('On focus PIN-' + index + ': ERROR focus PIN-' + index);
+                    log('On focus PIN-' + index + ': ERROR focus PIN-' + index);
                 }
             } else if (lastIndexNotEmpty !== -1) {
                 if (lastIndexNotEmpty !== index) {
                     //$(evt.target).blur();
                     //evt.stopPropagation();
 
-                    setLog('On focus PIN-' + index + ': set focus PIN-' + lastIndexNotEmpty);
-                    setFocus(lastIndexNotEmpty);
+                    log('On focus PIN-' + index + ': set focus PIN-' + lastIndexNotEmpty);
+                    focus(lastIndexNotEmpty);
                 }
             }
         });
@@ -153,7 +158,7 @@
             let keyCode = evt.which || evt.keyCode;
             const currentValue = $(this).val();
 
-            setLog('On keydown PIN-' + index + ': key code: ' + keyCode + ', last: ' + lastInputValue + ', current: ' + currentValue);
+            log('On keydown PIN-' + index + ': key code: ' + keyCode + ', last: ' + lastInputValue + ', current: ' + currentValue);
 
             // Update last input value
             lastInputValue = currentValue;
@@ -297,7 +302,7 @@
             switch (move) {
                 case 1:
                     if (nextIndex !== -1) {
-                        setFocus(nextIndex);
+                        focus(nextIndex);
                     }
 
                     break;
@@ -334,7 +339,7 @@
         $(this).on('input DOMSubtreeModified', function (evt) {
             const index = parseInt(evt.target.id.substr('pin-'.length));
             let currentValue = $(this).val();
-            setLog('On input PIN-' + index + ', last: ' + lastInputValue + ', current: ' + currentValue);
+            log('On input PIN-' + index + ', last: ' + lastInputValue + ', current: ' + currentValue, evt);
 
             const pattern = new RegExp($(this).prop('pattern'));
             currentValue = unmask(currentValue);
@@ -352,22 +357,22 @@
 
         getPin(pinLen - 1).on('keyup', function (evt) {
             const index = parseInt(evt.target.id.substr('pin-'.length));
-            setLog('On keyup PIN-' + index + ': value=' + $(this).val());
+            log('On keyup PIN-' + index + ': value=' + $(this).val());
 
             if ($(this).val() !== '') {
-                setLog('On focus PIN-' + index + ': set focus PIN-' + 0);
+                log('On focus PIN-' + index + ': set focus PIN-' + 0);
 
                 // Set set focus PIN-0 if error, submit and clear all PIN
                 $('.inputs .pin').val('');
-                setFocus(0);
+                focus(0);
             }
         });
 
         // HTML5 autofocus attribute is not supported on iOS
         // https://caniuse.com/#feat=autofocus
         if (settings.autoFocus) {
-            setLog('-- Auto focus STARTED --');
-            setFocus(0);
+            log('-- Auto focus STARTED --');
+            focus(0);
         }
     };
 
