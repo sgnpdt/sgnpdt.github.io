@@ -549,7 +549,6 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 		&:hover{background-color: @primary-color !important;color: #000000 !important;border: 1px solid @primary-color;}
 	}
 	.modal-footer{border: none;}
-	.modal-footer{padding-left: 0; padding-right: 0;}
 }
 #ShowFPTmember{
 	.modal-dialog{width: 580px;}
@@ -626,8 +625,12 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 		p{line-height: 48px;margin:0;text-align: center;}
 	}
 	.text_color{font-size: 22px;top: -2px;position: relative;}
-}
+	.color{color: #ffd200;text-shadow: 0 0 3px #000;font-size: 18px;position: relative;top: -2px;}
 
+}
+.copyright{position: absolute;bottom:0;left: 0;right: 0;
+	p{text-align: center;margin-bottom: 16px;color: rgba(255,255,255,0.3);font-size: 14px;}
+}
 
 
 /*.ribbon{height: 96px;border-left: 2px solid @primary-color;position: a
@@ -741,7 +744,11 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.fp-section{background-color: #06080d} 
 	.row_bg{height: 540px;}
 	.row_bg img{max-width: 80%; float: none !important;margin-bottom: 16px;}
-	#fp-nav.fp-left{left: 4px;}
+	#fp-nav.fp-left{left: -4px;}
+	#fp-nav ul li, .fp-slidesNav ul li{margin: 6px;}
+	#fp-nav ul li a span, .fp-slidesNav ul li a span{width: 6px;height: 6px;}
+	#fp-nav ul li a span, .fp-slidesNav ul li a span{margin: -2px 0 0 -2px;}
+	#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{width: 8px;height: 8px;margin: -3px 0 0 -3px;}
 	.modal-dialog{width: auto;}
 	#Showregister .modal-body{padding:2rem 1rem 1rem 1rem;}
 	#ShowFPTmember .modal-body{padding:2rem 1rem 1rem 1rem;}
@@ -750,6 +757,9 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.swiperphanmem, .swiperquanly{margin-top: 48px;}
 	.btn_left{padding-right: 8px;}
 	.btn_right{padding-left: 8px}
+	#ShowRegister_Q {
+		.modal-footer{padding-left: 0; padding-right: 0;}
+	}
 	#ShowFPTmember .modal-dialog{width: 90%;margin: 0 auto;}
 	#ShowFPTmember{
 		.modal-content{background-color: transparent;}

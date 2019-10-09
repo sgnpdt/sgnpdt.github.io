@@ -835,7 +835,7 @@
     z-index: 2;
   }
   .HeaderNav .navbar-collapse .navbar-nav {
-    width: 40%;
+    width: 50%;
     display: block;
     background-color: #000;
     border-radius: 0 0 16px 16px;

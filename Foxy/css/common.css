@@ -1242,10 +1242,6 @@ button.close span {
 #ShowRegister_Q .modal-footer {
   border: none;
 }
-#ShowRegister_Q .modal-footer {
-  padding-left: 0;
-  padding-right: 0;
-}
 #ShowFPTmember .modal-dialog {
   width: 580px;
 }
@@ -1518,6 +1514,25 @@ button.close span {
   font-size: 22px;
   top: -2px;
   position: relative;
+}
+.package_foxy .color {
+  color: #ffd200;
+  text-shadow: 0 0 3px #000;
+  font-size: 18px;
+  position: relative;
+  top: -2px;
+}
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.copyright p {
+  text-align: center;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
 }
 /*.ribbon{height: 96px;border-left: 2px solid @primary-color;position: a
 	.title{font-size: 16px;color: #000000;background-color: @primary-color;}
@@ -1796,7 +1811,28 @@ button.close span {
     margin-bottom: 16px;
   }
   #fp-nav.fp-left {
-    left: 4px;
+    left: -4px;
+  }
+  #fp-nav ul li,
+  .fp-slidesNav ul li {
+    margin: 6px;
+  }
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    width: 6px;
+    height: 6px;
+  }
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    margin: -2px 0 0 -2px;
+  }
+  #fp-nav ul li a.active span,
+  .fp-slidesNav ul li a.active span,
+  #fp-nav ul li:hover a.active span,
+  .fp-slidesNav ul li:hover a.active span {
+    width: 8px;
+    height: 8px;
+    margin: -3px 0 0 -3px;
   }
   .modal-dialog {
     width: auto;
@@ -1822,6 +1858,10 @@ button.close span {
   }
   .btn_right {
     padding-left: 8px;
+  }
+  #ShowRegister_Q .modal-footer {
+    padding-left: 0;
+    padding-right: 0;
   }
   #ShowFPTmember .modal-dialog {
     width: 90%;
