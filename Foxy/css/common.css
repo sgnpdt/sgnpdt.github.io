@@ -1568,6 +1568,9 @@ button.close span {
   border-radius: 0 6px 6px 0;
   min-width: 130px;
 }
+.img_top img {
+  background-color: #06080d;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
