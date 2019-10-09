@@ -1,7 +1,14 @@
 (function ($) {
     $.fn.jqueryPincodeAutotab = function (options) {
-        const pins = $(this);
-        const pinLen = pins.length;
+        const pinLen = $(this).length;
+
+        let settings = $.extend({
+            alwaysFocus: false,
+            autoFocus: true,
+            complete: function (pin) {		// fires when all fields are filled in
+                // pin:	the entered pin code
+            },
+        }, options);
 
         let lastInputValue = '';
         let hasBackspaceSupport;
@@ -25,8 +32,6 @@
         }
 
         function setLog(msg) {
-            console.log(msg);
-
             if ($('.pin-log')) {
                 $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
             }
@@ -64,6 +69,11 @@
             return lastNotEmpty;
         }
 
+        function unmask(value) {
+            // Remove every non-digit character
+            const output = value.replace(new RegExp(/[^\d]/, 'g'), '');
+            return output;
+        }
 
         // Change type to number on Android
         if (isAndroid()) {
@@ -84,9 +94,7 @@
             setFocus(index);
         });
 
-        const alwaysFocus = false;
-
-        if (alwaysFocus) {
+        if (settings.alwaysFocus) {
             // Always set focus on PIN inputs?
             $(this).blur(function (evt) {
                 const index = parseInt(evt.target.id.substr('pin-'.length));
@@ -141,19 +149,11 @@
 
         $(this).on('keydown', function (evt) {
             let move = 0;
-
             const index = parseInt(evt.target.id.substr('pin-'.length));
             let keyCode = evt.which || evt.keyCode;
             const currentValue = $(this).val();
 
             setLog('On keydown PIN-' + index + ': key code: ' + keyCode + ', last: ' + lastInputValue + ', current: ' + currentValue);
-
-            // If we got any charCode === 8, this means, that this device correctly
-            // sends backspace keys in event, so we do not need to apply any hacks
-            hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
-            if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
-                keyCode = 8;
-            }
 
             // Update last input value
             lastInputValue = currentValue;
@@ -164,6 +164,7 @@
                     $(this).val('0');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 1
@@ -172,6 +173,7 @@
                     $(this).val('1');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 2
@@ -180,6 +182,7 @@
                     $(this).val('2');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 3
@@ -188,6 +191,7 @@
                     $(this).val('3');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 4
@@ -196,6 +200,7 @@
                     $(this).val('4');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 5
@@ -204,6 +209,7 @@
                     $(this).val('5');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 6
@@ -212,6 +218,7 @@
                     $(this).val('6');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 7
@@ -220,6 +227,7 @@
                     $(this).val('7');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 8
@@ -228,6 +236,7 @@
                     $(this).val('8');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // number 9
@@ -236,6 +245,7 @@
                     $(this).val('9');
                     move = 1;
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 case 8: // backspace
@@ -253,6 +263,7 @@
                         move = 1;
                     }
                     evt.preventDefault();
+                    evt.stopPropagation();
                     break;
 
                 // case 86: // v
@@ -270,9 +281,7 @@
                 // Key code 229 means that user pressed some button, but input method is still processing that.
                 // This is a standard behavior for some input methods like entering Japanese or Chinese hieroglyphs.
                 case 229: // Chrome on Android device always returns 229 key code
-                    const androidKeyCode = $(this).val();
-                    $('.pin-log').html('Android key code: ' + androidKeyCode + '/' + $.isNumeric(androidKeyCode).toString() + '<br />' + $('.pin-log').html());
-                    if ($.isNumeric(androidKeyCode)) {
+                    if ($.isNumeric(currentValue)) {
                         move = 1;
                     }
 
@@ -318,14 +327,17 @@
                     return pastedData[i];
                 };
 
-                $(pins[i]).val(data);
+                getPin(i).val(data);
             }
         });
 
         $(this).on('input DOMSubtreeModified', function (evt) {
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            let currentValue = $(this).val();
+            setLog('On input PIN-' + index + ', last: ' + lastInputValue + ', current: ' + currentValue);
 
             const pattern = new RegExp($(this).prop('pattern'));
-            const currentValue = $(this).val();
+            currentValue = unmask(currentValue);
 
             if (!currentValue.match(pattern)) {
                 $(this).val('').addClass('invalid');
@@ -353,8 +365,10 @@
 
         // HTML5 autofocus attribute is not supported on iOS
         // https://caniuse.com/#feat=autofocus
-        setLog('-- Auto focus STARTED --');
-        setFocus(0);
+        if (settings.autoFocus) {
+            setLog('-- Auto focus STARTED --');
+            setFocus(0);
+        }
     };
 
     function visible(element) {
