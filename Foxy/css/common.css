@@ -45,6 +45,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-airplane {
+  background-image: url(../images/1954.png);
+  background-image: -webkit-image-set(url(../images/1954.png) 1x, url(../images/1954@2x.png) 2x, url(../images/1954@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1470,6 +1476,19 @@ button.close span {
   display: block;
   margin: 0 auto;
   width: 50%;
+}
+#Showthank .airplane {
+  width: 110px;
+  height: 180px;
+  background-image: url(../images/1954.png);
+  background-image: -webkit-image-set(url(../images/1954.png) 1x, url(../images/1954@2x.png) 2x, url(../images/1954@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  top: -53px;
+  left: -19px;
+  z-index: 2;
 }
 .package_foxy {
   width: 80%;
