@@ -152,9 +152,6 @@
                         var androidKeyCode = $(this).val();
                         if ($.isNumeric(androidKeyCode)) {
                             move = 1;
-                        } else {
-                            // Ignore input key too
-                            evt.preventDefault();
                         }
 
                         break;

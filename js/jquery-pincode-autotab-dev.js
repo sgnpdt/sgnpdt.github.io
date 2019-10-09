@@ -1,397 +1,360 @@
 (function ($) {
     $.fn.jqueryPincodeAutotab = function (options) {
-        let listOfElements = $(this);
-        let settings = $.extend({
-            prevElement: null,
-            nextElement: null,
-            defaultFlow: true
-        }, options);
+        const pins = $(this);
+        const pinLen = pins.length;
 
         let lastInputValue = '';
         let hasBackspaceSupport;
-        const isIos = function () {
-            return !!window.navigator.userAgent.match(/iPad|iPhone/i);
-        };
 
-        const isAndroid = function () {
+        function isIos() {
+            return !!window.navigator.userAgent.match(/iPad|iPhone/i);
+        }
+
+        function isAndroid() {
             return window.navigator && /android/i.test(window.navigator.userAgent);
-        };
+        }
 
         // On Android chrome, the keyup and keydown events always return key code 229
         // as a composition that buffers the user's keystrokes
-        const isAndroidBackspaceKeydown = function (lastInputValue, currentInputValue) {
+        function isAndroidBackspaceKeydown(lastInputValue, currentInputValue) {
             if (!isAndroid() || !lastInputValue || !currentInputValue) {
                 return false;
             }
 
             return currentInputValue === lastInputValue.slice(0, -1);
-        };
+        }
 
-        const setPinFocus = function (input) {
+        function setLog(msg) {
+            console.log(msg);
+
+            if ($('.pin-log')) {
+                $('.pin-log').html(msg + '<br />' + $('.pin-log').html());
+            }
+        }
+
+        function getPin(index) {
+            return $('#pin-' + index);
+        }
+
+        function setFocus(index) {
+            const pin = getPin(index);
             // Not work on Safari?
             if (isIos()) {
                 // 4ms is specified by the HTML5 spec
                 setTimeout(function () {
-                    input.select(); // select first
-                    input.focus();
+                    pin.select(); // select first
+                    pin.focus();
                 }, 10);
             } else {
-                input.focus();
+                pin.focus();
             }
-        };
+        }
 
-        return this.each(function (index, value) {
-            if(isAndroid) {
-                $(value).prop('type', 'number');
+        function getLastIndexNotEmpty() {
+            let lastNotEmpty = -1;
+            for (let i = pinLen - 1; i >= 0; i--) {
+                const data = getPin(i).val() || '';
+                if (data !== '') {
+                    lastNotEmpty = i + 1;
+                    lastNotEmpty = lastNotEmpty > (pinLen - 1) ? (pinLen - 1) : lastNotEmpty;
+                    break;
+                }
             }
 
-            $(value).on('input DOMSubtreeModified', function (evt) {
-                // 4ms is specified by the HTML5 spec
-                setTimeout(function () {
-                    let move = 0;
+            return lastNotEmpty;
+        }
 
-                    let currentValue = $(evt.target).val();
-                    // If we got any charCode === 8, this means, that this device correctly
-                    // sends backspace keys in event, so we do not need to apply any hacks
-                    let keyCode = evt.which || evt.keyCode;
 
-                    let log = 'input/keycode: ' + keyCode.toString() + '/' + hasBackspaceSupport.toString() + '/' + lastInputValue.toString() + '/' + currentValue.toString() + '/' + evt.target.value.toString() + '/';
-                    $('.pin-log').html(log + '<br />' + $('.pin-log').html());
+        // Change type to number on Android
+        if (isAndroid()) {
+            $(this).prop('type', 'number');
+        }
 
-                    hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
-                    if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
-                        keyCode = 8;
-                    } else {
-                        keyCode = evt.keyCode;
-                    }
+        $(this).on('delpin', function (evt) {
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            setLog('On delpin PIN-' + index + ': value=' + $(this).val());
 
-                    // Update last input value
-                    lastInputValue = currentValue;
-                    switch (keyCode) {
+            $(this).val('');
+            if ($(this).val() !== '') {
+                setLog('On delpin PIN-' + index + ': cannot clear value PIN-' + index);
+                $(evt.target).attr('value', ''); // for sure
+            }
 
-                        case 8: // backspace
-                        case 46: // delete
-                            $(this).val('');
-                            move = -1;
-                            break;
-
-                        default:
-                            return;
-                    }
-
-                    for (let i = 0; i < listOfElements.length; i++) {
-                        var prevElement;
-                        var nextElement;
-                        if (i - 1 >= 0) {
-                            prevElement = listOfElements[i - 1];
-                        }
-
-                        if (i + 1 <= listOfElements.length) {
-                            nextElement = listOfElements[i + 1];
-                        }
-
-                        if (listOfElements[i] === this) {
-                            var ele, j;
-                            // Delete PIN
-                            if (prevElement) {
-                                //$(prevElement).select();
-                                //$(prevElement).focus();
-
-                                // Custom event
-                                $(prevElement).trigger({type: 'delpin'});
-                            } else {
-                                if (settings.prevElement) {
-                                    //settings.prevElement.select();
-                                    //settings.prevElement.focus();
-
-                                    // Custom event
-                                    settings.prevElement.trigger({type: 'delpin'});
-                                } else if (settings.defaultFlow) {
-                                    ele = $(':focusable');
-                                    for (j = 0; j < ele.length; j++) {
-                                        if (ele[j] === this) {
-                                            if (ele[j - 1]) {
-                                                //$(ele[j - 1]).select();
-                                                //$(ele[j - 1]).focus();
-
-                                                // Custom event
-                                                $(ele[j - 1]).trigger({type: 'delpin'});
-                                            }
-
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }, 4);
-            });
-
-            $(value).on('keydown', function (evt) {
-                var move = 0;
-
-                var currentValue = $(this).val();
-                // If we got any charCode === 8, this means, that this device correctly
-                // sends backspace keys in event, so we do not need to apply any hacks
-                var keyCode = evt.which || evt.keyCode;
-
-                var log = 'keydown/keycode: ' + keyCode + '/' + hasBackspaceSupport + '/' + lastInputValue + '/' + currentValue;
-                $('.pin-log').html(log + '<br />' + $('.pin-log').html());
-
-                hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
-                if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
-                    keyCode = 8;
-                } else {
-                    keyCode = evt.keyCode;
-                }
-
-                // Update last input value
-                lastInputValue = currentValue;
-                switch (keyCode) {
-                    // number 0
-                    case 48:
-                    case 96:
-                        $(this).val('0');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 1
-                    case 49:
-                    case 97:
-                        $(this).val('1');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 2
-                    case 50:
-                    case 98:
-                        $(this).val('2');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 3
-                    case 51:
-                    case 99:
-                        $(this).val('3');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 4
-                    case 52:
-                    case 100:
-                        $(this).val('4');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 5
-                    case 53:
-                    case 101:
-                        $(this).val('5');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 6
-                    case 54:
-                    case 102:
-                        $(this).val('6');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 7
-                    case 55:
-                    case 103:
-                        $(this).val('7');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 8
-                    case 56:
-                    case 104:
-                        $(this).val('8');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    // number 9
-                    case 57:
-                    case 105:
-                        $(this).val('9');
-                        move = 1;
-                        evt.preventDefault();
-                        break;
-
-                    case 8: // backspace
-                    case 46: // delete
-                        $(this).val('');
-                        move = -1;
-                        evt.preventDefault();
-                        break;
-
-                    case 9: // tab
-                        if (evt.shiftKey) {
-                            move = -1;
-                        } else {
-                            move = 1;
-                        }
-                        evt.preventDefault();
-                        break;
-
-                    // case 86: // v
-                    //     if (!(evt.ctrlKey || evt.metaKey)) {
-                    //         evt.preventDefault();
-                    //     }
-                    //     break;
-
-                    // case 13: // enter
-                    // case 16: // shift
-                    // case 17: // ctrl
-                    // case 91: // command in mac
-                    //     break;
-
-                    // keyCode 229 means that user pressed some button, but input method is still processing that.
-                    // This is a standard behavior for some input methods like entering Japaneese or Chinese hieroglyphs.
-                    case 229: // Chrome on Android device always returns 229 keycode
-                        var androidKeyCode = $(this).val();
-                        $('.pin-log').html('androidKeyCode/' + androidKeyCode + '/' + $.isNumeric(androidKeyCode).toString() + '<br />' + $('.pin-log').html());
-                        if ($.isNumeric(androidKeyCode)) {
-                            move = 1;
-                        } else {
-                            // Ignore input key
-                            evt.preventDefault();
-
-                            //$('.pin-log').html('clear content <br />' + $('.pin-log').html());
-
-                            //$(this).val(''); // clear for sure
-                            //$(this).val(null);
-                            //$(this).attr('value', '');
-                        }
-
-                        break;
-
-                    default:
-                        evt.preventDefault();
-                }
-
-                for (var i = 0; i < listOfElements.length; i++) {
-                    var prevElement;
-                    var nextElement;
-                    if (i - 1 >= 0) {
-                        prevElement = listOfElements[i - 1];
-                    }
-
-                    if (i + 1 <= listOfElements.length) {
-                        nextElement = listOfElements[i + 1];
-                    }
-
-                    if (listOfElements[i] === this) {
-                        var ele, j;
-                        switch (move) {
-                            case 1:
-                                if (nextElement) {
-                                    // $(nextElement).select();
-                                    // if (isIos) {
-                                    //     $(nextElement).select();
-                                    // }
-                                    //
-                                    // // Set timeout?
-                                    // $(nextElement).focus();
-
-                                    setPinFocus($(nextElement));
-                                } else {
-                                    if (settings.nextElement) {
-                                        // settings.nextElement.select();
-                                        // if (isIos) {
-                                        //     settings.nextElement.select();
-                                        // }
-                                        //
-                                        // // Set timeout?
-                                        // settings.nextElement.focus();
-                                        setPinFocus(settings.nextElement);
-                                    } else if (settings.defaultFlow) {
-                                        ele = $(':focusable');
-                                        for (j = 0; j < ele.length; j++) {
-                                            if (ele[j] === this) {
-                                                if (ele[j + 1]) {
-                                                    //$(ele[j + 1]).select();
-                                                    // if (isIos) {
-                                                    //     $(ele[j + 1]).select();
-                                                    // }
-                                                    //
-                                                    // // Set timeout?
-                                                    // $(ele[j + 1]).focus();
-                                                    setPinFocus($(ele[j + 1]));
-                                                }
-
-                                                break;
-                                            }
-                                        }
-                                    }
-                                }
-
-                                break;
-
-                            case -1:
-                                // Delete PIN
-                                if (prevElement) {
-                                    //$(prevElement).select();
-                                    //$(prevElement).focus();
-
-                                    // Custom event
-                                    $(prevElement).trigger({type: 'delpin'});
-                                } else {
-                                    if (settings.prevElement) {
-                                        //settings.prevElement.select();
-                                        //settings.prevElement.focus();
-
-                                        // Custom event
-                                        settings.prevElement.trigger({type: 'delpin'});
-                                    } else if (settings.defaultFlow) {
-                                        ele = $(':focusable');
-                                        for (j = 0; j < ele.length; j++) {
-                                            if (ele[j] === this) {
-                                                if (ele[j - 1]) {
-                                                    //$(ele[j - 1]).select();
-                                                    //$(ele[j - 1]).focus();
-
-                                                    // Custom event
-                                                    $(ele[j - 1]).trigger({type: 'delpin'});
-                                                }
-
-                                                break;
-                                            }
-                                        }
-                                    }
-                                }
-
-                                break;
-                        }
-                    }
-                }
-            });
-
-            $(value).on('paste', function (event) {
-                event.preventDefault();
-                var clipboardData = event.clipboardData || event.originalEvent.clipboardData || window.clipboardData;
-                var pastedData = clipboardData.getData('text/plain');
-                for (var i = 0; i < listOfElements.length; i++) {
-                    var data = function () {
-                        return pastedData[i];
-                    };
-
-                    $(listOfElements[i]).val(data);
-                }
-            });
+            setLog('On delpin PIN-' + index + ': set focus PIN-' + index);
+            setFocus(index);
         });
+
+        const alwaysFocus = false;
+
+        if (alwaysFocus) {
+            // Always set focus on PIN inputs?
+            $(this).blur(function (evt) {
+                const index = parseInt(evt.target.id.substr('pin-'.length));
+                setLog('On blur PIN-' + index + ': value=' + $(this).val());
+
+                // Check all PIN are empty
+                if (getPin(0).val() === '') {
+                    evt.stopPropagation();
+
+                    setLog('On blur PIN-' + index + ': set focus PIN-' + 0);
+                    setFocus(0);
+                } else {
+                    let lastNotEmpty = getLastIndexNotEmpty();
+                    if (lastNotEmpty !== -1) {
+                        if (lastNotEmpty !== index) {
+                            evt.stopPropagation();
+                        }
+
+                        setLog('On blur PIN-' + index + ': set focus PIN-' + lastNotEmpty);
+                        setFocus(lastNotEmpty);
+                    }
+                }
+            });
+        }
+
+        $(this).focus(function (evt) {
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            setLog('On focus PIN-' + index + ': value=' + $(this).val());
+            let lastIndexNotEmpty = getLastIndexNotEmpty();
+
+            // Check all PIN are empty
+            if (getPin(0).val() === '' && index > 0) {
+                //$(evt.target).blur();
+                //evt.stopPropagation();
+
+                if (lastIndexNotEmpty === -1) {
+                    setLog('On focus PIN-' + index + ': set focus PIN-' + 0);
+                    setFocus(0);
+                } else {
+                    setLog('On focus PIN-' + index + ': ERROR focus PIN-' + index);
+                }
+            } else if (lastIndexNotEmpty !== -1) {
+                if (lastIndexNotEmpty !== index) {
+                    //$(evt.target).blur();
+                    //evt.stopPropagation();
+
+                    setLog('On focus PIN-' + index + ': set focus PIN-' + lastIndexNotEmpty);
+                    setFocus(lastIndexNotEmpty);
+                }
+            }
+        });
+
+        $(this).on('keydown', function (evt) {
+            let move = 0;
+
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            let keyCode = evt.which || evt.keyCode;
+            const currentValue = $(this).val();
+
+            setLog('On keydown PIN-' + index + ': key code: ' + keyCode + ', last: ' + lastInputValue + ', current: ' + currentValue);
+
+            // If we got any charCode === 8, this means, that this device correctly
+            // sends backspace keys in event, so we do not need to apply any hacks
+            hasBackspaceSupport = hasBackspaceSupport || keyCode === 8;
+            if (!hasBackspaceSupport && isAndroidBackspaceKeydown(lastInputValue, currentValue)) {
+                keyCode = 8;
+            }
+
+            // Update last input value
+            lastInputValue = currentValue;
+            switch (keyCode) {
+                // number 0
+                case 48:
+                case 96:
+                    $(this).val('0');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 1
+                case 49:
+                case 97:
+                    $(this).val('1');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 2
+                case 50:
+                case 98:
+                    $(this).val('2');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 3
+                case 51:
+                case 99:
+                    $(this).val('3');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 4
+                case 52:
+                case 100:
+                    $(this).val('4');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 5
+                case 53:
+                case 101:
+                    $(this).val('5');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 6
+                case 54:
+                case 102:
+                    $(this).val('6');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 7
+                case 55:
+                case 103:
+                    $(this).val('7');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 8
+                case 56:
+                case 104:
+                    $(this).val('8');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                // number 9
+                case 57:
+                case 105:
+                    $(this).val('9');
+                    move = 1;
+                    evt.preventDefault();
+                    break;
+
+                case 8: // backspace
+                case 46: // delete
+                    $(this).val('');
+                    move = -1;
+                    evt.preventDefault();
+                    evt.stopPropagation();
+                    break;
+
+                case 9: // tab
+                    if (evt.shiftKey) {
+                        move = -1;
+                    } else {
+                        move = 1;
+                    }
+                    evt.preventDefault();
+                    break;
+
+                // case 86: // v
+                //     if (!(evt.ctrlKey || evt.metaKey)) {
+                //         evt.preventDefault();
+                //     }
+                //     break;
+
+                // case 13: // enter
+                // case 16: // shift
+                // case 17: // ctrl
+                // case 91: // command in mac
+                //     break;
+
+                // Key code 229 means that user pressed some button, but input method is still processing that.
+                // This is a standard behavior for some input methods like entering Japanese or Chinese hieroglyphs.
+                case 229: // Chrome on Android device always returns 229 key code
+                    const androidKeyCode = $(this).val();
+                    $('.pin-log').html('Android key code: ' + androidKeyCode + '/' + $.isNumeric(androidKeyCode).toString() + '<br />' + $('.pin-log').html());
+                    if ($.isNumeric(androidKeyCode)) {
+                        move = 1;
+                    }
+
+                    break;
+
+                default:
+                    evt.preventDefault();
+                    evt.stopPropagation();
+            }
+
+            const prevIndex = (index >= 1) ? (index - 1) : -1;
+            const nextIndex = (index <= pinLen) ? (index + 1) : -1;
+            switch (move) {
+                case 1:
+                    if (nextIndex !== -1) {
+                        setFocus(nextIndex);
+                    }
+
+                    break;
+
+                case -1:
+                    // Delete PIN
+                    if (prevIndex !== -1) {
+                        // Custom event
+                        getPin(prevIndex).trigger({type: 'delpin'});
+                    }
+
+                    break;
+
+                default:
+                    break;
+            }
+        });
+
+        $(this).on('paste', function (evt) {
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            evt.preventDefault();
+
+            const clipboardData = evt.clipboardData || evt.originalEvent.clipboardData || window.clipboardData;
+            const pastedData = clipboardData.getData('text/plain');
+            for (let i = 0; i < pinLen; i++) {
+                const data = function () {
+                    return pastedData[i];
+                };
+
+                $(pins[i]).val(data);
+            }
+        });
+
+        $(this).on('input DOMSubtreeModified', function (evt) {
+
+            const pattern = new RegExp($(this).prop('pattern'));
+            const currentValue = $(this).val();
+
+            if (!currentValue.match(pattern)) {
+                $(this).val('').addClass('invalid');
+
+                // fire error callback
+                //that.settings.invalid($(this), nr);
+
+                evt.preventDefault();
+                evt.stopPropagation();
+            }
+        });
+
+        getPin(pinLen - 1).on('keyup', function (evt) {
+            const index = parseInt(evt.target.id.substr('pin-'.length));
+            setLog('On keyup PIN-' + index + ': value=' + $(this).val());
+
+            if ($(this).val() !== '') {
+                setLog('On focus PIN-' + index + ': set focus PIN-' + 0);
+
+                // Set set focus PIN-0 if error, submit and clear all PIN
+                $('.inputs .pin').val('');
+                setFocus(0);
+            }
+        });
+
+        // HTML5 autofocus attribute is not supported on iOS
+        // https://caniuse.com/#feat=autofocus
+        setLog('-- Auto focus STARTED --');
+        setFocus(0);
     };
 
     function visible(element) {

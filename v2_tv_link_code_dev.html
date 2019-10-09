@@ -5,9 +5,9 @@
     <meta content="width=device-width, height=device-height, maximum-scale=1.0, initial-scale=1.0, user-scalable=no"
           name="viewport">
     <meta content="#ffd200 " name="theme-color">
-    <meta http-equiv="Cache-Control" content="no-cache"/>
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta content="no-cache" http-equiv="Cache-Control"/>
+    <meta content="no-cache" http-equiv="Pragma">
+    <meta content="0" http-equiv="Expires">
     <!-- InstanceBeginEditable name="doctitle" -->
     <title>Mã liên kết TV</title>
     <!-- InstanceEndEditable -->
@@ -67,18 +67,24 @@
             <div class="table_input">
                 <div class="table_cell_input">
                     <div class="inputs" id="inputs">
-                        <input class="pin focused" id="pin-0" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
-                        <input class="pin" id="pin-1" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
-                        <input class="pin" id="pin-2" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
-                        <input class="pin" id="pin-3" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
-                        <input class="pin" id="pin-4" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
-                        <input class="pin" id="pin-5" inputmode="numeric" max="9" maxlength="1" min="0"
-                               pattern="\d*" placeholder="" required type="tel">
+                        <input autocomplete="off" class="pin focused" id="pin-0" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
+                        <input autocomplete="off" class="pin" id="pin-1" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
+                        <input autocomplete="off" class="pin" id="pin-2" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
+                        <input autocomplete="off" class="pin" id="pin-3" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
+                        <input autocomplete="off" class="pin" id="pin-4" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
+                        <input autocomplete="off" class="pin" id="pin-5" inputmode="numeric" max="9" maxlength="1"
+                               min="0" pattern="^\d*$" placeholder="" required type="tel"
+                               x-inputmode="numeric">
                     </div>
                 </div>
             </div>
@@ -86,7 +92,7 @@
                 <div class="invalid-feedback invalid-feedback_mlk ">
                     Mã liên kết không đúng
                 </div>
-                <div class="pin-log"></div>
+                <div class="pin-log" style="color: #CCCCCC;"></div>
             </div>
         </div>
     </div>
