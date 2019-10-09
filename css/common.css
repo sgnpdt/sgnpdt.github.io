@@ -2226,6 +2226,9 @@ html body.change_pass_pass .invalid-feedback {
   text-transform: uppercase;
   font-weight: bold;
 }
+.appbar_color {
+  background-color: #ffd200;
+}
 @media (max-width: 1024px) {
   .bg_login_form {
     max-width: 580px;
