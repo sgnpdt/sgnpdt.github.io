@@ -1149,7 +1149,7 @@ button:focus {
   vertical-align: middle;
 }
 .row_bg {
-  height: 580px;
+  height: 650px;
 }
 .align-items-center {
   -ms-flex-align: center!important;
@@ -1516,11 +1516,10 @@ button.close span {
   position: relative;
 }
 .package_foxy .color {
-  color: #ffd200;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  font-size: 18px;
+  color: #000;
+  font-size: 24px;
   position: relative;
-  top: -2px;
+  top: 0px;
 }
 .copyright {
   position: absolute;
@@ -1534,10 +1533,25 @@ button.close span {
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
 }
-/*.ribbon{height: 96px;border-left: 2px solid @primary-color;position: a
-	.title{font-size: 16px;color: #000000;background-color: @primary-color;}
-	.content{}
-}*/
+.package_foxy {
+  margin-top: 48px;
+}
+.text_content {
+  min-height: 135px;
+}
+.content_top_1 .text_content {
+  min-height: auto !important;
+}
+.ribbon {
+  height: 96px;
+  border-left: 2px solid #fed722;
+  position: absolute;
+}
+.ribbon .title {
+  font-size: 16px;
+  color: #000000;
+  background-color: #fed722;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
@@ -1806,9 +1820,10 @@ button.close span {
     min-height: 540px;
   }
   .row_bg img {
-    max-width: 80%;
+    max-width: 100%;
     float: none !important;
     margin-bottom: 16px;
+    max-height: 320px;
   }
   #fp-nav.fp-left {
     left: -4px;
@@ -2037,12 +2052,13 @@ button.close span {
   }
   .package_foxy {
     width: 90%;
+    margin-top: 12px;
   }
   .package_foxy .content p {
     line-height: 40px;
   }
   .row_bg img {
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 0;
   }
   .row_bg img.img_foxy {
@@ -2060,6 +2076,9 @@ button.close span {
   }
   .copyright p {
     font-size: 12px;
+  }
+  .text_content {
+    min-height: auto;
   }
 }
 @media (max-width: 320px) {
@@ -2082,6 +2101,7 @@ button.close span {
   }
   .row_bg img {
     margin-bottom: 0;
+    max-height: 80%;
   }
   .swiperphanmem,
   .swiperquanly {
@@ -2092,6 +2112,7 @@ button.close span {
   }
   .package_foxy {
     width: 100%;
+    margin-top: 8px;
   }
   .row_bg {
     min-height: 450px;

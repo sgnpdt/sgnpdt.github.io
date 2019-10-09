@@ -590,7 +590,7 @@
 .HeaderNav .navbar-collapse .navbar-nav li:hover:after {
   content: "";
   background-color: #ffd200;
-  height: 4px;
+  height: 3px;
   width: 100%;
   display: block;
   position: absolute;
