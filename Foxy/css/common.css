@@ -1213,6 +1213,9 @@ button.close span {
   font-size: 40px;
   font-weight: 300;
 }
+.cell_size {
+  width: 310px;
+}
 #ShowRegister_Q .modal-body {
   padding-top: 32px;
 }
@@ -1543,14 +1546,27 @@ button.close span {
   min-height: auto !important;
 }
 .ribbon {
-  height: 96px;
+  height: 76px;
   border-left: 2px solid #fed722;
   position: absolute;
+  top: 8px;
 }
 .ribbon .title {
-  font-size: 16px;
-  color: #000000;
+  font-size: 18px;
+  color: #fff;
+  line-height: 41px;
+  padding-left: 12px;
+}
+.ribbon .content {
   background-color: #fed722;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  line-height: 36px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0 6px 6px 0;
+  min-width: 130px;
 }
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
@@ -1620,6 +1636,21 @@ button.close span {
   }
   .title_big {
     font-size: 32px;
+  }
+  .cell_size {
+    width: 270px;
+  }
+  .ribbon {
+    height: 60px;
+  }
+  .ribbon .title {
+    line-height: 32px;
+    font-size: 16px;
+  }
+  .ribbon .content {
+    line-height: 28px;
+    font-size: 26px;
+    min-width: 115px;
   }
 }
 @media (max-width: 768px) {
@@ -1699,11 +1730,14 @@ button.close span {
   .row_bg {
     height: auto;
   }
+  .title_big {
+    min-height: 76px;
+  }
   .title_big br {
     display: none;
   }
   .content_top {
-    margin: 96px 0 64px 0;
+    margin: 96px 0 0 0;
   }
   .img_top {
     margin: 0;
@@ -1799,7 +1833,8 @@ button.close span {
   }
   .title_big {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    min-height: auto;
   }
   .text_content {
     text-align: center;
@@ -2079,6 +2114,31 @@ button.close span {
   }
   .text_content {
     min-height: auto;
+    text-align: left;
+  }
+  .content_top_2 .title_big {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .content_top_2 .title_big br {
+    display: inline-block;
+  }
+  .cell_size {
+    width: 200px;
+  }
+  .ribbon {
+    top: 4px;
+    height: 50px;
+  }
+  .ribbon .title {
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .ribbon .content {
+    line-height: 24px;
+    font-size: 20px;
+    min-width: 90px;
   }
 }
 @media (max-width: 320px) {
@@ -2087,6 +2147,7 @@ button.close span {
     font-size: 14px;
     padding-left: 12px;
     padding-right: 12px;
+    font-weight: bold;
   }
   .swiperphanmem,
   .swiperquanly {
@@ -2102,6 +2163,10 @@ button.close span {
   .row_bg img {
     margin-bottom: 0;
     max-height: 80%;
+    max-width: 80% !important;
+  }
+  .row_bg .img_foxy {
+    max-width: 100% !important;
   }
   .swiperphanmem,
   .swiperquanly {
@@ -2117,5 +2182,30 @@ button.close span {
   .row_bg {
     min-height: 450px;
     height: auto;
+  }
+  .text_content {
+    font-size: 12px;
+  }
+  .content_top_2 .title_big {
+    font-size: 20px;
+  }
+  .cell_size {
+    width: 170px;
+  }
+  .ribbon {
+    top: 2px;
+    height: 42px;
+  }
+  .ribbon .title {
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .ribbon .content {
+    line-height: 20px;
+    font-size: 16px;
+    min-width: 80px;
+  }
+  .package_foxy .color {
+    display: none;
   }
 }
