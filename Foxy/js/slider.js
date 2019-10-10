@@ -35,7 +35,7 @@ $( document ).ready(function() {
 		nextButton: '.swiper-button-next-canhan',
         prevButton: '.swiper-button-prev-canhan',
 		effect: 'fade',
-        autoplay:400000,
+        autoplay:4000,
 		loop: true,
         breakpoints: {
             1024: {
