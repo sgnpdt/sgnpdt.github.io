@@ -166,11 +166,11 @@
 					<div class="title_gift">Tặng ngay</div>
 					<h3 class="title_b">30 ngày sử dụng miễn phí</h3>
 					<p class="content_b">Dành cho khách hàng tải và đăng ký <br>kích hoạt lần đầu tiên ứng dụng FOXY.</p>
-					<div class="hidden-xs-down">
+					<div class="hidden-md-down">
 						<img src="../images/QR_CODE.png" />
 						<p class="scan_tit">Scan để tải ngay</p>
 					</div>
-					<div class="row Shows-xs">
+					<div class="row Shows-md double_btn">
 						<div class="col-md-6 col-12">
 							<div class="btn-primary">Tải ngay ứng dụng</div>
 						</div>

@@ -1818,7 +1818,7 @@ option {
     width: 100%;
   }
   .row_bg img {
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 0px;
   }
   .img_foxy {
@@ -1830,6 +1830,19 @@ option {
   .swipercanhan .swiper-slide {
     background-color: #06080d;
     height: 880px;
+  }
+  .line_foxy:after {
+    display: none;
+  }
+  .package_foxy {
+    margin-top: 16px;
+  }
+  .double_btn {
+    display: flex !important;
+  }
+  .btn-primary,
+  .btn-default {
+    padding: 8px 16px;
   }
 }
 @media (max-width: 475px) {
