@@ -1703,6 +1703,9 @@ option {
     font-size: 26px;
     min-width: 115px;
   }
+  .line_foxy:after {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .container-fluid > .navbar-collapse,
