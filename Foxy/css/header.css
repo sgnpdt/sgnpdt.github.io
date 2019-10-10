@@ -885,6 +885,14 @@
   .navbar-dark .navbar-brand {
     height: 48px;
   }
+  .HeaderNav .navbar-collapse .navbar-nav li {
+    width: 100%;
+    display: block;
+  }
+  .HeaderNav .navbar-collapse .navbar-nav li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
 }
 @media (max-width: 475px) {
   .group_link_header a,

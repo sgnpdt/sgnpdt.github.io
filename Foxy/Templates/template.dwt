@@ -31,7 +31,6 @@
 <script src="../js/swiper.min.js"></script>
 <script src="../js/slider.js"></script>
 <script src="../js/common.js"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -84,8 +83,9 @@
 
 				  <div class="collapse navbar-collapse" id="navbarsExample03">
 					<ul class="navbar-nav mr-auto" id="menu">
-					  <li data-menuanchor="firstPage" class="hidden-xs-down active">
-						<a class="icon_home" href="#firstPage"></a>
+					  <li data-menuanchor="firstPage" class=" active">
+						<!--<a class="icon_home" href="#firstPage"></a>-->
+						  <a class="" href="#firstPage">Trang chủ</a>
 					  </li>
 					  <li data-menuanchor="secondPage" class=" ">
 						<a class="" href="#secondPage">Về Foxy</a>

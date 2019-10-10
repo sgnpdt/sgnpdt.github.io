@@ -1161,6 +1161,8 @@ button:focus {
 #fp-nav ul li,
 .fp-slidesNav ul li {
   margin: 8px;
+  width: 12px;
+  height: 12px;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -1172,9 +1174,10 @@ button:focus {
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #fed722;
+  margin: -5px 0 0 -5px;
 }
 .icon_help {
   background-image: url(../images/help.png);
@@ -1215,6 +1218,9 @@ button.close span {
 }
 .cell_size {
   width: 310px;
+}
+.fix_offset {
+  margin-left: 3%;
 }
 #ShowRegister_Q .modal-body {
   padding-top: 32px;
@@ -1570,6 +1576,7 @@ button.close span {
 }
 .img_top img {
   background-color: #06080d;
+  float: right;
 }
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
