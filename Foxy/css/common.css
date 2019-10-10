@@ -1288,7 +1288,8 @@ button.close span {
   color: #fff;
   margin-bottom: 42px;
 }
-#Showregister input {
+#Showregister input,
+#Showregister select {
   background-color: transparent;
   border: 1px solid #818a93;
   color: #414141;
@@ -1602,6 +1603,15 @@ button.close span {
   top: 76px;
   right: -6px;
   content: "";
+}
+select:required:invalid {
+  color: gray !important;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: #414141;
 }
 .img_foxy_m {
   display: none;
@@ -2258,5 +2268,8 @@ button.close span {
   }
   .package_foxy .color {
     display: none;
+  }
+  .row_bg_top img {
+    max-width: 90% !important;
   }
 }

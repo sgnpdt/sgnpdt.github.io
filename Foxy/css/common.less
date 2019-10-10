@@ -568,7 +568,7 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.modal-body{background-color: #06080d;padding: 40px;}
 	button.close span {color: #fff;text-shadow: none;}
 	h5{color: #fff;margin-bottom: 42px;}
-	input{background-color: transparent;border: 1px solid #818a93;color: #414141;margin-bottom: 16px;}
+	input,select{background-color: transparent;border: 1px solid #818a93;color: #414141;margin-bottom: 16px;}
 	.info_cus{margin-top:12px;padding-right: 24px;}
 	.btn-send{width: 100%;background-color: @primary-color;border:1px solid @primary-color;color: @black-color;
 		&:hover,&:focus{color: @black-color !important;background-color: #ffd200;border: 1px solid @primary-color;}
@@ -646,6 +646,15 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 #fp-nav.fp-left{left: 8px;}
 .line_foxy{position: relative;
 	&:after{width: 11px;height: 358px;.source-icon-line-foxy();display: block;position: absolute;top:76px;right: -6px;content: "";}
+}
+select:required:invalid {
+  color: gray !important;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: #414141;
 }
 .img_foxy_m{display: none};
 
@@ -877,4 +886,7 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 		.content{line-height: 20px;font-size: 16px;min-width: 80px;}
 	}
 	.package_foxy .color{display: none;}
+	.row_bg_top{
+		img{max-width: 90% !important;}
+	}
 }
