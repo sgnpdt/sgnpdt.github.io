@@ -161,8 +161,8 @@
 .swiper-pagination-bullet {
   border: none;
   opacity: 0.87;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #ffd200;
