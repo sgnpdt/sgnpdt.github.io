@@ -889,6 +889,7 @@
     border-radius: 0 0 16px 16px;
     overflow: hidden;
     padding-top: 8px;
+    max-width: 180px;
   }
   .HeaderNav .navbar-collapse .navbar-nav li {
     margin-left: 0;
@@ -1029,6 +1030,8 @@
   .HeaderNav .navbar-collapse .navbar-nav li {
     padding-top: 4px;
     padding-bottom: 4px;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 @media (max-width: 375px) {

@@ -1799,11 +1799,14 @@ option {
     width: auto;
     float: none;
   }
+  .row_bg {
+    background-color: #06080d;
+  }
   .row_bg img {
     display: block;
     margin: 48px auto 0 auto;
     max-width: 600px;
-    max-height: 560px;
+    max-height: 530px;
     width: auto;
   }
   #Showregister .info_cus {
@@ -1816,7 +1819,7 @@ option {
   }
   .row_bg img {
     max-width: 100%;
-    margin-top: 24px;
+    margin-top: 0px;
   }
   .img_foxy {
     display: none !important;
@@ -1824,8 +1827,16 @@ option {
   .img_foxy_m {
     display: block !important;
   }
+  .swipercanhan .swiper-slide {
+    background-color: #06080d;
+    height: 880px;
+  }
 }
 @media (max-width: 475px) {
+  .swipercanhan .swiper-slide {
+    background-color: #06080d;
+    height: auto;
+  }
   .item.big {
     margin-bottom: 10px !important;
   }
@@ -2219,7 +2230,7 @@ option {
     margin-top: 0;
   }
   .title_big {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 16px;
   }
   .row_bg {
