@@ -1759,11 +1759,12 @@ button.close span {
     max-width: 520px;
     max-height: 560px;
     width: auto;
+    float: none;
   }
   .row_bg img {
     display: block;
     margin: 48px auto 0 auto;
-    max-width: 520px;
+    max-width: 600px;
     max-height: 560px;
     width: auto;
   }

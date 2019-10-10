@@ -825,15 +825,24 @@
 @media (max-width: 768px) {
   .HeaderNav .navbar-collapse .navbar-nav li a {
     font-size: 14px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .HeaderNav .navbar-collapse {
     text-align: left;
   }
   .HeaderNav .navbar-collapse .navbar-nav li {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .HeaderNav .icon_phone {
+    margin-right: 4px;
+  }
+  .bg_color .line {
+    display: none;
+  }
+  .logo_th {
+    top: 0;
   }
 }
 @media (max-width: 576px) {
@@ -856,6 +865,15 @@
   .navbar {
     height: 48px;
     z-index: 2;
+    display: inline-block;
+  }
+  .line_logo {
+    top: 16px;
+  }
+  .navbar .logo_th img {
+    width: 100px;
+    position: relative;
+    top: 2px;
   }
   .HeaderNav .navbar-collapse .navbar-nav {
     width: 50%;
@@ -915,6 +933,17 @@
   .HeaderNav .navbar-collapse .navbar-nav li {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+  .navbar-toggler {
+    float: right;
+    margin-top: 5px;
+  }
+  .bg_color .line {
+    background-color: #000000 !important;
+    display: inline-block;
+  }
+  .bg_color .hotline {
+    color: #000000;
   }
 }
 @media (max-width: 475px) {
