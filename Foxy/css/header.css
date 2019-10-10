@@ -51,6 +51,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-line-foxy {
+  background-image: url(../images/line_foxy.png);
+  background-image: -webkit-image-set(url(../images/line_foxy.png) 1x, url(../images/line_foxy@2x.png) 2x, url(../images/line_foxy@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;
