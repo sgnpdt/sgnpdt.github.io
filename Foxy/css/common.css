@@ -1890,9 +1890,13 @@ option {
     margin-bottom: 0;
   }
   .title_big {
-    text-align: center;
-    font-size: 24px;
+    text-align: left;
+    font-size: 22px;
     min-height: auto;
+    margin-bottom: 12px;
+  }
+  .title_big br {
+    display: block;
   }
   .text_content {
     text-align: center;
@@ -2176,8 +2180,8 @@ option {
   }
   .content_top_2 .title_big {
     text-align: left;
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 22px;
+    margin-bottom: 0px;
   }
   .content_top_2 .title_big br {
     display: inline-block;
@@ -2186,7 +2190,7 @@ option {
     width: 200px;
   }
   .ribbon {
-    top: 4px;
+    top: 0px;
     height: 50px;
   }
   .ribbon .title {
