@@ -869,6 +869,7 @@
   }
   .line_logo {
     top: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
   }
   .navbar .logo_th img {
     width: 100px;
