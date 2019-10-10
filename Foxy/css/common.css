@@ -1809,6 +1809,9 @@ option {
     max-height: 530px;
     width: auto;
   }
+  .row_bg .img_foxy_m {
+    max-width: 460px;
+  }
   #Showregister .info_cus {
     margin-top: 0;
     margin-bottom: 24px;
