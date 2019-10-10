@@ -1578,6 +1578,9 @@ button.close span {
   background-color: #06080d;
   float: right;
 }
+#fp-nav.fp-left {
+  left: 8px;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;

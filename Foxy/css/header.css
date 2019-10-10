@@ -783,6 +783,29 @@
 .navbar img {
   padding-left: 12px;
 }
+.bg_color .line {
+  background-color: #fed722 !important;
+  height: 18px;
+  top: 1px;
+}
+.bg_color .hotline {
+  color: #fed722;
+}
+.line_logo {
+  width: 1px;
+  height: 18px;
+  display: inline-block;
+  background-color: #ffffff ;
+  position: relative;
+  top: 4px;
+}
+.logo_th {
+  position: relative;
+  top: 2px;
+}
+.navbar-brand {
+  margin-right: 0.7rem;
+}
 @media (max-width: 1024px) {
   .HeaderContent .logo img {
     width: 150px;
