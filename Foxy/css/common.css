@@ -57,6 +57,13 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.source-icon-location {
+  background-image: url(../images/icon_location.png);
+  background-image: -webkit-image-set(url(../images/icon_location.png) 1x, url(../images/icon_location@2x.png) 2x, url(../images/icon_location@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1290,7 +1297,7 @@ button.close span {
 }
 #Showregister input,
 #Showregister select {
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #818a93;
   color: #414141;
   margin-bottom: 16px;
@@ -1619,6 +1626,33 @@ option {
 .g-recaptcha {
   margin-bottom: 14px;
 }
+.get_location {
+  width: 40px;
+  height: 36px;
+  background-image: url(../images/icon_location.png);
+  background-image: -webkit-image-set(url(../images/icon_location.png) 1x, url(../images/icon_location@2x.png) 2x, url(../images/icon_location@3x.png) 3x);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  content: "";
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.get_location:after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  display: inline-block;
+  background-color: #818a93;
+  position: relative;
+  top: 6px;
+  left: 0px;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
@@ -1645,6 +1679,12 @@ option {
   .item img {
     height: 184px;
     width: 184px;
+  }
+  .Shows-md.double_btn {
+    display: flex !important;
+  }
+  .fix_offset {
+    margin-left: 2%;
   }
 }
 @media (max-width: 1024px) {
@@ -2013,7 +2053,7 @@ option {
     margin: 0 auto;
   }
   #ShowFPTmember .modal-content {
-    background-color: transparent;
+    background-color: #ffffff;
   }
   #ShowFPTmember .balloon {
     width: 110px;
@@ -2079,7 +2119,7 @@ option {
     margin: 0 auto;
   }
   #Showregister .modal-content {
-    background-color: transparent;
+    background-color: #ffffff;
   }
   #Showregister .phone_mem {
     width: 214px;
@@ -2160,6 +2200,9 @@ option {
   #Showthank .modal-dialog {
     width: 90%;
     margin: 0 auto;
+  }
+  #Showthank .modal-content {
+    background-color: #ffffff;
   }
   #Showthank .modal-body-mobile {
     border-radius: 0.3rem;

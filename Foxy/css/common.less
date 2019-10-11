@@ -568,7 +568,7 @@ button.close{height: 40px;width: 40px;position: absolute;top:0;right: 0;z-index:
 	.modal-body{background-color: #06080d;padding: 40px;}
 	button.close span {color: #fff;text-shadow: none;}
 	h5{color: #fff;margin-bottom: 42px;}
-	input,select{background-color: transparent;border: 1px solid #818a93;color: #414141;margin-bottom: 16px;}
+	input,select{background-color: #fff;border: 1px solid #818a93;color: #414141;margin-bottom: 16px;}
 	.info_cus{margin-top:12px;padding-right: 24px;}
 	.btn-send{width: 100%;background-color: @primary-color;border:1px solid @primary-color;color: @black-color;
 		&:hover,&:focus{color: @black-color !important;background-color: #ffd200;border: 1px solid @primary-color;}
@@ -658,6 +658,9 @@ option {
 }
 .img_foxy_m{display: none};
 .g-recaptcha{margin-bottom: 14px;}
+.get_location{width: 40px;height: 36px;.source-icon-location();display: block;position: absolute;top:1px;right: 1px;content: "";background-color: #fff;border-radius: 0 4px 4px 0;cursor: pointer;
+	&:after{content: "";width: 1px;height: 24px;display: inline-block;background-color: #818a93;position: relative;top: 6px;left: 0px;}
+}
 
 @media (max-width: 1440px){
 	#fp-nav.fp-left{left: 4px;}
@@ -671,6 +674,8 @@ option {
 @media (max-width: 1200px){
 	.item.big img {height: 455px;width: 455px;}
 	.item img{height: 184px;width: 184px;}
+	.Shows-md.double_btn{display: flex !important;}
+	.fix_offset{margin-left: 2%}
 }
 @media (max-width: 1024px){
 	.group_item{margin-top: 36px;}
@@ -804,7 +809,7 @@ option {
 	}
 	#ShowFPTmember .modal-dialog{width: 90%;margin: 0 auto;}
 	#ShowFPTmember{
-		.modal-content{background-color: transparent;}
+		.modal-content{background-color: #ffffff;}
 		.balloon{width: 110px;height: 180px;.source-icon-balloon();display: block;position: absolute;top:-53px;left: -8px;z-index: 2;}
 		.modal-body-mobile{background-color: #ebebeb;}
 		button.close{top:0;right: 0;}
@@ -819,7 +824,7 @@ option {
 		button.close span{color: #000;}
 		
 		.modal-dialog{width: 90%;margin: 0 auto;}
-		.modal-content{background-color: transparent;}
+		.modal-content{background-color: #ffffff;}
 		.phone_mem{width: 214px;height: 250px;.source-icon-phone-mem();display: block;position: absolute;top:-157px;left: 7px;z-index: 2;}
 		.modal-body-mobile{background-color: #ebebeb;}
 		button.close{top:0;right: 0;}
@@ -838,6 +843,7 @@ option {
 	}
 	#Showthank {
 		.modal-dialog{width: 90%;margin: 0 auto;}
+		.modal-content{background-color: #ffffff;}
 		.modal-body-mobile{border-radius: 0.3rem;position: relative;padding-top: 48px;height: auto;padding-bottom: 2rem;
 			
 			.title_b{font-size: 20px;font-weight: bold;color: @black-color;margin-bottom: 14px;}

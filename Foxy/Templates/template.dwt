@@ -229,14 +229,17 @@
 								<input type="text" class="form-control" placeholder="Họ tên" required>
 								<input type="number" class="form-control" placeholder="Số điện thoại" required>
 								<input type="email" class="form-control" placeholder="Email" required>
-								<select required class="form-control">
-									<option value="" selected disabled>Bạn đang ở khu vực nào?</option>
-									<option>Hồ Chí Minh</option>
-									<option>Hà Nội</option>
-									<option>Hải Phòng</option>
-									<option>Lạng Sơn</option>
-									<option>Bắc Ninh</option>
-								</select>
+								<div class="position-relative">
+									<select required class="form-control">
+										<option value="" selected disabled>Bạn đang ở khu vực nào?</option>
+										<option>Hồ Chí Minh</option>
+										<option>Hà Nội</option>
+										<option>Hải Phòng</option>
+										<option>Lạng Sơn</option>
+										<option>Bắc Ninh</option>
+									</select>
+									<span class="get_location"></span>
+								</div>
 								<!--Re-Captcha here-->
 								<button type="submit" class="btn btn-primary btn-send">Gửi Đi</button>
 							</div>
