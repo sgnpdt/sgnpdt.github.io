@@ -1616,6 +1616,9 @@ option {
 .img_foxy_m {
   display: none;
 }
+.g-recaptcha {
+  margin-bottom: 14px;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
@@ -2189,7 +2192,7 @@ option {
     margin-bottom: 0;
   }
   .row_bg img.img_foxy {
-    max-width: 100%;
+    max-width: 85%;
   }
   .fp-section.fp-table,
   .fp-slide.fp-table {
