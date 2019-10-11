@@ -29,6 +29,7 @@
 <script type="text/javascript" src="../js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="../js/fullpage.js"></script>
 <script src="../js/swiper.min.js"></script>
+<script src="../js/lottie-player.js"></script>
 <script src="../js/slider.js"></script>
 <script src="../js/common.js"></script>
 </head>
