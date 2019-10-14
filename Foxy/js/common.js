@@ -58,7 +58,11 @@ $( document ).ready(function() {
 	$('.modal').on('shown.bs.modal', function (e) {
 	    $('.navbar-toggler').addClass("collapsed");
 		$('.navbar-collapse').removeClass("show");
+		
 	});
 	
+	$('#Showregister').on('shown.bs.modal', function (e) {
+		$(this).modal({backdrop: 'static', keyboard: false});
+	});
 	
 });
