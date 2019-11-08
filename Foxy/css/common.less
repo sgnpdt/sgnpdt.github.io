@@ -40,6 +40,7 @@
 	}
 }
 body{font-family:"Roboto";font-size:14px;height: 100%;/*background-image: linear-gradient(to bottom, #06080d, #131a2b)*/ ;overflow-x: hidden;background-color: #06080d;}
+body *{box-sizing: border-box;}
 html{height:100%}
 .right{float: right;}
 .left{float: left;}
@@ -324,8 +325,8 @@ a[x-apple-data-detectors] {
     font-size: 16px;text-align: center;
     cursor: pointer !important;
     text-transform: uppercase;
-    height: 40px;
-    padding: 8px 20px;line-height: 24px;
+    
+    padding: 7px 20px;line-height: 24px;
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -342,8 +343,8 @@ a[x-apple-data-detectors] {
     font-size: 16px;text-align: center;display: inline-block;
     cursor: pointer !important;
     text-transform: uppercase;
-    height: 40px;
-    padding: 8px 20px;line-height: 24px;
+   
+    padding: 7px 20px;line-height: 24px;
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -662,6 +663,16 @@ option {
 	&:after{content: "";width: 1px;height: 24px;display: inline-block;background-color: #818a93;position: relative;top: 6px;left: 0px;}
 }
 .animation_img{float: right;}
+
+.swiperphanmem .offset-md-1{margin-left: 4%;}
+.title_bg{font-size: 39px;font-weight: bold;color: #000;background-color: #fdd621;text-transform: uppercase;display: inline-block;height: 60px;line-height: 60px;padding-left: 16px;padding-right: 16px;border-radius: 0 12px 12px 0;margin-bottom: 30px;}
+.bg_iphone{.source-bg-iphone();position: relative;width: 100%;height: 100%;
+	video{position: absolute;top:20%;left:11.3%;width: 76.8%;}
+}
+.d-tablet{display: table !important;}
+.bg_iphone_table{height: 480px;width: 100%;
+	.d-table-cell{vertical-align: middle;}
+}
 
 @media (max-width: 1440px){
 	#fp-nav.fp-left{left: 4px;}

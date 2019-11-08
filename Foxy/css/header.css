@@ -64,6 +64,12 @@
   background-size: 50%;
   background-position: center center;
 }
+.source-bg-iphone {
+  background-image: url(../images/Phone_VideoPlayer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;
