@@ -2470,7 +2470,7 @@ option {
   }
   .bg_iphone:after {
     background-size: contain;
-    top: -18%;
+    top: 0%;
   }
   .title_bg {
     font-size: 20px;
@@ -2479,6 +2479,9 @@ option {
   }
   .modal-body-tintuc {
     padding: 1rem;
+  }
+  .bg_iphone_table {
+    height: 280px;
   }
 }
 @media (max-width: 320px) {
