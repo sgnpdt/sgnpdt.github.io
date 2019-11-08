@@ -12,11 +12,11 @@ $( document ).ready(function() {
         breakpoints: {
             1024: {
                 slidesPerView: 1,
-                spaceBetween: 10
+                spaceBetween: 0
             },
             768: {
                 slidesPerView: 1,
-                spaceBetween: 8
+                spaceBetween: 0
             },
             640: {
                 slidesPerView: 1,
@@ -40,11 +40,11 @@ $( document ).ready(function() {
         breakpoints: {
             1024: {
                 slidesPerView: 1,
-                spaceBetween: 10
+                spaceBetween: 0
             },
             768: {
                 slidesPerView: 1,
-                spaceBetween: 8
+                spaceBetween: 0
             },
             640: {
                 slidesPerView: 1,

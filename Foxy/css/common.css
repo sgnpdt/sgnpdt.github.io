@@ -1913,6 +1913,9 @@ option {
   .line_foxy:after {
     display: none;
   }
+  .bg_iphone video {
+    top: 32.5%;
+  }
 }
 @media (max-width: 768px) {
   .container-fluid > .navbar-collapse,
@@ -2056,6 +2059,18 @@ option {
   .btn-primary,
   .btn-default {
     padding: 8px 16px;
+  }
+  .bg_iphone:after {
+    left: 0;
+  }
+  .bg_iphone video {
+    top: 23.1%;
+  }
+  .row_bg {
+    margin: 0;
+  }
+  .title_big_event {
+    min-height: auto;
   }
 }
 @media (max-width: 475px) {
@@ -2444,6 +2459,23 @@ option {
   }
   .row_bg_top img {
     max-height: 330px;
+  }
+  .bg_iphone {
+    background-image: none;
+  }
+  .bg_iphone video {
+    width: 100%;
+    left: 0;
+    top: 12%;
+  }
+  .bg_iphone:after {
+    background-size: contain;
+    top: -18%;
+  }
+  .title_bg {
+    font-size: 20px;
+    line-height: 36px;
+    height: 36px;
   }
 }
 @media (max-width: 320px) {
