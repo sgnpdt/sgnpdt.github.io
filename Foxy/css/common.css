@@ -70,6 +70,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-bg-confetti {
+  background-image: url(../images/confetti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1663,9 +1669,6 @@ option {
 .animation_img {
   float: right;
 }
-.swiperphanmem .offset-md-1 {
-  margin-left: 4%;
-}
 .title_bg {
   font-size: 39px;
   font-weight: bold;
@@ -1678,7 +1681,10 @@ option {
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 0 12px 12px 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.list_btn_iphone {
+  margin-top: 20px;
 }
 .bg_iphone {
   background-image: url(../images/Phone_VideoPlayer.png);
@@ -1688,12 +1694,26 @@ option {
   position: relative;
   width: 100%;
   height: 100%;
+  background-size: contain;
 }
 .bg_iphone video {
   position: absolute;
-  top: 20%;
-  left: 11.3%;
-  width: 76.8%;
+  top: 24.2%;
+  left: 16.8%;
+  width: 66%;
+}
+.bg_iphone:after {
+  background-image: url(../images/confetti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: -48px;
+  content: "";
+  background-size: contain;
+  width: 100%;
+  height: 100%;
 }
 .d-tablet {
   display: table !important;
@@ -1705,12 +1725,104 @@ option {
 .bg_iphone_table .d-table-cell {
   vertical-align: middle;
 }
+.modal-xl-tintuc {
+  max-width: 1390px;
+}
+.modal-xl-tintuc button.close span {
+  color: #fff;
+}
+.modal-xl-tintuc .modal-content {
+  background-color: transparent;
+}
+.modal-body-tintuc {
+  background-color: #06080d;
+  padding: 3rem;
+  background: #131a2b;
+  background: -moz-linear-gradient(45deg, #131a2b 0%, #030407 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #131a2b), color-stop(100%, #030407));
+  background: -webkit-linear-gradient(45deg, #131a2b 0%, #030407 100%);
+  background: -o-linear-gradient(45deg, #131a2b 0%, #030407 100%);
+  background: -ms-linear-gradient(45deg, #131a2b 0%, #030407 100%);
+  background: linear-gradient(45deg, #131a2b 0%, #030407 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131a2b', endColorstr='#030407', GradientType=1);
+}
+.modal-body-tintuc .content {
+  margin-bottom: 32px;
+}
+.modal-body-tintuc .date {
+  color: #7a7a7a;
+  font-size: 12px;
+  margin-bottom: 0.6rem;
+}
+.modal-body-tintuc .title_b {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+}
+.modal-body-tintuc .content_b {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+.modal-body-tintuc .btn-primary {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.modal-body-tintuc .scan-link {
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 24px;
+}
+.modal-body-tintuc .scan-link .scan {
+  font-size: 16px;
+  margin-bottom: 0.4rem;
+}
+.modal-body-tintuc .scan-link a {
+  margin-top: 12px;
+  display: block;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
   }
   .package_foxy {
     width: 100%;
+  }
+  .bg_iphone video {
+    top: 29.1%;
+  }
+  .title_big {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .title_bg {
+    font-size: 28px;
+    line-height: 42px;
+    height: 42px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+    border-radius: 0 8px 8px 0;
+  }
+  .text_content {
+    font-size: 16px;
+  }
+  .content_scan {
+    margin-top: 32px;
+  }
+  .cell_size {
+    width: 276px;
+  }
+  .ribbon {
+    top: 0;
+  }
+  .ribbon .content {
+    font-size: 26px;
   }
 }
 @media (max-width: 1400px) {

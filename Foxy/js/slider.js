@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 	var swiper1 = new Swiper('.swiper-container.swiper_phanmem_sp', {
-
+		pagination: '.swiper-pagination-phanmem_sp',
         paginationClickable: true,
         slidesPerView: 1,
 		nextButton: '.swiper-button-next-phanmem_sp',

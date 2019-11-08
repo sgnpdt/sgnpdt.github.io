@@ -70,6 +70,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-bg-confetti {
+  background-image: url(../images/confetti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;
