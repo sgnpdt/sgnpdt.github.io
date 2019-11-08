@@ -64,5 +64,5 @@ $( document ).ready(function() {
 	$('#Showregister').on('shown.bs.modal', function (e) {
 		$(this).modal({backdrop: 'static', keyboard: false});
 	});
-	
+	$( window ).load(function() { $( '.clip_tvc' ).get(0).play(); }); 
 });
