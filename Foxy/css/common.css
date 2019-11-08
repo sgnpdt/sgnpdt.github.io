@@ -2477,6 +2477,9 @@ option {
     line-height: 36px;
     height: 36px;
   }
+  .modal-body-tintuc {
+    padding: 1rem;
+  }
 }
 @media (max-width: 320px) {
   .btn-default,
