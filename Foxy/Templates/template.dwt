@@ -23,6 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
 <link rel="stylesheet" type="text/css" href="../css/fullpage.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.min.css">
 <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 <link rel="stylesheet" type="text/css" href="../css/header.css">
@@ -34,6 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="../js/fullpage.js"></script>
+<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script src="../js/lottie-player.js"></script>
 <script src="../js/slider.js"></script>
@@ -181,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<h3 class="title_b">30 ngày sử dụng miễn phí</h3>
 					<p class="content_b">Dành cho khách hàng tải và đăng ký <br>kích hoạt lần đầu tiên ứng dụng FOXY.</p>
 					<div class="hidden-md-down">
-						<img src="../images/QR_CODE.png" />
+						<img src="../images/QR_CODE.png" alt="" />
 						<p class="scan_tit">Scan để tải ngay</p>
 					</div>
 					<div class="row Shows-md double_btn">
@@ -303,38 +305,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</button>
             <div class="modal-body modal-body-mobile modal-body-tintuc">
 				
-				<div class="">
+				<div class="content_scroll mCustomScrollbar">
 					<div class="row">
 						<div class="col-lg-9">
-							<p class="date">Thứ Hai, 11/11/2019</p>
-							<div class="content"> 
-								<h3 class="title_b">Đăng ký FOXY - RINH IPHONE 11</h3>
-								<p class="content_b">Ứng dụng di động Foxy - ứng dụng cho phép bạn thưởng thức các nội dung yêu thích của TRUYỀN HÌNH FPT mọi lúc mọi nơi bằng các thiết bị di động. Bao gồm điện thoại di động và máy tính bảng.
-	Từ ngày 11/11/2019, khách hàng đăng ký Foxy sẽ nhận được ngay 30 ngày sử dụng miễn phí. Ngoài ra, khách hàng còn có cơ hội bốc thăm trúng thưởng 04 chiếc điện thoại Iphone 11 cùng nhiều phần quà may mắn khác.</p>
-							</div>
-							<div class="content"> 
-								<h3 class="title_b">Điều kiện tham gia chương trình khuyến mãi</h3>
-								<p class="content_b">Khách hàng tham gia chương trình khuyến mãi <strong>“ĐĂNG KÝ FOXY - RING NGAY IPHONE 11!”</strong> cần đáp ứng đủ hai (02) điều kiện dưới đây</p>
-								<p class="content_b">-	Khách hàng là thuê bao của Truyền hình FPT. Đăng ký <strong>MỚI</strong> ứng dụng Foxy từ ngày 11/11/2019 đến hết ngày 31/12/2019</p>
-								<p class="content_b">-	Hợp đồng của Khách hàng đã kích hoạt ứng dụng Foxy trước thời điểm quay thưởng</p>
-								<p class="content_b"><strong>Phạm vi áp dụng:</strong> Toàn quốc</p>
-								<p class="content_b"><strong>Thời gian áp dụng:</strong> từ ngày 11/11/2019 đến hết ngày 31/12/2019</p>
-								<p class="content_b"><strong>Cơ cấu giải thưởng:</strong> </p>
-								<p class="content_b">4 giải đặc biệt: 4 điện thoại iphone 11.</p>
-								<p class="content_b">Tổng giá trị giải thưởng 87,600,000</p>
-								<p class="content_b">Ghi chú: Các giải thưởng hiện vật không được quy đổi thành tiền mặt</p>
+							
+								<p class="date">Thứ Hai, 11/11/2019</p>
+								<div class="content"> 
+									<h3 class="title_b">Đăng ký FOXY - RINH IPHONE 11</h3>
+									<p class="content_b">Ứng dụng di động Foxy - ứng dụng cho phép bạn thưởng thức các nội dung yêu thích của <span class="color_text">TRUYỀN HÌNH FPT</span> mọi lúc mọi nơi bằng các thiết bị di động. Bao gồm điện thoại di động và máy tính bảng.
+		Từ ngày <span class="color_text">11/11/2019</span>, khách hàng đăng ký Foxy sẽ nhận được <span class="color_text">ngay 30 ngày sử dụng miễn phí</span>. </p>
+									<p class="content_b">Ngoài ra, khách hàng còn có cơ hội bốc thăm trúng thưởng 04 chiếc điện thoại Iphone 11 cùng nhiều phần quà may mắn khác.</p>
+								</div>
+								<div class="content"> 
+									<h3 class="title_b">Điều kiện tham gia chương trình khuyến mãi</h3>
+									<p class="content_b">Khách hàng tham gia chương trình khuyến mãi “<strong class="color_text">ĐĂNG KÝ FOXY - RING NGAY IPHONE 11!</strong>” cần đáp ứng đủ hai (02) điều kiện dưới đây</p>
+									<p class="content_b">-	Khách hàng là <span class="color_text">thuê bao của Truyền hình FPT</span>. Đăng ký <strong class="color_text">MỚI</strong> ứng dụng Foxy từ ngày 11/11/2019 đến hết ngày 31/12/2019</p>
+									<p class="content_b">-	Hợp đồng của Khách hàng đã <span class="color_text">kích hoạt ứng dụng Foxy</span> trước thời điểm quay thưởng</p>
+									<p class="content_b"><strong>Phạm vi áp dụng:</strong> Toàn quốc</p>
+									<p class="content_b"><strong>Thời gian áp dụng:</strong> từ ngày 11/11/2019 đến hết ngày 31/12/2019</p>
+									<p class="content_b"><strong>Cơ cấu giải thưởng:</strong> </p>
+									<p class="content_b">4 giải đặc biệt: <span class="color_text">4 điện thoại iphone 11</span>.</p>
+									<p class="content_b">Tổng giá trị giải thưởng <span class="color_text">87,600,000</span></p>
+									<p class="content_b">Ghi chú: Các giải thưởng hiện vật không được quy đổi thành tiền mặt</p>
 
-							</div>
-							<div class="content"> 
-								<h3 class="title_b">Quy định về bằng chứng xác định trúng thưởng</h3>
-								<p class="content_b">Mã số tham dự của khách hàng là mã số của bộ giải mã (MAC box) (là bộ số và chữ cái gồm 12 ký tự được in ở bên dưới bộ giải mã Truyền hình).</p>
-								<p class="content_b">Nếu Khách hàng sử dụng nhiều bộ giải mã thì MAC box của bộ giải mã chính được sử dụng làm mã số quay thưởng của Khách hàng.</p>
-								<p class="content_b">Thông tin trên Chứng minh nhân dân/ Hộ chiếu/ Thẻ căn cước của Khách hàng phải trùng khớp với thông tin của Chủ hợp đồng được lưu trên hệ thống của FPT Telecom.</p>
-								<p class="content_b">Truyền hình FPT có quyền từ chối trao thưởng cho Khách hàng cung cấp thông tin khác với thông tin Chủ hợp đồng dịch vụ.</p>
-							</div>
+								</div>
+								<div class="content"> 
+									<h3 class="title_b">Quy định về bằng chứng xác định trúng thưởng</h3>
+									<p class="content_b">Mã số tham dự của khách hàng là <span class="color_text">mã số của bộ giải mã</span> (MAC box) (là bộ số và chữ cái gồm 12 ký tự được in ở bên dưới bộ giải mã Truyền hình).</p>
+									<p class="content_b">Nếu Khách hàng sử dụng nhiều bộ giải mã thì <span class="color_text">MAC box của bộ giải mã chính</span> được sử dụng làm mã số quay thưởng của Khách hàng.</p>
+									<p class="content_b">Thông tin trên <span class="color_text">Chứng minh nhân dân/ Hộ chiếu/ Thẻ căn cước</span> của Khách hàng phải trùng khớp với thông tin của Chủ hợp đồng được lưu trên hệ thống của FPT Telecom.</p>
+									<p class="content_b">Truyền hình FPT có quyền từ chối trao thưởng cho Khách hàng cung cấp thông tin khác với thông tin Chủ hợp đồng dịch vụ.</p>
+								</div>
 						</div>
 						<div class="col-lg-3">
-							<img alt="" src="../images/iphone_pb.png" />
+							<img class="iphone_popup" alt="" src="../images/iphone_pb.png" />
 							<div class="btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#ShowRegister_Q">Đăng ký ngay</div>
 							<div class="scan-link">
 								<p class="scan">SCAN ĐỂ TẢI NGAY</p>

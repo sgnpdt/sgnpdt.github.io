@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+	$(".content_scroll").mCustomScrollbar();
+	
 	var navMain = $(".navbar-collapse"); // avoid dependency on #id
      // "a:not([data-toggle])" - to avoid issues caused
      // when you have dropdown inside navbar
@@ -97,5 +99,6 @@ $( document ).ready(function() {
 	$(".clip_tvc").on('pause', function() {
 	  $(".icon_play").show();
 	});
+	
 	
 });

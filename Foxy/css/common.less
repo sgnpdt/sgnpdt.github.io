@@ -699,6 +699,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	
 }
 .icon_play{.source-icon-play();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;}
+.content_scroll{height: calc(~"100%");}
+.color_text{color:#fdd621;}
 
 @media (max-width: 1440px){
 	#fp-nav.fp-left{left: 4px;}
@@ -806,6 +808,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	}
 	.row_bg{margin: 0;}
 	.title_big_event{    min-height: auto;}
+	.iphone_popup{width: 50%;display: block;margin: 0 auto;}
 }
 
 @media (max-width: 475px){
@@ -940,11 +943,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	.bg_iphone:after{    background-size: contain;top: 0%;display: none;}
 	.title_bg{font-size: 20px;line-height: 36px;height: 36px;}
 	.modal-body-tintuc{padding: 1rem}
-	.bg_iphone_table{height: 280px;}
+	.bg_iphone_table{height: 240px;}
+	.modal-body-tintuc{padding-right: 0;}
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: rgba(255,255,255,0);}
 }
 
 @media (max-width: 320px){
-	.btn-default,.btn-primary{font-size: 14px !important;padding-left: 12px;padding-right: 12px;font-weight: bold;}
+	.btn-default,.btn-primary{font-size: 13px !important;padding-left: 12px;padding-right: 12px;font-weight: bold;}
 	.swiperphanmem, .swiperquanly{margin-top: 0;}
 	.title_big{font-size: 20px;margin-bottom: 16px;
 		
@@ -978,4 +983,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 		p{font-size: 13px;}
 	}
 	.text_help p{font-size: 16px;}
+	.bg_iphone video, .bg_iphone .youtube{top:16%;}
+	.bg_iphone_table{height: 220px;}
 }

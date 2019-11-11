@@ -1809,6 +1809,12 @@ option {
   z-index: 2;
   background-size: contain;
 }
+.content_scroll {
+  height: calc(100%);
+}
+.color_text {
+  color: #fdd621;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
@@ -2097,6 +2103,11 @@ option {
   }
   .title_big_event {
     min-height: auto;
+  }
+  .iphone_popup {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
   }
 }
 @media (max-width: 475px) {
@@ -2509,13 +2520,19 @@ option {
     padding: 1rem;
   }
   .bg_iphone_table {
-    height: 280px;
+    height: 240px;
+  }
+  .modal-body-tintuc {
+    padding-right: 0;
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 @media (max-width: 320px) {
   .btn-default,
   .btn-primary {
-    font-size: 14px !important;
+    font-size: 13px !important;
     padding-left: 12px;
     padding-right: 12px;
     font-weight: bold;
@@ -2594,5 +2611,12 @@ option {
   }
   .text_help p {
     font-size: 16px;
+  }
+  .bg_iphone video,
+  .bg_iphone .youtube {
+    top: 16%;
+  }
+  .bg_iphone_table {
+    height: 220px;
   }
 }
