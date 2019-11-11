@@ -2689,4 +2689,10 @@ option {
   .content_scroll {
     height: 450px;
   }
+  .modal-body-tintuc .title_b {
+    font-size: 18px;
+  }
+  .modal-body-tintuc .content_b {
+    font-size: 14px;
+  }
 }
