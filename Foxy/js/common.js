@@ -76,8 +76,26 @@ $( document ).ready(function() {
 	  });
 	}
 	$('.icon_play').click(function() {
-		$('.clip_tvc').get(0).play();
-		$('.icon_play').hide();
+		//$('.clip_tvc').get(0).play();
+		//$('.icon_play').hide();
+		
+		var video = $(".clip_tvc").get(0);
+
+		if ( video.paused ) {
+			video.play();
+			$(".icon_play").hide();
+			
+		} else {
+			video.pause();
+			$(".icon_play").show();
+			
+		}
+
+		return false;
+	});
+	
+	$(".clip_tvc").on('pause', function() {
+	  $(".icon_play").show();
 	});
 	
 });
