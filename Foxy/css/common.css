@@ -1970,6 +1970,23 @@ option {
   .bg_iphone .youtube {
     top: 32.5%;
   }
+  .video_playing:hover .icon_play {
+    background-image: url(../images/icon_pause.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    z-index: 2;
+    background-size: contain;
+    display: none !important;
+  }
 }
 @media (max-width: 768px) {
   .container-fluid > .navbar-collapse,
