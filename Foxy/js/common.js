@@ -74,6 +74,10 @@ $( document ).ready(function() {
 		// Autoplay was prevented.
 		// Show a "Play" button so that user can start playback.
 	  });
-	}	
+	}
+	$('.icon_play').click(function() {
+		$('.clip_tvc').get(0).play();
+		$('.icon_play').hide();
+	});
 	
 });

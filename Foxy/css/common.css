@@ -76,6 +76,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-icon-play {
+  background-image: url(../images/icon_play.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1696,11 +1702,13 @@ option {
   height: 100%;
   background-size: contain;
 }
-.bg_iphone video {
+.bg_iphone video,
+.bg_iphone .youtube {
   position: absolute;
   top: 24.2%;
   left: 16.8%;
   width: 66%;
+  height: 42%;
 }
 .bg_iphone:after {
   background-image: url(../images/confetti.png);
@@ -1786,6 +1794,22 @@ option {
   margin-top: 12px;
   display: block;
 }
+.icon_play {
+  background-image: url(../images/icon_play.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  z-index: 2;
+  background-size: contain;
+}
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
     left: 4px;
@@ -1793,7 +1817,8 @@ option {
   .package_foxy {
     width: 100%;
   }
-  .bg_iphone video {
+  .bg_iphone video,
+  .bg_iphone .youtube {
     top: 29.1%;
   }
   .title_big {
@@ -1913,7 +1938,8 @@ option {
   .line_foxy:after {
     display: none;
   }
-  .bg_iphone video {
+  .bg_iphone video,
+  .bg_iphone .youtube {
     top: 32.5%;
   }
 }
@@ -2063,7 +2089,8 @@ option {
   .bg_iphone:after {
     left: 0;
   }
-  .bg_iphone video {
+  .bg_iphone video,
+  .bg_iphone .youtube {
     top: 23.1%;
   }
   .row_bg {
@@ -2463,7 +2490,8 @@ option {
   .bg_iphone {
     background-image: none;
   }
-  .bg_iphone video {
+  .bg_iphone video,
+  .bg_iphone .youtube {
     width: 100%;
     left: 0;
     top: 12%;

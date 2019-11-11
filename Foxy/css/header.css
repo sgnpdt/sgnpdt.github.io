@@ -76,6 +76,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-icon-play {
+  background-image: url(../images/icon_play.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;
