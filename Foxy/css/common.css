@@ -1815,7 +1815,7 @@ option {
   z-index: 2;
   background-size: contain;
 }
-.video_playing:hover .icon_play {
+.video_playing .icon_play {
   background-image: url(../images/icon_pause.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1831,6 +1831,15 @@ option {
   z-index: 2;
   background-size: contain;
   display: block !important;
+  opacity: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+.video_playing:hover .icon_play {
+  opacity: 1;
 }
 .content_scroll {
   height: calc(100% - 3rem);
