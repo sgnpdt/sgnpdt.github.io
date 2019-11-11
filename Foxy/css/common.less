@@ -701,7 +701,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 .icon_play{.source-icon-play();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;}
 .video_playing .icon_play{.source-icon-pause();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;display: block !important;opacity: 0;.animation(all);}
 .video_playing:hover .icon_play{opacity: 1;}
-.content_scroll{height: calc(~"100%");}
+/*.content_scroll{height: calc(~"100%");}*/
+.content_scroll{height: 600px;}
 .color_text{color:#fdd621;}
 .mCSB_scrollTools{opacity: 0.18;}
 .mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools, .mCS-autoHide:hover>.mCustomScrollBox~.mCSB_scrollTools, .mCustomScrollBox:hover>.mCSB_scrollTools, .mCustomScrollBox:hover~.mCSB_scrollTools, .mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag, .mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag{opacity: 0.3;}
@@ -720,6 +721,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	.cell_size{width: 276px;}
 	.ribbon{top: 0;}
 	.ribbon .content{font-size: 26px;}
+	.content_scroll{height: 480px;}
 }
 @media (max-width: 1400px){
 	.item.big img {height: 555px;width: 555px;}
@@ -761,7 +763,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 		
 	}
 	.video_playing:hover .icon_play{.source-icon-pause();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;display: none !important;}
-	.content_scroll{height: calc(~"100% - 3rem");}
+	.content_scroll{height: 480px;}
 }
 @media (max-width: 768px){
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{margin-right:0;margin-left: 0; }
@@ -952,6 +954,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	.bg_iphone_table{height: 240px;}
 	.modal-body-tintuc{padding-right: 0;}
 	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: rgba(255,255,255,0);}
+	
 }
 
 @media (max-width: 320px){
@@ -991,4 +994,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 	.text_help p{font-size: 16px;}
 	.bg_iphone video, .bg_iphone .youtube{top:16%;}
 	.bg_iphone_table{height: 220px;}
+	.content_scroll{height: 450px;}
 }

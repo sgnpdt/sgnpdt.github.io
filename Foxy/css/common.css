@@ -1841,8 +1841,9 @@ option {
 .video_playing:hover .icon_play {
   opacity: 1;
 }
+/*.content_scroll{height: calc(~"100%");}*/
 .content_scroll {
-  height: calc(100%);
+  height: 600px;
 }
 .color_text {
   color: #fdd621;
@@ -1896,6 +1897,9 @@ option {
   }
   .ribbon .content {
     font-size: 26px;
+  }
+  .content_scroll {
+    height: 480px;
   }
 }
 @media (max-width: 1400px) {
@@ -2008,7 +2012,7 @@ option {
     display: none !important;
   }
   .content_scroll {
-    height: calc(100% - 3rem);
+    height: 480px;
   }
 }
 @media (max-width: 768px) {
@@ -2681,5 +2685,8 @@ option {
   }
   .bg_iphone_table {
     height: 220px;
+  }
+  .content_scroll {
+    height: 450px;
   }
 }

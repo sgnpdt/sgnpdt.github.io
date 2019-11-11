@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	$(".content_scroll").mCustomScrollbar();
+	
 	
 	var navMain = $(".navbar-collapse"); // avoid dependency on #id
      // "a:not([data-toggle])" - to avoid issues caused
@@ -60,7 +60,7 @@ $( document ).ready(function() {
 	$('.modal').on('shown.bs.modal', function (e) {
 	    $('.navbar-toggler').addClass("collapsed");
 		$('.navbar-collapse').removeClass("show");
-		
+		$(".content_scroll").mCustomScrollbar();
 	});
 	
 	$('#Showregister').on('shown.bs.modal', function (e) {
