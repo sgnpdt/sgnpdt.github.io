@@ -82,6 +82,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-icon-pause {
+  background-image: url(../images/icon_pause.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .HeaderPage {
   position: fixed;
   z-index: 5;

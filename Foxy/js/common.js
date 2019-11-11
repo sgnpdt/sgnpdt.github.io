@@ -82,15 +82,15 @@ $( document ).ready(function() {
 		//$('.icon_play').hide();
 		
 		var video = $(".clip_tvc").get(0);
-
+		
 		if ( video.paused ) {
 			video.play();
 			$(".icon_play").hide();
-			
+			$(".bg_iphone").addClass("video_playing");
 		} else {
 			video.pause();
 			$(".icon_play").show();
-			
+			$(".bg_iphone").removeClass("video_playing");
 		}
 
 		return false;
@@ -98,7 +98,10 @@ $( document ).ready(function() {
 	
 	$(".clip_tvc").on('pause', function() {
 	  $(".icon_play").show();
+	  $(".bg_iphone").removeClass("video_playing");
 	});
-	
+	$(".clip_tvc").on('play', function() {
+	  
+	});
 	
 });

@@ -82,6 +82,12 @@
   background-size: cover;
   background-position: center center;
 }
+.source-icon-pause {
+  background-image: url(../images/icon_pause.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .Shows-xs {
   display: none !important;
 }
@@ -1808,6 +1814,23 @@ option {
   margin-top: -32px;
   z-index: 2;
   background-size: contain;
+}
+.video_playing:hover .icon_play {
+  background-image: url(../images/icon_pause.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  z-index: 2;
+  background-size: contain;
+  display: block !important;
 }
 .content_scroll {
   height: calc(100%);
