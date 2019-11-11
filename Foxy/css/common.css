@@ -1749,7 +1749,7 @@ option {
 }
 .modal-body-tintuc {
   background-color: #06080d;
-  padding: 3rem;
+  padding: 3rem 2rem 3rem 3rem;
   background: #131a2b;
   background: -moz-linear-gradient(45deg, #131a2b 0%, #030407 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #131a2b), color-stop(100%, #030407));
