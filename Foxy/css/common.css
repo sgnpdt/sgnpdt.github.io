@@ -2471,6 +2471,7 @@ option {
   .bg_iphone:after {
     background-size: contain;
     top: 0%;
+    display: none;
   }
   .title_bg {
     font-size: 20px;
