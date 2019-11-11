@@ -1842,10 +1842,21 @@ option {
   opacity: 1;
 }
 .content_scroll {
-  height: calc(100% - 3rem);
+  height: calc(100%);
 }
 .color_text {
   color: #fdd621;
+}
+.mCSB_scrollTools {
+  opacity: 0.18;
+}
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag {
+  opacity: 0.3;
 }
 @media (max-width: 1440px) {
   #fp-nav.fp-left {
@@ -1995,6 +2006,9 @@ option {
     z-index: 2;
     background-size: contain;
     display: none !important;
+  }
+  .content_scroll {
+    height: calc(100% - 3rem);
   }
 }
 @media (max-width: 768px) {

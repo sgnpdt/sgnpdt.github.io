@@ -701,8 +701,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 .icon_play{.source-icon-play();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;}
 .video_playing .icon_play{.source-icon-pause();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;display: block !important;opacity: 0;.animation(all);}
 .video_playing:hover .icon_play{opacity: 1;}
-.content_scroll{height: calc(~"100% - 3rem");}
+.content_scroll{height: calc(~"100%");}
 .color_text{color:#fdd621;}
+.mCSB_scrollTools{opacity: 0.18;}
+.mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools, .mCS-autoHide:hover>.mCustomScrollBox~.mCSB_scrollTools, .mCustomScrollBox:hover>.mCSB_scrollTools, .mCustomScrollBox:hover~.mCSB_scrollTools, .mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag, .mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag{opacity: 0.3;}
 
 @media (max-width: 1440px){
 	#fp-nav.fp-left{left: 4px;}
@@ -759,6 +761,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131a2b', end
 		
 	}
 	.video_playing:hover .icon_play{.source-icon-pause();width: 64px;height: 64px;display: inline-block;position: absolute;top:50%;left: 50%;margin-left: -32px;margin-top: -32px;z-index: 2;background-size: contain;display: none !important;}
+	.content_scroll{height: calc(~"100% - 3rem");}
 }
 @media (max-width: 768px){
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{margin-right:0;margin-left: 0; }
