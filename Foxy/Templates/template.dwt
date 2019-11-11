@@ -303,7 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
 			</button>
-            <div class="modal-body modal modal-body-mobile modal-body-tintuc modal-dialog-scrollable">
+            <div class="modal-body modal modal-body-mobile modal-body-tintuc">
 				
 				<div class="content_scroll">
 					<div class="row">
