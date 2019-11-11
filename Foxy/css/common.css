@@ -1833,7 +1833,7 @@ option {
   display: block !important;
 }
 .content_scroll {
-  height: calc(100%);
+  height: calc(100% - 3rem);
 }
 .color_text {
   color: #fdd621;
